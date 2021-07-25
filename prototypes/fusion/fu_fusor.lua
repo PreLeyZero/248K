@@ -54,8 +54,7 @@ data:extend({
         energy_source = {
             type = 'electric',
             buffer_capacity = '400MJ',
-            usage_priority = 'secondary-input',
-            input_flow_limit = '600MW',
+            usage_priority = 'secondary-input'
         },
         energy_usage = '400MW',
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
