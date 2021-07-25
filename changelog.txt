@@ -1,0 +1,395 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.6.4
+Date: 14.7.2021
+  Changes:
+    - Portable nuclear reactor is now cheaper
+---------------------------------------------------------------------------------------------------
+Version: 0.6.3
+Date: 13.7.2021
+  Bugfixes:
+    - fixed white hole machine bounding box
+---------------------------------------------------------------------------------------------------
+Version: 0.6.2
+Date: 12.7.2021
+  Features:
+    - added fission stage shield equipment
+    - added bug zapper discharge equipment
+---------------------------------------------------------------------------------------------------
+Version: 0.6.1
+Date: 11.7.2021
+  Bugfixes:
+    - fixed a bug caused by non-stackeable items
+---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 10.7.2021
+  Features:
+    - added white hole generator
+    - added up to 248k elements
+    - added S-Lab and science packs
+---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+Date: 16.6.2021
+  Features:
+    - added tank to kerosene producing 
+    - added recipe for building nuclear bombs from plutonium 
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 29.5.2021
+  Changes:
+    - adjusted water pressurizer energy input 
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 27.5.2021
+  Bugfixes:
+    - fixed KI migration bug 
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 27.5.2021
+  Features:
+    - added black hole generator
+    - added Informatron support
+  Changes:
+    - changed pollution and production values for modules 
+    - changed kerosene burner output
+  Bugfixes:
+    - fixed a bug where KI amplifier did not update properly
+---------------------------------------------------------------------------------------------------
+Version: 0.4.10
+Date: 12.5.2021
+  Bugfixes:
+    - fixed old KI beacon crash on mine 
+---------------------------------------------------------------------------------------------------
+Version: 0.4.9
+Date: 12.5.2021
+  Features:
+    - updated nearly all tech/item icons 
+    - increased stack sizes for energy crystals
+    - added matter charger, stabilizer, crushed exotic matter 
+    - added Black hole gnerator [WIP, disabled]
+    - updated Krastorio 2 integration
+  Bugfixes:
+    - core slaves are no longer destructible
+---------------------------------------------------------------------------------------------------
+Version: 0.4.8
+Date: 12.5.2021
+  Bugfixes:
+    - fixed migration bug: handling already reinited KI buildings
+    - fixed bug with max rate calculator: cursor stack being invalid for read  
+---------------------------------------------------------------------------------------------------
+Version: 0.4.7
+Date: 12.5.2021
+  Features:
+    - added first part of SE compatibility [WIP]
+  Bugfixes:
+    - fixed migration bug, which caused to reinit KI buildings
+---------------------------------------------------------------------------------------------------
+Version: 0.4.6
+Date: 11.5.2021
+  Features:
+    - added another magnet train
+    - added crystal growth facility
+---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 9.5.2021
+  Bugfixes:
+    - fixed migration error
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 8.5.2021
+  Features:
+    - reworked KI mechanic [NOTE: old KI link setups will be reseted to channel 1]
+  Bugfixes:
+    - fixed lang
+---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 5.3.2021
+  Bugfixes:
+    - fixed a bug caused by biters
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 4.3.2021
+  Features:
+    - added more support for Ind2 WIP
+  Bugfixes:
+    - fixed inputs for KI2 and KI3 machines
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 4.3.2021
+  Features:
+    - added custom description for KI linker
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 4.3.2021
+  Features:
+    - added KI2 and KI3 core
+    - added KI2 and KI3 beacons
+    - added KI2 and KI3 machines
+    - added KI2 and KI3 tech tree 
+    - adjusted booktorio wiki and some item descriptions 
+    - adjusted sprites for Core fluids
+---------------------------------------------------------------------------------------------------
+Version: 0.3.20
+Date: 25.2.2021
+  Features:
+    - adding compatibility between ind2 and 248k, WIP
+  Bugfixes:
+    - fixed missing lang key 
+---------------------------------------------------------------------------------------------------
+Version: 0.3.19
+Date: 23.2.2021
+  Features:
+    - added new sprites for fusion stage: exchanger and thermochemical seperator
+    - added new sprites for exotic stage: crafter
+  Bugfixes:
+    - fixes ingame changelog file 
+---------------------------------------------------------------------------------------------------
+Version: 0.3.18
+Date: 21.2.2021
+  Features:
+    - added new sprites for fusion stage: stelerator, burner, fusor and activator
+---------------------------------------------------------------------------------------------------
+Version: 0.3.17
+Date: 21.2.2021
+  Features:
+    - added new sprites for fission stage: reactor, roboports, charger, crafter and crusher
+  Bugfixes:
+    - added Migrations for new recipes
+---------------------------------------------------------------------------------------------------
+Version: 0.3.16
+Date: 20.2.2021
+  Features:
+    - added remainding textures for stage 1
+    - Kerosene burner now generates pollution
+---------------------------------------------------------------------------------------------------
+Version: 0.3.15
+Date: 19.2.2021
+  Features:
+    - added tanker wagon for em suspension train
+    - updated textures for water pressurizer, water turbine, burner generator. more graphic updates will follow soon
+---------------------------------------------------------------------------------------------------
+Version: 0.3.14
+Date: 8.1.2021
+  Features:
+    - buffed gauss modules
+    - added koaverx for matter
+    - updated gr train texture
+---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: 29.12.2020
+  Features:
+    - Portable train reactor now usable in K2
+---------------------------------------------------------------------------------------------------
+Version: 0.3.12
+Date: 28.12.2020
+  Bugfixes:
+    - fixed Booktorio wiki
+  Changes:
+    - changed lang keys for aluminum (AE) to BE
+    - fixed stuff for sandros fixes
+    - changed ingredients of last recipe
+---------------------------------------------------------------------------------------------------
+Version: 0.3.11
+Date: 19.12.2020
+  Features:
+    - modified krastorio endgame recipes (config)
+    - relocated recipe from 0.3.10
+---------------------------------------------------------------------------------------------------
+Version: 0.3.10
+Date: 16.12.2020
+  Features:
+    - added recipe for petroleum usage
+---------------------------------------------------------------------------------------------------
+Version: 0.3.9
+Date: 06.12.2020
+  Features:
+    - added krastorio 2 sprite for tech card - thanks to romner_set
+  Bugfixes:
+    - fixed krastorio 2 bug with rfp
+---------------------------------------------------------------------------------------------------
+Version: 0.3.8
+Date: 06.12.2020
+  Bugfixes:
+    - fixed sprite bug
+---------------------------------------------------------------------------------------------------
+Version: 0.3.7
+Date: 05.12.2020
+  Features:
+    - updated to factorio version 1.1
+    - shifted some dependencies (booktorio is now no longer required)
+    - added support for krastorio 2
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 29.11.2020
+  Features:
+    - added fusion train, wagon + tech
+---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 25.11.2020
+  Features:
+    - added modules 1 to 3 for 248k recipes 
+    - added universal modules 4 to 6
+---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 23.11.2020
+  Bugfixes:
+    - adressed fluid temperature issues
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 20.11.2020
+  Features:
+    - added booktorio ingame wiki
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 19.11.2020
+  Features:
+    - added steel and wheels recipes for star engine
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 19.11.2020
+  Features:
+    - added exotic matter usage
+    - added super crafting machine
+    - added fusion cell
+---------------------------------------------------------------------------------------------------
+Version: 0.2.12
+Date: 18.11.2020
+  Features:
+    - added new science pack, and exotic matter with space probes
+---------------------------------------------------------------------------------------------------
+Version: 0.2.11
+Date: 17.11.2020
+  Features:
+    - added star engine techs: copper, sulfur, lithium, uranium
+---------------------------------------------------------------------------------------------------
+Version: 0.2.10
+Date: 15.11.2020
+  Features:
+    - added star engine: core, cooler and heating units
+    - added new hydrogen refining techs
+---------------------------------------------------------------------------------------------------
+Version: 0.2.9
+Date: 9.11.2020
+  Changes:
+    - added dependency for extractor inserter, to get used up fuel cells from machines
+---------------------------------------------------------------------------------------------------
+Version: 0.2.8
+Date: 9.11.2020
+  Changes:
+    - Fixed fluid inputs for el_pressurizer
+---------------------------------------------------------------------------------------------------
+Version: 0.2.7
+Date: 8.11.2020
+  Changes:
+    - Fixed fusor inputs, again
+---------------------------------------------------------------------------------------------------
+Version: 0.2.6
+Date: 7.11.2020
+  Changes:
+    - Fixed kerosene burner texture
+---------------------------------------------------------------------------------------------------
+Version: 0.2.5
+Date: 6.11.2020
+  Features:
+    - added new fusion reactor
+    - added advanced isotopes
+    - removed fusion reactors module slots 
+    - Lead cooling cycle now available in fu_energy_tech
+    - updated liquid lead exchanger sprite
+  Changes:
+    - changed tech tree graphics
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 1.11.2020
+  Features:
+    - added Tesla and Hertz bots
+  Changes:
+    - robo charger now consumes less energy
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 27.10.2020
+  Changes:
+    - fixed bug with fusor inputs, input slots are now accessible
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 23.10.2020
+  Changes:
+    - buffed kerosene producing, now each recipe has a bit increased output 
+    - nerferd uranium power
+    - less time to produce diesle fuel
+    - buffed fusion, now consumes less isotopes
+    - buffed fusor output
+    - increased stack size of fusor tech
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 22.10.2020
+  Features:
+    - added Stellarator fusion reactor
+    - added lead
+    - added liquid lead and cooling cycle
+  Changes:
+    - buffed lithium-6 Isotope producing to make it viable for fusion and changed tech signs ratios to reflect lithium changes
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 21.10.2020
+  Features:
+    - added Fusion stage
+    - added Seperator, Burner, basic Isotopes
+    - added Fusor, fusion tech signs
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 19.10.2020
+  Features:
+    - added roboport and robo charger
+    - added kerosene engine for burning kerosene
+    - little visual update for the train
+    - config for blueprinting KI1 beacons, may get some more attention in the future 
+  Changes:
+    - decreased overall crafting time for machines (inventory) but also for kerosene producing
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 16.10.2020
+  Features:
+    - added sound for machines and trains
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 16.10.2020
+  Changes:
+    - visual update for KI1 beacon
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 15.10.2020
+  Changes:
+    - buffed thorium fuel cycle
+    - nerfed uranium fuel cycle
+    - changed energy crystal recipe ratios
+    - increased science cost of some techs
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 14.10.2020
+  Features:
+    - Added crushing
+    - Added new line of energy crstals
+    - Added new train fuel
+    - Added new materials: industrial steel
+  Changes:
+    - changed el_energy_crystal stack size to 100
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 12.10.2020
+  Features:
+    - Added nuclear miner
+    - Added train and player equipment: nuclear reactor
+    - new recipe for low density structures
+  Changes:
+    - balanced thorium fuel cycle
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 11.10.2020
+  Features:
+    - Added nuclear crafting machine
+  Changes:
+    - changed technology for meterials: now includes new crafting machine
+    - nerfed basic nuclear fuel
+
+
+

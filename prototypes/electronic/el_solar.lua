@@ -1,0 +1,60 @@
+--local functions
+local function config(name)
+    return settings.startup['el_solar_'..name].value
+end
+
+local function sprite(name)
+    return '__248k__/ressources/electronic/el_solar/el_solar_'..name
+end
+
+--item
+data:extend({
+    {
+        name = 'el_solar_item',
+        type = 'item',
+        icon = sprite('item.png'),
+        icon_size = 64,
+        place_result = 'el_solar_entity',
+        stack_size = 20,
+        subgroup = 'el_item_subgroup_c',
+        order = 'a-c',
+    },
+
+})
+
+--entity
+data:extend({
+    --prototype
+    {
+        name = 'el_solar_entity',
+        type = 'solar-panel',
+        icon = sprite('entity_icon.png'),
+        icon_size = 64,
+        flags = {"player-creation","placeable-neutral"},
+        --minable
+        minable = {
+            mining_time = 1,
+            result = 'el_solar_item',
+        },
+        max_health = 150,
+        corpse = 'small-remnants',
+        collision_box = {{-1.4,-1.4},{1.4,1.4}},
+        selection_box = {{-1.5,-1.5},{1.5,1.5}},
+        --energy
+        energy_source = {
+            type = 'electric',
+            usage_priority = 'solar',
+            input_flow_limit = '0W',
+            output_flow_limit = tostring(config('power_output'))..'W',
+        },
+        production = tostring(config('power_output'))..'W',
+        --picture
+        picture = {
+            filename = sprite('entity_picture_1.png'),
+            width = 386,
+            height = 448,
+            scale = 0.25,
+        },
+        map_color = {r=1.7,g=1.7,b=1.7},
+    },
+})
