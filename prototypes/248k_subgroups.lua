@@ -416,6 +416,42 @@ data:extend({
         type = 'recipe-category',
     },
     {
+        name = 'el_purifier_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'el_arc_furnace_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'el_caster_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'el_grower_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'fi_fiberer_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'fi_compound_machine_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'fu_laser_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'fu_plasma_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'fu_magnet_category',
+        type = 'recipe-category',
+    },
+    {
         name = "gr_cooker_fluid",
         type = "recipe-category"
     },

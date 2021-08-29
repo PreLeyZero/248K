@@ -15,7 +15,7 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'concrete',30},
-            {'fi_compound_material_item',10},
+            {'fi_materials_GFK',20},
             {'iron-gear-wheel',20},
             {'electronic-circuit',15},
             {'el_energy_crystal_item',4},
@@ -31,10 +31,10 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'concrete',60},
-            {'fi_compound_material_item',20},
+            {'el_materials_ALK',20},
             {'iron-gear-wheel',40},
             {'electric-engine-unit',15},
-            {'el_energy_crystal_item',2},
+            {'el_energy_crystal_item',10},
         },
         result = 'fi_crusher_item',
         result_count = 1,
@@ -129,11 +129,11 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'steel-plate',450},
-            {'concrete',800},
-            {'fi_compound_material_item',600},
-            {'copper-plate',200},
-            {'el_energy_crystal_item',40},
-            {'advanced-circuit',700},
+            {'concrete',400},
+            {'fi_materials_GFK',300},
+            {'fi_materials_NFK',300},
+            {'fi_energy_crystal_item',40},
+            {'advanced-circuit',500},
         },
         result = 'fi_solid_reactor_item',
         result_count = 1,
@@ -160,8 +160,8 @@ data:extend({
         category = 'fi_crafting_category',
         subgroup = 'fi_item_subgroup_b',
         ingredients = {
-            {'el_aluminum_item',8},
-            {'steel-plate',4},
+            {'fi_materials_glass_fiber',3},
+            {'el_materials_ALK',3},
             {'copper-plate',30},
         },
         result = 'low-density-structure',
@@ -282,7 +282,7 @@ data:extend({
             {'fi_pure_fuel_item',1},
         },
         result = 'fi_equipment_player_reactor_item',
-        result_count = 2,
+        result_count = 4,
         energy_required = 20,
     },
     {
@@ -310,7 +310,7 @@ data:extend({
             {'fi_pure_fuel_item',1},
         },
         result = 'fi_train_equipment_generator_item',
-        result_count = 2,
+        result_count = 4,
         energy_required = 20,
     },
     --crystals
@@ -318,12 +318,13 @@ data:extend({
         name = 'fi_energy_crystal_recipe',
         type = 'recipe',
         enabled = 'false',
-        category = 'smelting',
+        category = 'el_grower_category',
         ingredients = {
-            {'fi_base_crystal_item',2},
+            {type="item", name="el_energy_crystal_item", amount=1},
+            {type="fluid", name="fi_crystal_fluid", amount=50},
         },
         result = 'fi_energy_crystal_item',
-        result_count = 1,
+        result_count = 2,
         energy_required = 4,
         always_show_made_in = true,
     },
@@ -359,10 +360,10 @@ data:extend({
         enabled = 'false',
         category = 'fi_crushing',
         ingredients = {
-            {'el_energy_crystal_item',4},
+            {'el_energy_crystal_item',1},
         },
         result = 'fi_crushed_crystal_item',
-        result_count = 1,
+        result_count = 2,
         energy_required = 2,
         always_show_made_in = true,
     },
@@ -373,13 +374,13 @@ data:extend({
         category = 'chemistry',
         main_product = 'fi_crystal_fluid',
         ingredients = {
-            {type="item", name="fi_crushed_crystal_item", amount=2},
+            {type="item", name="fi_crushed_crystal_item", amount=1},
             {type="item", name="fi_crushed_lithium_item", amount=1},
         },
         results = {
             {type="fluid", name="fi_crystal_fluid", amount=100},
         },
-        energy_required = 4,
+        energy_required = 1,
         always_show_made_in = true,
     },
     {
@@ -402,10 +403,10 @@ data:extend({
         enabled = 'false',
         category = 'fi_crushing',
         ingredients = {
-            {'el_lithium_item',4},
+            {'el_lithium_item',1},
         },
         result = 'fi_crushed_lithium_item',
-        result_count = 1,
+        result_count = 2,
         energy_required = 2,
         always_show_made_in = true,
     },
@@ -415,10 +416,10 @@ data:extend({
         enabled = 'false',
         category = 'fi_crushing',
         ingredients = {
-            {'iron-plate',4},
+            {'iron-plate',1},
         },
         result = 'fi_crushed_iron_item',
-        result_count = 1,
+        result_count = 2,
         energy_required = 2,
         always_show_made_in = true,
     },
@@ -428,10 +429,10 @@ data:extend({
         enabled = 'false',
         category = 'fi_crushing',
         ingredients = {
-            {'copper-plate',4},
+            {'copper-plate',1},
         },
         result = 'fi_crushed_copper_item',
-        result_count = 1,
+        result_count = 2,
         energy_required = 2,
         always_show_made_in = true,
     },
@@ -441,10 +442,10 @@ data:extend({
         enabled = 'false',
         category = 'fi_crushing',
         ingredients = {
-            {'el_aluminum_item',4},
+            {'el_aluminum_item',1},
         },
         result = 'fi_crushed_aluminum_item',
-        result_count = 1,
+        result_count = 2,
         energy_required = 2,
         always_show_made_in = true,
     },
@@ -454,10 +455,36 @@ data:extend({
         enabled = 'false',
         category = 'fi_crushing',
         ingredients = {
-            {'coal',4},
+            {'coal',1},
         },
         result = 'fi_crushed_coal_item',
-        result_count = 1,
+        result_count = 2,
+        energy_required = 2,
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_crushed_stone_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_crushing',
+        ingredients = {
+            {'stone',1},
+        },
+        result = 'fi_crushed_stone_item',
+        result_count = 2,
+        energy_required = 2,
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_crushed_uranium_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_crushing',
+        ingredients = {
+            {'uranium-238',1},
+        },
+        result = 'fi_crushed_uranium_item',
+        result_count = 2,
         energy_required = 2,
         always_show_made_in = true,
     },
@@ -510,9 +537,9 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'fi_robo_charger_item',1},
-            {'fi_industrial_steel_item',80},
-            {'fi_energy_crystal_item',25},
-            {'fi_compound_material_item',80},
+            {'fi_materials_GFK',40},
+            {'fi_materials_titan',10},
+            {'fi_materials_NFK',20},
         },
         result = 'fi_robo_port_item',
         result_count = 1,
@@ -524,7 +551,7 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'roboport',1},
-            {'fi_industrial_steel_item',60},
+            {'el_materials_ALK',60},
             {'fi_energy_crystal_item',25},
             {'el_energy_crystal_item',25},
         },
@@ -551,7 +578,7 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'fi_modules_base_item',1},
-            {'fi_base_crystal_item',2},
+            {'fi_materials_GFK',1},
         },
         result = 'fi_modules_core_item',
         result_count = 1,
@@ -636,5 +663,372 @@ data:extend({
         result = 'fi_modules_productivity_6_item',
         result_count = 1,
         energy_required = 6,
+    },
+    {
+        name = 'fi_fiberer_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        ingredients = {
+            {'concrete',60},
+            {'el_materials_ALK',20},
+            {'iron-gear-wheel',40},
+            {'electric-engine-unit',15},
+            {'el_energy_crystal_item',10},
+        },
+        result = 'fi_fiberer_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fi_natural_fiber_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_fiberer_category',
+        main_product = 'fi_materials_natural_fiber',
+        ingredients = {
+            {type="item", name="wood", amount=1},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+        },
+        results = {
+            {type="item", name="fi_materials_natural_fiber", amount=2},
+        },
+        energy_required = 2,
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_glass_fiber_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_fiberer_category',
+        main_product = 'fi_materials_glass_fiber',
+        ingredients = {
+            {type="item", name="fi_crushed_glass_item", amount=2},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+        },
+        results = {
+            {type="item", name="fi_materials_glass_fiber", amount=1},
+        },
+        energy_required = 2,
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_arc_glass_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="stone", amount=5},
+        },
+        results = {
+            {type="fluid", name="fi_arc_glass", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_cast_glass_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="fi_arc_glass", amount=100},
+        },
+        results = {
+            {type="item", name="fi_materials_glass", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_crushed_glass_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_crushing',
+        ingredients = {
+            {'fi_materials_glass',1},
+        },
+        result = 'fi_crushed_glass_item',
+        result_count = 2,
+        energy_required = 1,
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_flourite_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        main_product = 'fi_materials_flourite',
+        ingredients = {
+            {type="fluid", name="el_dirty_water", amount=100},
+        },
+        results = {
+            {type="fluid", name="water", amount=100},
+            {type="item", name="fi_materials_flourite", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+    },
+    {
+        name = 'fi_strong_acid_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'chemistry',
+        main_product = 'fi_strong_acid',
+        ingredients = {
+            {type="fluid", name="water", amount=50},
+            {type="fluid", name="sulfuric-acid", amount=50},
+            {type="item", name="fi_materials_flourite", amount=1},
+        },
+        results = {
+            {type="fluid", name="el_acidic_water", amount=20},
+            {type="fluid", name="fi_strong_acid", amount=80},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_purify_stone_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'fi_dirty_water',
+        ingredients = {
+            {type="fluid", name="fi_strong_acid", amount=100},
+            {type="fluid", name="water", amount=50},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="stone", amount=10}
+        },
+        results = {
+            {type="fluid", name="fi_dirty_water", amount=50},
+            {type="item", name="el_energy_crystal_item", amount=3},
+            {type="item", name="el_materials_pure_iron", amount=3},
+            {type="item", name="el_materials_pure_copper", amount=3},
+        },
+        energy_required = 2,
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_purify_iron_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'fi_thorium232_item',
+        ingredients = {
+            {type="fluid", name="fi_strong_acid", amount=200},
+            {type="fluid", name="water", amount=50},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="iron-ore", amount=10}
+        },
+        results = {
+            {type="fluid", name="fi_dirty_water", amount=50},
+            {type="item", name="fi_thorium232_item", amount=2},
+            {type="item", name="el_materials_pure_iron", amount=8}
+        },
+        energy_required = 4,
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_purify_copper_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'uranium-238',
+        ingredients = {
+            {type="fluid", name="fi_strong_acid", amount=200},
+            {type="fluid", name="water", amount=50},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="copper-ore", amount=10}
+        },
+        results = {
+            {type="fluid", name="fi_dirty_water", amount=50},
+            {type="item", name="uranium-238", amount=2},
+            {type="item", name="el_materials_pure_copper", amount=8}
+        },
+        energy_required = 2,
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_purify_uranium_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'fi_dirty_water',
+        ingredients = {
+            {type="fluid", name="fi_strong_acid", amount=1000},
+            {type="fluid", name="water", amount=500},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="uranium-ore", amount=100}
+        },
+        results = {
+            {type="fluid", name="fi_dirty_water", amount=500},
+            {type="item", name="el_energy_crystal_item", amount=50},
+            {type="item", name="uranium-238", amount=20},
+            {type="item", name="uranium-235", amount=4},
+        },
+        energy_required = 2,
+        always_show_made_in = true
+    },
+
+
+    {
+        name = 'fi_arc_pure_gold_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="fi_materials_pure_gold", amount=1},
+        },
+        results = {
+            {type="fluid", name="fi_arc_gold", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_cast_gold_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="fi_arc_gold", amount=100},
+        },
+        results = {
+            {type="item", name="fi_materials_gold", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_arc_pure_titan_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="fi_materials_pure_titan", amount=1},
+        },
+        results = {
+            {type="fluid", name="fi_arc_titan", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_cast_titan_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="fi_arc_titan", amount=100},
+        },
+        results = {
+            {type="item", name="fi_materials_titan", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_arc_pure_neodym_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="fi_materials_pure_neodym", amount=1},
+        },
+        results = {
+            {type="fluid", name="fi_arc_neodym", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'fi_cast_neodym_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="fi_arc_neodym", amount=100},
+        },
+        results = {
+            {type="item", name="fi_materials_neodym", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_compound_machine_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {'concrete',60},
+            {'el_materials_ALK',60},
+            {'iron-gear-wheel',40},
+            {'electric-engine-unit',15},
+            {'el_energy_crystal_item',20},
+        },
+        result = 'fi_compound_machine_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fi_NFK_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_compound_machine_category',
+        ingredients = {
+            {type="fluid", name="petroleum-gas", amount=10},
+            {type="item", name="fi_materials_natural_fiber", amount=1},
+            {type="item", name="plastic-bar", amount=1},
+        },
+        results = {
+            {type="item", name="fi_materials_NFK", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_GFK_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_compound_machine_category',
+        ingredients = {
+            {type="fluid", name="petroleum-gas", amount=10},
+            {type="item", name="fi_materials_glass_fiber", amount=1},
+            {type="item", name="plastic-bar", amount=1},
+        },
+        results = {
+            {type="item", name="fi_materials_GFK", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_pure_ore_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        main_product = 'fi_materials_pure_gold',
+        ingredients = {
+            {type="fluid", name="fi_dirty_water", amount=50},
+        },
+        results = {
+            {type="fluid", name="water", amount=50},
+            {type="item", name="fi_materials_pure_gold", amount=2},
+            {type="item", name="fi_materials_pure_neodym", amount=2},
+            {type="item", name="fi_materials_pure_titan", amount=2},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
     },
 })

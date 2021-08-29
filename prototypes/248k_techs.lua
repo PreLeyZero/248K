@@ -31,7 +31,7 @@ data:extend({
         type = 'technology',
         icon = sprite('el_energy_tech.png'),
         icon_size = 128,
-        prerequisites = {'el_stage_tech'},
+        prerequisites = {'el_ALK_tech','el_lithium_tech'},
         effects = {
             { 
                 type = 'nothing',
@@ -95,6 +95,164 @@ data:extend({
             time = 30,
         },
     },
+    {
+        name = 'el_arc_furnace_tech',
+        type = 'technology',
+        icon = sprite('el_arc_furnace_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_purifier_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_arc_furnace_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_arc_pure_iron_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_arc_pure_copper_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_arc_pure_aluminum_recipe',
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'el_caster_tech',
+        type = 'technology',
+        icon = sprite('el_caster_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_arc_furnace_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_caster_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_cast_pure_aluminum_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_cast_pure_iron_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_cast_pure_copper_recipe',
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'el_purifier_tech',
+        type = 'technology',
+        icon = sprite('el_purifier_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_stage_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_purifier_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_purify_stone_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_purify_iron_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_purify_copper_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_purify_stone_acidic_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_purify_uranium_acidic_recipe',
+            }
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'el_grower_tech',
+        type = 'technology',
+        icon = sprite('el_grower_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_ALK_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_grower_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_grow_energy_crystal_recipe',
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'el_ALK_tech',
+        type = 'technology',
+        icon = sprite('el_ALK_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_caster_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_ceramic_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_ALK_recipe',
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
+    
     --water generator
     {
         name = 'el_water_generator_tech',
@@ -127,31 +285,7 @@ data:extend({
     },
     --aluminum_ore
     --aluminum_item
-    {
-        name = 'el_aluminum_tech',
-        type = 'technology',
-        icon = sprite('el_aluminum_tech.png'),
-        icon_size = 128,
-        prerequisites = {'el_stage_tech'},
-        effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'el_aluminum_ore_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'el_aluminum_item_recipe',
-            },
-        },
-        unit = {
-            count = '30',
-            ingredients = {
-                {'automation-science-pack',1},
-                {'logistic-science-pack',1,},
-            },
-            time = 30,
-        },
-    },
+    
     --lithium_ore
     --lithium_item
     --lithium_basic_battery
@@ -161,16 +295,8 @@ data:extend({
         type = 'technology',
         icon = sprite('el_lithium_tech.png'),
         icon_size = 128,
-        prerequisites = {'el_stage_tech'},
+        prerequisites = {'el_purifier_tech'},
         effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'el_lithium_ore_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'el_lithium_item_recipe',
-            },
             { 
                 type = 'unlock-recipe',
                 recipe = 'el_lithium_basic_battery_recipe',
@@ -178,6 +304,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'el_lithium_battery_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_lithium_ore_recipe',
             },
         },
         unit = {
@@ -197,7 +327,7 @@ data:extend({
         type = 'technology',
         icon = sprite('el_kerosene_tech.png'),
         icon_size = 128,
-        prerequisites = {'el_stage_tech'},
+        prerequisites = {'el_ALK_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -236,7 +366,7 @@ data:extend({
         type = 'technology',
         icon = sprite('el_train_tech.png'),
         icon_size = 128,
-        prerequisites = {'el_kerosene_tech'},
+        prerequisites = {'el_kerosene_tech','el_grower_tech','el_lithium_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -268,39 +398,13 @@ data:extend({
             time = 30,
         },
     },
-    --el_crystal
-    {
-        name = 'el_crystal_tech',
-        type = 'technology',
-        icon = sprite('el_crystal_tech.png'),
-        icon_size = 128,
-        prerequisites = {'el_stage_tech'},
-        effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'el_energy_crystal_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'el_train_fuel_diesel_energized_recipe',
-            },
-        },
-        unit = {
-            count = '30',
-            ingredients = {
-                {'automation-science-pack',1},
-                {'logistic-science-pack',1,},
-            },
-            time = 30,
-        },
-    },
     --el_ki
     {
         name = 'el_ki_tech',
         type = 'technology',
         icon = sprite('el_ki_tech.png'),
         icon_size = 128,
-        prerequisites = {'el_stage_tech'},
+        prerequisites = {'el_ALK_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -345,7 +449,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_ki_tech.png'),
         icon_size = 128,
-        prerequisites = {'el_ki_tech'},
+        prerequisites = {'el_ki_tech','fi_materials_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -751,13 +855,11 @@ data:extend({
         icon = sprite('fi_stage_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'el_aluminum_tech',
             'el_solar_tech',
             'el_burner_tech',
             'el_water_generator_tech',
             'el_train_tech',
-            'el_ki_tech',
-            'el_lithium_tech'
+            'el_ki_tech'
         },
         effects = {
             {
@@ -781,7 +883,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_energy_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_stage_tech'},
+        prerequisites = {'fi_materials_tech'},
         effects = {
             { 
                 type = 'nothing',
@@ -798,13 +900,197 @@ data:extend({
             time = 30,
         },
     },
+    {
+        name = 'fi_fiberer_tech',
+        type = 'technology',
+        icon = sprite('fi_fiberer_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_glass_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_fiberer_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_natural_fiber_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_glass_fiber_recipe',
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_flourite_tech',
+        type = 'technology',
+        icon = sprite('fi_flourite_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_glass_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_flourite_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_strong_acid_recipe',
+            }
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_glass_tech',
+        type = 'technology',
+        icon = sprite('fi_glass_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_crusher_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_arc_glass_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_cast_glass_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_crushed_glass_recipe',
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_purifier_tech',
+        type = 'technology',
+        icon = sprite('fi_purifier_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_flourite_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_purify_stone_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_purify_uranium_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_pure_ore_recipe',
+            },
+        },
+        unit = {
+            count = '300',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_purifier_2_tech',
+        type = 'technology',
+        icon = sprite('fi_purifier_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_flourite_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_purify_iron_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_purify_copper_recipe',
+            }
+        },
+        unit = {
+            count = '300',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_caster_tech',
+        type = 'technology',
+        icon = sprite('fi_arc_furnace_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_purifier_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_arc_pure_gold_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_arc_pure_titan_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_arc_pure_neodym_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_cast_neodym_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_cast_gold_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_cast_titan_recipe',
+            },
+        },
+        unit = {
+            count = '300',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
     --fi
     {
         name = 'fi_refining_tech',
         type = 'technology',
         icon = sprite('fi_refining_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_stage_tech'},
+        prerequisites = {'fi_purifier_2_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -813,10 +1099,6 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_uranium233_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fi_thorium232_recipe',
             },
             { 
                 type = 'unlock-recipe',
@@ -841,14 +1123,40 @@ data:extend({
     {
         name = 'fi_materials_tech',
         type = 'technology',
-        icon = sprite('fi_materials_tech.png'),
+        icon = sprite('fi_compound_machine_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_stage_tech'},
+        prerequisites = {'fi_fiberer_tech','fi_caster_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
-                recipe = 'fi_compound_material_recipe',
+                recipe = 'fi_compound_machine_recipe',
             },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_NFK_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_GFK_recipe',
+            }
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_crafter_tech',
+        type = 'technology',
+        icon = sprite('fi_crafter_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_materials_tech'},
+        effects = {
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_crafter_recipe',
@@ -868,36 +1176,13 @@ data:extend({
             time = 30,
         },
     },
-    --fi_miner
-    {
-        name = 'fi_miner_tech',
-        type = 'technology',
-        icon = sprite('fi_miner_tech.png'),
-        icon_size = 128,
-        prerequisites = {'fi_stage_tech'},
-        effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fi_miner_recipe',
-            },
-        },
-        unit = {
-            count = '150',
-            ingredients = {
-                {'chemical-science-pack',1},
-                {'automation-science-pack',1},
-                {'logistic-science-pack',1,},
-            },
-            time = 30,
-        },
-    },
     --fi_train
     {
         name = 'fi_train_tech',
         type = 'technology',
         icon = sprite('fi_train_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_stage_tech'},
+        prerequisites = {'fi_energy_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -931,7 +1216,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_solid_reactor_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_energy_tech'},
+        prerequisites = {'fi_energy_tech','fi_refining_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -1009,6 +1294,14 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_coal_recipe',
             },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_crushed_stone_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_crushed_uranium_recipe',
+            },
         },
         unit = {
             count = '200',
@@ -1026,19 +1319,11 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_crystal_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_crusher_tech'},
+        prerequisites = {'fi_materials_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_energy_crystal_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fi_catalyst_crystal_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fi_base_crystal_recipe',
             },
             { 
                 type = 'unlock-recipe',
@@ -1059,44 +1344,13 @@ data:extend({
             time = 30,
         },
     },
-    --blends 
-    {
-        name = 'fi_blends_tech',
-        type = 'technology',
-        icon = sprite('fi_blends_tech.png'),
-        icon_size = 128,
-        prerequisites = {'fi_materials_tech','fi_crusher_tech'},
-        effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fi_materials_industrial_steel_blend_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fi_materials_industrial_steel_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fi_materials_steel_recipe',
-            },
-        },
-        unit = {
-            count = '300',
-            ingredients = {
-                {'chemical-science-pack',1},
-                {'automation-science-pack',1},
-                {'logistic-science-pack',1,},
-            },
-            time = 30,
-        },
-    },
     --robo
     {
         name = 'fi_robo_tech',
         type = 'technology',
         icon = sprite('fi_robo_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_materials_tech','fi_miner_tech'},
+        prerequisites = {'fi_materials_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -1175,7 +1429,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_modules_3_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_modules_2_tech','fu_fusor_tech'},
+        prerequisites = {'fi_modules_2_tech','fu_energy_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -1281,9 +1535,7 @@ data:extend({
         prerequisites = {
             'fi_crystal_tech',
             'fi_solid_reactor_tech',
-            'fi_blends_tech',
             'fi_robo_tech',
-            'fi_refining_tech',
             'fi_train_tech'
         },
         effects = {
@@ -1303,6 +1555,161 @@ data:extend({
             time = 45,
         },
     },
+    {
+        name = 'fu_laser_tech',
+        type = 'technology',
+        icon = sprite('fu_laser_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_lead_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_laser_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_laser_card_recipe',
+            },
+            
+        },
+        unit = {
+            count = '800',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_plasma_tech',
+        type = 'technology',
+        icon = sprite('fu_plasma_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_lead_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_plasma_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_plasma_card_recipe',
+            },
+        },
+        unit = {
+            count = '800',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_magnet_tech',
+        type = 'technology',
+        icon = sprite('fu_magnet_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_lead_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_magnet_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_magnet_1_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_magnet_card_recipe',
+            },
+        },
+        unit = {
+            count = '800',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_KFK_tech',
+        type = 'technology',
+        icon = sprite('fu_KFK_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_stage_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_KFK_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_carbon_fiber_recipe',
+            },
+        },
+        unit = {
+            count = '800',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_TIM_tech',
+        type = 'technology',
+        icon = sprite('fu_TIM_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_stage_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_TIM_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_metal_foam_recipe',
+            },
+        },
+        unit = {
+            count = '800',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
     --fu fusor
     {
         name = 'fu_fusor_tech',
@@ -1310,7 +1717,7 @@ data:extend({
         icon = sprite('fu_fusor_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'fu_stage_tech',
+            'fu_lead_tech',
         },
         effects = {
             { 
@@ -1319,31 +1726,31 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_tech_sign_1_recipe',
+                recipe = 'fu_fusion_card_1_recipe',
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_tech_sign_2_recipe',
+                recipe = 'fu_fusion_card_2_recipe',
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_tech_sign_3_recipe',
+                recipe = 'fu_fusion_card_3_recipe',
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_tech_sign_4_recipe',
+                recipe = 'fu_fusion_card_4_recipe',
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_tech_sign_5_recipe',
+                recipe = 'fu_fusion_card_5_recipe',
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_tech_sign_6_recipe',
+                recipe = 'fu_fusion_card_6_recipe',
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_tech_sign_7_recipe',
+                recipe = 'fu_fusion_card_7_recipe',
             },
             {
                 type = 'nothing',
@@ -1368,7 +1775,7 @@ data:extend({
         icon = sprite('fu_basic_elements_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'fu_stage_tech',
+            'fu_fusor_tech',
         },
         effects = {
             { 
@@ -1493,23 +1900,15 @@ data:extend({
         type = 'technology',
         icon = sprite('fu_energy_tech.png'),
         icon_size = 128,
-        prerequisites = {'fu_fusor_tech'},
+        prerequisites = {'fu_fusor_tech','fu_laser_tech','fu_magnet_tech','fu_plasma_tech'},
         effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fu_exchanger_item_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fu_exchanger_1_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fu_exchanger_2_recipe',
-            },
             { 
                 type = 'nothing',
                 effect_description = {'description.fu_energy_eff'},
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_tech_sign_recipe',
             },
         },
         unit = {
@@ -1528,12 +1927,16 @@ data:extend({
         type = 'technology',
         icon = sprite('fu_crystal_tech.png'),
         icon_size = 128,
-        prerequisites = {'fu_stage_tech'},
+        prerequisites = {'fu_laser_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_crystal_from_fluid_recipe',
-            }
+                recipe = 'fu_laser_crystal_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_refined_crystal_recipe',
+            },
         },
         unit = {
             count = '1000',
@@ -1552,12 +1955,8 @@ data:extend({
         type = 'technology',
         icon = sprite('fu_lead_tech.png'),
         icon_size = 128,
-        prerequisites = {'fu_stage_tech'},
+        prerequisites = {'fu_KFK_tech','fu_TIM_tech'},
         effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fu_lead_ore_recipe',
-            },
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_lead_recipe',
@@ -1569,6 +1968,26 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_lead_molten_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_arc_pure_lead_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_pure_ore_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_exchanger_item_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_exchanger_1_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_exchanger_2_recipe',
             },
         },
         unit = {
@@ -1628,7 +2047,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fu_robo_tech.png'),
         icon_size = 128,
-        prerequisites = {'fu_fusor_tech'},
+        prerequisites = {'fu_energy_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',

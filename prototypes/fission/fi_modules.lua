@@ -8,18 +8,16 @@ local function sprite(name)
 end
 
 local limitation_list = {
-    'el_aluminum_ore_recipe',
-    'el_aluminum_item_recipe',
-    'el_lithium_ore_recipe',
-    'el_lithium_item_recipe',
     'el_train_fuel_diesel_recipe',
-    'el_energy_crystal_recipe',
+    'el_grow_energy_crystal_recipe',
     'fi_compound_material_recipe',
     'fi_materials_industrial_steel_recipe',
     'fu_lead_ore_recipe',
     'fi_base_crystal_recipe',
     'fi_catalyst_crystal_recipe',
-    'fi_energy_crystal_recipe'
+    'fi_energy_crystal_recipe',
+    'fi_glass_fiber_recipe',
+    'fi_natural_fiber_recipe'
 }
 
 --item

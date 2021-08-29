@@ -89,7 +89,7 @@ data:extend({
     },
     --tech sign
     {
-        name = 'fu_tech_sign_1_recipe',
+        name = 'fu_fusion_card_1_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
         enabled = 'false',
@@ -97,13 +97,13 @@ data:extend({
             {type="fluid", name="fu_lithium_6", amount=100},
             {type="fluid", name="fu_protium", amount=100},
         },
-        result = 'fu_tech_sign_item',
+        result = 'fu_materials_fusion_card',
         result_count = 5,
         energy_required = 100,
         always_show_made_in = true,
     },
     {
-        name = 'fu_tech_sign_2_recipe',
+        name = 'fu_fusion_card_2_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
         enabled = 'false',
@@ -111,13 +111,13 @@ data:extend({
             {type="fluid", name="fu_lithium_6", amount=100},
             {type="fluid", name="fu_deuterium", amount=100},
         },
-        result = 'fu_tech_sign_item',
-        result_count = 100,
+        result = 'fu_materials_fusion_card',
+        result_count = 30,
         energy_required = 100,
         always_show_made_in = true,
     },
     {
-        name = 'fu_tech_sign_3_recipe',
+        name = 'fu_fusion_card_3_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
         enabled = 'false',
@@ -125,13 +125,13 @@ data:extend({
             {type="fluid", name="fu_lithium_6", amount=100},
             {type="fluid", name="fu_helium_3", amount=100},
         },
-        result = 'fu_tech_sign_item',
+        result = 'fu_materials_fusion_card',
         result_count = 100,
         energy_required = 100,
         always_show_made_in = true,
     },
     {
-        name = 'fu_tech_sign_4_recipe',
+        name = 'fu_fusion_card_4_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
         enabled = 'false',
@@ -139,26 +139,26 @@ data:extend({
             {type="fluid", name="fu_deuterium", amount=100},
             {type="fluid", name="fu_tritium", amount=100},
         },
-        result = 'fu_tech_sign_item',
-        result_count = 10000,
+        result = 'fu_materials_fusion_card',
+        result_count = 100,
         energy_required = 100,
         always_show_made_in = true,
     },
     {
-        name = 'fu_tech_sign_5_recipe',
+        name = 'fu_fusion_card_5_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_deuterium", amount=200},
+            {type="fluid", name="fu_deuterium", amount=100},
         },
-        result = 'fu_tech_sign_item',
-        result_count = 2000,
+        result = 'fu_materials_fusion_card',
+        result_count = 40,
         energy_required = 100,
         always_show_made_in = true,
     },
     {
-        name = 'fu_tech_sign_6_recipe',
+        name = 'fu_fusion_card_6_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
         enabled = 'false',
@@ -166,21 +166,21 @@ data:extend({
             {type="fluid", name="fu_deuterium", amount=100},
             {type="fluid", name="fu_helium_3", amount=100},
         },
-        result = 'fu_tech_sign_item',
-        result_count = 1000,
+        result = 'fu_materials_fusion_card',
+        result_count = 20,
         energy_required = 100,
         always_show_made_in = true,
     },
     {
-        name = 'fu_tech_sign_7_recipe',
+        name = 'fu_fusion_card_7_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
         enabled = 'false',
         ingredients = {
             {type="fluid", name="fu_protium", amount=20000},
         },
-        result = 'fu_tech_sign_item',
-        result_count = 10,
+        result = 'fu_materials_fusion_card',
+        result_count = 1,
         energy_required = 100,
         always_show_made_in = true,
     },
@@ -296,14 +296,17 @@ data:extend({
     {
         name = 'fu_lead_recipe',
         type = 'recipe',
-        category = 'smelting',
         enabled = 'false',
+        category = 'el_caster_category',
         ingredients = {
-            {type="item", name="fu_lead_ore_item", amount=4},
+            {type="fluid", name="fu_arc_pure_lead", amount=100},
         },
-        result = 'fu_lead_item',
-        result_count = 2,
-        energy_required = 2,
+        results = {
+            {type="item", name="fu_lead_item", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
     },
     {
         name = 'fu_lead_crushed_recipe',
@@ -311,10 +314,10 @@ data:extend({
         category = 'fi_crushing',
         enabled = 'false',
         ingredients = {
-            {type="item", name="fu_lead_item", amount=4},
+            {type="item", name="fu_lead_item", amount=1},
         },
         result = 'fu_crushed_lead_item',
-        result_count = 1,
+        result_count = 2,
         energy_required = 2,
     },
     {
@@ -338,7 +341,7 @@ data:extend({
         category = 'fu_stelar_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=1000, temperature=500},
+            {type="fluid", name="fu_lead_fluid", amount=1000},
             {type="fluid", name="fu_protium", amount=20},
         },
         results = {
@@ -353,7 +356,7 @@ data:extend({
         category = 'fu_stelar_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=1000, temperature=500},
+            {type="fluid", name="fu_lead_fluid", amount=1000},
             {type="fluid", name="fu_deuterium", amount=1},
             {type="fluid", name="fu_tritium", amount=1},
         },
@@ -369,7 +372,7 @@ data:extend({
         category = 'fu_stelar_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=1000, temperature=500},
+            {type="fluid", name="fu_lead_fluid", amount=1000},
             {type="fluid", name="fu_protium", amount=15},
             {type="fluid", name="fu_lithium_6", amount=15},
         },
@@ -386,7 +389,7 @@ data:extend({
         category = 'fu_tokamak_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=110000, temperature=500},
+            {type="fluid", name="fu_lead_fluid", amount=110000},
             {type="fluid", name="fu_deuterium", amount=200},
         },
         results = {
@@ -401,7 +404,7 @@ data:extend({
         category = 'fu_tokamak_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=180000, temperature=500},
+            {type="fluid", name="fu_lead_fluid", amount=180000},
             {type="fluid", name="fu_deuterium", amount=100},
             {type="fluid", name="fu_tritium", amount=100},
         },
@@ -1084,5 +1087,275 @@ data:extend({
         result_count = 1,
         energy_required = 6,
     },
+    {
+        name = 'fu_laser_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {'concrete',60},
+            {'el_materials_ALK',60},
+            {'iron-gear-wheel',40},
+            {'electric-engine-unit',15},
+            {'el_energy_crystal_item',20},
+        },
+        result = 'fu_laser_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fu_laser_crystal_recipe',
+        type = 'recipe',
+        category = 'fu_laser_category',
+        enabled = 'false',
+        main_product = 'fu_materials_energy_crystal',
+        subgroup = 'fu_item_subgroup_a-b',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="item", name="fu_materials_refined_crystal", amount=1}
+        },
+        results = {
+            {type="item", name="fu_materials_energy_crystal", amount=1},
+            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500}
+        },
+        result_count = 1,
+        energy_required = 3,
+        always_show_made_in = true,
+    },
+    {
+        name = 'fu_refined_crystal_recipe',
+        type = 'recipe',
+        category = 'el_grower_category',
+        enabled = 'false',
+        subgroup = 'fu_item_subgroup_a-b',
+        ingredients = {
+            {type="fluid", name="fi_crystal_fluid", amount=100},
+            {type="item", name="fi_energy_crystal_item", amount=2}
+        },
+        results = {
+            {type="item", name="fu_materials_refined_crystal", amount=1}
+        },
+        result_count = 1,
+        energy_required = 10,
+        always_show_made_in = true,
+    },
+    {
+        name = 'fu_plasma_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {'concrete',60},
+            {'el_materials_ALK',60},
+            {'iron-gear-wheel',40},
+            {'electric-engine-unit',15},
+            {'el_energy_crystal_item',20},
+        },
+        result = 'fu_plasma_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fu_magnet_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {'concrete',60},
+            {'el_materials_ALK',60},
+            {'iron-gear-wheel',40},
+            {'electric-engine-unit',15},
+            {'el_energy_crystal_item',20},
+        },
+        result = 'fu_magnet_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fu_magnet_1_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fu_magnet_category',
+        main_product = 'fu_materials_magnet',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=20},
+            {type="item", name="fi_materials_neodym", amount=6},
+            {type="item", name="fi_materials_GFK", amount=2},
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=20, temperature=1500},
+            {type="item", name="fu_materials_magnet", amount=1},
+        },
+        energy_required = 4,
+        always_show_made_in = true,
+    },
+    {
+        name = 'fu_KFK_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_compound_machine_category',
+        ingredients = {
+            {type="fluid", name="petroleum-gas", amount=20},
+            {type="item", name="fu_materials_carbon_fiber", amount=1},
+            {type="item", name="plastic-bar", amount=2},
+        },
+        results = {
+            {type="item", name="fu_materials_KFK", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fu_TIM_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_compound_machine_category',
+        ingredients = {
+            {type="fluid", name="fu_metal_foam", amount=20},
+            {type="item", name="fi_materials_titan", amount=4},
+        },
+        results = {
+            {type="item", name="fu_materials_TIM", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fu_metal_foam_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'chemistry',
+        ingredients = {
+            {type="fluid", name="steam", amount=300},
+            {type="item", name="el_aluminum_item", amount=4},
+        },
+        results = {
+            {type="fluid", name="fu_metal_foam", amount=20},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fu_carbon_fiber_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_fiberer_category',
+        ingredients = {
+            {type="item", name="fi_crushed_coal_item", amount=6},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+        },
+        results = {
+            {type="item", name="fu_materials_carbon_fiber", amount=1},
+        },
+        energy_required = 2,
+        always_show_made_in = true
+    },
+
+
+
+    {
+        name = 'fu_laser_card_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fu_laser_category',
+        main_product = 'fu_materials_laser_card',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=50}
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="item", name="fu_materials_laser_card", amount=1}
+        },
+        energy_required = 1,
+        always_show_made_in = true
+    },
+    {
+        name = 'fu_plasma_card_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fu_plasma_category',
+        main_product = 'fu_materials_plasma_card',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="item", name="stone", amount=10}
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="item", name="fu_materials_plasma_card", amount=1}
+        },
+        energy_required = 1,
+        always_show_made_in = true
+    },
+    {
+        name = 'fu_magnet_card_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fu_magnet_category',
+        main_product = 'fu_materials_magnet_card',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="item", name="fi_materials_neodym", amount=1}
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="item", name="fu_materials_magnet_card", amount=1}
+        },
+        energy_required = 1,
+        always_show_made_in = true
+    },
+
+    {
+        name = 'fu_pure_ore_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        main_product = 'fu_materials_pure_lead',
+        ingredients = {
+            {type="fluid", name="fi_dirty_water", amount=50},
+        },
+        results = {
+            {type="fluid", name="water", amount=50},
+            {type="item", name="fi_materials_pure_gold", amount=2},
+            {type="item", name="fi_materials_pure_neodym", amount=2},
+            {type="item", name="fi_materials_pure_titan", amount=2},
+            {type="item", name="fu_materials_pure_lead", amount=2},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+    },
+    {
+        name = 'fu_arc_pure_lead_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="fu_materials_pure_lead", amount=1},
+        },
+        results = {
+            {type="fluid", name="fu_arc_pure_lead", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'fu_tech_sign_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        main_product = 'fu_tech_sign_item',
+        ingredients = {
+            {type="item", name="fu_materials_laser_card", amount=1},
+            {type="item", name="fu_materials_plasma_card", amount=1},
+            {type="item", name="fu_materials_fusion_card", amount=1},
+            {type="item", name="fu_materials_magnet_card", amount=1},
+        },
+        results = {
+            {type="item", name="fu_tech_sign_item", amount=2}
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
+    
+    
 
 })

@@ -5,7 +5,7 @@ data:extend({
         name            = 'el_solar_power_output',
         type            = 'int-setting',
         setting_type    = 'startup',
-        default_value   = 200000,
+        default_value   = 80000,
         minimum_value   = 1,
         maximum_value   = 10^10,
         order           = 'a',    
