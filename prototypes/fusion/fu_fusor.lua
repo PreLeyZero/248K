@@ -16,7 +16,7 @@ data:extend({
         icon_size = 64,
         place_result = 'fu_fusor_entity',
         stack_size = 20,
-        subgroup = 'fu_item_subgroup_d',
+        subgroup = 'fu_item_subgroup_c',
         order = 'a-a',
     },
     {

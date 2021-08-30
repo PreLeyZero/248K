@@ -16,7 +16,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10,
         subgroup = 'gr_item_subgroup_a',
-        order = 'a-c',
+        order = 'a-c-c',
     },
     {
         name = 'gr_materials_stack_down_item',
@@ -25,7 +25,7 @@ data:extend({
         icon_size = 64,
         stack_size = 100,
         subgroup = 'gr_item_subgroup_a',
-        order = 'a-a',
+        order = 'a-c-b',
     },
     {
         name = 'gr_materials_stack_up_item',
@@ -34,7 +34,7 @@ data:extend({
         icon_size = 64,
         stack_size = 100,
         subgroup = 'gr_item_subgroup_a',
-        order = 'a-b',
+        order = 'a-c-a',
     },
     {
         name = 'gr_materials_cooked_crystal_item',
@@ -401,6 +401,51 @@ data:extend({
         subgroup = 'gr_item_subgroup_b',
         order = "c-b",
         stack_size = 1
+    },
+    {
+        name = 'gr_materials_circuit',
+        type = 'item',
+        icon = sprite('circuit.png'),
+        icon_size = 64,
+        stack_size = 500,
+        subgroup = 'gr_item_subgroup_a',
+        order = 'a-b',
+    },
+    {
+        name = 'gr_materials_gold_wire',
+        type = 'item',
+        icon = sprite('gold_wire.png'),
+        icon_size = 64,
+        stack_size = 200,
+        subgroup = 'gr_item_subgroup_a',
+        order = 'a-c',
+    },
+    {
+        name = 'gr_materials_pcb',
+        type = 'item',
+        icon = sprite('pcb.png'),
+        icon_size = 64,
+        stack_size = 200,
+        subgroup = 'gr_item_subgroup_a',
+        order = 'a-a',
+    },
+    {
+        name = 'gr_materials_magnet',
+        type = 'item',
+        icon = sprite('magnet.png'),
+        icon_size = 64,
+        stack_size = 200,
+        subgroup = 'gr_item_subgroup_a',
+        order = 'a-a',
+    },
+    {
+        name = 'gr_materials_plasma_cube',
+        type = 'item',
+        icon = sprite('plasma_cube.png'),
+        icon_size = 64,
+        stack_size = 200,
+        subgroup = 'gr_item_subgroup_a',
+        order = 'a-a',
     },
 
 })

@@ -360,8 +360,8 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="steel-plate", amount=20},
-            {type="item", name="fu_tech_sign_item", amount=100},
+            {type="item", name="fu_materials_KFK", amount=20},
+            {type="item", name="fu_tech_sign_item", amount=20},
             {type="item", name="processing-unit", amount=20},
             {type="item", name="fi_ki_beacon_item", amount=1},
         },
@@ -422,7 +422,7 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="steel-plate", amount=100},
+            {type="item", name="fu_materials_KFK", amount=100},
             {type="item", name="concrete", amount=500},
             {type="item", name="electronic-circuit", amount=100},
             {type="item", name="advanced-circuit", amount=100},
@@ -481,12 +481,12 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="fi_industrial_steel_item", amount=80},
+            {type="item", name="fu_materials_KFK", amount=40},
             {type="item", name="concrete", amount=120},
             {type="item", name="advanced-circuit", amount=100},
             {type="item", name="processing-unit", amount=100},
-            {type="item", name="fu_tech_sign_item", amount=100},
-            {type="item", name="low-density-structure", amount=100},
+            {type="item", name="fu_tech_sign_item", amount=20},
+            {type="item", name="fu_materials_TIM", amount=40},
         },
         results = {
             {type="item", name="fu_ki_circuit_item", amount=1},
@@ -569,9 +569,9 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=20},
+            {type="item", name="fu_tech_sign_item", amount=8},
             {type="item", name="advanced-circuit", amount=20},
-            {type="item", name="fu_space_probe_science_item", amount=4},
+            {type="item", name="fu_space_probe_science_item", amount=2},
         },
         results = {
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
@@ -585,9 +585,9 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=16},
+            {type="item", name="fu_tech_sign_item", amount=4},
             {type="item", name="advanced-circuit", amount=16},
-            {type="item", name="fu_space_probe_science_item", amount=2},
+            {type="item", name="fu_space_probe_science_item", amount=1},
         },
         results = {
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
@@ -601,7 +601,7 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=16},
+            {type="item", name="fu_tech_sign_item", amount=4},
             {type="item", name="advanced-circuit", amount=16},
         },
         results = {
@@ -616,7 +616,7 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=12},
+            {type="item", name="fu_tech_sign_item", amount=3},
             {type="item", name="advanced-circuit", amount=12},
         },
         results = {

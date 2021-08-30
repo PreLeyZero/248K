@@ -184,7 +184,7 @@ data:extend({
         },
         working_sound = { 
             sound = { filename ='__base__/sound/train-engine.ogg'},
-            apparent_volume = 0.5,
+            apparent_volume = 0.2,
         }, 
         vehicle_impact_sound = {
             filename = "__base__/sound/car-metal-impact-6.ogg",
@@ -351,8 +351,8 @@ data:extend({
         icon_size = 64,
         place_result = 'gr_magnet_train_pre_entity',
         stack_size = 20,
-        subgroup = 'gr_item_subgroup_b',
-        order = 'b-a',
+        subgroup = 'fu_item_subgroup_d',
+        order = 'e-a',
     },
     {
         name = 'gr_magnet_wagon_pre_item',
@@ -361,8 +361,8 @@ data:extend({
         icon_size = 64,
         place_result = 'gr_magnet_wagon_pre_entity',
         stack_size = 20,
-        subgroup = 'gr_item_subgroup_b',
-        order = 'b-b',
+        subgroup = 'fu_item_subgroup_d',
+        order = 'e-b',
     },
     {
         name = 'gr_magnet_tanker_pre_item',
@@ -371,8 +371,8 @@ data:extend({
         icon_size = 64,
         place_result = 'gr_magnet_tanker_pre_entity',
         stack_size = 20,
-        subgroup = 'gr_item_subgroup_b',
-        order = 'b-c',
+        subgroup = 'fu_item_subgroup_d',
+        order = 'e-c',
     },
     {
         name = 'gr_magnet_train_pre_entity',
@@ -399,7 +399,7 @@ data:extend({
             result = 'gr_magnet_train_pre_item',
         },
         --stats
-        max_speed = 2,
+        max_speed = 1.8,
         max_power = '40kW',
         braking_force = 1,
         friction_force = 0.00025,
@@ -409,7 +409,18 @@ data:extend({
         reversing_power_modifier = 0.5,
         weight = 10,
         --burner
-        energy_source = {type = "void"},
+        burner = {
+            fuel_categories = {
+                'nuclear',
+                'fi_basic_fuel',
+                'fi_advanced_fuel',
+                'fi_pure_fuel',
+            },
+            fuel_inventory_size = 3,
+            burnt_inventory_size = 3,
+            effectivity = 0.001,
+            emissions_per_minute = 10,
+        },
         --light
         front_light = {
             {
@@ -515,7 +526,7 @@ data:extend({
         },
         working_sound = { 
             sound = { filename ='__base__/sound/train-engine.ogg'},
-            apparent_volume = 0.5,
+            apparent_volume = 0.2,
         }, 
         vehicle_impact_sound = {
             filename = "__base__/sound/car-metal-impact-6.ogg",

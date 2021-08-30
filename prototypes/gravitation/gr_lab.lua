@@ -29,11 +29,11 @@ data:extend({
         type = 'lab',
         icon = sprite('item.png'),
         icon_size = 64,
-        flags = {"player-creation","placeable-neutral"},
+        flags = {"player-creation","placeable-neutral","not-rotatable"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-4,-4},{4,4}},
-        selection_box = {{-4,-4},{4,4}},
+        collision_box = {{-4,-3.5},{4,3.5}},
+        selection_box = {{-4,-3.5},{4,3.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
@@ -64,7 +64,8 @@ data:extend({
             scale = 0.6,
             line_length = 1,
             frame_count = 1,
-            animation_speed = 0.1
+            animation_speed = 0.1,
+            shift = {0,-0.2}
         },
         on_animation = {
             filename = sprite('animation.png'),
@@ -72,7 +73,8 @@ data:extend({
             scale = 0.6,
             line_length = 5,
             frame_count = 5,
-            animation_speed = 0.1
+            animation_speed = 0.1,
+            shift = {0,-0.2}
         },
         
         working_sound = { 

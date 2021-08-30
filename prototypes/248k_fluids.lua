@@ -290,7 +290,7 @@ data:extend({
 		flow_color = { r=0.92, g=0.29, b=0.22 }, 
 		pressure_to_speed_ratio = 0.400, 
 		flow_to_energy_ratio = 0,
-        subgroup = 'fi_item_subgroup_f',
+        subgroup = 'fu_item_subgroup_f',
         order = 'a-a',
     },
     {

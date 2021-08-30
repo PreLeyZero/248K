@@ -720,15 +720,15 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = '2000',
             ingredients = {
-                {'chemical-science-pack',100},
-                {'automation-science-pack',100},
-                {'logistic-science-pack',100},
-                {'production-science-pack',100},
-                {'utility-science-pack',100}, 
-                {'space-science-pack',100}, 
-                {'fu_space_probe_science_item',100},
+                {'chemical-science-pack',50},
+                {'automation-science-pack',50},
+                {'logistic-science-pack',50},
+                {'production-science-pack',50},
+                {'utility-science-pack',50}, 
+                {'space-science-pack',50}, 
+                {'fu_space_probe_science_item',50},
                 {'fi_ki_science',1},
                 {'fu_ki_science',1} 
             },
@@ -748,15 +748,15 @@ data:extend({
             },
         },
         unit = {
-            count = '2000',
+            count = '4000',
             ingredients = {
-                {'chemical-science-pack',100},
-                {'automation-science-pack',100},
-                {'logistic-science-pack',100},
-                {'production-science-pack',100},
-                {'utility-science-pack',100}, 
-                {'space-science-pack',100}, 
-                {'fu_space_probe_science_item',100},
+                {'chemical-science-pack',50},
+                {'automation-science-pack',50},
+                {'logistic-science-pack',50},
+                {'production-science-pack',50},
+                {'utility-science-pack',50}, 
+                {'space-science-pack',50}, 
+                {'fu_space_probe_science_item',50},
                 {'fi_ki_science',1},
                 {'fu_ki_science',1} 
             },
@@ -1003,7 +1003,15 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fi_pure_ore_recipe',
+                recipe = 'fi_pure_neodym_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_pure_titan_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_pure_gold_recipe',
             },
         },
         unit = {
@@ -1580,7 +1588,6 @@ data:extend({
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
-                {'production-science-pack',1},
                 {'utility-science-pack',1},
             },
             time = 45,
@@ -1610,7 +1617,6 @@ data:extend({
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
-                {'production-science-pack',1},
                 {'utility-science-pack',1},
             },
             time = 45,
@@ -1644,7 +1650,6 @@ data:extend({
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
-                {'production-science-pack',1},
                 {'utility-science-pack',1},
             },
             time = 45,
@@ -1669,12 +1674,11 @@ data:extend({
             },
         },
         unit = {
-            count = '800',
+            count = '200',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
-                {'production-science-pack',1},
                 {'utility-science-pack',1},
             },
             time = 45,
@@ -1699,12 +1703,11 @@ data:extend({
             },
         },
         unit = {
-            count = '800',
+            count = '200',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
-                {'production-science-pack',1},
                 {'utility-science-pack',1},
             },
             time = 45,
@@ -1717,7 +1720,7 @@ data:extend({
         icon = sprite('fu_fusor_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'fu_lead_tech',
+            'fu_magnet_tech','fu_basic_elements_tech'
         },
         effects = {
             { 
@@ -1775,7 +1778,7 @@ data:extend({
         icon = sprite('fu_basic_elements_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'fu_fusor_tech',
+            'fu_lead_tech',
         },
         effects = {
             { 
@@ -1820,7 +1823,7 @@ data:extend({
         icon = sprite('fu_hydrogen_1_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'fu_basic_elements_tech',
+            'fu_fusor_tech',
         },
         effects = {
             { 
@@ -1900,7 +1903,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fu_energy_tech.png'),
         icon_size = 128,
-        prerequisites = {'fu_fusor_tech','fu_laser_tech','fu_magnet_tech','fu_plasma_tech'},
+        prerequisites = {'fu_fusor_tech','fu_crystal_tech','fu_magnet_tech','fu_plasma_tech'},
         effects = {
             { 
                 type = 'nothing',
@@ -1960,6 +1963,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_lead_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_heat_lead_recipe',
             },
             { 
                 type = 'unlock-recipe',
@@ -2031,7 +2038,7 @@ data:extend({
             },
         },
         unit = {
-            count = '400',
+            count = '1000',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2095,11 +2102,12 @@ data:extend({
         },
     },
         unit = {
-            count = '400',
+            count = '2000',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
+                {'production-science-pack',1},
                 {'utility-science-pack',1}
         },
         time = 45,
@@ -2111,7 +2119,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fu_activator_tech.png'),
         icon_size = 128,
-        prerequisites = {'fu_fusor_tech'},
+        prerequisites = {'fu_fusor_tech','fu_basic_elements_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -2520,7 +2528,7 @@ data:extend({
         icon = sprite('gr_compact_fusion_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'gr_stage_tech'
+            'gr_magnet_tech'
         },
         effects = {
             { 
@@ -2674,7 +2682,7 @@ data:extend({
         icon = sprite('gr_train_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'gr_compact_fusion_tech'
+            'fu_magnet_tech','fu_space_probe_3_tech'
         },
         effects = {
             { 
@@ -2691,7 +2699,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = '200',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2710,7 +2718,7 @@ data:extend({
         icon = sprite('gr_train_plus_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'gr_train_tech'
+            'gr_train_tech','gr_compact_fusion_tech'
         },
         effects = {
             { 
@@ -2770,52 +2778,12 @@ data:extend({
         },
     },
     {
-        name = 'gr_cooker_tech',
-        type = 'technology',
-        icon = sprite('gr_cooker_tech.png'),
-        icon_size = 128,
-        prerequisites = {
-            'gr_stage_tech'
-        },
-        effects = {
-            { 
-                type = 'unlock-recipe',
-                recipe = 'gr_cooker_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'gr_cooker_fluid_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'gr_cooked_crystal_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'gr_refined_crystal_recipe',
-            },
-        },
-        unit = {
-            count = '400',
-            ingredients = {
-                {'chemical-science-pack',1},
-                {'automation-science-pack',1},
-                {'logistic-science-pack',1},
-                {'production-science-pack',1},
-                {'utility-science-pack',1}, 
-                {'space-science-pack',1}, 
-                {'fu_space_probe_science_item',1}
-            },
-            time = 100,
-        },
-    },
-    {
         name = 'gr_charger_tech',
         type = 'technology',
         icon = sprite('gr_charger_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'gr_stage_tech'
+            'gr_magnet_tech'
         },
         effects = {
             { 
@@ -2940,7 +2908,7 @@ data:extend({
         icon = sprite('gr_red_tech.png'),
         icon_size = 128,
         prerequisites = {
-            'gr_data_tech'
+            'gr_lab_tech'
         },
         effects = {
             { 
@@ -3202,6 +3170,98 @@ data:extend({
         },
         unit = {
             count = '10000',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1}, 
+                {'space-science-pack',1}, 
+                {'fu_space_probe_science_item',1}
+            },
+            time = 100,
+        },
+    },
+    {
+        name = 'gr_circuit_tech',
+        type = 'technology',
+        icon = sprite('gr_circuit_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'gr_stage_tech'
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_circuit_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_gold_wire_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_pcb_recipe',
+            },
+        },
+        unit = {
+            count = '1000',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1}, 
+                {'space-science-pack',1}, 
+                {'fu_space_probe_science_item',1}
+            },
+            time = 100,
+        },
+    },
+    {
+        name = 'gr_magnet_tech',
+        type = 'technology',
+        icon = sprite('gr_magnet_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'gr_plasma_cube_tech'
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_magnet_recipe',
+            },
+        },
+        unit = {
+            count = '1000',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1}, 
+                {'space-science-pack',1}, 
+                {'fu_space_probe_science_item',1}
+            },
+            time = 100,
+        },
+    },
+    {
+        name = 'gr_plasma_cube_tech',
+        type = 'technology',
+        icon = sprite('gr_plasma_cube_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'gr_circuit_tech'
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_plasma_cube_recipe',
+            },
+        },
+        unit = {
+            count = '1000',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},

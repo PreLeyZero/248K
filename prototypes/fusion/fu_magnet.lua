@@ -48,7 +48,7 @@ data:extend({
           type = 'electric',
           usage_priority = 'secondary-input',
       },
-      energy_usage = '20MW',
+      energy_usage = '60MW',
       fluid_boxes = {
           {
             

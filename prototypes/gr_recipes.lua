@@ -92,9 +92,9 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {type="item", name="gr_materials_fusion_cell_item", amount=4},
-            {type="item", name="low-density-structure", amount=100},
+            {type="item", name="fu_materials_KFK", amount=100},
             {type="item", name="gr_materials_stack_up_item", amount=4},
-            {type="item", name="copper-cable", amount=1000},
+            {type="item", name="gr_materials_magnet", amount=20},
             {type="item", name="gr_magnet_train_pre_item", amount=1},
         },
         results = {
@@ -109,9 +109,9 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {type="item", name="gr_materials_fusion_cell_item", amount=2},
-            {type="item", name="low-density-structure", amount=100},
+            {type="item", name="fu_materials_KFK", amount=100},
             {type="item", name="gr_materials_stack_down_item", amount=2},
-            {type="item", name="copper-cable", amount=1000},
+            {type="item", name="gr_materials_magnet", amount=20},
             {type="item", name="gr_magnet_wagon_pre_item", amount=1},
         },
         results = {
@@ -126,9 +126,9 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {type="item", name="gr_materials_fusion_cell_item", amount=2},
-            {type="item", name="low-density-structure", amount=100},
+            {type="item", name="fu_materials_KFK", amount=100},
             {type="item", name="gr_materials_stack_down_item", amount=2},
-            {type="item", name="copper-cable", amount=1000},
+            {type="item", name="gr_materials_magnet", amount=20},
             {type="item", name="gr_magnet_tanker_pre_item", amount=1},
         },
         results = {
@@ -142,10 +142,10 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {type="item", name="gr_materials_fusion_cell_item", amount=4},
-            {type="item", name="low-density-structure", amount=100},
-            {type="item", name="iron-plate", amount=100},
-            {type="item", name="copper-cable", amount=1000},
+            {type="item", name="fu_materials_KFK", amount=100},
+            {type="item", name="fu_materials_TIM", amount=100},
+            {type="item", name="fu_materials_magnet", amount=100},
+            {type="item", name="fu_materials_energy_crystal", amount=100},
             {type="item", name="el_diesel_train_item", amount=1},
         },
         results = {
@@ -159,10 +159,10 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {type="item", name="gr_materials_fusion_cell_item", amount=2},
-            {type="item", name="low-density-structure", amount=100},
-            {type="item", name="iron-plate", amount=100},
-            {type="item", name="copper-cable", amount=1000},
+            {type="item", name="fu_materials_KFK", amount=100},
+            {type="item", name="fu_materials_TIM", amount=100},
+            {type="item", name="fu_materials_magnet", amount=100},
+            {type="item", name="fu_materials_energy_crystal", amount=100},
             {type="item", name="cargo-wagon", amount=1},
         },
         results = {
@@ -176,10 +176,10 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {type="item", name="gr_materials_fusion_cell_item", amount=2},
-            {type="item", name="low-density-structure", amount=100},
-            {type="item", name="iron-plate", amount=100},
-            {type="item", name="copper-cable", amount=1000},
+            {type="item", name="fu_materials_KFK", amount=100},
+            {type="item", name="fu_materials_TIM", amount=100},
+            {type="item", name="fu_materials_magnet", amount=100},
+            {type="item", name="fu_materials_energy_crystal", amount=100},
             {type="item", name="fluid-wagon", amount=1},
         },
         results = {
@@ -206,76 +206,6 @@ data:extend({
         energy_required = 100,
         always_show_made_in = true
     },
-    --cooker
-    {
-        name = 'gr_cooker_recipe',
-        type = 'recipe',
-        enabled = 'false',
-        main_product = 'gr_cooker_item',
-        ingredients = {
-            {'fi_industrial_steel_item',200},
-            {'fi_compound_material_item',200},
-            {'processing-unit',100},
-            {'pipe',60}
-        },
-        results = {
-            {type="item", name="gr_cooker_item", amount=1}
-        },
-        result_count = 1,
-        energy_required = 5
-    },
-    {
-        name = 'gr_cooker_fluid_recipe',
-        type = 'recipe',
-        category = 'gr_cooker_fluid',
-        enabled = 'false',
-        main_product = 'gr_materials_cooked_crystal_item',
-        ingredients = {
-            {type="fluid", name="water", amount=1000},
-            {type="item", name="fi_crushed_crystal_item", amount=1}
-        },
-        results = {
-            {type="item", name="gr_materials_cooked_crystal_item", amount=1}
-        },
-        result_count = 1,
-        energy_required = 60,
-        always_show_made_in = true
-    },
-    {
-        name = 'gr_cooked_crystal_recipe',
-        type = 'recipe',
-        category = 'chemistry',
-        enabled = 'false',
-        main_product = 'gr_materials_refined_crystal_item',
-        ingredients = {
-            {type="item", name="gr_materials_cooked_crystal_item", amount=1},
-            {type="fluid", name="petroleum-gas", amount=100}
-        },
-        results = {
-            {type="item", name="gr_materials_refined_crystal_item", amount=1}
-        },
-        result_count = 1,
-        energy_required = 30,
-        always_show_made_in = true
-    },
-    {
-        name = 'gr_refined_crystal_recipe',
-        type = 'recipe',
-        category = 'centrifuging',
-        enabled = 'false',
-        main_product = 'fi_energy_crystal_item',
-        subgroup = 'gr_item_subgroup_a',
-        ingredients = {
-            {type="item", name="gr_materials_refined_crystal_item", amount=1}
-        },
-        results = {
-            {type="item", name="fi_energy_crystal_item", amount=1},
-            {type="item", name="el_energy_crystal_item", amount=4}
-        },
-        result_count = 1,
-        energy_required = 10,
-        always_show_made_in = true
-    },
     --charger
     {
         name = 'gr_charger_recipe',
@@ -284,12 +214,12 @@ data:extend({
         main_product = 'gr_charger_item',
         ingredients = {
             {'low-density-structure',100},
-            {'fi_industrial_steel_item',400},
-            {'fi_compound_material_item',400},
+            {'fu_materials_KFK',100},
+            {'gr_materials_magnet',100},
             {'fu_tech_sign_item',1000},
             {'concrete',500},
             {'lab',10},
-            {'processing-unit',500}
+            {'gr_materials_circuit',100}
         },
         results = {
             {type="item", name="gr_charger_item", amount=1}
@@ -305,14 +235,14 @@ data:extend({
         main_product = 'gr_materials_stabilizer_item',
         ingredients = {
             {'gr_materials_crushed_exotic_item',1},
-            {'fi_energy_crystal_item',20},
-            {'fu_tech_sign_item',100},
+            {'fu_materials_energy_crystal',10},
+            {'fu_tech_sign_item',10},
         },
         results = {
             {type="item", name="gr_materials_stabilizer_item", amount=2}
         },
         result_count = 1,
-        energy_required = 10,
+        energy_required = 1,
         always_show_made_in = true
     },
     {
@@ -324,8 +254,8 @@ data:extend({
             {'fu_space_probe_ore_item',1},
         },
         result = 'gr_materials_crushed_exotic_item',
-        result_count = 1,
-        energy_required = 20,
+        result_count = 2,
+        energy_required = 2,
         always_show_made_in = true
     },
     {
@@ -340,6 +270,7 @@ data:extend({
             {'fu_star_engine_cooler_item',1},
             {'gr_materials_stack_up_item',40},
             {'gr_materials_stack_down_item',40},
+            {'gr_materials_magnet',100},
         },
         result = 'gr_black_hole_item',
         result_count = 1,
@@ -357,6 +288,7 @@ data:extend({
             {'fu_star_engine_cooler_item',1},
             {'gr_materials_stack_up_item',40},
             {'gr_materials_stack_down_item',40},
+            {'gr_materials_magnet',100},
         },
         result = 'gr_white_hole_item',
         result_count = 1,
@@ -370,12 +302,13 @@ data:extend({
             {'gr_materials_stack_up_item',10},
             {'gr_materials_stack_down_item',10},
             {'lab',40},
-            {'fi_industrial_steel_item',100},
-            {'fi_compound_material_item',100},
+            {'fu_materials_KFK',100},
+            {'fu_materials_TIM',100},
+            {'gr_materials_magnet',100},
         },
         result = 'gr_lab_item',
         result_count = 1,
-        energy_required = 200,
+        energy_required = 20,
     },
     --endgame
 
@@ -602,7 +535,7 @@ data:extend({
         ingredients = {
             {'gr_materials_crushed_exotic_item',1},
             {'gr_materials_stabilizer_item',1},
-            {'processing-unit',100},
+            {'gr_materials_circuit',20},
             {'fi_modules_base_item',10}
         },
         result = 'gr_materials_data_item',
@@ -748,5 +681,95 @@ data:extend({
         result = 'gr_materials_charge_remote',
         result_count = 1,
         energy_required = 10,
+    },
+
+    {
+        name = 'gr_circuit_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        main_product = 'gr_materials_circuit',
+        ingredients = {
+            {type="item", name="gr_materials_gold_wire", amount=10},
+            {type="item", name="copper-cable", amount=10},
+            {type="item", name="gr_materials_pcb", amount=1},
+            {type="fluid", name="fi_strong_acid", amount=50},
+        },
+        results = {
+            {type="fluid", name="water", amount=50},
+            {type="item", name="gr_materials_circuit", amount=1},
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
+    {
+        name = 'gr_gold_wire_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="fi_materials_gold", amount=1},
+        },
+        results = {
+            {type="item", name="gr_materials_gold_wire", amount=2},
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
+    {
+        name = 'gr_pcb_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'chemistry',
+        ingredients = {
+            {type="fluid", name="petroleum-gas", amount=30},
+            {type="item", name="fi_materials_glass_fiber", amount=1},
+            {type="item", name="fu_materials_carbon_fiber", amount=1},
+            {type="item", name="processing-unit", amount=5},
+            {type="item", name="plastic-bar", amount=4},
+        },
+        results = {
+            {type="item", name="gr_materials_pcb", amount=1},
+        },
+        energy_required = 2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'gr_magnet_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fu_magnet_category',
+        main_product = 'gr_materials_magnet',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="item", name="gr_materials_plasma_cube", amount=2},
+            {type="item", name="fu_materials_magnet", amount=1},
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="item", name="gr_materials_magnet", amount=1},
+        },
+        energy_required = 2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'gr_plasma_cube_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fu_plasma_category',
+        main_product = 'gr_materials_plasma_cube',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="item", name="fu_materials_KFK", amount=2},
+            {type="item", name="fi_materials_gold", amount=1},
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="item", name="gr_materials_plasma_cube", amount=1},
+        },
+        energy_required = 2,
+        order = 'a-b',
+        always_show_made_in = true
     },
 })
