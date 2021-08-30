@@ -1,8 +1,30 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.6.4
+Version: 0.9.0
 Date: 14.7.2021
+  WARNING:
+    - This version contains major changes so updating on an exiting save can work but is not advised
+  Features:
+    - added new composite materials
+    - added ore purification
+    - added ore smelting
+    - added a bunch of new machines
+    - overhauled fusion tech
+    - rebalanced exotic science
+    - added a lot of intermediates
+    - reorganised tech tree
+    - added ES-es locale - big thanks to Seraphim
+    - added a way to re-heat liquid lead
+    - added some recipes to accept 248k prod. modules
   Changes:
-    - Portable nuclear reactor is now cheaper
+    - portable nuclear reactor is now cheaper
+    - KIX science cost tweaked
+    - adjusted S-lab hitbox
+    - fixed fusor energy input
+    - nerved el_burner effectivity to 90 percent
+    - nerved solar panel output 
+    - Future train 1 is now available in fusion stage
+    - Future train 1 now uses nuclear fuel
+    - KI2/KI3 core now directly produce KI science - may not migrate properly from old versions
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.3
 Date: 13.7.2021

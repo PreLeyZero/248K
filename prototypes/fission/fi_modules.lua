@@ -12,12 +12,21 @@ local limitation_list = {
     'el_grow_energy_crystal_recipe',
     'fi_compound_material_recipe',
     'fi_materials_industrial_steel_recipe',
+    'fi_GFK_recipe',
+    'fi_NFK_recipe',
+    'fu_KFK_recipe',
+    'fu_TIM_recipe',
     'fu_lead_ore_recipe',
     'fi_base_crystal_recipe',
     'fi_catalyst_crystal_recipe',
     'fi_energy_crystal_recipe',
     'fi_glass_fiber_recipe',
-    'fi_natural_fiber_recipe'
+    'fi_natural_fiber_recipe',
+    'fu_carbon_fiber_recipe',
+    'fu_tech_sign_recipe',
+    'gr_pcb_recipe',
+    'gr_gold_wire_recipe',
+    'gr_circuit_recipe'
 }
 
 --item
@@ -35,7 +44,7 @@ data:extend({
         effect = {
             consumption = {bonus = 0.9},
             speed = {bonus = -0.2},
-            productivity = {bonus = 0.08},
+            productivity = {bonus = 0.06},
             pollution = {bonus = 0.3}
         },
         limitation = limitation_list,
@@ -54,7 +63,7 @@ data:extend({
         effect = {
             consumption = {bonus = 1.4},
             speed = {bonus = -0.35},
-            productivity = {bonus = 0.12},
+            productivity = {bonus = 0.10},
             pollution = {bonus = 0.6}
         },
         limitation = limitation_list,
@@ -73,7 +82,7 @@ data:extend({
         effect = {
             consumption = {bonus = 2.6},
             speed = {bonus = -0.6},
-            productivity = {bonus = 0.20},
+            productivity = {bonus = 0.12},
             pollution = {bonus = 0.9}
         },
         limitation = limitation_list,

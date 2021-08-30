@@ -795,33 +795,33 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         category = 'fi_ki_core_category',
-        icon = sprite('fluids/el_pressurized_water.png'),
-        icon_size = 64,
-        subgroup = 'el_item_subgroup_f',
         ingredients = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=550},
-            {type="fluid", name="el_ki_memory_fluid", amount=550},
-            {type="fluid", name="fi_ki_circuit_fluid", amount=550}    
+            {type="fluid", name="el_ki_cpu_fluid", amount=550*3},
+            {type="fluid", name="el_ki_memory_fluid", amount=550*3},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=550*3}    
         },
-        results = {},
-        energy_required = 15,
+        results = {
+            {type='item', name='fi_ki_science', amount=1}
+        },
+        energy_required = 15*3,
+        always_show_made_in = true
     },
     {
         name = 'fu_ki_cpu_memory_circuit_recipe',
         type = 'recipe',
         enabled = 'false',
         category = 'fu_ki_core_category',
-        icon = sprite('fluids/el_pressurized_water.png'),
-        icon_size = 64,
-        subgroup = 'el_item_subgroup_f',
         ingredients = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=550},
-            {type="fluid", name="el_ki_memory_fluid", amount=550},
-            {type="fluid", name="fi_ki_circuit_fluid", amount=550},
-            {type="fluid", name="fu_ki_circuit_fluid", amount=550}    
+            {type="fluid", name="el_ki_cpu_fluid", amount=550*3},
+            {type="fluid", name="el_ki_memory_fluid", amount=550*3},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=550*3},
+            {type="fluid", name="fu_ki_circuit_fluid", amount=550*3}    
         },
-        results = {},
-        energy_required = 15,
+        results = {
+            {type='item', name='fu_ki_science', amount=1}
+        },
+        energy_required = 15*3,
+        always_show_made_in = true
     },
     {
         name = 'el_arc_furnace_recipe',

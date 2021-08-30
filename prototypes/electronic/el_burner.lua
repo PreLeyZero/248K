@@ -55,7 +55,7 @@ data:extend({
         burner = {
             type = 'burner',
             fuel_inventory_size = 3,
-            effectivity = 1.2,
+            effectivity = 0.9,
             emissions_per_minute = 20,
             smoke = {
                 {

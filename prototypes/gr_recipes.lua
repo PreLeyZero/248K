@@ -6,10 +6,10 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'fi_crafter_item',2},
-            {'fi_industrial_steel_item',100},
-            {'fi_compound_material_item',100},
+            {'fu_materials_KFK',100},
+            {'fu_materials_magnet',10},
             {'gr_materials_fusion_cell_item',1},
-            {'processing-unit',50}
+            {'gr_materials_circuit',10}
         },
         result = 'gr_crafter_item',
         result_count = 1,

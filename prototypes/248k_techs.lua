@@ -466,6 +466,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_ki_circuit_fluid_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_ki_cpu_memory_circuit_recipe',
             }
         },
         unit = {
@@ -500,6 +504,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_ki_circuit_fluid_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_ki_cpu_memory_circuit_recipe',
             }
         },
         unit = {
