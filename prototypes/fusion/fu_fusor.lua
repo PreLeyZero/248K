@@ -16,7 +16,7 @@ data:extend({
         icon_size = 64,
         place_result = 'fu_fusor_entity',
         stack_size = 20,
-        subgroup = 'fu_item_subgroup_d',
+        subgroup = 'fu_item_subgroup_c',
         order = 'a-a',
     },
     {
@@ -54,8 +54,7 @@ data:extend({
         energy_source = {
             type = 'electric',
             buffer_capacity = '400MJ',
-            usage_priority = 'secondary-input',
-            input_flow_limit = '600MW',
+            usage_priority = 'secondary-input'
         },
         energy_usage = '400MW',
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},

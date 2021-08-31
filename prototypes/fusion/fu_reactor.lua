@@ -228,7 +228,7 @@ data:extend({
       --animation
       animation = {
           north = {
-              filename = sprite('tokamak_entity_animation_vertikal.png'),
+              filename = sprite('tokamak_entity_animation.png'),
               size = {512*3,512*2},
               scale = 0.37,
               line_length = 3,
@@ -238,7 +238,7 @@ data:extend({
               shift = {2.34,0.3},
           },
           east = {
-              filename = sprite('tokamak_entity_animation_horizontal.png'),
+              filename = sprite('tokamak_entity_animation.png'),
               size = {512*3,512*2},
               scale = 0.37,
               line_length = 3,
@@ -248,7 +248,7 @@ data:extend({
               shift = {2.34,0.3},
           },
           south = {
-              filename = sprite('tokamak_entity_animation_vertikal.png'),
+              filename = sprite('tokamak_entity_animation.png'),
               size = {512*3,512*2},
               scale = 0.37,
               line_length = 3,
@@ -258,7 +258,7 @@ data:extend({
               shift = {2.34,0.3},
           },
           west = {
-              filename = sprite('tokamak_entity_animation_horizontal.png'),
+              filename = sprite('tokamak_entity_animation.png'),
               size = {512*3,512*2},
               scale = 0.37,
               line_length = 3,

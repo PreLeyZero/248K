@@ -30,67 +30,7 @@ data:extend({
         order = 'a-a-2',
     },
     --el_aluminum_ore
-    {
-        name = 'el_aluminum_ore_recipe',
-        type = 'recipe',
-        enabled = 'false',
-        category = 'crafting-with-fluid',
-        ingredients = {
-            {'stone',2},
-            {type="fluid", name="sulfuric-acid", amount=20},
-        },
-        result = 'el_aluminum_ore_item',
-        result_count = 4,
-        energy_required = 2,
-        always_show_made_in = true,
-        order = 'a-a',
-    },
-    --el_aluminum_item
-    {
-        name = 'el_aluminum_item_recipe',
-        type = 'recipe',
-        enabled = 'false',
-        category = 'smelting',
-        ingredients = {
-            {'el_aluminum_ore_item',2},
-        },
-        result = 'el_aluminum_item',
-        result_count = 4,
-        energy_required = 2,
-        always_show_made_in = true,
-        order = 'a-c',
-    },
-    --el_lithium_ore
-    {
-        name = 'el_lithium_ore_recipe',
-        type = 'recipe',
-        enabled = 'false',
-        category = 'crafting-with-fluid',
-        ingredients = {
-            {'stone',2},
-            {type="fluid", name="sulfuric-acid", amount=20},
-        },
-        result = 'el_lithium_ore_item',
-        result_count = 4,
-        energy_required = 2,
-        always_show_made_in = true,
-        order = 'a-b',
-    },
-    --el_lithium_item
-    {
-        name = 'el_lithium_item_recipe',
-        type = 'recipe',
-        enabled = 'false',
-        category = 'smelting',
-        ingredients = {
-            {'el_lithium_ore_item',2},
-        },
-        result = 'el_lithium_item',
-        result_count = 4,
-        energy_required = 2,
-        always_show_made_in = true,
-        order = 'a-d',
-    },
+    
     --el_lithium_basic_battery
     {
         name = 'el_lithium_basic_battery_recipe',
@@ -132,7 +72,7 @@ data:extend({
         ingredients = {
             {'iron-gear-wheel',40},
             {'steel-plate',15},
-            {'el_aluminum_item',15},
+            {'el_materials_ALK',10},
             {'electronic-circuit',10}
         },
         result = 'el_burner_item',
@@ -162,7 +102,7 @@ data:extend({
         ingredients = {
             {'iron-gear-wheel',60},
             {'engine-unit',15},
-            {'el_aluminum_item',30},
+            {'el_materials_ALK',20},
             {'electronic-circuit',20},
             {'pipe',30},
             {'copper-cable',20},
@@ -180,7 +120,7 @@ data:extend({
         ingredients = {
             {'iron-gear-wheel',40},
             {'pipe',40},
-            {'el_aluminum_item',15},
+            {'el_materials_ALK',10},
             {'electronic-circuit',15}
         },
         result = 'el_pressurizer_item',
@@ -216,8 +156,8 @@ data:extend({
             {'locomotive',1},
             {'engine-unit',15},
             {'iron-gear-wheel',40},
-            {'advanced-circuit',25},
-            {'el_aluminum_item',25}, 
+            {'advanced-circuit',15},
+            {'el_materials_ALK',25}, 
         },
         result = 'el_diesel_train_item',
         result_count = 1,
@@ -348,19 +288,20 @@ data:extend({
     },
     --el_energy_crystal
     {
-        name = 'el_energy_crystal_recipe',
+        name = 'el_grow_energy_crystal_recipe',
         type = 'recipe',
         enabled = 'false',
-        category = 'crafting-with-fluid',
+        category = 'el_grower_category',
         ingredients = {
-            {type="item", name="stone", amount=10},
-            {type="fluid", name="el_acidic_water", amount=30},
+            {type="item", name="el_energy_crystal_item", amount=1},
+            {type="fluid", name="el_acidic_water", amount=15},
         },
         results = {
-            {type="item", name="el_energy_crystal_item", amount=3},
+            {type="item", name="el_energy_crystal_item", amount=2},
         },
         result_count = 1,
-        energy_required = 10,
+        energy_required = 30,
+        always_show_made_in = true
     },
     --el_energy_crystal_fuel
     {
@@ -387,7 +328,7 @@ data:extend({
         category = 'crafting',
         ingredients = {
             {type="item", name="steel-plate", amount=20},
-            {type="item", name="el_aluminum_item", amount=10},
+            {type="item", name="el_materials_ALK", amount=10},
             {type="item", name="electronic-circuit", amount=20},
         },
         results = {
@@ -403,7 +344,7 @@ data:extend({
         category = 'crafting',
         ingredients = {
             {type="item", name="steel-plate", amount=20},
-            {type="item", name="low-density-structure", amount=10},
+            {type="item", name="fi_materials_neodym", amount=5},
             {type="item", name="advanced-circuit", amount=20},
             {type="item", name="el_ki_beacon_item", amount=1},
         },
@@ -419,8 +360,8 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="steel-plate", amount=20},
-            {type="item", name="fu_tech_sign_item", amount=100},
+            {type="item", name="fu_materials_KFK", amount=20},
+            {type="item", name="fu_tech_sign_item", amount=20},
             {type="item", name="processing-unit", amount=20},
             {type="item", name="fi_ki_beacon_item", amount=1},
         },
@@ -441,7 +382,7 @@ data:extend({
             {type="item", name="concrete", amount=500},
             {type="item", name="electronic-circuit", amount=100},
             {type="item", name="advanced-circuit", amount=100},
-            {type="item", name="el_aluminum_item", amount=140},
+            {type="item", name="el_materials_ALK", amount=140},
             {type="item", name="el_energy_crystal_item", amount=40},
             {type="item", name="el_solar_item", amount=10},
             {type="item", name="el_lithium_battery", amount=40},
@@ -461,7 +402,7 @@ data:extend({
         category = 'crafting',
         ingredients = {
             {type="item", name="fi_crafter_item", amount=10},
-            {type="item", name="fi_miner_item", amount=10},
+            {type="item", name="fi_materials_neodym", amount=100},
             {type="item", name="fi_crusher_item", amount=10},
             {type="item", name="fi_modules_core_item", amount=20},
             {type="item", name="low-density-structure", amount=100},
@@ -481,7 +422,7 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="steel-plate", amount=100},
+            {type="item", name="fu_materials_KFK", amount=100},
             {type="item", name="concrete", amount=500},
             {type="item", name="electronic-circuit", amount=100},
             {type="item", name="advanced-circuit", amount=100},
@@ -509,7 +450,7 @@ data:extend({
             {type="item", name="steel-plate", amount=40},
             {type="item", name="concrete", amount=60},
             {type="item", name="advanced-circuit", amount=100},
-            {type="item", name="el_aluminum_item", amount=100},
+            {type="item", name="el_materials_ALK", amount=100},
         },
         results = {
             {type="item", name="el_ki_memory_item", amount=1},
@@ -523,10 +464,10 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="fi_industrial_steel_item", amount=80},
+            {type="item", name="fi_materials_neodym", amount=20},
             {type="item", name="concrete", amount=120},
             {type="item", name="advanced-circuit", amount=100},
-            {type="item", name="low-density-structure", amount=100},
+            {type="item", name="fi_materials_GFK", amount=100},
         },
         results = {
             {type="item", name="fi_ki_circuit_item", amount=1},
@@ -540,12 +481,12 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="fi_industrial_steel_item", amount=80},
+            {type="item", name="fu_materials_KFK", amount=40},
             {type="item", name="concrete", amount=120},
             {type="item", name="advanced-circuit", amount=100},
             {type="item", name="processing-unit", amount=100},
-            {type="item", name="fu_tech_sign_item", amount=100},
-            {type="item", name="low-density-structure", amount=100},
+            {type="item", name="fu_tech_sign_item", amount=20},
+            {type="item", name="fu_materials_TIM", amount=40},
         },
         results = {
             {type="item", name="fu_ki_circuit_item", amount=1},
@@ -628,9 +569,9 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=20},
+            {type="item", name="fu_tech_sign_item", amount=8},
             {type="item", name="advanced-circuit", amount=20},
-            {type="item", name="fu_space_probe_science_item", amount=4},
+            {type="item", name="fu_space_probe_science_item", amount=2},
         },
         results = {
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
@@ -644,9 +585,9 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=16},
+            {type="item", name="fu_tech_sign_item", amount=4},
             {type="item", name="advanced-circuit", amount=16},
-            {type="item", name="fu_space_probe_science_item", amount=2},
+            {type="item", name="fu_space_probe_science_item", amount=1},
         },
         results = {
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
@@ -660,7 +601,7 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=16},
+            {type="item", name="fu_tech_sign_item", amount=4},
             {type="item", name="advanced-circuit", amount=16},
         },
         results = {
@@ -675,7 +616,7 @@ data:extend({
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="fu_tech_sign_item", amount=12},
+            {type="item", name="fu_tech_sign_item", amount=3},
             {type="item", name="advanced-circuit", amount=12},
         },
         results = {
@@ -756,7 +697,7 @@ data:extend({
             {type="item", name="steel-plate", amount=40},
             {type="item", name="concrete", amount=60},
             {type="item", name="advanced-circuit", amount=100},
-            {type="item", name="el_aluminum_item", amount=100},
+            {type="item", name="el_materials_ALK", amount=100},
         },
         results = {
             {type="item", name="el_ki_cpu_item", amount=1},
@@ -854,35 +795,346 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         category = 'fi_ki_core_category',
-        icon = sprite('fluids/el_pressurized_water.png'),
-        icon_size = 64,
-        subgroup = 'el_item_subgroup_f',
         ingredients = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=550},
-            {type="fluid", name="el_ki_memory_fluid", amount=550},
-            {type="fluid", name="fi_ki_circuit_fluid", amount=550}    
+            {type="fluid", name="el_ki_cpu_fluid", amount=550*3},
+            {type="fluid", name="el_ki_memory_fluid", amount=550*3},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=550*3}    
         },
-        results = {},
-        energy_required = 15,
+        results = {
+            {type='item', name='fi_ki_science', amount=1}
+        },
+        energy_required = 15*3,
+        always_show_made_in = true
     },
     {
         name = 'fu_ki_cpu_memory_circuit_recipe',
         type = 'recipe',
         enabled = 'false',
         category = 'fu_ki_core_category',
-        icon = sprite('fluids/el_pressurized_water.png'),
-        icon_size = 64,
-        subgroup = 'el_item_subgroup_f',
         ingredients = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=550},
-            {type="fluid", name="el_ki_memory_fluid", amount=550},
-            {type="fluid", name="fi_ki_circuit_fluid", amount=550},
-            {type="fluid", name="fu_ki_circuit_fluid", amount=550}    
+            {type="fluid", name="el_ki_cpu_fluid", amount=550*3},
+            {type="fluid", name="el_ki_memory_fluid", amount=550*3},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=550*3},
+            {type="fluid", name="fu_ki_circuit_fluid", amount=550*3}    
         },
-        results = {},
-        energy_required = 15,
+        results = {
+            {type='item', name='fu_ki_science', amount=1}
+        },
+        energy_required = 15*3,
+        always_show_made_in = true
+    },
+    {
+        name = 'el_arc_furnace_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        ingredients = {
+            {'iron-gear-wheel',40},
+            {'steel-plate',25},
+            {'stone-furnace',2}
+        },
+        result = 'el_arc_furnace_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'el_caster_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        ingredients = {
+            {'iron-gear-wheel',40},
+            {'steel-plate',25},
+            {'electronic-circuit',20}
+        },
+        result = 'el_caster_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'el_purifier_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        ingredients = {
+            {'iron-gear-wheel',40},
+            {'steel-plate',15},
+            {'electronic-circuit',10}
+        },
+        result = 'el_purifier_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'el_grower_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        ingredients = {
+            {'iron-gear-wheel',40},
+            {'steel-plate',15},
+            {'el_materials_ALK',15},
+            {'electronic-circuit',10}
+        },
+        result = 'el_grower_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+
+    {
+        name = 'el_purify_stone_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'el_dirty_water',
+        ingredients = {
+            {type="fluid", name="water", amount=100},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="stone", amount=10}
+        },
+        results = {
+            {type="fluid", name="el_dirty_water", amount=100},
+            {type="item", name="el_materials_pure_iron", amount=1},
+            {type="item", name="el_materials_pure_copper", amount=1},
+            {type="item", name="el_materials_pure_aluminum", amount=2},
+        },
+        energy_required = 1,
+        always_show_made_in = true
+    },
+    {
+        name = 'el_purify_iron_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'el_dirty_water',
+        ingredients = {
+            {type="fluid", name="water", amount=50},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="iron-ore", amount=10}
+        },
+        results = {
+            {type="fluid", name="el_dirty_water", amount=50},
+            {type="item", name="el_materials_pure_iron", amount=5},
+        },
+        energy_required = 1,
+        always_show_made_in = true
+    },
+    {
+        name = 'el_purify_copper_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'el_dirty_water',
+        ingredients = {
+            {type="fluid", name="water", amount=50},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="copper-ore", amount=10}
+        },
+        results = {
+            {type="fluid", name="el_dirty_water", amount=50},
+            {type="item", name="el_materials_pure_copper", amount=5},
+        },
+        energy_required = 1,
+        always_show_made_in = true
+    },
+    {
+        name = 'el_purify_stone_acidic_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'el_energy_crystal_item',
+        ingredients = {
+            {type="fluid", name="el_acidic_water", amount=200},
+            {type="fluid", name="water", amount=50},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="stone", amount=10}
+        },
+        results = {
+            {type="fluid", name="el_dirty_water", amount=50},
+            {type="item", name="el_energy_crystal_item", amount=1},
+            {type="item", name="el_materials_pure_iron", amount=1},
+            {type="item", name="el_materials_pure_copper", amount=1},
+        },
+        energy_required = 2,
+        always_show_made_in = true
+    },
+    {
+        name = 'el_purify_uranium_acidic_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'el_energy_crystal_item',
+        ingredients = {
+            {type="fluid", name="el_acidic_water", amount=1000},
+            {type="fluid", name="water", amount=500},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="uranium-ore", amount=100}
+        },
+        results = {
+            {type="fluid", name="el_dirty_water", amount=500},
+            {type="item", name="el_energy_crystal_item", amount=50},
+            {type="item", name="uranium-238", amount=9},
+            {type="item", name="uranium-235", amount=1},
+        },
+        energy_required = 10,
+        always_show_made_in = true
+    },
+
+
+    {
+        name = 'el_aluminum_item_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'smelting',
+        ingredients = {
+            {'el_aluminum_ore_item',2},
+        },
+        result = 'el_aluminum_item',
+        result_count = 4,
+        energy_required = 2,
+        always_show_made_in = true,
+        order = 'a-c',
+    },
+    {
+        name = 'el_lithium_ore_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        main_product = 'el_lithium_item',
+        ingredients = {
+            {type="fluid", name="el_dirty_water", amount=100},
+        },
+        results = {
+            {type="fluid", name="water", amount=100},
+            {type="item", name="el_lithium_item", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+    },
+    {
+        name = 'el_arc_pure_iron_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="el_materials_pure_iron", amount=1},
+        },
+        results = {
+            {type="fluid", name="el_arc_pure_iron", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'el_cast_pure_iron_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="el_arc_pure_iron", amount=100},
+        },
+        results = {
+            {type="item", name="iron-plate", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+        allow_decomposition = false
+    },
+    {
+        name = 'el_arc_pure_copper_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="el_materials_pure_copper", amount=1},
+        },
+        results = {
+            {type="fluid", name="el_arc_pure_copper", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'el_cast_pure_copper_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="el_arc_pure_copper", amount=100},
+        },
+        results = {
+            {type="item", name="copper-plate", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true,
+        allow_decomposition = false
+    },
+    {
+        name = 'el_arc_pure_aluminum_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="item", name="el_materials_pure_aluminum", amount=1},
+        },
+        results = {
+            {type="fluid", name="el_arc_pure_aluminum", amount=200},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+    {
+        name = 'el_cast_pure_aluminum_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="el_arc_pure_aluminum", amount=100},
+        },
+        results = {
+            {type="item", name="el_aluminum_item", amount=1},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+        always_show_made_in = true
+    },
+
+    {
+        name = 'el_ceramic_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        ingredients = {
+            {type="fluid", name="steam", amount=100},
+            {type="item", name="stone", amount=2},
+        },
+        results = {
+            {type="item", name="el_materials_ceramic", amount=1},
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
+    {
+        name = 'el_ALK_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="el_materials_ceramic", amount=2},
+            {type="item", name="el_aluminum_item", amount=6},
+        },
+        results = {
+            {type="item", name="el_materials_ALK", amount=3},
+        },
+        energy_required = 1,
+        order = 'a-b',
     },
 
 
 
+    
 })

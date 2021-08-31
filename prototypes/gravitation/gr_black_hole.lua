@@ -50,7 +50,7 @@ data:extend({
         energy_source = {
             type = "electric",
             render_no_power_icon = false,
-            buffer_capacity = "10YJ",
+            buffer_capacity = "1TJ",
             usage_priority = "primary-output",
             max_input_flow = "0W",
             --drain = "1GW"

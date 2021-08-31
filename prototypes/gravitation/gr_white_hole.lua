@@ -39,8 +39,7 @@ data:extend({
         crafting_speed = 1,
         energy_source = {
             type = "electric",
-            usage_priority = "secondary-input",
-            drain = "1TW"
+            usage_priority = "secondary-input"
         },
         energy_usage = "1TW",
         animation =  {

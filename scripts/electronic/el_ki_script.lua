@@ -160,7 +160,7 @@ end
 function make_ki_buffer1(entity)
     register_ki_buffer1(entity)
     make_slave_ki_buffer1(entity)
-    make_container_ki_buffer1(entity)
+    --make_container_ki_buffer1(entity)
     global.ki.dirty = true
     --gui.update_main()
 end
@@ -168,7 +168,7 @@ end
 function make_ki_buffer2(entity)
     register_ki_buffer2(entity)
     make_slave_ki_buffer2(entity)
-    make_container_ki_buffer2(entity)
+    --make_container_ki_buffer2(entity)
     global.ki.dirty = true
     --gui.update_main()
 end
@@ -200,7 +200,10 @@ function destroy_fi_core(entity,player_index,robot)
         return
     end
     destroy_slave_ki_core(entity,global.ki.buffer1[entity.unit_number].slave,player_index,robot)
-    destroy_slave_ki_core(entity,global.ki.buffer1[entity.unit_number].container,player_index,robot)
+
+    if global.ki.buffer1[entity.unit_number].container then 
+        destroy_slave_ki_core(entity,global.ki.buffer1[entity.unit_number].container,player_index,robot)
+    end
     unregister_ki_buffer1(entity)
     global.ki.dirty = true
     --gui.update_main()
@@ -214,7 +217,10 @@ function destroy_fu_core(entity,player_index,robot)
         return
     end
     destroy_slave_ki_core(entity,global.ki.buffer2[entity.unit_number].slave,player_index,robot)
-    destroy_slave_ki_core(entity,global.ki.buffer2[entity.unit_number].container,player_index,robot)
+
+    if global.ki.buffer2[entity.unit_number].container then 
+        destroy_slave_ki_core(entity,global.ki.buffer2[entity.unit_number].container,player_index,robot)
+    end
     unregister_ki_buffer2(entity)
     global.ki.dirty = true
     --gui.update_main()
@@ -422,17 +428,17 @@ function el_ki_buffer1_working()
                 global.ki.dirty = true
             end
 
-            if global.ki.buffer1[i].entity.products_finished >= 3 then
-                if global.ki.buffer1[i].container then
-                    local container = global.ki.buffer1[i].container
-                    local container_inv = container.get_inventory(defines.inventory.chest)
+            --if global.ki.buffer1[i].entity.products_finished >= 3 then
+            --    if global.ki.buffer1[i].container then
+            --        local container = global.ki.buffer1[i].container
+            --        local container_inv = container.get_inventory(defines.inventory.chest)
 
-                    if container_inv.can_insert({name='fi_ki_science', count=1}) then
-                        container_inv.insert({name='fi_ki_science', count=1})
-                        global.ki.buffer1[i].entity.products_finished = 0
-                    end
-                end
-            end
+            --        if container_inv.can_insert({name='fi_ki_science', count=1}) then
+            --            container_inv.insert({name='fi_ki_science', count=1})
+            --            global.ki.buffer1[i].entity.products_finished = 0
+            --        end
+            --    end
+            --end
         end
     end
 end
@@ -447,17 +453,17 @@ function el_ki_buffer2_working()
                 global.ki.dirty = true
             end
 
-            if global.ki.buffer2[i].entity.products_finished >= 3 then
-                if global.ki.buffer2[i].container then
-                    local container = global.ki.buffer2[i].container
-                    local container_inv = container.get_inventory(defines.inventory.chest)
+            --if global.ki.buffer2[i].entity.products_finished >= 3 then
+            --    if global.ki.buffer2[i].container then
+            --        local container = global.ki.buffer2[i].container
+            --        local container_inv = container.get_inventory(defines.inventory.chest)
 
-                    if container_inv.can_insert({name='fu_ki_science', count=1}) then
-                        container_inv.insert({name='fu_ki_science', count=1})
-                        global.ki.buffer2[i].entity.products_finished = 0
-                    end
-                end
-            end
+            --        if container_inv.can_insert({name='fu_ki_science', count=1}) then
+            --            container_inv.insert({name='fu_ki_science', count=1})
+            --            global.ki.buffer2[i].entity.products_finished = 0
+            --        end
+            --    end
+            --end
         end
     end
 end
