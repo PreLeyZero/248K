@@ -43,14 +43,11 @@ data:extend({
         crafting_categories = {'fu_activator_crafting_category'},
         crafting_speed = 1,
         energy_source = {
-            type = 'burner',
-            fuel_inventory_size = 3,
-            burnt_inventory_size = 3,
-            effectivity = 1,
-            emissions_per_minute = 40,
-            fuel_categories = {'fi_basic_fuel','fi_advanced_fuel'}
+            type = 'electric',
+            usage_priority = 'secondary-input',
+            --input_flow_limit = '4MW',
         },
-        energy_usage = '50MW',
+        energy_usage = '2MW',
         allowed_effects = {"speed", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {
@@ -71,7 +68,18 @@ data:extend({
                   {type = "input", position = {-2, 0}}
                 },
                 production_type = "input"
+            },
+            { 
+              base_area = 1,
+              height = 2,
+              base_level = -1,
+              pipe_covers = pipecoverspictures(),
+              pipe_connections =
+              {
+                {type = "input", position = {0, 2}}
               },
+              production_type = "input"
+            },
             { 
               base_area = 1,
               height = 2,

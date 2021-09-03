@@ -230,7 +230,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
-        order = 'a-a',
+        order = 'f-a',
     },
     {
         name = 'gr_materials_green_pack_item',
@@ -240,7 +240,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
-        order = 'a-b',
+        order = 'f-b',
     },
     {
         name = 'gr_materials_blue_pack_item',
@@ -250,7 +250,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
-        order = 'a-c',
+        order = 'f-c',
     },
     {
         name = 'gr_materials_purple_pack_item',
@@ -260,7 +260,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
-        order = 'a-d',
+        order = 'f-d',
     },
     {
         name = 'gr_materials_yellow_pack_item',
@@ -270,7 +270,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
-        order = 'a-e',
+        order = 'f-e',
     },
     {
         name = 'gr_materials_grey_pack_item',
@@ -280,7 +280,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
-        order = 'a-f',
+        order = 'f-f',
     },
     {
         name = 'gr_materials_white_pack_item',
@@ -290,7 +290,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
-        order = 'a-g',
+        order = 'f-g',
     },
 
     {

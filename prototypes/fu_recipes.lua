@@ -384,6 +384,51 @@ data:extend({
         result_count = 1,
         energy_required = 1,
     },
+    {
+        name = 'fu_stelerator_2_neutron_recipe',
+        type = 'recipe',
+        category = 'fu_stelar_reactor_crafting_category',
+        main_product = 'fu_materials_charged_container',
+        enabled = 'false',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=300},
+            {type="fluid", name="fu_deuterium", amount=1},
+            {type="fluid", name="fu_tritium", amount=1},
+            {type="item", name="fu_materials_empty_container", amount=6},
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=300, temperature=1500},
+            {type="item", name="fu_materials_charged_container", amount=6},
+        },
+        result_count = 1,
+        energy_required = 1,
+        always_show_made_in = true,
+        subgroup = 'fu_item_subgroup_e',
+        order = 'f-a',
+    },
+    {
+        name = 'fu_stelerator_3_neutron_recipe',
+        type = 'recipe',
+        category = 'fu_stelar_reactor_crafting_category',
+        main_product = 'fu_materials_charged_container',
+        enabled = 'false',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid", amount=300},
+            {type="fluid", name="fu_protium", amount=15},
+            {type="fluid", name="fu_lithium_6", amount=15},
+            {type="item", name="fu_materials_empty_container", amount=6},
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid", amount=300, temperature=1500},
+            {type="item", name="fu_materials_charged_container", amount=6},
+        },
+        result_count = 1,
+        energy_required = 1,
+        always_show_made_in = true,
+        subgroup = 'fu_item_subgroup_e',
+        order = 'f-a',
+    },
+
     --tokamak fusion
     {
         name = 'fu_tokamak_1_recipe',
@@ -530,6 +575,7 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {type="fluid", name="fu_protium", amount=10},
+            {type="fluid", name="fu_neutron_fluid", amount=1},
         },
         results = {
             {type="fluid", name="fu_protium", amount=9},
@@ -547,6 +593,7 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {type="fluid", name="fu_deuterium", amount=10},
+            {type="fluid", name="fu_neutron_fluid", amount=1},
         },
         results = {
             {type="fluid", name="fu_deuterium", amount=9},
@@ -1371,6 +1418,102 @@ data:extend({
         },
         result_count = 1,
         energy_required = 6,
+    },
+    {
+        name = 'fu_empty_container_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="fu_materials_magnet", amount=2},
+            {type="item", name="fu_materials_KFK", amount=6},
+            {type="item", name="fu_materials_energy_crystal", amount=2},
+            {type="item", name="fu_tech_sign_item", amount=10},
+        },
+        results = {
+            {type="item", name="fu_materials_empty_container", amount=1},
+        },
+        result_count = 1,
+        energy_required = 6,
+    },
+    {
+        name = 'fu_neutron_fluid_container_recipe',
+        type = 'recipe',
+        category = 'crafting-with-fluid',
+        main_product = 'fu_neutron_fluid',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="fu_materials_charged_container", amount=1},
+        },
+        results = {
+            {type="item", name="fu_materials_empty_container", amount=1},
+            {type="fluid", name="fu_neutron_fluid", amount=1},
+        },
+        result_count = 1,
+        energy_required = 1,
+    },
+    {
+        name = 'fu_neutron_fluid_233_recipe',
+        type = 'recipe',
+        category = 'crafting-with-fluid',
+        main_product = 'fu_neutron_fluid',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="fi_advanced_thorium_fuel_item", amount=1},
+        },
+        results = {
+            {type="item", name="fi_used_advanced_thorium_fuel_item", amount=1},
+            {type="fluid", name="fu_neutron_fluid", amount=20},
+        },
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fu_neutron_fluid_235_recipe',
+        type = 'recipe',
+        category = 'crafting-with-fluid',
+        main_product = 'fu_neutron_fluid',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="fi_basic_fuel_item", amount=1},
+        },
+        results = {
+            {type="item", name="fi_used_basic_fuel_item", amount=1},
+            {type="fluid", name="fu_neutron_fluid", amount=20},
+        },
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fu_neutron_fluid_232_recipe',
+        type = 'recipe',
+        category = 'crafting-with-fluid',
+        main_product = 'fu_neutron_fluid',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="fi_basic_thorium_fuel_item", amount=1},
+        },
+        results = {
+            {type="item", name="fi_used_basic_thorium_fuel_item", amount=1},
+            {type="fluid", name="fu_neutron_fluid", amount=12},
+        },
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'fu_neutron_fluid_MOX_recipe',
+        type = 'recipe',
+        category = 'crafting-with-fluid',
+        main_product = 'fu_neutron_fluid',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="fi_advanced_fuel_item", amount=1},
+        },
+        results = {
+            {type="item", name="fi_used_advanced_fuel_item", amount=1},
+            {type="fluid", name="fu_neutron_fluid", amount=28},
+        },
+        result_count = 1,
+        energy_required = 4,
     },
     
     

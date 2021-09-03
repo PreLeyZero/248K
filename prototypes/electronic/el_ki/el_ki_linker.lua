@@ -25,7 +25,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'fi_item_subgroup_k',
-        order = 'c-a',
+        order = 'f-a',
     },
     {
         name = 'fu_ki_science',
@@ -35,7 +35,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'fu_item_subgroup_k',
-        order = 'c-a',
+        order = 'f-a',
     },
     {
         name = "el_ki_selection_tool",

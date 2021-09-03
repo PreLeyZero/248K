@@ -106,7 +106,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'fu_item_subgroup_b',
-        order = 'd-a',
+        order = 'f-a',
     },
     {
         name = 'fu_space_probe_science_item_1',
@@ -116,7 +116,7 @@ data:extend({
         icon_size = 64,
         stack_size = 10000,
         subgroup = 'fu_item_subgroup_b',
-        order = 'd-b',
+        order = 'f-b',
     },
 
 })

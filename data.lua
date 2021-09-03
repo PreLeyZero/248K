@@ -38,6 +38,7 @@ require('prototypes/fission/fi_modules')
 
 require('prototypes/fission/fi_fiberer')
 require('prototypes/fission/fi_compound_machine')
+require('prototypes/fission/fi_castor')
 
 require('prototypes/fusion/fu_fusor')
 require('prototypes/fusion/fu_boiler')

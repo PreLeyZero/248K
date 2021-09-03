@@ -1192,6 +1192,32 @@ data:extend({
             time = 30,
         },
     },
+    {
+        name = 'fi_castor_tech',
+        type = 'technology',
+        icon = sprite('fi_castor_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_refining_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_castor_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_decay_waste_recipe',
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
     --fi_train
     {
         name = 'fi_train_tech',
@@ -2127,11 +2153,43 @@ data:extend({
         type = 'technology',
         icon = sprite('fu_activator_tech.png'),
         icon_size = 128,
-        prerequisites = {'fu_fusor_tech','fu_basic_elements_tech'},
+        prerequisites = {'fu_fusor_tech','fu_basic_elements_tech','fu_reactor_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_activator_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_empty_container_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_stelerator_2_neutron_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_stelerator_3_neutron_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_neutron_fluid_container_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_neutron_fluid_235_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_neutron_fluid_233_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_neutron_fluid_232_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_neutron_fluid_MOX_recipe',
             },
             { 
                 type = 'unlock-recipe',

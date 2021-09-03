@@ -108,4 +108,22 @@ data:extend({
         subgroup = 'fu_item_subgroup_c',
         order = 'c-a',
     },
+    {
+        name = 'fu_materials_empty_container',
+        type = 'item',
+        icon = sprite('empty_container.png'),
+        icon_size = 64,
+        stack_size = 1,
+        subgroup = 'fu_item_subgroup_b',
+        order = 'f-a',
+    },
+    {
+        name = 'fu_materials_charged_container',
+        type = 'item',
+        icon = sprite('charged_container.png'),
+        icon_size = 64,
+        stack_size = 1,
+        subgroup = 'fu_item_subgroup_b',
+        order = 'f-a',
+    },
 })

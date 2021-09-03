@@ -436,6 +436,10 @@ data:extend({
         type = 'recipe-category',
     },
     {
+        name = 'fi_castor_category',
+        type = 'recipe-category',
+    },
+    {
         name = 'fi_compound_machine_category',
         type = 'recipe-category',
     },
