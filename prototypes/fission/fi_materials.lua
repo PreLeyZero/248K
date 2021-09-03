@@ -135,5 +135,14 @@ data:extend({
         subgroup = 'fi_item_subgroup_b',
         order = 'a-a',
     },
+    {
+        name = 'fi_materials_waste',
+        type = 'item',
+        icon = sprite('waste.png'),
+        icon_size = 64,
+        stack_size = 1,
+        subgroup = 'fi_item_subgroup_a',
+        order = 'f-a',
+    },
 
 })

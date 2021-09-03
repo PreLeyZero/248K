@@ -26,7 +26,9 @@ local limitation_list = {
     'fu_tech_sign_recipe',
     'gr_pcb_recipe',
     'gr_gold_wire_recipe',
-    'gr_circuit_recipe'
+    'gr_circuit_recipe',
+    'gr_materials_stack_up_item_recipe',
+    'gr_materials_stack_down_item_recipe'
 }
 
 --item

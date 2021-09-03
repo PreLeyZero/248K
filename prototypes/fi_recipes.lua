@@ -24,6 +24,19 @@ data:extend({
         result_count = 1,
         energy_required = 4,
     },
+    {
+        name = 'fi_castor_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {'concrete',100},
+            {'fi_materials_GFK',40},
+            {'el_tank_item',1}
+        },
+        result = 'fi_castor_item',
+        result_count = 1,
+        energy_required = 4,
+    },
     --crusher
     {
         name = 'fi_crusher_recipe',
@@ -64,7 +77,7 @@ data:extend({
         ingredients = {
             {'uranium-235',1},
             {'uranium-238',19},
-            {'el_aluminum_item',10},
+            {'el_materials_ALK',10},
         },
         result = 'fi_basic_fuel_item',
         result_count = 8,
@@ -77,7 +90,7 @@ data:extend({
         ingredients = {
             {'fi_thorium232_item',10},
             {'uranium-238',10},
-            {'el_aluminum_item',10},
+            {'el_materials_ALK',10},
         },
         result = 'fi_basic_thorium_fuel_item',
         result_count = 8,
@@ -90,7 +103,7 @@ data:extend({
         ingredients = {
             {'fi_plutonium239_item',1},
             {'uranium-238',19},
-            {'el_aluminum_item',10},
+            {'el_materials_ALK',10},
         },
         result = 'fi_advanced_fuel_item',
         result_count = 2,
@@ -103,7 +116,7 @@ data:extend({
         ingredients = {
             {'fi_uranium233_item',4},
             {'uranium-238',16},
-            {'el_aluminum_item',10},
+            {'el_materials_ALK',10},
         },
         result = 'fi_advanced_thorium_fuel_item',
         result_count = 2,
@@ -116,7 +129,7 @@ data:extend({
         ingredients = {
             {'uranium-235',1},
             {'fi_plutonium239_item',1},
-            {'el_aluminum_item',10},
+            {'el_materials_ALK',10},
         },
         result = 'fi_pure_fuel_item',
         result_count = 1,
@@ -176,10 +189,14 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         category = 'centrifuging',
+        main_product = 'fi_plutonium239_item',
         ingredients = {
             {'fi_used_basic_fuel_item',6},
         },
-        result = 'fi_plutonium239_item',
+        results = {
+            {'fi_plutonium239_item',1},
+            {'fi_materials_waste',1}
+        },
         result_count = 1,
         energy_required = 20,
     },
@@ -206,10 +223,14 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         category = 'centrifuging',
+        main_product = 'fi_uranium233_item',
         ingredients = {
             {'fi_used_basic_thorium_fuel_item',6},
         },
-        result = 'fi_uranium233_item',
+        results = {
+            {'fi_uranium233_item',1},
+            {'fi_materials_waste',1}
+        },
         result_count = 1,
         energy_required = 20,
     },
@@ -231,11 +252,15 @@ data:extend({
         name = 'fi_advanced_fuel_recycle_recipe',
         type = 'recipe',
         enabled = 'false',
+        main_product = 'uranium-238',
         category = 'centrifuging',
         ingredients = {
             {'fi_used_advanced_fuel_item',4},
         },
-        result = 'uranium-238',
+        results = {
+            {'uranium-238',1},
+            {'fi_materials_waste',1}
+        },
         result_count = 3,
         energy_required = 20,
         subgroup = 'fi_item_subgroup_a',
@@ -247,10 +272,14 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         category = 'centrifuging',
+        main_product = 'uranium-238',
         ingredients = {
             {'fi_used_advanced_thorium_fuel_item',4},
         },
-        result = 'uranium-238',
+        results = {
+            {'uranium-238',1},
+            {'fi_materials_waste',1}
+        },
         result_count = 3,
         energy_required = 20,
         subgroup = 'fi_item_subgroup_a',
@@ -262,10 +291,14 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         category = 'centrifuging',
+        main_product = 'uranium-238',
         ingredients = {
             {'fi_used_pure_fuel_item',4},
         },
-        result = 'uranium-238',
+        results = {
+            {'uranium-238',1},
+            {'fi_materials_waste',1}
+        },
         result_count = 3,
         energy_required = 20,
         subgroup = 'fi_item_subgroup_a',
@@ -394,7 +427,7 @@ data:extend({
         },
         result = 'fi_fuel_train_crystal_item',
         result_count = 4,
-        energy_required = 30,
+        energy_required = 5,
     },
     --crushed 
     {
@@ -1065,6 +1098,21 @@ data:extend({
             {type="item", name="fi_materials_pure_titan", amount=6},
         },
         energy_required = 0.2,
+        order = 'a-b',
+    },
+    {
+        name = 'fi_decay_waste_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_castor_category',
+        icon = sprite('fission/fi_materials/fi_materials_waste.png'),
+        icon_size = 64,
+        subgroup = 'fi_item_subgroup_a',
+        ingredients = {
+            {type="item", name="fi_materials_waste", amount=1},
+        },
+        results = {},
+        energy_required = 150,
         order = 'a-b',
     },
 })

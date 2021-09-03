@@ -1,6 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.1
+Date: 13.7.2021
+  Changes:
+    - removed fluid must flow dependency
+    - removed god-forsaken extractor inserter dependency
+    - changed working speed of fiber maker to 1 from 3.5
+    - black hole stabalizer is now cheaper, but crafttime is longer
+    - changed order of the science packs to better fit into the tech tree
+    - fuel rods now use Aluminum-composite instead of Aluminium
+    - decreased craft time for diesel fuels
+    - increased yield for energized diesel fuel
+  Features:
+    - added neutron fluid
+    - added nuclear waste
+---------------------------------------------------------------------------------------------------
 Version: 0.9.0
-Date: 14.7.2021
+Date: 31.08.2021
   WARNING:
     - This version contains major changes so updating on an exiting save can work but is not advised
   Features:

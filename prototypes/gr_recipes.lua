@@ -239,10 +239,10 @@ data:extend({
             {'fu_tech_sign_item',10},
         },
         results = {
-            {type="item", name="gr_materials_stabilizer_item", amount=2}
+            {type="item", name="gr_materials_stabilizer_item", amount=4}
         },
         result_count = 1,
-        energy_required = 1,
+        energy_required = 4,
         always_show_made_in = true
     },
     {

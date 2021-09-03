@@ -248,7 +248,7 @@ data:extend({
             {type="item", name="el_train_fuel_diesel_item", amount=1},
         },
         result_count = 1,
-        energy_required = 30,
+        energy_required = 10,
     },
     --el_generator_equip
     {
@@ -310,15 +310,15 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="el_train_fuel_diesel_item", amount=2},
-            {type="item", name="el_energy_crystal_item", amount=2},
-            {type="item", name="el_lithium_item", amount=2},
+            {type="item", name="el_train_fuel_diesel_item", amount=3},
+            {type="item", name="el_energy_crystal_item", amount=3},
+            {type="item", name="el_lithium_item", amount=3},
         },
         results = {
             {type="item", name="el_train_fuel_diesel_energized_item", amount=4},
         },
         result_count = 1,
-        energy_required = 30,
+        energy_required = 5,
     },
     --el_ki_beacon
     {
