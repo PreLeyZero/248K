@@ -149,6 +149,10 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
+                recipe = 'el_cast_pure_steel_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
                 recipe = 'el_cast_pure_copper_recipe',
             },
         },
@@ -308,6 +312,14 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'el_lithium_ore_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_dirty_water_vent_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_dirty_water_landfill_recipe',
             },
         },
         unit = {
