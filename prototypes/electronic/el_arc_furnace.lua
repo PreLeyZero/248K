@@ -47,7 +47,7 @@ data:extend({
           type = 'electric',
           usage_priority = 'secondary-input',
       },
-      allowed_effects = {"speed", "consumption", "pollution"},
+      allowed_effects = {"speed", "productivity", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {
               0,
@@ -109,44 +109,31 @@ data:extend({
       },
       --animation
       animation = {
-          north = {
-              filename = sprite('entity_animation.png'),
-              size = {512,512},
-              scale = 0.54,
-              line_length = 3,
-              frame_count = 3,
-              animation_speed = 0.5,
-              shift = {0,-0.1}
-          },
-          east = {
-              filename = sprite('entity_animation.png'),
-              size = {512,512},
-              scale = 0.54,
-              line_length = 3,
-              --lines_per_file = 3,
-              frame_count = 3,
-              animation_speed = 0.5,
-              shift = {0,-0.1}
-          },
-          south = {
-              filename = sprite('entity_animation.png'),
-              size = {512,512},
-              scale = 0.54,
-              line_length = 3,
-              frame_count = 3,
-              animation_speed = 0.5,
-              shift = {0,-0.1}
-          },
-          west = {
-              filename = sprite('entity_animation.png'),
-              size = {512,512},
-              scale = 0.54,
-              line_length = 3,
-              frame_count = 3,
-              animation_speed = 0.5,
-              shift = {0,-0.1}
-          },
+        filename = sprite('entity_base.png'),
+        size = {512,512},
+        scale = 0.54,
+        line_length = 1,
+        --lines_per_file = 2,
+        frame_count = 1,
+        --animation_speed = 0.2,
+        shift = {0,-0.1} 
       },
+      working_visualisations = {
+        {
+          animation = 
+          {
+            filename = sprite('entity_overlay.png'),
+            size = {512,512},
+            scale = 0.54,
+            line_length = 3,
+            lines_per_file = 1,
+            frame_count = 3,
+            animation_speed = 0.2,
+            shift = {0,-0.1} 
+          }
+        }
+      },
+      
       working_sound =
       {
         sound = {filename = "__base__/sound/chemical-plant-3.ogg" },

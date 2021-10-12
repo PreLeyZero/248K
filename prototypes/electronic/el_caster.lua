@@ -48,7 +48,7 @@ data:extend({
           type = 'electric',
           usage_priority = 'secondary-input',
       },
-      allowed_effects = {"speed", "consumption", "pollution"},
+      allowed_effects = {"speed", "productivity", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {
               0,

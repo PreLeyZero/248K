@@ -26,7 +26,7 @@ end
 function gr_white_hole_recipe_generator()
     local items = data.raw.item
     for i,v in pairs(items) do
-        if data.raw.item[i].stack_size > 1 then
+        if tonumber(data.raw.item[i].stack_size) > 1 then
             gr_make_white_hole_recipe(data.raw.item[i].name)
         end
     end

@@ -300,7 +300,7 @@ data:extend({
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         result_count = 1,
-        energy_required = 30,
+        energy_required = 10,
         always_show_made_in = true
     },
     --el_energy_crystal_fuel
@@ -1043,6 +1043,22 @@ data:extend({
         allow_decomposition = false
     },
     {
+        name = 'el_cast_pure_steel_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_caster_category',
+        ingredients = {
+            {type="fluid", name="el_arc_pure_iron", amount=500},
+        },
+        results = {
+            {type="item", name="steel-plate", amount=1},
+        },
+        energy_required = 0.5,
+        order = 'a-b',
+        always_show_made_in = true,
+        allow_decomposition = false
+    },
+    {
         name = 'el_arc_pure_copper_recipe',
         type = 'recipe',
         enabled = 'false',
@@ -1129,6 +1145,36 @@ data:extend({
         },
         results = {
             {type="item", name="el_materials_ALK", amount=3},
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
+    {
+        name = 'el_dirty_water_vent_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        subgroup = 'el_item_subgroup_a',
+        category = 'crafting-with-fluid',
+        ingredients = {
+            {type="fluid", name="el_dirty_water", amount=100},
+        },
+        results = {
+            {type="fluid", name="water", amount=100},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+    },
+    {
+        name = 'el_dirty_water_landfill_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        subgroup = 'el_item_subgroup_a',
+        category = 'crafting-with-fluid',
+        ingredients = {
+            {type="fluid", name="el_dirty_water", amount=10000},
+        },
+        results = {
+            {type="item", name="landfill", amount=1},
         },
         energy_required = 1,
         order = 'a-b',

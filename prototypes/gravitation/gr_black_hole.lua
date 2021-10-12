@@ -32,6 +32,7 @@ data:extend({
             width = 512*2,
             height = 512*2,
             scale = 0.4,
+            shift = {0,0.5}
         },
         inventory_size = 80,
         flags = {"player-creation","placeable-neutral","not-rotatable"},
@@ -68,7 +69,8 @@ data:extend({
             scale = 0.4,
             line_length = 4,
             frame_count = 4,
-            animation_speed = 0.5
+            animation_speed = 0.5,
+            shift = {0,0.5}
         },
         continuous_animation = true
     }

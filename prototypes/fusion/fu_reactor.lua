@@ -12,7 +12,7 @@ data:extend({
     {
         name = 'fu_stelar_reactor_item',
         type = 'item',
-        icon = sprite('stelar_item.png'),
+        icon = sprite('stelar_entity_icon.png'),
         icon_size = 64,
         place_result = 'fu_stelar_reactor_entity',
         stack_size = 20,
@@ -22,7 +22,7 @@ data:extend({
     {
       name = 'fu_tokamak_reactor_item',
       type = 'item',
-      icon = sprite('tokamak_item.png'),
+      icon = sprite('tokamak_entity_icon.png'),
       icon_size = 64,
       place_result = 'fu_tokamak_reactor_entity',
       stack_size = 20,
@@ -39,11 +39,11 @@ data:extend({
         type = 'assembling-machine',
         icon = sprite('stelar_entity_icon.png'),
         icon_size = 64,
-        flags = {"player-creation","placeable-neutral","not-rotatable"},
+        flags = {"player-creation","placeable-neutral"},
         max_health = 1500,
         corpse = 'big-remnants',
-        collision_box = {{-5.8,-3.8},{5.8,5.8}},
-        selection_box = {{-6,-4},{6,6}},
+        collision_box = {{-6.25,-6.25},{6.25,6.25}},
+        selection_box = {{-6.5,-6.5},{6.5,6.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
@@ -67,7 +67,7 @@ data:extend({
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {type = "input", position = {-1.5, -4.5}},
+                {type = "input", position = {-1, -7}},
               },
               production_type = "input"
             },
@@ -78,7 +78,7 @@ data:extend({
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {type = "input", position = {1.5, -4.5}}
+                {type = "input", position = {1, -7}}
               },
               production_type = "input"
             },
@@ -89,7 +89,7 @@ data:extend({
                 pipe_covers = pipecoverspictures(),
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, -4.5}}
+                  {type = "input", position = {3, -7}}
                 },
                 production_type = "input"
               },
@@ -100,53 +100,36 @@ data:extend({
                 pipe_covers = pipecoverspictures(),
                 pipe_connections =
                 {
-                  {type = "output", position = {-0.5, -4.5}}
+                  {type = "output", position = {-3, -7}}
                 },
                 production_type = "output"
               },
         },
         --animation
         animation = {
-            north = {
-                filename = sprite('stelar_entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.4,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.5,
-                shift = {0,0.4},
-            },
-            east = {
-                filename = sprite('stelar_entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.4,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.5,
-                shift = {0,0.4},
-            },
-            south = {
-                filename = sprite('stelar_entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.4,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.5,
-                shift = {0,0.4},
-            },
-            west = {
-                filename = sprite('stelar_entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.4,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.5,
-                shift = {0,0.4},
-            },
+          filename = sprite('stelar_entity_base.png'),
+          size = {512*2,512*2},
+          scale = 0.56,
+          line_length = 1,
+          --lines_per_file = 2,
+          frame_count = 1,
+          --animation_speed = 0.2,
+          shift = {2.4,-1.5} 
+        },
+        working_visualisations = {
+          {
+            animation = 
+            {
+              filename = sprite('stelar_entity_overlay.png'),
+              size = {512*2,512*2},
+              scale = 0.56,
+              line_length = 3,
+              lines_per_file = 3,
+              frame_count = 9,
+              animation_speed = 0.3,
+              shift = {2.4,-1.5} 
+            }
+          }
         },
         
         working_sound = { 
@@ -159,11 +142,11 @@ data:extend({
       type = 'assembling-machine',
       icon = sprite('tokamak_entity_icon.png'),
       icon_size = 64,
-      flags = {"player-creation","placeable-neutral","not-rotatable"},
+      flags = {"player-creation","placeable-neutral"},
       max_health = 1500,
       corpse = 'big-remnants',
-      collision_box = {{-5.8,-3.8},{5.8,5.8}},
-      selection_box = {{-6,-4},{6,6}},
+      collision_box = {{-6.2,-6.2},{6.2,6.2}},
+      selection_box = {{-6.5,-6.5},{6.5,6.5}},
       map_color = {r=0, g=0, b=1, a=1},
       minable = {
           mining_time = 1,
@@ -187,7 +170,7 @@ data:extend({
             pipe_covers = pipecoverspictures(),
             pipe_connections =
             {
-              {type = "input", position = {-1.5, -4.5}},
+              {type = "input", position = {-1, -7}},
             },
             production_type = "input"
           },
@@ -198,7 +181,7 @@ data:extend({
             pipe_covers = pipecoverspictures(),
             pipe_connections =
             {
-              {type = "input", position = {1.5, -4.5}}
+              {type = "input", position = {1, -7}}
             },
             production_type = "input"
           },
@@ -209,7 +192,7 @@ data:extend({
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {type = "input", position = {0.5, -4.5}}
+                {type = "input", position = {3, -7}}
               },
               production_type = "input"
             },
@@ -220,53 +203,20 @@ data:extend({
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {type = "output", position = {-0.5, -4.5}}
+                {type = "output", position = {-3, -7}}
               },
               production_type = "output"
             },
       },
-      --animation
       animation = {
-          north = {
-              filename = sprite('tokamak_entity_animation.png'),
-              size = {512*3,512*2},
-              scale = 0.37,
-              line_length = 3,
-              lines_per_file = 3,
-              frame_count = 9,
-              animation_speed = 0.5,
-              shift = {2.34,0.3},
-          },
-          east = {
-              filename = sprite('tokamak_entity_animation.png'),
-              size = {512*3,512*2},
-              scale = 0.37,
-              line_length = 3,
-              lines_per_file = 3,
-              frame_count = 9,
-              animation_speed = 0.5,
-              shift = {2.34,0.3},
-          },
-          south = {
-              filename = sprite('tokamak_entity_animation.png'),
-              size = {512*3,512*2},
-              scale = 0.37,
-              line_length = 3,
-              lines_per_file = 3,
-              frame_count = 9,
-              animation_speed = 0.5,
-              shift = {2.34,0.3},
-          },
-          west = {
-              filename = sprite('tokamak_entity_animation.png'),
-              size = {512*3,512*2},
-              scale = 0.37,
-              line_length = 3,
-              lines_per_file = 3,
-              frame_count = 9,
-              animation_speed = 0.5,
-              shift = {2.34,0.3},
-          },
+        filename = sprite('tokamak_entity_animation.png'),
+        size = {512*2,512*2},
+        scale = 0.56,
+        line_length = 3,
+        lines_per_file = 3,
+        frame_count = 9,
+        animation_speed = 0.3,
+        shift = {2.4,-1.5} 
       },
       
       working_sound = { 
