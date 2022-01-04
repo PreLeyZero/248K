@@ -10,7 +10,6 @@ end
 --settings check
 --if config('recipe_enabled') then 
 --end
-
 --recipe
 data:extend({
     --el_solar
@@ -141,7 +140,7 @@ data:extend({
             {type="fluid", name="steam", amount=240, temperature=165},
         },
         results = {
-            {type="fluid", name="el_pressurized_water", amount=240, temperature = '500'},
+            {type="fluid", name="el_pressurized_water", amount=240, temperature =500},
             {type="fluid", name="water", amount=240},
         },
         energy_required = 2,
@@ -508,7 +507,7 @@ data:extend({
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
-            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -525,7 +524,7 @@ data:extend({
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
-            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -542,7 +541,7 @@ data:extend({
             {type="item", name="el_energy_crystal_item", amount=1},
         },
         results = {
-            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -558,7 +557,7 @@ data:extend({
             {type="item", name="red-wire", amount=8},
         },
         results = {
-            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -574,7 +573,7 @@ data:extend({
             {type="item", name="fu_space_probe_science_item", amount=2},
         },
         results = {
-            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -590,7 +589,7 @@ data:extend({
             {type="item", name="fu_space_probe_science_item", amount=1},
         },
         results = {
-            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -605,7 +604,7 @@ data:extend({
             {type="item", name="advanced-circuit", amount=16},
         },
         results = {
-            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -620,7 +619,7 @@ data:extend({
             {type="item", name="advanced-circuit", amount=12},
         },
         results = {
-            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -636,7 +635,7 @@ data:extend({
             {type="item", name="battery", amount=10},
         },
         results = {
-            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -652,7 +651,7 @@ data:extend({
             {type="item", name="battery", amount=8},
         },
         results = {
-            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -667,7 +666,7 @@ data:extend({
             {type="item", name="battery", amount=8},
         },
         results = {
-            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -682,7 +681,7 @@ data:extend({
             {type="item", name="battery", amount=4},
         },
         results = {
-            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
             {type="item", name="uranium-235", amount=1},
         },
         energy_required = 20,
@@ -719,7 +718,7 @@ data:extend({
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -736,7 +735,7 @@ data:extend({
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -753,7 +752,7 @@ data:extend({
             {type="item", name="el_energy_crystal_item", amount=1},
         },
         results = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
@@ -769,7 +768,7 @@ data:extend({
             {type="item", name="green-wire", amount=8},
         },
         results = {
-            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature = '500'},
+            {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
     },
