@@ -228,6 +228,7 @@ if (not mods["RealisticFusionPower"]) then
 end
 data.raw.recipe["fu_burner_recipe"].hidden = true
 
+--[[
 table.insert(data.raw.technology["gr_stage_tech"].unit.ingredients, {"fu_space_probe_science_item", 1})
 table.insert(data.raw.technology["gr_train_tech"].unit.ingredients, {"fu_space_probe_science_item", 1})
 table.insert(data.raw.technology["gr_train_plus_tech"].unit.ingredients, {"fu_space_probe_science_item", 1})
@@ -247,6 +248,7 @@ table.insert(data.raw.technology["fu_ki_plus_1_tech"].unit.ingredients, {"fi_ki_
 table.insert(data.raw.technology["fu_ki_plus_1_tech"].unit.ingredients, {"fu_ki_science", 1})
 table.insert(data.raw.technology["fu_ki_plus_2_tech"].unit.ingredients, {"fi_ki_science", 1})
 table.insert(data.raw.technology["fu_ki_plus_2_tech"].unit.ingredients, {"fu_ki_science", 1})
+--]]
 
 table.insert(data.raw["generator-equipment"]["fi_train_equipment_generator_item"].categories,"vehicle-equipment")
 
