@@ -185,4 +185,11 @@ data:extend({
         default_value   = true,
         order           = 'b',
     },
+    {
+        name            = 'overhaul_mode',
+        type            = 'bool-setting',
+        setting_type    = 'startup',
+        default_value   = true,
+        order           = 'b',
+    },
 })

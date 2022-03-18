@@ -2042,6 +2042,10 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fu_exchanger_2_recipe',
             },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_exchanger_3_recipe',
+            },
         },
         unit = {
             count = '200',

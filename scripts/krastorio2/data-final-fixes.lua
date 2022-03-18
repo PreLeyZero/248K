@@ -113,11 +113,11 @@ data:extend({
         main_product = 'steam',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="fluid", name="water", amount=1000/2},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=500},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
             {type="fluid", name="steam", amount=1000/2, temperature=425},
         },
         result_count = 1,
@@ -133,11 +133,11 @@ data:extend({
         main_product = 'steam',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=100},
             {type="fluid", name="water", amount=1000/4},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=500},
+            {type="fluid", name="fu_lead_fluid_cold", amount=100},
             {type="fluid", name="steam", amount=1000/4, temperature=975},
         },
         result_count = 1,

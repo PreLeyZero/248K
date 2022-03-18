@@ -112,3 +112,8 @@ data:extend({
 if data.raw.technology["atomic-bomb"] then
     table.insert(data.raw.technology["atomic-bomb"].effects, {type ="unlock-recipe", recipe ="fi_atomic_bomb_recipe"})
 end
+
+--overhaul
+if settings.startup['overhaul_mode'].value == true then
+    require('scripts/overhaul')
+end

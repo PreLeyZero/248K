@@ -16,3 +16,7 @@ end
 if mods["space-exploration"] then
     require('scripts/SE/data-final-fixes')
 end
+--overhaul K2
+if (settings.startup['overhaul_mode'].value == true and mods["Krastorio2"]) then
+    require('scripts/krastorio2/overhaul')
+end

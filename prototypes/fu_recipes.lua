@@ -331,7 +331,7 @@ data:extend({
             {type="item", name="fu_crushed_lead_item", amount=10},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=500},
+            {type="fluid", name="fu_lead_fluid_cold", amount=100},
         },
         result_count = 1,
         energy_required = 10,
@@ -343,11 +343,11 @@ data:extend({
         category = 'fu_stelar_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=1000},
+            {type="fluid", name="fu_lead_fluid_cold", amount=1000},
             {type="fluid", name="fu_protium", amount=20},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=1000, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=1000},
         },
         result_count = 1,
         energy_required = 1,
@@ -358,12 +358,12 @@ data:extend({
         category = 'fu_stelar_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=1000},
+            {type="fluid", name="fu_lead_fluid_cold", amount=1000},
             {type="fluid", name="fu_deuterium", amount=1},
             {type="fluid", name="fu_tritium", amount=1},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=1000, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=1000},
         },
         result_count = 1,
         energy_required = 1,
@@ -374,12 +374,12 @@ data:extend({
         category = 'fu_stelar_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=1000},
+            {type="fluid", name="fu_lead_fluid_cold", amount=1000},
             {type="fluid", name="fu_protium", amount=15},
             {type="fluid", name="fu_lithium_6", amount=15},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=1000, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=1000},
         },
         result_count = 1,
         energy_required = 1,
@@ -391,13 +391,13 @@ data:extend({
         main_product = 'fu_materials_charged_container',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=300},
+            {type="fluid", name="fu_lead_fluid_cold", amount=300},
             {type="fluid", name="fu_deuterium", amount=1},
             {type="fluid", name="fu_tritium", amount=1},
             {type="item", name="fu_materials_empty_container", amount=6},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=300, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=300},
             {type="item", name="fu_materials_charged_container", amount=6},
         },
         result_count = 1,
@@ -413,13 +413,13 @@ data:extend({
         main_product = 'fu_materials_charged_container',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=300},
+            {type="fluid", name="fu_lead_fluid_cold", amount=300},
             {type="fluid", name="fu_protium", amount=15},
             {type="fluid", name="fu_lithium_6", amount=15},
             {type="item", name="fu_materials_empty_container", amount=6},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=300, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=300},
             {type="item", name="fu_materials_charged_container", amount=6},
         },
         result_count = 1,
@@ -436,11 +436,11 @@ data:extend({
         category = 'fu_tokamak_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=110000},
+            {type="fluid", name="fu_lead_fluid_cold", amount=110000},
             {type="fluid", name="fu_deuterium", amount=200},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=110000, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=110000},
         },
         result_count = 1,
         energy_required = 100,
@@ -451,12 +451,12 @@ data:extend({
         category = 'fu_tokamak_reactor_crafting_category',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=180000},
+            {type="fluid", name="fu_lead_fluid_cold", amount=180000},
             {type="fluid", name="fu_deuterium", amount=100},
             {type="fluid", name="fu_tritium", amount=100},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=180000, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=180000},
         },
         result_count = 1,
         energy_required = 100,
@@ -485,11 +485,11 @@ data:extend({
         main_product = 'steam',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="fluid", name="water", amount=1000},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=500},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
             {type="fluid", name="steam", amount=1000, temperature=500},
         },
         result_count = 1,
@@ -505,12 +505,31 @@ data:extend({
         main_product = 'steam',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=100},
             {type="fluid", name="water", amount=1000},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=500},
+            {type="fluid", name="fu_lead_fluid_cold", amount=100},
             {type="fluid", name="steam", amount=1000, temperature=1000},
+        },
+        result_count = 1,
+        energy_required = 1,
+        subgroup = 'fu_item_subgroup_e',
+        order = 'b-a',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fu_exchanger_3_recipe',
+        type = 'recipe',
+        category = 'fu_exchanger_crafting_category',
+        main_product = 'fu_lead_fluid_cold',
+        enabled = 'false',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid_hot", amount=100},
+            {type="fluid", name="water", amount=1000},
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid_cold", amount=100},
         },
         result_count = 1,
         energy_required = 1,
@@ -1156,12 +1175,12 @@ data:extend({
         main_product = 'fu_materials_energy_crystal',
         subgroup = 'fu_item_subgroup_a-b',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
             {type="item", name="fu_materials_refined_crystal", amount=1}
         },
         results = {
             {type="item", name="fu_materials_energy_crystal", amount=1},
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500}
+            {type="fluid", name="fu_lead_fluid_hot", amount=50}
         },
         result_count = 1,
         energy_required = 3,
@@ -1225,12 +1244,12 @@ data:extend({
         category = 'fu_magnet_category',
         main_product = 'fu_materials_magnet',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=20},
+            {type="fluid", name="fu_lead_fluid_cold", amount=20},
             {type="item", name="fi_materials_neodym", amount=6},
             {type="item", name="fi_materials_GFK", amount=2},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=20, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=20},
             {type="item", name="fu_materials_magnet", amount=1},
         },
         energy_required = 4,
@@ -1310,10 +1329,10 @@ data:extend({
         category = 'fu_laser_category',
         main_product = 'fu_materials_laser_card',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50}
+            {type="fluid", name="fu_lead_fluid_cold", amount=50}
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="item", name="fu_materials_laser_card", amount=1}
         },
         energy_required = 1,
@@ -1326,11 +1345,11 @@ data:extend({
         category = 'fu_plasma_category',
         main_product = 'fu_materials_plasma_card',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
             {type="item", name="stone", amount=10}
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="item", name="fu_materials_plasma_card", amount=1}
         },
         energy_required = 1,
@@ -1343,11 +1362,11 @@ data:extend({
         category = 'fu_magnet_category',
         main_product = 'fu_materials_magnet_card',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
             {type="item", name="fi_materials_neodym", amount=1}
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="item", name="fu_materials_magnet_card", amount=1}
         },
         energy_required = 1,
@@ -1411,10 +1430,10 @@ data:extend({
         category = 'crafting-with-fluid',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=100},
+            {type="fluid", name="fu_lead_fluid_hot", amount=100},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=500},
+            {type="fluid", name="fu_lead_fluid_cold", amount=100},
         },
         result_count = 1,
         energy_required = 6,
