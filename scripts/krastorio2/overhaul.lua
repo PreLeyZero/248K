@@ -58,10 +58,18 @@ local function remove_tech_card(tech, card)
         return
     end
 
+    --in data.raw
+    --[[
+    ingredients = {
+        {'automation-science-pack',1},
+        {'logistic-science-pack',1},
+    }
+    ]]
+
     for i,v in ipairs(data.raw.technology[tech].unit.ingredients) do
         for j,w in ipairs(v) do
             if w == card then
-                v = nil
+                data.raw.technology[tech].unit.ingredients[i] = nil
             end
         end
     end
