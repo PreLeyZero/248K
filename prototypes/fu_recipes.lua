@@ -1465,7 +1465,7 @@ data:extend({
         },
         results = {
             {type="item", name="fu_materials_empty_container", amount=1},
-            {type="fluid", name="fu_neutron_fluid", amount=1},
+            {type="fluid", name="fu_neutron_fluid", amount=2},
         },
         result_count = 1,
         energy_required = 1,
@@ -1481,7 +1481,7 @@ data:extend({
         },
         results = {
             {type="item", name="fi_used_advanced_thorium_fuel_item", amount=1},
-            {type="fluid", name="fu_neutron_fluid", amount=20},
+            {type="fluid", name="fu_neutron_fluid", amount=30},
         },
         result_count = 1,
         energy_required = 4,
@@ -1497,7 +1497,7 @@ data:extend({
         },
         results = {
             {type="item", name="fi_used_basic_fuel_item", amount=1},
-            {type="fluid", name="fu_neutron_fluid", amount=20},
+            {type="fluid", name="fu_neutron_fluid", amount=30},
         },
         result_count = 1,
         energy_required = 4,
@@ -1513,7 +1513,7 @@ data:extend({
         },
         results = {
             {type="item", name="fi_used_basic_thorium_fuel_item", amount=1},
-            {type="fluid", name="fu_neutron_fluid", amount=12},
+            {type="fluid", name="fu_neutron_fluid", amount=18},
         },
         result_count = 1,
         energy_required = 4,
@@ -1529,7 +1529,7 @@ data:extend({
         },
         results = {
             {type="item", name="fi_used_advanced_fuel_item", amount=1},
-            {type="fluid", name="fu_neutron_fluid", amount=28},
+            {type="fluid", name="fu_neutron_fluid", amount=34},
         },
         result_count = 1,
         energy_required = 4,

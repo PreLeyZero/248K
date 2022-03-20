@@ -118,7 +118,7 @@ data:extend({
         },
         results = {
             {type="fluid", name="fu_lead_fluid_cold", amount=50},
-            {type="fluid", name="steam", amount=1000/2, temperature=425},
+            {type="fluid", name="steam", amount=1000/2, temperature=415},
         },
         result_count = 1,
         energy_required = 1,
