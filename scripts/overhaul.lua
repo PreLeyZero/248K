@@ -148,6 +148,7 @@ tech_table = {
     {"fi_refining_tech",        "uranium-processing"},
     {"fi_crafter_tech",         "fi_refining_tech"},
     {"el_solar_tech",           "concrete"},
+    {"fusion-reactor-equipment","fu_energy_tech"},
 
     --add science packs
     {"fi_stage_tech",           "chemical-science-pack"},

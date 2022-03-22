@@ -221,7 +221,7 @@ data:extend({
 
 --techs
 table.insert(data.raw.technology["kr-lithium-processing"].effects, {type ="unlock-recipe", recipe ="fi_lithium_to_k2"})
-table.insert(data.raw.technology["kr-matter-processing"].effects, {type ="unlock-recipe", recipe ="fu_star_engine_cooler_7_recipe"})
+--table.insert(data.raw.technology["kr-matter-processing"].effects, {type ="unlock-recipe", recipe ="fu_star_engine_cooler_7_recipe"})
 if (not mods["RealisticFusionPower"]) then
     table.insert(data.raw.technology["kr-fusion-energy"].effects, {type ="unlock-recipe", recipe ="fu_activator_4_recipe"})
     table.insert(data.raw.technology["kr-fusion-energy"].effects, {type ="unlock-recipe", recipe ="fu_activator_3_recipe"})
@@ -253,10 +253,10 @@ table.insert(data.raw.technology["fu_ki_plus_2_tech"].unit.ingredients, {"fu_ki_
 table.insert(data.raw["generator-equipment"]["fi_train_equipment_generator_item"].categories,"vehicle-equipment")
 
 if (config("krastorio_endgame")) then
-    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=100}) 
-    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=100}) 
-    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=40}) 
-    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=40}) 
+    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=40}) 
+    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=40}) 
+    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=5}) 
+    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=5}) 
 end
 table.insert(data.raw.lab['kr-singularity-lab'].inputs, 'fu_space_probe_science_item')
 table.insert(data.raw.lab['kr-singularity-lab'].inputs, 'fi_ki_science')

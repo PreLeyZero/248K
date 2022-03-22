@@ -268,7 +268,14 @@ building_table = {
     {"kr-advanced-assembling-machine",  "fu_materials_KFK", 6},
     {"kr-advanced-furnace",             "fu_materials_KFK", 6},
     {"kr-advanced-chemical-plant",      "fu_materials_KFK", 6},
+    {"kr-matter-plant",                 "fu_materials_KFK", 12},
+    {"kr-matter-assembler",             "fu_materials_KFK", 8},
+    {"kr-stabilizer-charging-station",  "fu_materials_KFK", 6},
     {"kr-large-roboport",               "fi_robo_port_item", 1},
+    {"kr-antimatter-reactor",           "fu_tokamak_reactor_item", 1},
+    {"kr-intergalactic-transceiver",    "fu_tokamak_reactor_item", 1},
+    {"kr-intergalactic-transceiver",    "gr_materials_magnet", 100},
+    {"kr-intergalactic-transceiver",    "gr_materials_fusion_cell_item", 10},
 
 
 }
@@ -289,6 +296,7 @@ item_table = {
     {"empty-dt-fuel",           "fu_materials_KFK", 2},
     {"fu_empty_container_recipe","empty-dt-fuel", 1},
     {"energy-control-unit",     "fu_materials_energy_crystal", 1},
+    {"matter-stabilizer",       "fu_materials_empty_container", 1},
 
     --science
     {"chemical-science-pack",        "el_energy_crystal_item",3},
@@ -314,7 +322,7 @@ tech_table = {
     {"logistics-2",                 "el_materials_ALK"},
     {"fi_robo_tech",                "construction-robotics"},
     {"fi_robo_tech",                "logistic-robotics"},
-    {"fu_tokamak_tech",             "kr-fusion-energy"},
+    {"fu_energy_tech",              "kr-fusion-energy"},
     {"kr-fusion-energy",            "fu_KFK_tech"},
     {"kr-ai-core",                  "fu_crystal_tech"},
     {"fusion-reactor-equipment",    "fu_crystal_tech"},
@@ -327,10 +335,21 @@ tech_table = {
     {"kr-advanced-furnace",         "fu_KFK_tech"},
     {"kr-advanced-chemical-plant",  "fu_KFK_tech"},
     {"kr-advanced-roboports",       "fi_robo_tech"},
-    {"gr_stage_tech",               "kr-matter-tech-card"},
+    {"kr-matter-processing",        "fu_KFK_tech"},
+    {"fu_star_engine_tech",         "kr-matter-coal-processing"},
+    {"fu_star_engine_tech",         "kr-matter-copper-processing"},
+    {"fu_star_engine_tech",         "kr-matter-iron-processing"},
+    {"fu_star_engine_tech",         "kr-matter-minerals-processing"},
+    {"fu_star_engine_tech",         "kr-matter-oil-processing"},
+    {"fu_star_engine_tech",         "kr-matter-rare-materials-processing"},
+    {"fu_star_engine_tech",         "kr-matter-stone-processing"},
+    {"fu_star_engine_tech",         "kr-matter-uranium-processing"},
+    {"fu_star_engine_tech",         "kr-matter-water-processing"},
     {"gr_stage_tech",               "kr-advanced-tech-card"},
     {"gr_charger_tech",             "kr-singularity-tech-card"},
     {"gr_compact_fusion_tech",      "kr-singularity-tech-card"},
+    {"kr-intergalactic-transceiver","gr_magnet_tech"},
+    {"kr-intergalactic-transceiver","gr_compact_fusion_tech"},
 
     --energy tech
     {"kr-fuel",                     "el_energy_tech"},
@@ -376,6 +395,14 @@ data.raw.recipe["dt-fuel"].ingredients = {
     {type="fluid", name="fu_deuterium", amount=6}, 
     {type="fluid", name="fu_tritium", amount=6}
 }
+
+data.raw["assembling-machine"]["fu_star_engine_core_entity"].energy_usage = "2GW"
+data.raw["assembling-machine"]["fu_star_engine_cooler_up_entity"].energy_usage = "1GW"
+data.raw["assembling-machine"]["fu_star_engine_cooler_entity"].energy_usage = "1GW"
+data.raw["assembling-machine"]["fu_star_engine_heater_left_entity"].energy_usage = "1GW"
+data.raw["assembling-machine"]["fu_star_engine_heater_entity"].energy_usage = "1GW"
+
+table.insert(data.raw.technology["fu_star_engine_iron_tech"].effects, {type ="unlock-recipe", recipe ="fu_star_engine_cooler_7_recipe"})
 
 data:extend({
     {
@@ -428,6 +455,21 @@ data:extend({
         energy_required = 10,
         always_show_made_in = true,
     },
+    {
+        name = 'fu_star_engine_cooler_7_recipe',
+        type = 'recipe',
+        category = 'fu_star_engine_cooler_crafting_category',
+        enabled = 'false',
+        subgroup = 'fu_star_engine_subgroup_c',
+        ingredients = {
+            {type="fluid", name="fu_iron_heated", amount=500},
+        },
+        results = {
+            {type="fluid", name="matter", amount=100},
+        },
+        result_count = 1,
+        energy_required = 1,
+    },
 })
 
 --===================================================================================================================
@@ -446,7 +488,7 @@ add_tech_cards(change_table_index(add_card_table, tech_structure))
 remove_pre_techs(change_table_index(pre_tech_table, tech_structure))
 remove_tech_cards(change_table_index(remove_card_table, card_structure))
 
-add_cards_to_tree(del_doubles(walk_techs("gr_stage_tech", break_con)), "matter-tech-card")
+add_cards_to_tree(del_doubles(walk_techs("fu_star_engine_tech", break_con)), "matter-tech-card")
 add_cards_to_tree(del_doubles(walk_techs("gr_stage_tech", break_con)), "advanced-tech-card")
 add_cards_to_tree(del_doubles(walk_techs("gr_charger_tech", break_con)), "singularity-tech-card")
 add_cards_to_tree(del_doubles(walk_techs("gr_compact_fusion_tech", break_con)), "singularity-tech-card")
