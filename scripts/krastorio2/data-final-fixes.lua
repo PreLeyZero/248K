@@ -113,12 +113,12 @@ data:extend({
         main_product = 'steam',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="fluid", name="water", amount=1000/2},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=500},
-            {type="fluid", name="steam", amount=1000/2, temperature=425},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
+            {type="fluid", name="steam", amount=1000/2, temperature=415},
         },
         result_count = 1,
         energy_required = 1,
@@ -133,11 +133,11 @@ data:extend({
         main_product = 'steam',
         enabled = 'false',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=100},
             {type="fluid", name="water", amount=1000/4},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=100, temperature=500},
+            {type="fluid", name="fu_lead_fluid_cold", amount=100},
             {type="fluid", name="steam", amount=1000/4, temperature=975},
         },
         result_count = 1,
@@ -221,13 +221,14 @@ data:extend({
 
 --techs
 table.insert(data.raw.technology["kr-lithium-processing"].effects, {type ="unlock-recipe", recipe ="fi_lithium_to_k2"})
-table.insert(data.raw.technology["kr-matter-processing"].effects, {type ="unlock-recipe", recipe ="fu_star_engine_cooler_7_recipe"})
+--table.insert(data.raw.technology["kr-matter-processing"].effects, {type ="unlock-recipe", recipe ="fu_star_engine_cooler_7_recipe"})
 if (not mods["RealisticFusionPower"]) then
     table.insert(data.raw.technology["kr-fusion-energy"].effects, {type ="unlock-recipe", recipe ="fu_activator_4_recipe"})
     table.insert(data.raw.technology["kr-fusion-energy"].effects, {type ="unlock-recipe", recipe ="fu_activator_3_recipe"})
 end
 data.raw.recipe["fu_burner_recipe"].hidden = true
 
+--[[
 table.insert(data.raw.technology["gr_stage_tech"].unit.ingredients, {"fu_space_probe_science_item", 1})
 table.insert(data.raw.technology["gr_train_tech"].unit.ingredients, {"fu_space_probe_science_item", 1})
 table.insert(data.raw.technology["gr_train_plus_tech"].unit.ingredients, {"fu_space_probe_science_item", 1})
@@ -247,14 +248,15 @@ table.insert(data.raw.technology["fu_ki_plus_1_tech"].unit.ingredients, {"fi_ki_
 table.insert(data.raw.technology["fu_ki_plus_1_tech"].unit.ingredients, {"fu_ki_science", 1})
 table.insert(data.raw.technology["fu_ki_plus_2_tech"].unit.ingredients, {"fi_ki_science", 1})
 table.insert(data.raw.technology["fu_ki_plus_2_tech"].unit.ingredients, {"fu_ki_science", 1})
+--]]
 
 table.insert(data.raw["generator-equipment"]["fi_train_equipment_generator_item"].categories,"vehicle-equipment")
 
 if (config("krastorio_endgame")) then
-    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=100}) 
-    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=100}) 
-    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=40}) 
-    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=40}) 
+    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=40}) 
+    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=40}) 
+    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=5}) 
+    table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=5}) 
 end
 table.insert(data.raw.lab['kr-singularity-lab'].inputs, 'fu_space_probe_science_item')
 table.insert(data.raw.lab['kr-singularity-lab'].inputs, 'fi_ki_science')

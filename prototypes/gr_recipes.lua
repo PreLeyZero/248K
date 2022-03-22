@@ -741,12 +741,12 @@ data:extend({
         category = 'fu_magnet_category',
         main_product = 'gr_materials_magnet',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
             {type="item", name="gr_materials_plasma_cube", amount=2},
             {type="item", name="fu_materials_magnet", amount=1},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="item", name="gr_materials_magnet", amount=1},
         },
         energy_required = 2,
@@ -760,12 +760,12 @@ data:extend({
         category = 'fu_plasma_category',
         main_product = 'gr_materials_plasma_cube',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=50},
             {type="item", name="fu_materials_KFK", amount=2},
             {type="item", name="fi_materials_gold", amount=1},
         },
         results = {
-            {type="fluid", name="fu_lead_fluid", amount=50, temperature=1500},
+            {type="fluid", name="fu_lead_fluid_hot", amount=50},
             {type="item", name="gr_materials_plasma_cube", amount=1},
         },
         energy_required = 2,

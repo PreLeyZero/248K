@@ -8,6 +8,22 @@ local gr_gui = require('scripts/gravitation/gui')
 require('scripts/informatron/inf_main')
 
 --===================================================================================================================
+--                              other functions
+--===================================================================================================================
+
+function print_start_message()
+    if settings.startup['overhaul_mode'].value == false then
+        game.print("You are currently playing 248k on standalone Mode.", {r=0.5, g=0, b=0.5})
+        game.print("If you wish to play 248k as an overhaul mod with tech and item integration, especially in Krastorio2 turn on the mod setting", {r=0.5, g=0, b=0.5})
+    elseif settings.startup['overhaul_mode'].value == true then
+        game.print("You are currently playing 248k on overhaul Mode.", {r=0.5, g=0, b=0.5})
+        game.print("If you wish to play 248k as an overhaul mod without tech and item integration turn off the mod setting", {r=0.5, g=0, b=0.5})
+    end
+end
+
+--===================================================================================================================
+--                              Event handlers
+--===================================================================================================================
 
 --init
 
@@ -23,6 +39,8 @@ script.on_init(
         for i,v in pairs(game.players) do 
             gui.add_top_gui(game.players[i])
         end
+
+        print_start_message()
     end
 )
 
@@ -35,6 +53,12 @@ script.on_event({
     },
     function(e)
         gui.add_top_gui(game.get_player(e["player_index"]))   
+        
+        if not global.message_printed then
+            print_start_message()
+            global.message_printed = true    
+        end
+        
     end 
 )
 
@@ -163,4 +187,3 @@ script.on_configuration_changed(
         end
     end
 )
-

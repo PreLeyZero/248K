@@ -1,10 +1,10 @@
 {
     "name": "248k",
-    "version": "0.9.3",
+    "version": "1.0.0",
     "title": "248k Mod",
     "author": "PreLeyZero",
     "factorio_version": "1.1",
-    "description": "Advance through 4 stages of tech. Start with simple machines and work your way through nuclear fission and fusion up to black and white holes, in order to tame the 248k Element. This mod is designed to be playable in already existing worlds since it changes nothing on world generation or vanilla itself. Does include a booktorio/Informatron ingame wiki!",
+    "description": "Advance through 4 stages of tech. Start with simple machines and work your way through nuclear fission and fusion up to black and white holes. Can be added to already existing saves! See mod portal for more info.",
     "dependencies": [
         "base >= 1.0.0",
         "Squeak Through",

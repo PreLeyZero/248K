@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 22.3.2022
+  Features:
+    - added vanila overhaul mode: integrate 248k items, buildings and techs into progression + change vanila items + buildings accordingly
+    - added krastorio 2 overhaul mode.
+    - use mod settings to choose standalone mode or overhaul mode
+---------------------------------------------------------------------------------------------------
+Version: 0.9.5
+Date: 19.1.2022
+  Features:
+    - added ja locale thanks to kyon1207
+    - added ru locale thanks to Astorin
+---------------------------------------------------------------------------------------------------
+Version: 0.9.4
+Date: 4.1.2022
+  Bugfixes:
+    - fixed crash with krastorio 2 and omnifluid
+---------------------------------------------------------------------------------------------------
 Version: 0.9.3
 Date: 12.10.2021
   Changes:
