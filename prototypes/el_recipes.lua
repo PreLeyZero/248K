@@ -1140,12 +1140,11 @@ data:extend({
         enabled = 'false',
         category = 'el_arc_furnace_category',
         ingredients = {
-            {type="fluid", name="steam", amount=100},
-            {type="item", name="stone", amount=2},
-            {type="item", name="coal", amount=1},
+            {type="item", name="stone", amount=4},
+            {type="item", name="coal", amount=3},
         },
         results = {
-            {type="item", name="el_materials_ceramic", amount=2},
+            {type="item", name="el_materials_ceramic", amount=1},
         },
         energy_required = 1,
         order = 'a-b',
