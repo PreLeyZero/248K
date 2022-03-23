@@ -1135,6 +1135,22 @@ data:extend({
         order = 'a-b',
     },
     {
+        name = 'el_ceramic_1_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_arc_furnace_category',
+        ingredients = {
+            {type="fluid", name="steam", amount=100},
+            {type="item", name="stone", amount=2},
+            {type="item", name="coal", amount=1},
+        },
+        results = {
+            {type="item", name="el_materials_ceramic", amount=2},
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
+    {
         name = 'el_ALK_recipe',
         type = 'recipe',
         enabled = 'false',

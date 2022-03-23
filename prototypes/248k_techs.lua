@@ -244,6 +244,10 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
+                recipe = 'el_ceramic_1_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
                 recipe = 'el_ALK_recipe',
             },
         },

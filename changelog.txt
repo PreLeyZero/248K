@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 23.3.2022
+  Features:
+    - added recipe for ceramic for overhaul mode
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 23.3.2022
+  Features:
+    - updated ru locale thanks to Astorin
+  Bugfixes:
+    - fixed bug that causes a crash with the new overhaul mode
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 22.3.2022
   Features:
