@@ -1149,6 +1149,7 @@ data:extend({
         },
         energy_required = 1,
         order = 'a-b',
+        always_show_made_in = true
     },
     {
         name = 'el_ALK_recipe',
