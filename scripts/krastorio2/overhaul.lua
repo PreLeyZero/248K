@@ -169,14 +169,15 @@ function find_following_techs(tech, break_con)
 
     for i,v in pairs(data.raw.technology) do
         --i = techname, v = data.raw.technology[techname]
-
-        for j,w in ipairs(data.raw.technology[i].prerequisites) do
-            --prerequisites = {'el_energy_tech'}
-            --j = index, w = techname
-
-            if w == tech then
-                if not (i == break_con) then
-                    table.insert(return_table, i)
+        if data.raw.technology[i].prerequisites then 
+            for j,w in ipairs(data.raw.technology[i].prerequisites) do
+                --prerequisites = {'el_energy_tech'}
+                --j = index, w = techname
+    
+                if w == tech then
+                    if not (i == break_con) then
+                        table.insert(return_table, i)
+                    end
                 end
             end
         end
