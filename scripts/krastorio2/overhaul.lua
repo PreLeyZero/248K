@@ -89,7 +89,7 @@ local function remove_pre_tech(tech, pre_tech)
 
     for i,v in ipairs(data.raw.technology[tech].prerequisites) do 
         if v == pre_tech then
-            v = nil
+            data.raw.technology[tech].prerequisites[i] = nil
         end
     end
 end
@@ -299,6 +299,12 @@ item_table = {
     {"energy-control-unit",     "fu_materials_energy_crystal", 1},
     {"matter-stabilizer",       "fu_materials_empty_container", 1},
 
+    --military
+    {"energy-shield-equipment", "el_energy_crystal_item", 5},
+    {"energy-shield-mk2-equipment","fi_energy_crystal_item", 5},
+    {"energy-shield-mk3-equipment","fu_materials_energy_crystal", 5},
+    {"battery-equipment",       "el_lithium_battery", 1},
+
     --science
     {"chemical-science-pack",        "el_energy_crystal_item",3},
     {"production-science-pack",      "fi_materials_titan",  1},
@@ -351,6 +357,19 @@ tech_table = {
     {"gr_compact_fusion_tech",      "kr-singularity-tech-card"},
     {"kr-intergalactic-transceiver","gr_magnet_tech"},
     {"kr-intergalactic-transceiver","gr_compact_fusion_tech"},
+    {"el_lithium_tech",             "logistic-science-pack"},
+    {"energy-shield-equipment",     "el_gower_tech"},
+    {"energy-shield-equipment",     "el_energy_tech"},
+    {"energy-shield-mk2-equipment", "fi_energy_tech"},
+    {"energy-shield-mk2-equipment", "fi_crystal_tech"},
+    {"kr-energy-shield-mk3-equipment", "fu_energy_tech"},
+    {"kr-energy-shield-mk3-equipment", "fu_crystal_tech"},
+    {"solar-panel-equipment",       "el_energy_tech"},
+    {"battery-equipment",           "el_energy_tech"},
+    {"kr-imersite-solar-panel-equipment","fu_energy_tech"},
+    {"kr-tesla-coil",               "fi_energy_tech"},
+    {"kr-portable-generator",       "fi_energy_tech"},
+    {"battery-mk2-equipment",       "fi_energy_tech"},
 
     --energy tech
     {"kr-fuel",                     "el_energy_tech"},

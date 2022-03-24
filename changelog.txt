@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 23.3.2022
+  Features:
+    - integrated some of k2 equipment into overhul mode including personal batteries, shields and power generating equipment
+  Bugfixes:
+    - fixed ore purifaction needing logistic science as prerequisite
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 23.3.2022
   Features:
