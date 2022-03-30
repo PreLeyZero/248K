@@ -25,10 +25,10 @@ data:extend({
 data:extend({
 {
     name = 'fu_burner_entity',
-    type = 'generator',
+    type = 'furnace',
     icon = sprite('entity_icon.png'),
     icon_size = 64,
-    flags = {"player-creation","placeable-neutral", "not-rotatable"},
+    flags = {"player-creation","placeable-neutral"},
     --minable
     minable = {
         mining_time = 1,
@@ -36,54 +36,55 @@ data:extend({
     },
     max_health = 150,
     corpse = 'small-remnants',
+    crafting_categories = {'fu_burner_category'},
     collision_box = {{-1.4,-1.4},{1.4,1.4}},
     selection_box = {{-1.5,-1.5},{1.5,1.5}},
+    result_inventory_size = 2,
+    source_inventory_size = 1,
     --energy
     effectivity = 1,
     energy_source = {
         type = 'electric',
-        usage_priority = 'primary-output',
-        input_flow_limit = '0W',
-        output_flow_limit = tostring(config('power_output'))..'W',
+        usage_priority = 'secondary-input',
+        buffer_capacity = '5MJ',
     },
-    max_power_output = tostring(config('power_output'))..'W',
-    maximum_temperature = 40,
-    fluid_usage_per_tick = 1,
-    fluid_box = {
-        base_area = 1,
-        height = 2,
-        base_level = -1,
-        filter = 'fu_oxygen',
-        minimum_temperature = 0,
-        maximum_temperature = 40,
-        production_type = 'input-output', 
-        pipe_connections = {
-            {type = "input-output", position = {2, 0}},  
-            {type = "input-output", position = {-2, 0}},  
+    crafting_speed = 1,
+    energy_usage = '500KW',
+    fluid_boxes = {
+        {
+            base_area = 1,
+            height = 2,
+            base_level = -1,
+            production_type = 'input', 
+            --pipe_picture = assembler2pipepictures(),
+            pipe_covers = pipecoverspictures(),
+            pipe_connections = {
+                {type = "input", position = {2, 0}},  
+                --{type = "output", position = {-2, 0}},  
+            },
         },
-    },
-    fluid_input = {
-        name = 'fu_oxygen',
-        minimum_temperature = 0,
+        {
+            base_area = 1,
+            height = 2,
+            base_level = 1,
+            production_type = 'output', 
+            --pipe_picture = assembler2pipepictures(),
+            pipe_covers = pipecoverspictures(),
+            pipe_connections = {
+                {type = "output", position = {-2, 0}},  
+                --{type = "output", position = {-2, 0}},  
+            },
+        }
     },
     --animation
-    vertical_animation = {
+    animation = {
         filename = sprite('entity_animation.png'),
         size = {420,448},
-        scale = 0.26,
+        scale = 0.265,
         line_length = 1,
         frame_count = 1,
         animation_speed = 0.5,
-        shift = {0,-0.2}
-    },
-    horizontal_animation = {
-        filename = sprite('entity_animation.png'),
-        size = {420,448},
-        scale = 0.26,
-        line_length = 1,
-        frame_count = 1,
-        animation_speed = 0.5,
-        shift = {0,-0.2}
+        shift = {0,-0.4}
     },
     map_color = {r=0, g=0, b=1, a=1},
     working_sound =

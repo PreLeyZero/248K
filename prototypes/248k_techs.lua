@@ -195,6 +195,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'el_purify_uranium_acidic_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_dirty_water_vent_2_recipe',
             }
         },
         unit = {
@@ -1049,6 +1053,40 @@ data:extend({
         },
     },
     {
+        name = 'fi_advanced_purifier_tech',
+        type = 'technology',
+        icon = sprite('fi_purifier_2_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_purifier_tech', 'uranium-processing'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_empty_solution_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_solution_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_rich_powder_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_extract_rich_powder_recipe',
+            },
+        },
+        unit = {
+            count = '600',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
         name = 'fi_purifier_2_tech',
         type = 'technology',
         icon = sprite('fi_purifier_tech.png'),
@@ -1122,7 +1160,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_refining_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_purifier_2_tech'},
+        prerequisites = {'fi_purifier_2_tech', 'fi_advanced_purifier_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -1838,6 +1876,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_boiler_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_burn_oxygen_recipe',
             },
             { 
                 type = 'unlock-recipe',

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 30.3.2022
+  Features:
+    - added kovarex like processing for rich water
+    - added corrosive solution and its use in fuel reprocessing
+  Changes:
+    - fu stage burner is now furnace, which no longer outputs power
+    - added dirty water to water conversion in purifier for early game
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 23.3.2022
   Features:

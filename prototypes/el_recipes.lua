@@ -1180,6 +1180,21 @@ data:extend({
         order = 'a-b',
     },
     {
+        name = 'el_dirty_water_vent_2_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        subgroup = 'el_item_subgroup_a',
+        category = 'el_purifier_category',
+        ingredients = {
+            {type="fluid", name="el_dirty_water", amount=100},
+        },
+        results = {
+            {type="fluid", name="water", amount=100},
+        },
+        energy_required = 0.2,
+        order = 'a-b',
+    },
+    {
         name = 'el_dirty_water_landfill_recipe',
         type = 'recipe',
         enabled = 'false',

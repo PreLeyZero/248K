@@ -117,6 +117,7 @@ item_table = {
 --[TECHS]
 
 tech_table = {
+    {"el_grower_tech",          "el_kerosene_tech"},
     {"automation-2",            "el_ALK_tech"},
     {"chemical-science-pack",   "el_grower_tech"},
     {"engine",                  "el_ALK_tech"},

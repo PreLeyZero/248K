@@ -54,6 +54,7 @@ data:extend({
             buffer_capacity = "1TJ",
             usage_priority = "primary-output",
             max_input_flow = "0W",
+            max_output_flow = "1TW",
             --drain = "1GW"
         },
         light = {

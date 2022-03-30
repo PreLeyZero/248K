@@ -43,7 +43,9 @@ local limitation_list = {
     'gr_gold_wire_recipe',
     'gr_circuit_recipe',
     'gr_materials_stack_up_item_recipe',
-    'gr_materials_stack_down_item_recipe'
+    'gr_materials_stack_down_item_recipe',
+    'fi_rich_powder_recipe',
+    'fi_strong_acid_recipe'
 }
 
 --item

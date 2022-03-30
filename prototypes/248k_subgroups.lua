@@ -344,6 +344,10 @@ data:extend({
         name = 'fu_boiler_crafting_category',
         type = 'recipe-category',
     },
+    {
+        name = 'fu_burner_category',
+        type = 'recipe-category',
+    },
     --fu_reactors
     {
         name = 'fu_stelar_reactor_crafting_category',

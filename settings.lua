@@ -37,15 +37,6 @@ data:extend({
         maximum_value   = 10^10,
         order           = 'a',    
     },
-    {
-        name            = 'fu_burner_power_output',
-        type            = 'int-setting',
-        setting_type    = 'startup',
-        default_value   = 3500000,
-        minimum_value   = 1,
-        maximum_value   = 10^10,
-        order           = 'a',    
-    },
     --el KI1
     {
         name            = 'el_ki_beacon_effectivity',

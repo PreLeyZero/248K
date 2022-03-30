@@ -192,10 +192,12 @@ data:extend({
         main_product = 'fi_plutonium239_item',
         ingredients = {
             {'fi_used_basic_fuel_item',6},
+            {type="item", name="fi_materials_solution", amount=1},
         },
         results = {
             {'fi_plutonium239_item',1},
-            {'fi_materials_waste',1}
+            {'fi_materials_waste',1},
+            {type="item", name="fi_materials_empty_solution", amount=1, probability=0.95},
         },
         result_count = 1,
         energy_required = 20,
@@ -226,10 +228,12 @@ data:extend({
         main_product = 'fi_uranium233_item',
         ingredients = {
             {'fi_used_basic_thorium_fuel_item',6},
+            {type="item", name="fi_materials_solution", amount=1},
         },
         results = {
             {'fi_uranium233_item',1},
-            {'fi_materials_waste',1}
+            {'fi_materials_waste',1},
+            {type="item", name="fi_materials_empty_solution", amount=1, probability=0.95},
         },
         result_count = 1,
         energy_required = 20,
@@ -256,10 +260,12 @@ data:extend({
         category = 'centrifuging',
         ingredients = {
             {'fi_used_advanced_fuel_item',4},
+            {type="item", name="fi_materials_solution", amount=1},
         },
         results = {
             {'uranium-238',1},
-            {'fi_materials_waste',1}
+            {'fi_materials_waste',1},
+            {type="item", name="fi_materials_empty_solution", amount=1, probability=0.95},
         },
         result_count = 3,
         energy_required = 20,
@@ -275,10 +281,12 @@ data:extend({
         main_product = 'uranium-238',
         ingredients = {
             {'fi_used_advanced_thorium_fuel_item',4},
+            {type="item", name="fi_materials_solution", amount=1},
         },
         results = {
             {'uranium-238',1},
-            {'fi_materials_waste',1}
+            {'fi_materials_waste',1},
+            {type="item", name="fi_materials_empty_solution", amount=1, probability=0.95},
         },
         result_count = 3,
         energy_required = 20,
@@ -294,10 +302,12 @@ data:extend({
         main_product = 'uranium-238',
         ingredients = {
             {'fi_used_pure_fuel_item',4},
+            {type="item", name="fi_materials_solution", amount=1},
         },
         results = {
             {'uranium-238',1},
-            {'fi_materials_waste',1}
+            {'fi_materials_waste',1},
+            {type="item", name="fi_materials_empty_solution", amount=1, probability=0.95},
         },
         result_count = 3,
         energy_required = 20,
@@ -1114,5 +1124,84 @@ data:extend({
         results = {},
         energy_required = 150,
         order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_empty_solution_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        main_product = 'fi_materials_empty_solution',
+        ingredients = {
+            {type="item", name="fi_materials_GFK", amount=6},
+            {type="item", name="empty-barrel", amount=1},
+        },
+        results = {
+            {type="item", name="fi_materials_empty_solution", amount=1},
+        },
+        energy_required = 1,
+        order = 'a-b',
+        --always_show_made_in = true,
+    },
+    {
+        name = 'fi_solution_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'chemistry',
+        main_product = 'fi_materials_solution',
+        ingredients = {
+            {type="fluid", name="fi_strong_acid", amount=240},
+            {type="fluid", name="sulfuric-acid", amount=120},
+            {type="item", name="fi_materials_empty_solution", amount=1},
+            {type="item", name="el_lithium_item", amount=3},
+        },
+        results = {
+            {type="fluid", name="el_acidic_water", amount=20},
+            {type="item", name="fi_materials_solution", amount=1, probability=0.95},
+            {type="item", name="fi_materials_empty_solution", amount=1, probability=0.05},
+        },
+        energy_required = 6,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    --purifier 10 stone + 100 strong acid = 50 rich water
+    --enrichment 10/2 stone + 120 strong acid = 150 rich water
+    {
+        name = 'fi_rich_powder_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'centrifuging',
+        main_product = 'fi_materials_rich_powder',
+        ingredients = {
+            {type="item", name="fi_materials_solution", amount=1},
+            {type="item", name="fi_crushed_stone_item", amount=10},
+            {type="item", name="fi_crushed_coal_item", amount=20},
+        },
+        results = {
+            {type="item", name="fi_crushed_coal_item", amount=17},
+            {type="item", name="fi_materials_rich_powder", amount=3},
+            {type="item", name="fi_materials_empty_solution", amount=1},
+        },
+        energy_required = 6,
+        order = 'a-b',
+        always_show_made_in = true,
+    },
+    {
+        name = 'fi_extract_rich_powder_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'chemistry',
+        main_product = 'fi_dirty_water',
+        ingredients = {
+            {type="item", name="fi_materials_rich_powder", amount=1},
+            {type="fluid", name="water", amount=300},
+        },
+        results = {
+            {type="fluid", name="fi_dirty_water", amount=250},
+            {type="fluid", name="el_dirty_water", amount=50},
+        },
+        energy_required = 1,
+        order = 'a-b',
+        always_show_made_in = true,
     },
 })
