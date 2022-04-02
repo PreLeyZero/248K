@@ -3,6 +3,10 @@ Version: 1.0.5
 Date: 2.4.2022
   Features:
     - redone star engine graphics, aswell as decreased star engine size, current star engines will drop to ground
+  Changes:
+    - reduced water pressurizer cost
+    - KI1 tech now requires circuit networks in overhaul mode
+    - lithium processing is now tied to battery tech in overhaul mode
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 30.3.2022
