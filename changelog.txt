@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2.4.2022
+  Features:
+    - redone star engine graphics, aswell as decreased star engine size, current star engines will drop to ground
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 30.3.2022
   Features:

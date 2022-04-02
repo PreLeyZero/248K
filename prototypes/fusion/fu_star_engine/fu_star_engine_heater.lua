@@ -12,7 +12,7 @@ data:extend({
     {
         name = 'fu_star_engine_heater_item',
         type = 'item',
-        icon = sprite('item.png'),
+        icon = sprite('icon.png'),
         icon_size = 64,
         place_result = 'fu_star_engine_heater_entity',
         stack_size = 1,
@@ -28,13 +28,13 @@ data:extend({
     {
         name = 'fu_star_engine_heater_entity',
         type = 'assembling-machine',
-        icon = sprite('entity_icon.png'),
+        icon = sprite('icon.png'),
         icon_size = 64,
         flags = {"player-creation","placeable-neutral","not-rotatable"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-15,-6.5},{11,6.5}},
-        selection_box = {{-15,-6.5},{11,6.5}},
+        collision_box = {{-10.5,-4.5}, {8.5,4.5}},
+        selection_box = {{-10.5,-4.5}, {8.5,4.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
@@ -57,7 +57,7 @@ data:extend({
               
               pipe_connections =
               {
-                {type = "input", position = {11.5, 0}}
+                {type = "input", position = {9, 0}}
               },
               production_type = "input"
             },
@@ -68,7 +68,7 @@ data:extend({
                 
                 pipe_connections =
                 {
-                  {type = "input", position = {11.5, 3}}
+                  {type = "input", position = {9, 2}}
                 },
                 production_type = "input"
             },
@@ -79,7 +79,7 @@ data:extend({
                 
                 pipe_connections =
                 {
-                  {type = "input", position = {11.5, -3}}
+                  {type = "input", position = {9, -2}}
                 },
                 production_type = "input"
             },
@@ -90,7 +90,7 @@ data:extend({
                 
                 pipe_connections =
                 {
-                  {type = "output", position = {-15.5, -2}},
+                  {type = "output", position = {-11, -1}},
                 },
                 production_type = "output"
             },
@@ -101,7 +101,7 @@ data:extend({
               
               pipe_connections =
               {
-                {type = "output", position = {-15.5, 3}},
+                {type = "output", position = {-11, 1}},
               },
               production_type = "output"
             },
@@ -110,43 +110,29 @@ data:extend({
         },
         --animation
         animation = {
-            north = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.8,
-                shift = {0.3,-0.2},
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.3,
-            },
-            east = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.1,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.3,
-            },
-            south = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.1,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.3,
-            },
-            west = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.1,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.3,
-            },
+            filename = sprite('base.png'),
+            size = {1080, 1080},
+            scale = 0.58,
+            shift = {-1.0, 0.2},
+            line_length = 1,
+            lines_per_file = 1,
+            frame_count = 1,
+            animation_speed = 1,
+        },
+        working_visualisations = {
+          {
+            animation = 
+            {
+              filename = sprite('animation.png'),
+              size = {1080, 1080},
+              scale = 0.58,
+              line_length = 3,
+              lines_per_file = 3,
+              frame_count = 9,
+              animation_speed = 0.3,
+              shift = {-1.0, 0.2} 
+            }
+          }
         },
         
         working_sound = { 

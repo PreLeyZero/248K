@@ -8,8 +8,8 @@ data:extend(
 		type     = "sprite",
 		name     = "bk_sprite_1",		
 		filename = sprite('1.png'),
-		width    = 1117,
-		height   = 948,
+		width    = 1245,
+		height   = 1122,
 		scale    = 0.5 
     },
     {
@@ -48,8 +48,8 @@ data:extend(
 		type     = "sprite",
 		name     = "bk_sprite_6",		
 		filename = sprite('6.png'),
-		width    = 1190,
-		height   = 1020,
+		width    = 1080,
+		height   = 1080,
 		scale    = 0.7
 	},
 	{

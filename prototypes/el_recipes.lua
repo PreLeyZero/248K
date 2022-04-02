@@ -117,10 +117,10 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {'iron-gear-wheel',40},
-            {'pipe',40},
+            {'iron-gear-wheel',20},
+            {'pipe',15},
             {'el_materials_ALK',10},
-            {'electronic-circuit',15}
+            {'electronic-circuit',10}
         },
         result = 'el_pressurizer_item',
         result_count = 1,

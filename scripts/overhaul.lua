@@ -122,6 +122,8 @@ tech_table = {
     {"chemical-science-pack",   "el_grower_tech"},
     {"engine",                  "el_ALK_tech"},
     {"oil-processing",          "el_ALK_tech"},
+    {"el_lithium_tech",         "battery"},
+    {"el_ki_tech",              "circuit-network"},
     {"electric-energy-distribution-1",  "el_ALK_tech"},
     {"el_energy_tech",          "solar-energy"},
     {"stack-inserter",          "el_grower_tech"},

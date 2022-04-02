@@ -103,7 +103,7 @@ data:extend({
         },
         --animation
         animation = {
-            north = {
+            
                 filename = sprite('entity_animation.png'),
                 size = {480,500},
                 scale = 0.27,

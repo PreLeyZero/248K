@@ -88,7 +88,7 @@ data:extend({
         },
         working_sound = { 
             sound = { filename ='__base__/sound/pipe.ogg'},
-            apparent_volume = 0.7,
+            apparent_volume = 0.3,
         },
     },
 })

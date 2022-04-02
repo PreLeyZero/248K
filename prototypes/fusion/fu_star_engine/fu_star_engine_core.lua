@@ -12,7 +12,7 @@ data:extend({
     {
         name = 'fu_star_engine_core_item',
         type = 'item',
-        icon = sprite('item.png'),
+        icon = sprite('icon.png'),
         icon_size = 64,
         place_result = 'fu_star_engine_core_entity',
         stack_size = 1,
@@ -28,7 +28,7 @@ data:extend({
     {
         name = 'fu_star_engine_core_entity',
         type = 'assembling-machine',
-        icon = sprite('entity_icon.png'),
+        icon = sprite('icon.png'),
         icon_size = 64,
         flags = {"player-creation","placeable-neutral","not-rotatable"},
         max_health = 300,
@@ -58,7 +58,7 @@ data:extend({
                 base_level = -1,
                 pipe_connections =
                 {
-                  {type = "input", position = {-9, -1}}
+                  {type = "input", position = {-9, 3}}
                 },
                 production_type = "input"
             },
@@ -68,7 +68,7 @@ data:extend({
                 base_level = -1,
                 pipe_connections =
                 {
-                  {type = "input", position = {-9, 4}}
+                  {type = "input", position = {-9, 1}}
                 },
                 production_type = "input"
             },
@@ -79,7 +79,7 @@ data:extend({
               base_level = -1,
               pipe_connections =
               {
-                {type = "input", position = {9, -1}}
+                {type = "input", position = {9, 3}}
               },
               production_type = "input"
           },
@@ -89,7 +89,7 @@ data:extend({
               base_level = -1,
               pipe_connections =
               {
-                {type = "input", position = {9, 4}}
+                {type = "input", position = {9, 1}}
               },
               production_type = "input"
           },
@@ -101,7 +101,7 @@ data:extend({
               base_level = 1,
               pipe_connections =
               {
-                {type = "output", position = {-4, -5}},
+                {type = "output", position = {-2, -5}},
               },
               production_type = "output"
             },
@@ -111,7 +111,7 @@ data:extend({
               base_level = 1,
               pipe_connections =
               {
-                {type = "output", position = {4, -5}},
+                {type = "output", position = {2, -5}},
               },
               production_type = "output"
             },
@@ -122,7 +122,7 @@ data:extend({
               base_level = 1,
               pipe_connections =
               {
-                {type = "output", position = {-4, 9}},
+                {type = "output", position = {-2, 9}},
               },
               production_type = "output"
             },
@@ -132,50 +132,36 @@ data:extend({
               base_level = 1,
               pipe_connections =
               {
-                {type = "output", position = {4, 9}},
+                {type = "output", position = {2, 9}},
               },
               production_type = "output"
             },
         },
         --animation
         animation = {
-            north = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.6,
-                shift = {2,0},
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.3,
-            },
-            east = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.5,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.5,
-            },
-            south = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.5,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.5,
-            },
-            west = {
-                filename = sprite('entity_animation.png'),
-                size = {600*2,512*2},
-                scale = 0.5,
-                line_length = 3,
-                lines_per_file = 3,
-                frame_count = 9,
-                animation_speed = 0.5,
-            },
+          filename = sprite('base.png'),
+          size = {1080, 1080},
+          scale = 0.52,
+          shift = {0,2.6},
+          line_length = 1,
+          lines_per_file = 1,
+          frame_count = 1,
+          animation_speed = 1,
+        },
+        working_visualisations = {
+          {
+            animation = 
+            {
+              filename = sprite('animation.png'),
+              size = {1080, 1080},
+              scale = 0.52,
+              line_length = 3,
+              lines_per_file = 3,
+              frame_count = 9,
+              animation_speed = 0.3,
+              shift = {0,2.6} 
+            }
+          }
         },
         
         working_sound = { 
