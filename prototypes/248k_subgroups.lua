@@ -393,6 +393,10 @@ data:extend({
         type = 'fuel-category',
     },
     {
+        name = 'fi_test_fuel',
+        type = 'fuel-category',
+    },
+    {
         name = 'fi_basic_fuel',
         type = 'fuel-category',
     },
