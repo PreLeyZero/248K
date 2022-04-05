@@ -5,6 +5,7 @@ Date: 5.4.2022
     - added pipe covers for most machines
     - added more inputs to KI cores to improve symetry
     - added new simple kerosene recipe in Overhaul mode, without lightoil 
+    - added korean locale by x2605
   Changes:
     - removed squeak trough dependency
 
