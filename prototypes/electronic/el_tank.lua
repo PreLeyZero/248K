@@ -38,7 +38,7 @@ data:extend({
         },
         max_health = 300,
         corpse = 'small-remnants',
-        collision_box = {{-3.2,-3.2},{3.2,3.2}},
+        collision_box = {{-3.5,-3.5},{3.5,3.5}},
         selection_box = {{-3.5,-3.5},{3.5,3.5}},
         pictures = {
             picture = {
@@ -84,17 +84,17 @@ data:extend({
             pipe_covers = pipecoverspictures(),
             pipe_connections =
             {
-              {type = "input-output", position = {-3.8, 1}},
-              {type = "input-output", position = {-3.8, -1}},
+              {type = "input-output", position = {-4, 1}},
+              {type = "input-output", position = {-4, -1}},
 
-              {type = "input-output", position = {3.8, 1}},
-              {type = "input-output", position = {3.8, -1}},
+              {type = "input-output", position = {4, 1}},
+              {type = "input-output", position = {4, -1}},
 
-              {type = "input-output", position = {1, 3.8}},
-              {type = "input-output", position = {1, -3.8}},
+              {type = "input-output", position = {1, 4}},
+              {type = "input-output", position = {1, -4}},
 
-              {type = "input-output", position = {-1, 3.8}},
-              {type = "input-output", position = {-1, -3.8}}
+              {type = "input-output", position = {-1, 4}},
+              {type = "input-output", position = {-1, -4}}
             },
             production_type = "input-output"
         },
