@@ -82,6 +82,7 @@ data:extend({
             height = 1,
             base_level = 0,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input-output", position = {-4, 1}},
