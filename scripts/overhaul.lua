@@ -168,6 +168,67 @@ tech_table = {
 --===================================================================================================================
 --                              structures and adding 
 --===================================================================================================================
+data:extend({
+    {
+        name = 'el_kerosene_basic_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'oil-processing',
+        main_product = 'el_kerosene',
+        ingredients = {
+            {type="fluid", name="crude-oil", amount=200},
+            {type="fluid", name="steam", amount=100},
+        },
+        results = {
+            {type="fluid", name="el_kerosene", amount=140},
+            {type="fluid", name="water", amount=90},
+        },
+        result_count = 1,
+        energy_required = 5,
+    },
+    {
+        name = 'el_kerosene_tech',
+        type = 'technology',
+        icon = '__248k__/ressources/techs/el_kerosene_tech.png',
+        icon_size = 128,
+        prerequisites = {'el_ALK_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_kerosene_basic_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_desulfurized_kerosene_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_usage_acidic_water_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_tank_recipe',
+            },
+            { 
+                type = 'nothing',
+                effect_description = {'description.el_kerosene_tech_eff'},
+            },
+        },
+        unit = {
+            count = '150',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+})
+
+table.insert(data.raw.technology["advanced-oil-processing"].effects, { 
+    type = 'unlock-recipe',
+    recipe = 'el_kerosene_recipe',
+})
 
 recipe_structure = {"recipe", "item", "item_amount"}
 tech_structure = {"tech", "pre_tech"}
