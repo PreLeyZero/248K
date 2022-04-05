@@ -60,50 +60,54 @@ data:extend({
         energy_usage = '400MW',
         --fluid
         fluid_boxes = {
+          {
+            base_area = 1,
+            height = 2,
+            base_level = -1,
+            pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
+            pipe_connections =
             {
-              base_area = 1,
-              height = 2,
-              base_level = -1,
-              pipe_covers = pipecoverspictures(),
-              pipe_connections =
-              {
-                {type = "input", position = {-1, -7}},
-              },
-              production_type = "input"
+              {type = "input", position = {-1, -7}},
             },
-            { 
-              base_area = 1,
-              height = 2,
-              base_level = -1,
-              pipe_covers = pipecoverspictures(),
-              pipe_connections =
-              {
-                {type = "input", position = {1, -7}}
-              },
-              production_type = "input"
+            production_type = "input"
+          },
+          { 
+            base_area = 1,
+            height = 2,
+            base_level = -1,
+            pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
+            pipe_connections =
+            {
+              {type = "input", position = {1, -7}}
             },
-            { 
-                base_area = 1,
-                height = 2,
-                base_level = -1,
-                pipe_covers = pipecoverspictures(),
-                pipe_connections =
-                {
-                  {type = "input", position = {3, -7}}
-                },
-                production_type = "input"
-              },
-              { 
-                base_area = 1,
-                height = 2,
-                base_level = 1,
-                pipe_covers = pipecoverspictures(),
-                pipe_connections =
-                {
-                  {type = "output", position = {-3, -7}}
-                },
-                production_type = "output"
-              },
+            production_type = "input"
+          },
+          { 
+            base_area = 1,
+            height = 2,
+            base_level = -1,
+            pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
+            pipe_connections =
+            {
+              {type = "input", position = {3, -7}}
+            },
+            production_type = "input"
+          },
+          { 
+            base_area = 1,
+            height = 2,
+            base_level = 1,
+            pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
+            pipe_connections =
+            {
+              {type = "output", position = {-3, -7}}
+            },
+            production_type = "output"
+          },
         },
         --animation
         animation = {
@@ -114,7 +118,7 @@ data:extend({
           --lines_per_file = 2,
           frame_count = 1,
           --animation_speed = 0.2,
-          shift = {2.4,-1.5} 
+          shift = {2.4,-1.7} 
         },
         working_visualisations = {
           {
@@ -127,7 +131,7 @@ data:extend({
               lines_per_file = 3,
               frame_count = 9,
               animation_speed = 0.3,
-              shift = {2.4,-1.5} 
+              shift = {2.4,-1.7} 
             }
           }
         },
@@ -163,50 +167,54 @@ data:extend({
       energy_usage = '400MW',
       --fluid
       fluid_boxes = {
+        {
+          base_area = 1,
+          height = 2,
+          base_level = -1,
+          pipe_covers = pipecoverspictures(),
+          pipe_picture = grey_south_pipe_picture,
+          pipe_connections =
           {
-            base_area = 1,
-            height = 2,
-            base_level = -1,
-            pipe_covers = pipecoverspictures(),
-            pipe_connections =
-            {
-              {type = "input", position = {-1, -7}},
-            },
-            production_type = "input"
+            {type = "input", position = {-1, -7}},
           },
-          { 
-            base_area = 1,
-            height = 2,
-            base_level = -1,
-            pipe_covers = pipecoverspictures(),
-            pipe_connections =
-            {
-              {type = "input", position = {1, -7}}
-            },
-            production_type = "input"
+          production_type = "input"
+        },
+        { 
+          base_area = 1,
+          height = 2,
+          base_level = -1,
+          pipe_covers = pipecoverspictures(),
+          pipe_picture = grey_south_pipe_picture,
+          pipe_connections =
+          {
+            {type = "input", position = {1, -7}}
           },
-          { 
-              base_area = 1,
-              height = 2,
-              base_level = -1,
-              pipe_covers = pipecoverspictures(),
-              pipe_connections =
-              {
-                {type = "input", position = {3, -7}}
-              },
-              production_type = "input"
-            },
-            { 
-              base_area = 1,
-              height = 2,
-              base_level = 1,
-              pipe_covers = pipecoverspictures(),
-              pipe_connections =
-              {
-                {type = "output", position = {-3, -7}}
-              },
-              production_type = "output"
-            },
+          production_type = "input"
+        },
+        { 
+          base_area = 1,
+          height = 2,
+          base_level = -1,
+          pipe_covers = pipecoverspictures(),
+          pipe_picture = grey_south_pipe_picture,
+          pipe_connections =
+          {
+            {type = "input", position = {3, -7}}
+          },
+          production_type = "input"
+        },
+        { 
+          base_area = 1,
+          height = 2,
+          base_level = 1,
+          pipe_covers = pipecoverspictures(),
+          pipe_picture = grey_south_pipe_picture,
+          pipe_connections =
+          {
+            {type = "output", position = {-3, -7}}
+          },
+          production_type = "output"
+        },
       },
       animation = {
         filename = sprite('tokamak_entity_animation.png'),
@@ -216,7 +224,7 @@ data:extend({
         lines_per_file = 3,
         frame_count = 9,
         animation_speed = 0.3,
-        shift = {2.4,-1.5} 
+        shift = {2.4,-1.7} 
       },
       
       working_sound = { 

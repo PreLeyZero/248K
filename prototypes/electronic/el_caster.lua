@@ -64,6 +64,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {0, -4}},
@@ -76,6 +77,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {-4, 0}}
@@ -88,6 +90,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {4, 0}},
@@ -101,6 +104,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {0, 4}},
@@ -118,7 +122,7 @@ data:extend({
               lines_per_file = 3,
               frame_count = 9,
               animation_speed = 0.2,
-              shift = {0,-0.1}
+              shift = {0,-0.3}
           },
           east = {
               filename = sprite('entity_animation.png'),
@@ -128,7 +132,7 @@ data:extend({
               lines_per_file = 3,
               frame_count = 9,
               animation_speed = 0.2,
-              shift = {0,-0.1}
+              shift = {0,-0.3}
           },
           south = {
               filename = sprite('entity_animation.png'),
@@ -138,7 +142,7 @@ data:extend({
               lines_per_file = 3,
               frame_count = 9,
               animation_speed = 0.2,
-              shift = {0,-0.1}
+              shift = {0,-0.3}
           },
           west = {
               filename = sprite('entity_animation.png'),
@@ -148,7 +152,7 @@ data:extend({
               lines_per_file = 3,
               frame_count = 9,
               animation_speed = 0.2,
-              shift = {0,-0.1}
+              shift = {0,-0.3}
           },
       },
       working_sound =

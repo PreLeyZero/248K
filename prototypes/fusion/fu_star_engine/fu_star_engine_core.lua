@@ -33,7 +33,7 @@ data:extend({
         flags = {"player-creation","placeable-neutral","not-rotatable"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-8.5,-4.5},{8.5,8.5}},
+        collision_box = {{-8.4,-4.4},{8.4,8.4}},
         selection_box = {{-8.5,-4.5},{8.5,8.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {

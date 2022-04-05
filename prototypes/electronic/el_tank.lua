@@ -38,7 +38,7 @@ data:extend({
         },
         max_health = 300,
         corpse = 'small-remnants',
-        collision_box = {{-3.5,-3.5},{3.5,3.5}},
+        collision_box = {{-3.4,-3.4},{3.4,3.4}},
         selection_box = {{-3.5,-3.5},{3.5,3.5}},
         pictures = {
             picture = {

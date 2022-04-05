@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 5.4.2022
+  Features:
+    - added pipe covers for most machines
+    - added more inputs to KI cores to improve symetry
+    - added new simple kerosene recipe in Overhaul mode, without lightoil 
+  Changes:
+    - removed squeak trough dependency
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 3.4.2022
   Features:

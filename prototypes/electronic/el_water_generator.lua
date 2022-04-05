@@ -33,7 +33,7 @@ data:extend({
         flags = {"player-creation","placeable-neutral"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-1.3, -3.3}, {1.3, 3.3}},
+        collision_box = {{-1.4, -3.4}, {1.4, 3.4}},
         selection_box = {{-1.5, -3.5}, {1.5, 3.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
@@ -52,7 +52,9 @@ data:extend({
             filter = 'el_pressurized_water',
             minimum_temperature = 0,
             maximum_temperature = 500,
-            production_type = 'input-output', 
+            production_type = 'input-output',
+            pipe_covers = pipecoverspictures(),
+            pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
                 {type = "input-output", position = {2, 0}},  
                 {type = "input-output", position = {-2, 0}},  
@@ -81,7 +83,7 @@ data:extend({
         horizontal_animation = {
             filename = sprite('entity_animation_horizontal_1.png'),
             size = {896,480},
-            scale = 0.22,
+            scale = 0.2,
             line_length = 4,
             frame_count = 4,
             animation_speed = 0.5,
@@ -92,4 +94,3 @@ data:extend({
         },
     },
 })
-

@@ -33,7 +33,7 @@ data:extend({
         flags = {"player-creation","placeable-neutral","not-rotatable"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-6.5,-9},{6.5,9}},
+        collision_box = {{-6.4,-8.9},{6.4,8.9}},
         selection_box = {{-6.5,-9},{6.5,9}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
@@ -54,7 +54,8 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = -1,
-              
+              pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "input", position = {-2, -9.5}}
@@ -65,7 +66,8 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = -1,
-              
+              pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "input", position = {2, -9.5}}
@@ -76,7 +78,8 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
-              
+              pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "output", position = {0, 9.5}},
@@ -87,7 +90,8 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
-              
+              pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "output", position = {-2, 9.5}},
@@ -98,7 +102,8 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
-              
+              pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "output", position = {2, 9.5}},
@@ -109,7 +114,8 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
-              
+              pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "output", position = {-4, 9.5}},
@@ -120,7 +126,8 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
-              
+              pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "output", position = {4, 9.5}},
@@ -133,7 +140,7 @@ data:extend({
           filename = sprite('base.png'),
           size = {1080, 1080},
           scale = 0.58,
-          shift = {0,-0.35},
+          shift = {0,-0.62},
           line_length = 1,
           lines_per_file = 1,
           frame_count = 1,
@@ -150,7 +157,7 @@ data:extend({
               lines_per_file = 3,
               frame_count = 9,
               animation_speed = 0.3,
-              shift = {0,-0.35} 
+              shift = {0,-0.62} 
             }
           }
         },

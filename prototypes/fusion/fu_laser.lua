@@ -56,6 +56,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {0, -4}},
@@ -68,6 +69,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {-4, 0}}
@@ -80,6 +82,7 @@ data:extend({
             height = 2,
             base_level = 1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "output", position = {4, 0}},
@@ -93,6 +96,7 @@ data:extend({
             height = 2,
             base_level = 1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "output", position = {0, 4}},
@@ -109,7 +113,7 @@ data:extend({
         --lines_per_file = 2,
         frame_count = 1,
         --animation_speed = 0.2,
-        shift = {0,-0.1} 
+        shift = {0,-0.3} 
       },
       working_visualisations = {
         {
@@ -122,7 +126,7 @@ data:extend({
             lines_per_file = 1,
             frame_count = 3,
             animation_speed = 0.2,
-            shift = {0,-0.1} 
+            shift = {0,-0.3} 
           }
         }
       },

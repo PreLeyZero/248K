@@ -57,6 +57,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {0, -2}},
@@ -69,6 +70,7 @@ data:extend({
             height = 2,
             base_level = -1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "input", position = {-2, 0}}
@@ -81,6 +83,7 @@ data:extend({
             height = 2,
             base_level = 1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "output", position = {2, 0}},
@@ -94,6 +97,7 @@ data:extend({
             height = 2,
             base_level = 1,
             pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
               {type = "output", position = {0, 2}},

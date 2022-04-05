@@ -33,7 +33,7 @@ data:extend({
         flags = {"player-creation","placeable-neutral"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-1.8,-1.8},{1.8,1.8}},
+        collision_box = {{-1.9,-1.9},{1.9,1.9}},
         selection_box = {{-2,-2},{2,2}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
@@ -61,6 +61,7 @@ data:extend({
               height = 2,
               base_level = -1,
               pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "input", position = {-2.5, -0.5}}
@@ -72,6 +73,7 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_pipe_picture,
                 pipe_connections =
                 {
                   {type = "input", position = {-2.5, 1.5}}
@@ -83,6 +85,7 @@ data:extend({
               height = 2,
               base_level = 1,
               pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "output", position = {2.5, -0.5}},
@@ -94,6 +97,7 @@ data:extend({
               height = 2,
               base_level = 1,
               pipe_covers = pipecoverspictures(),
+              pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
                 {type = "output", position = {2.5, 1.5}},

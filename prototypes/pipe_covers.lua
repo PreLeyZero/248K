@@ -107,7 +107,49 @@ grey_south_pipe_picture = {
     east = empty_sprite
 }
 
-north_south_basic_pipe_picture = {
+grey_south_north_pipe_picture = {
+    north = {
+        filename = sprite("north_basic_covers"),
+		priority = "high",
+		width = 45,
+        height = 40,
+        shift = util.by_pixel(0, 25),
+        scale = 0.5
+    },
+    south = {
+        filename = sprite("south_covers_grey"),
+		priority = "high",
+		width = 88,
+        height = 61,
+        shift = util.by_pixel(0, -31.25),
+        scale = 0.5
+    },
+    west = empty_sprite,
+    east = empty_sprite
+}
+
+grey_south_long_north_pipe_picture = {
+    north = {
+        filename = sprite("north_long_basic_covers"),
+		priority = "high",
+		width = 45,
+        height = 65,
+        shift = util.by_pixel(0, 23.25),
+        scale = 0.5
+    },
+    south = {
+        filename = sprite("south_covers_grey"),
+		priority = "high",
+		width = 88,
+        height = 61,
+        shift = util.by_pixel(0, -31.25),
+        scale = 0.5
+    },
+    west = empty_sprite,
+    east = empty_sprite
+}
+
+south_basic_pipe_picture = {
     north = empty_sprite,
     south = {
         filename = sprite("south_basic_covers"),

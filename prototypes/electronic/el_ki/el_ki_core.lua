@@ -61,8 +61,8 @@ data:extend({
         crafting_speed = 1,
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-2.8, -2.8}, {2.8, 2.8}},
-        selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+        collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
+        selection_box = {{-3, -3}, {3, 3}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
@@ -82,9 +82,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, -3.2}},
+                  {type = "input", position = {0.5, -3.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'el_ki_cpu_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {-0.5, -3.5}},
                 },
                 production_type = "input"
             },
@@ -94,12 +108,26 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, 3.2}},
+                  {type = "input", position = {0.5, 3.5}},
                 },
                 production_type = "input"
-          },
+            },
+            {
+                filter = 'el_ki_memory_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {-0.5, 3.5}},
+                },
+                production_type = "input"
+            },
         },
         animation = {
             
@@ -168,7 +196,7 @@ data:extend({
         crafting_speed = 1,
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-2.8, -2.8}, {2.8, 2.8}},
+        collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
         selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
@@ -189,9 +217,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, -3.2}},
+                  {type = "input", position = {0.5, -3.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'el_ki_cpu_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {-0.5, -3.5}},
                 },
                 production_type = "input"
             },
@@ -201,9 +243,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, 3.2}},
+                  {type = "input", position = {0.5, 3.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'el_ki_memory_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {-0.5, 3.5}},
                 },
                 production_type = "input"
             },
@@ -213,9 +269,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {3.2, 0.5}},
+                  {type = "input", position = {3.5, 0.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'fi_ki_circuit_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {3.5, -0.5}},
                 },
                 production_type = "input"
             }
@@ -287,7 +357,7 @@ data:extend({
         crafting_speed = 1,
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-2.8, -2.8}, {2.8, 2.8}},
+        collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
         selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
@@ -308,9 +378,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, -3.2}},
+                  {type = "input", position = {0.5, -3.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'el_ki_cpu_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {-0.5, -3.5}},
                 },
                 production_type = "input"
             },
@@ -320,9 +404,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, 3.2}},
+                  {type = "input", position = {0.5, 3.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'el_ki_memory_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {-0.5, 3.5}},
                 },
                 production_type = "input"
             },
@@ -332,9 +430,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {3.2, 0.5}},
+                  {type = "input", position = {3.5, 0.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'fi_ki_circuit_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {3.5, -0.5}},
                 },
                 production_type = "input"
             },
@@ -344,9 +456,23 @@ data:extend({
                 height = 2,
                 base_level = -1,
                 pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-3.2, 0.5}},
+                  {type = "input", position = {-3.5, 0.5}},
+                },
+                production_type = "input"
+            },
+            {
+                filter = 'fu_ki_circuit_fluid',
+                base_area = 1,
+                height = 2,
+                base_level = -1,
+                pipe_covers = pipecoverspictures(),
+                pipe_picture = grey_south_long_north_pipe_picture,
+                pipe_connections =
+                {
+                  {type = "input", position = {-3.5, -0.5}},
                 },
                 production_type = "input"
             }
