@@ -40,6 +40,9 @@ data:extend({
         corpse = 'small-remnants',
         collision_box = {{-3.4,-3.4},{3.4,3.4}},
         selection_box = {{-3.5,-3.5},{3.5,3.5}},
+        circuit_wire_connection_points = circuit_connector_definitions["storage-tank"].points,
+		circuit_connector_sprites = circuit_connector_definitions["storage-tank"].sprites,
+		circuit_wire_max_distance = 20,
         pictures = {
             picture = {
                 filename = sprite('entity_picture.png'),
