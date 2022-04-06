@@ -50,6 +50,16 @@ data:extend({
             frame_count = 4,
             animation_speed = 0.1
         },
+        working_visualisations = {
+            {
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 18,
+                color = {r=0.08 ,g=0.70 ,b=0.87 },
+              }
+            }
+        },
     }
 })
 

@@ -129,6 +129,17 @@ data:extend({
                 shift = {0,-1},
             },
         },
+
+        working_visualisations = {
+            {
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 12,
+                color = {r=0.08 ,g=0.51 ,b=0.87 },
+              }
+            }
+          },
         
         working_sound = { 
             sound = { filename = '__base__/sound/nuclear-reactor-1.ogg'},

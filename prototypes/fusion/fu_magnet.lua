@@ -147,6 +147,16 @@ data:extend({
               shift = {0,-0.3}
           },
       },
+
+      working_visualisations = {
+        {
+          light = {
+            type = "basic",
+            intensity = 1,
+            size = 15
+          }
+        }
+      },
       working_sound =
       {
         sound = {filename = "__base__/sound/chemical-plant-3.ogg" },

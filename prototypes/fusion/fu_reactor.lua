@@ -132,6 +132,12 @@ data:extend({
               frame_count = 9,
               animation_speed = 0.3,
               shift = {2.4,-1.7} 
+            },
+            light = {
+              type = "basic",
+              intensity = 1,
+              size = 26,
+              color = {r=0.79 ,g=0.08 ,b=0.87 },
             }
           }
         },
@@ -225,6 +231,17 @@ data:extend({
         frame_count = 9,
         animation_speed = 0.3,
         shift = {2.4,-1.7} 
+      },
+
+      working_visualisations = {
+        {
+          light = {
+            type = "basic",
+            intensity = 1,
+            size = 26,
+            color = {r=0.79 ,g=0.08 ,b=0.87 },
+          }
+        }
       },
       
       working_sound = { 

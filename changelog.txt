@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 6.4.2022      
+  Features:
+    - updated korean locale by x2605
+    - added circuit connections to tank
+    - updated mod settings to be more organized and added some info
+    - added light effects to arc furnace, KI cores, star engine, Fusion reactors, White/Black hole and fu stage machines
+---------------------------------------------------------------------------------------------------
 Version: 1.0.7
 Date: 6.4.2022      
   Features:

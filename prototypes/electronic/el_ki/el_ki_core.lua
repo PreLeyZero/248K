@@ -162,6 +162,15 @@ data:extend({
             frame_count = 9,
             scale = 0.2,
         },
+        working_visualisations = {
+            {
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 15,
+              }
+            }
+        },
         working_sound = { 
             sound = { filename ='__base__/sound/nuclear-reactor-1.ogg'},
             apparent_volume = 2.5,
@@ -321,6 +330,15 @@ data:extend({
             animation_speed = 0.3,
             frame_count = 9,
             scale = 0.2,
+        },
+        working_visualisations = {
+            {
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 15,
+              }
+            }
         },
         working_sound = { 
             sound = { filename ='__base__/sound/nuclear-reactor-1.ogg'},
@@ -507,6 +525,15 @@ data:extend({
             animation_speed = 0.3,
             frame_count = 9,
             scale = 0.2,
+        },
+        working_visualisations = {
+            {
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 15,
+              }
+            }
         },
         working_sound = { 
             sound = { filename ='__base__/sound/nuclear-reactor-1.ogg'},

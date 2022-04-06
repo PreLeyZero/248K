@@ -160,6 +160,12 @@ data:extend({
               frame_count = 9,
               animation_speed = 0.3,
               shift = {0,2.6} 
+            },
+            light = {
+              type = "basic",
+              intensity = 1,
+              size = 24,
+              color = {r=0.87 ,g=0.64 ,b=0.08 },
             }
           }
         },

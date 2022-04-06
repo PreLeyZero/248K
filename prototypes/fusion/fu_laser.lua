@@ -127,6 +127,12 @@ data:extend({
             frame_count = 3,
             animation_speed = 0.2,
             shift = {0,-0.3} 
+          },
+          light = {
+            type = "basic",
+            intensity = 1,
+            size = 15,
+            color = {r=0.87 ,g=0.25 ,b=0.08 },
           }
         }
       },
