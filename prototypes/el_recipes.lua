@@ -1,8 +1,3 @@
---local functions
-local function config(name)
-    return settings.startup['el_solar_'..name].value
-end
-
 local function sprite(name)
     return '__248k__/ressources/'..name
 end

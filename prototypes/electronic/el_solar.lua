@@ -7,6 +7,22 @@ local function sprite(name)
     return '__248k__/ressources/electronic/el_solar/el_solar_'..name
 end
 
+local function solar_output()
+    if config("power_output") == "80kW (normal)" then
+        return "80KW"
+    end
+
+    if config("power_output") == "100kW (high)" then
+        return "100KW"
+    end
+
+    if config("power_output") == "160kW (very high)" then
+        return "160KW"
+    end
+    
+    return "80kW"
+end
+
 --item
 data:extend({
     {
@@ -45,9 +61,8 @@ data:extend({
             type = 'electric',
             usage_priority = 'solar',
             input_flow_limit = '0W',
-            output_flow_limit = tostring(config('power_output'))..'W',
         },
-        production = tostring(config('power_output'))..'W',
+        production = solar_output(),
         --picture
         picture = {
             filename = sprite('entity_picture_1.png'),

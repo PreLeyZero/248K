@@ -7,6 +7,22 @@ local function sprite(name)
     return '__248k__/ressources/electronic/el_burner/el_burner_'..name
 end
 
+local function burner_output()
+    if config("power_output") == "2.4MW (normal)" then
+        return "2.4MW"
+    end
+
+    if config("power_output") == "3MW (high)" then
+        return "3MW"
+    end
+
+    if config("power_output") == "1.2MW (low)" then
+        return "1.2MW"
+    end
+    
+    return "2.4MW"
+end
+
 --item
 data:extend({
     {
@@ -72,9 +88,8 @@ data:extend({
             type = 'electric',
             usage_priority = 'primary-output',
             input_flow_limit = '0W',
-            output_flow_limit = tostring(config('power_output'))..'W',
         },
-        max_power_output = tostring(config('power_output'))..'W',
+        max_power_output = burner_output(),
         --animation
         animation = {
             filename = sprite('entity_animation.png'),
@@ -114,10 +129,9 @@ data:extend({
             type = 'electric',
             usage_priority = 'primary-output',
             input_flow_limit = '0W',
-            output_flow_limit = tostring(config('kerosene_power_output'))..'W',
             emissions_per_minute = 20,
         },
-        max_power_output = tostring(config('kerosene_power_output'))..'W',
+        max_power_output = burner_output(),
         maximum_temperature = 40,
         fluid_usage_per_tick = 1,
         fluid_box = {

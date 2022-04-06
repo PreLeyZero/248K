@@ -7,6 +7,22 @@ local function sprite(name)
     return '__248k__/ressources/electronic/el_water_generator/el_water_generator_'..name
 end
 
+local function water_output()
+    if config("power_output") == "4MW (normal)" then
+        return "4MW"
+    end
+
+    if config("power_output") == "5MW (high)" then
+        return "5MW"
+    end
+
+    if config("power_output") == "3MW (low)" then
+        return "3MW"
+    end
+    
+    return "3MW"
+end
+
 --item
 data:extend({
     {
@@ -43,7 +59,7 @@ data:extend({
         --energy
         maximum_temperature = 500,
         fluid_usage_per_tick = 1,
-        max_power_output = tostring(config('power_output'))..'W',
+        max_power_output = water_output(),
         effectivity = 0.9,
         fluid_box = {
             base_area = 1,
@@ -69,7 +85,6 @@ data:extend({
             type = 'electric',
             usage_priority = 'primary-output',
             input_flow_limit = '0W',
-            output_flow_limit = tostring(config('power_output'))..'W',
         },
         --animation
         vertical_animation = {

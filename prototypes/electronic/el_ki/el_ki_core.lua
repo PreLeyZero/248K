@@ -7,6 +7,29 @@ local function sprite(name)
     return '__248k__/ressources/electronic/el_ki/el_ki_core/el_ki_core_'..name
 end
 
+local function core_input(core_number)
+    if core_number == 1 then
+        if config("energy_usage") == "normal" then return "20MW" end
+        if config("energy_usage") == "high" then return "40MW" end
+        if config("energy_usage") == "very high" then return "100MW" end
+        if config("energy_usage") == "low" then return "10MW" end
+    end
+
+    if core_number == 2 then
+        if config("energy_usage") == "normal" then return "200MW" end
+        if config("energy_usage") == "high" then return "400MW" end
+        if config("energy_usage") == "very high" then return "1000MW" end
+        if config("energy_usage") == "low" then return "100MW" end
+    end
+
+    if core_number == 3 then
+        if config("energy_usage") == "normal" then return "2000MW" end
+        if config("energy_usage") == "high" then return "4000MW" end
+        if config("energy_usage") == "very high" then return "10000MW" end
+        if config("energy_usage") == "low" then return "1000MW" end
+    end
+end
+
 local allowed_modules = {}
 if config("productivity") then
     allowed_modules = {"speed", "productivity", "consumption", "pollution"}
@@ -72,9 +95,8 @@ data:extend({
         energy_source = {
             type = 'electric',
             usage_priority = 'primary-input',
-            input_flow_limit = config('energy_usage_input')..'W',
         },
-        energy_usage = config('energy_usage')..'W',
+        energy_usage = core_input(1),
         fluid_boxes = {
             {
                 filter = 'el_ki_cpu_fluid',
@@ -207,9 +229,8 @@ data:extend({
         energy_source = {
             type = 'electric',
             usage_priority = 'primary-input',
-            input_flow_limit = config('energy_usage_input_2')..'W',
         },
-        energy_usage = config('energy_usage_2')..'W',
+        energy_usage = core_input(2),
         fluid_boxes = {
             {
                 filter = 'el_ki_cpu_fluid',
@@ -368,9 +389,8 @@ data:extend({
         energy_source = {
             type = 'electric',
             usage_priority = 'primary-input',
-            input_flow_limit = config('energy_usage_input_3')..'W',
         },
-        energy_usage = config('energy_usage_3')..'W',
+        energy_usage = core_input(3),
         fluid_boxes = {
             {
                 filter = 'el_ki_cpu_fluid',
