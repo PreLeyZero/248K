@@ -262,4 +262,8 @@ table.insert(data.raw.lab['kr-singularity-lab'].inputs, 'fu_space_probe_science_
 table.insert(data.raw.lab['kr-singularity-lab'].inputs, 'fi_ki_science')
 table.insert(data.raw.lab['kr-singularity-lab'].inputs, 'fu_ki_science')
 
+table.insert(data.raw.lab['biusart-lab'].inputs, 'fu_space_probe_science_item')
+table.insert(data.raw.lab['biusart-lab'].inputs, 'fi_ki_science')
+table.insert(data.raw.lab['biusart-lab'].inputs, 'fu_ki_science')
+
 data.raw.tool["fu_space_probe_science_item"].icon = "__248k__/ressources/fusion/fu_space_probe/fu_space_probe_science_item_krastorio.png"
