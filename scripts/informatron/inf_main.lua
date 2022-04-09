@@ -10,6 +10,7 @@ remote.add_interface("inf_248k", {
   function inf_248k_menu(player_index)
     return {
       ki1core=1,
+      burner=1,
       diesel=1,
       fusion=1,
       starengine=1,
@@ -28,6 +29,12 @@ remote.add_interface("inf_248k", {
         element.add{type="label", name="text_3", caption={"gui.bk_248k_first_steps"}, style="heading_1_label"}
         element.add{type="label", name="text_4", caption={"gui.bk_248k_first_steps_text"}}
     end
+
+    if page_name == "burner" then
+      element.add{type="label", name="text_1", caption={"gui.inf_burner"}, style="heading_1_label"}
+      element.add{type="label", name="text_2", caption={"gui.inf_burner_text"}}
+      element.add{type="button", name="image_1", style="inf_248k_image_11"}
+  end
     
     if page_name == "ki1core" then
         element.add{type="label", name="text_1", caption={"gui.bk_248k_ki1_core"}, style="heading_1_label"}

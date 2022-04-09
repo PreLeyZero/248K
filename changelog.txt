@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 8.4.2022   
+  Features:
+
+  Changes:
+    - Fusion stage burner can now destroy items + turn steam into water and vent water, is now available in electronics stage
+    - Kerosene burner got more fluid inputs
+    - Desulfurized kerosene now got a fuel value
+    - removed access to uranium purification recipe
+
+  Bugfixes:
+    - fixed sprite of plasma facility overlaying fluid output 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 8.4.2022      
   Bugfixes:
