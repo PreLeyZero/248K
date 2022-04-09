@@ -13,4 +13,4 @@ informatron_make_image("inf_248k_image_7", sprite('7.png'), 1292, 627)
 informatron_make_image("inf_248k_image_8", sprite('8.PNG'), 493, 124)
 informatron_make_image("inf_248k_image_9", sprite('9.PNG'), 279, 317)
 informatron_make_image("inf_248k_image_10", sprite('10.PNG'), 994, 630)
-
+informatron_make_image("inf_248k_image_11", sprite('11.PNG'), 788, 461)
