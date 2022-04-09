@@ -16,8 +16,8 @@ data:extend({
         icon_size = 64,
         place_result = 'fu_burner_entity',
         stack_size = 20,
-        subgroup = 'fu_item_subgroup_c',
-        order = 'a-b',
+        subgroup = 'el_item_subgroup_c',
+        order = 'a-a',
     },
 })
 
@@ -56,8 +56,8 @@ data:extend({
             height = 2,
             base_level = -1,
             production_type = 'input', 
-            --pipe_picture = assembler2pipepictures(),
             pipe_covers = pipecoverspictures(),
+            pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
                 {type = "input", position = {2, 0}},  
                 --{type = "output", position = {-2, 0}},  
@@ -68,8 +68,8 @@ data:extend({
             height = 2,
             base_level = 1,
             production_type = 'output', 
-            --pipe_picture = assembler2pipepictures(),
             pipe_covers = pipecoverspictures(),
+            pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
                 {type = "output", position = {-2, 0}},  
                 --{type = "output", position = {-2, 0}},  
@@ -84,7 +84,7 @@ data:extend({
         line_length = 1,
         frame_count = 1,
         animation_speed = 0.5,
-        shift = {0,-0.4}
+        shift = {0,-0.5}
     },
     map_color = {r=0, g=0, b=1, a=1},
     working_sound =

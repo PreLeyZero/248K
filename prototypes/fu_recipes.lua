@@ -81,9 +81,8 @@ data:extend({
         hidden = false,
         ingredients = {
             {'el_burner_item',1},
-            {'pipe',60},
-            {'fu_materials_KFK',25},
-            {'fu_materials_TIM',15}  
+            {'pipe',20},
+            {'electronic-circuit',20}  
         },
         result = 'fu_burner_item',
         result_count = 1,
@@ -1541,9 +1540,43 @@ data:extend({
         category = 'fu_burner_category',
         icon = '__248k__/ressources/elements/fu_oxygen.png',
         icon_size = 64,
-        enabled = 'false',
+        enabled = true,
+        hidden = true,
         ingredients = {
             {type="fluid", name="fu_oxygen", amount=60},
+        },
+        results = {},
+        result_count = 1,
+        energy_required = 1,
+        always_show_made_in = true,
+        subgroup = 'fu_item_subgroup_f',
+    },
+    {
+        name = 'fu_burn_steam_recipe',
+        type = 'recipe',
+        category = 'fu_burner_category',
+        enabled = true,
+        hidden = true,
+        ingredients = {
+            {type="fluid", name="steam", amount=100},
+        },
+        results = {
+            {type="fluid", name="water", amount=100},
+        },
+        result_count = 1,
+        energy_required = 1,
+        always_show_made_in = true,
+        subgroup = 'fu_item_subgroup_f',
+    },
+    {
+        name = 'fu_burn_water_recipe',
+        type = 'recipe',
+        category = 'fu_burner_category',
+        icon = data.raw.fluid["water"].icon,
+        icon_size = data.raw.fluid["water"].icon_size,
+        hidden = true,
+        ingredients = {
+            {type="fluid", name="water", amount=100},
         },
         results = {},
         result_count = 1,

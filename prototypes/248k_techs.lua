@@ -85,6 +85,10 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'el_burner_kerosene_recipe',
             },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_burner_recipe',
+            },
         },
         unit = {
             count = '150',
@@ -192,10 +196,10 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'el_purify_stone_acidic_recipe',
             },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'el_purify_uranium_acidic_recipe',
-            },
+            --{ 
+            --    type = 'unlock-recipe',
+            --    recipe = 'el_purify_uranium_acidic_recipe',
+            --},
             { 
                 type = 'unlock-recipe',
                 recipe = 'el_dirty_water_vent_2_recipe',
@@ -1876,14 +1880,6 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_boiler_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fu_burn_oxygen_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
-                recipe = 'fu_burner_recipe',
             },
             { 
                 type = 'unlock-recipe',

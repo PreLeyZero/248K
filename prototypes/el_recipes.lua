@@ -202,7 +202,7 @@ data:extend({
             {type="fluid", name="el_kerosene", amount=200},
         },
         results = {
-            {type="fluid", name="el_desulfurized_kerosene", amount=80,temperature=40},
+            {type="fluid", name="el_desulfurized_kerosene", amount=80},
             {type="fluid", name="el_acidic_water", amount=120},
         },
         result_count = 1,

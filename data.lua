@@ -91,9 +91,6 @@ if mods["space-exploration"] then
     require('scripts/SE/data')
 end
 
-require('scripts/gravitation/gr_make_white_hole_recipes')
-
-
 data:extend({
     {
         type = "sprite",
@@ -114,3 +111,9 @@ end
 if settings.startup['overhaul_mode'].value == true then
     require('scripts/overhaul')
 end
+
+--white hole
+require('scripts/gravitation/gr_make_white_hole_recipes')
+
+--make item vent recipes
+require('scripts/electronic/el_burner')
