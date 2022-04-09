@@ -133,18 +133,24 @@ data:extend({
         },
         max_power_output = burner_output(),
         maximum_temperature = 40,
+        scale_fluid_usage = true,
+        burns_fluid = true,
         fluid_usage_per_tick = 1,
         fluid_box = {
             base_area = 1,
             height = 2,
             base_level = -1,
             filter = 'el_desulfurized_kerosene',
+            pipe_covers = pipecoverspictures(),
+            pipe_picture = south_basic_pipe_picture,
             minimum_temperature = 0,
             maximum_temperature = 40,
             production_type = 'input-output', 
             pipe_connections = {
                 {type = "input-output", position = {2, 0}},  
                 {type = "input-output", position = {-2, 0}},  
+                {type = "input-output", position = {0, 2}},  
+                {type = "input-output", position = {0, -2}},  
             },
         },
         fluid_input = {
@@ -157,22 +163,22 @@ data:extend({
             size = {420,448},
             --filename = sprite('test.png'),
             --size = {512,512},
-            scale = 0.25,
+            scale = 0.265,
             line_length = 1,
             frame_count = 1,
             animation_speed = 0.5,
-            shift = {0,-0.2}
+            shift = {0,-0.5}
         },
         horizontal_animation = {
             filename = sprite('kerosene_entity_animation.png'),
             size = {420,448},
             --filename = sprite('test.png'),
             --size = {512,512},
-            scale = 0.25,
+            scale = 0.265,
             line_length = 1,
             frame_count = 1,
             animation_speed = 0.5,
-            shift = {0,-0.2}
+            shift = {0,-0.5}
         },
         map_color = {r=0, g=0, b=1, a=1},
         working_sound =
@@ -185,7 +191,7 @@ data:extend({
                 name = 'smoke',
                 tape = 'trival-smoke',
                 frequency = 0.5,
-                position = {-0.6,-1.8},
+                position = {-0.6,-2.2},
                 --deviation = {x = -2, y = -2},
                 duration = 0.5,
             },

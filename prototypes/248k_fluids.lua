@@ -7,6 +7,22 @@ local function sprite(name)
     return '__248k__/ressources/fluids/'..name
 end
 
+local function burner_power()
+    if config("el_burner_power_output") == "2.4MW (normal)" then
+        return "0.04MJ"
+    end
+
+    if config("el_burner_power_output") == "3MW (high)" then
+        return "0.05MJ"
+    end
+
+    if config("el_burner_power_output") == "1.2MW (low)" then
+        return "0.02MJ"
+    end
+    
+    return "0.04MJ"
+end
+
 data:extend({
     {
         name = 'el_pressurized_water',
@@ -60,7 +76,8 @@ data:extend({
         icon_size = 64,
         default_temperature = 15,
         max_temperature = 1000,
-        heat_capacity = '2kJ',
+        fuel_value = burner_power(),
+        heat_capacity = '1kJ',
         base_color = { r=0.9, g=0.77, b=0.6 }, 
 		flow_color = { r=0.9, g=0.77, b=0.6 }, 
 		pressure_to_speed_ratio = 0.400, 
