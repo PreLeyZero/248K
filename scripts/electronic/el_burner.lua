@@ -31,7 +31,7 @@ end
 function burner_recipe_generator()
     local items = data.raw.item
     for i,v in pairs(items) do
-        if not data.raw.item[i].name == "fi_materials_waste" then
+        if not (data.raw.item[i].name == "fi_materials_waste") then
             make_burner_recipe(data.raw.item[i].name)
         end
     end
