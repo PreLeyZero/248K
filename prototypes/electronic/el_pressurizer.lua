@@ -48,6 +48,7 @@ data:extend({
           type = 'electric',
           usage_priority = 'secondary-input',
           input_flow_limit = '60kW',
+          emissions_per_minute = 25,
       },
       energy_usage = '40kW',
       fluid_boxes = {
