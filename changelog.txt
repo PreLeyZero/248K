@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 8.4.2022   
+  Features:
+    - added icon to not operable KI beacons
+    - added text displaying KI beacon channels
+    - added a few delivery cannon recipes for SE by x2605
+    - updated korean locale by x2605
+
+  Changes:
+    - pressurizer now outputs a bit pollution 
+
+  Bugfixes:
+    - fixed water pressurizer beeing net negative in K2
+    - white hole generator can now be blueprinted
+    - fixed bug that Item/fluid handler was not available with K2
+---------------------------------------------------------------------------------------------------
 Version: 1.0.10
 Date: 8.4.2022   
   Features:
