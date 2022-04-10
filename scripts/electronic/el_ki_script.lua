@@ -604,7 +604,7 @@ end
 --=================================================================================
 
 function make_beacon_text(entity)
-    entity.surface.create_entity({name="flying-text", position=entity.position, text="Channel: "..global.ki.beacon[entity.unit_number].channel, color={r=1, g=1, b=1}})
+    entity.surface.create_entity({name="flying-text", position=entity.position, text="CH: "..global.ki.beacon[entity.unit_number].channel, color={r=1, g=1, b=1}})
 end
 
 function remove_request_ghost(entity)

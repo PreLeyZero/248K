@@ -545,7 +545,7 @@ function gui.on_selected(e)
                                 global.ki.beacon[id].channel = global.ki.selectchannel
                                 table.insert(global.ki.channel[global.ki.selectchannel].beacons, id)
 
-                                player.create_local_flying_text({text="Channel "..tostring(global.ki.selectchannel), position=v.position})
+                                player.create_local_flying_text({text="CH "..tostring(global.ki.selectchannel), position=v.position})
                             end
                         end
 
