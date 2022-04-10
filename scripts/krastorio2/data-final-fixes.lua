@@ -217,6 +217,24 @@ data:extend({
         result_count = 1,
         energy_required = 60,
     },
+    {
+        name = 'el_water_pressure_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_special_fluid',
+        icon = '__248k__/ressources/fluids/el_pressurized_water.png',
+        icon_size = 64,
+        main_product = 'el_pressurized_water',
+        ingredients = {
+            {type="fluid", name="water", amount=480},
+            {type="fluid", name="steam", amount=160, temperature=165},
+        },
+        results = {
+            {type="fluid", name="el_pressurized_water", amount=240, temperature =500},
+            {type="fluid", name="water", amount=240},
+        },
+        energy_required = 2,
+    },
 })
 
 --techs
