@@ -24,6 +24,7 @@ data:extend({
         type = "furnace",
         icon = sprite('item.png'),
         icon_size = 64,
+        flags = {"player-creation","placeable-neutral"},
         collision_box = {{-5.8,-5.8},{5.8,5.8}},
         selection_box = {{-6,-6},{6,6}},
         max_health = 1500,
