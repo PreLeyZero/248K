@@ -796,8 +796,8 @@ function el_ki_supported_adder()
         if game.forces[1] then
             if game.forces[1].technologies['el_ki_sup_4_tech'].researched then
                 global.ki.supported4 = true
-                --global.ki.supported = 65535
-                global.ki.supported = 10
+                global.ki.supported = 65535
+                --global.ki.supported = 10
                 gui.update_main()
             end
         end
