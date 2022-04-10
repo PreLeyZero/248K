@@ -177,6 +177,9 @@ function make_ki_beacon(entity)
     register_ki_beacon(entity)
     el_ki_single_beacon_update(entity.unit_number)
     gui.update_main()
+
+    make_beacon_text(entity)
+    --el_ki_beacon_make_text(entity)
 end
 
 function destroy_ki_core(entity,player_index,robot) 
@@ -599,6 +602,11 @@ end
 --=================================================================================
 --util
 --=================================================================================
+
+function make_beacon_text(entity)
+    entity.surface.create_entity({name="flying-text", position=entity.position, text="Channel: "..global.ki.beacon[entity.unit_number].channel, color={r=1, g=1, b=1}})
+end
+
 function remove_request_ghost(entity)
     if (entity.ghost_name == "el_ki_beacon_entity") or (entity.ghost_name == "fi_ki_beacon_entity") or (entity.ghost_name == "fu_ki_beacon_entity") then
        if entity.item_requests then 
