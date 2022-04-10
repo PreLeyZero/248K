@@ -244,7 +244,6 @@ if (not mods["RealisticFusionPower"]) then
     table.insert(data.raw.technology["kr-fusion-energy"].effects, {type ="unlock-recipe", recipe ="fu_activator_4_recipe"})
     table.insert(data.raw.technology["kr-fusion-energy"].effects, {type ="unlock-recipe", recipe ="fu_activator_3_recipe"})
 end
-data.raw.recipe["fu_burner_recipe"].hidden = true
 
 --[[
 table.insert(data.raw.technology["gr_stage_tech"].unit.ingredients, {"fu_space_probe_science_item", 1})
