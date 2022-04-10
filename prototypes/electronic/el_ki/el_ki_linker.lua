@@ -52,5 +52,13 @@ data:extend({
         alt_selection_mode = {"any-entity"},
         entity_filters = {"el_ki_beacon_entity","fi_ki_beacon_entity","fu_ki_beacon_entity"},
         alt_entity_filters = {"el_ki_beacon_entity","fi_ki_beacon_entity","fu_ki_beacon_entity"}
-    }
+    },
+    {
+		type     = "sprite",
+		name     = "el_ki_not_operable_icon",		
+		filename = "__248k__/ressources/electronic/el_ki/el_ki_linker/el_ki_not_operable_icon.png",
+		width    = 64,
+		height   = 64,
+		scale    = 1
+	}
 })

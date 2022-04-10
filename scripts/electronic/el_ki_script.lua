@@ -232,7 +232,12 @@ end
 function destroy_ki_beacon(entity)
     clear_ki_beacon(entity)
     unregister_ki_beacon(entity)
-    count_supported_beacons()
+    count_total_beacons()
+
+    if is_beacon_supported() then
+        global.ki.dirty = true
+    end
+
     gui.update_main()
 end
 
@@ -302,7 +307,7 @@ function register_ki_beacon(entity)
     global.ki.beacon[unit].entity = entity
     global.ki.beacon[unit].channel = global.ki.standardchannel
 
-    add_to_supported(unit)
+    add_to_channel(unit)
     global.ki.beacon[unit].supported = is_beacon_supported()
 
     entity.operable = false
@@ -569,6 +574,21 @@ end
 
 function el_ki_beacon_update()
     el_ki_buffer1_adder()
+
+    --if now less beacons then support max 
+    if is_beacon_supported() then
+        local dif = global.ki.supported - count_total_beacons()
+
+        local unsupported = get_unsupported_beacons()
+        for i,v in ipairs(unsupported) do
+            global.ki.beacon[v].supported = true
+            dif = dif - 1
+            if dif == 0 then 
+                break 
+            end
+        end
+    end
+
     for i,v in pairs(global.ki.beacon) do 
       el_ki_single_beacon_update(i)  
     end
@@ -582,6 +602,11 @@ function el_ki_single_beacon_update(id)
             local channel = global.ki.beacon[id].channel
 
             beacon_inv.clear()
+
+            if global.ki.beacon[id].icon then
+                rendering.destroy(global.ki.beacon[id].icon)
+                global.ki.beacon[id].icon = nil
+            end
 
             if global.ki.channel[channel].core then
                 local coreunit = global.ki.channel[channel].core
@@ -597,11 +622,29 @@ function el_ki_single_beacon_update(id)
             end
         end
     end
+
+    if not global.ki.beacon[id].supported then
+        if not global.ki.beacon[id].icon then
+            if global.ki.beacon[id].entity.valid then
+                global.ki.beacon[id].icon = make_not_operable_icon(global.ki.beacon[id].entity)
+            end
+        end
+    end
 end
 
 --=================================================================================
 --util
 --=================================================================================
+
+function get_unsupported_beacons()
+    local unsupported = {}
+    for i,v in pairs(global.ki.beacon) do
+        if not v.supported then
+            table.insert(unsupported,i)
+        end
+    end
+    return unsupported
+end
 
 function make_beacon_text(entity)
     entity.surface.create_entity({name="flying-text", position=entity.position, text="CH: "..global.ki.beacon[entity.unit_number].channel, color={r=1, g=1, b=1}})
@@ -615,7 +658,10 @@ function remove_request_ghost(entity)
     end
 end
 
-
+function make_not_operable_icon(entity)
+    local sprite = rendering.draw_sprite({sprite="el_ki_not_operable_icon", target=entity, x_scale=0.5, y_scale=0.5, surface=entity.surface, render_layer=200})
+    return sprite
+end
 
 function el_ki_buffer1_adder() 
     for i,v in pairs(global.ki.channel) do
@@ -690,7 +736,7 @@ function make_channel(unit)
     end
 end
 
-function count_supported_beacons() 
+function count_total_beacons() 
     local count = 0
     for i,v in pairs(global.ki.channel) do
         --if not (i == 0) then
@@ -704,13 +750,13 @@ function count_supported_beacons()
 end
 
 function is_beacon_supported()
-    if global.ki.supported >= count_supported_beacons() then
+    if global.ki.supported >= count_total_beacons() then
         return true
     end
     return false
 end
 
-function add_to_supported(id)
+function add_to_channel(id)
     local channel = global.ki.beacon[id].channel
     table.insert(global.ki.channel[channel].beacons, id)
 end
@@ -750,7 +796,8 @@ function el_ki_supported_adder()
         if game.forces[1] then
             if game.forces[1].technologies['el_ki_sup_4_tech'].researched then
                 global.ki.supported4 = true
-                global.ki.supported = 65535
+                --global.ki.supported = 65535
+                global.ki.supported = 10
                 gui.update_main()
             end
         end
