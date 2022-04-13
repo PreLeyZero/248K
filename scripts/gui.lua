@@ -446,7 +446,25 @@ function gui.on_change(e)
                 
                     if global.ki.gui.main then
                         if global.ki.gui.main.frame then
-                            local main248kframe = global.ki.gui.main.frame
+                            local main248kframe = global.ki.gui.main.frame -- this global value(gui element) need to be defined per player
+                            --Quick and dirty remedy for crash that can cause in multiplay
+                            if not (
+                                main248kframe.valid
+                                and main248kframe.main248kcontentframe.valid
+                                and main248kframe.main248kcontentframe.main248kselectchannelframe.valid
+                                and main248kframe.main248kcontentframe.main248kselectchannelframe.main248kselectchannelslider.valid
+                            ) then
+                                game.print("248k:gui_error")
+                                return
+                            end
+                            if not (
+                                main248kframe.main248kcontentframe.main248kselectchannelframe.valid
+                                and main248kframe.main248kcontentframe.main248kselectchannelframe.main248kselectchanneltextfield.valid
+                            ) then
+                                game.print("248k:gui_error")
+                                return
+                            end
+                            --remedy end
                             local slider_channel = main248kframe.main248kcontentframe.main248kselectchannelframe.main248kselectchannelslider.slider_value
                             local text_channel = tonumber(main248kframe.main248kcontentframe.main248kselectchannelframe.main248kselectchanneltextfield.text)
 
@@ -462,7 +480,23 @@ function gui.on_change(e)
                     if (global.ki.gui.core.frame and global.ki.gui.core.id) then
                     
                         local main248kcoreframe = global.ki.gui.core.frame
-                        local id = global.ki.gui.core.id
+                        local id = global.ki.gui.core.id -- this global value(gui element) need to be defined per player
+                        --Quick and dirty remedy for crash that can cause in multiplay
+                        if not (
+                            main248kcoreframe.valid
+                            and main248kcoreframe.main248kcorecontentframe.valid
+                            and main248kcoreframe.main248kcorecontentframe.main248kcorechannelframe.valid
+                            and main248kcoreframe.main248kcorecontentframe.main248kcorechannelframe.main248kcorechannelslider.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        if not (main248kcoreframe.main248kcorecontentframe.main248kcorechannelframe.main248kcorechanneltextfield.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        --remedy end
                         local slider_channel = main248kcoreframe.main248kcorecontentframe.main248kcorechannelframe.main248kcorechannelslider.slider_value
                         local text_channel = tonumber(main248kcoreframe.main248kcorecontentframe.main248kcorechannelframe.main248kcorechanneltextfield.text)
 
@@ -476,7 +510,23 @@ function gui.on_change(e)
                     if (global.ki.gui.buffer1.frame and global.ki.gui.buffer1.id) then
                     
                         local main248kbuffer1frame = global.ki.gui.buffer1.frame
-                        local id = global.ki.gui.buffer1.id
+                        local id = global.ki.gui.buffer1.id -- this global value(gui element) need to be defined per player
+                        --Quick and dirty remedy for crash that can cause in multiplay
+                        if not (
+                            main248kbuffer1frame.valid
+                            and main248kbuffer1frame.main248kbuffer1contentframe.valid
+                            and main248kbuffer1frame.main248kbuffer1contentframe.main248kbuffer1channelframe.valid
+                            and main248kbuffer1frame.main248kbuffer1contentframe.main248kbuffer1channelframe.main248kbuffer1channelslider.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        if not (main248kbuffer1frame.main248kbuffer1contentframe.main248kbuffer1channelframe.main248kbuffer1channeltextfield.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        --remedy end
                         local slider_channel = main248kbuffer1frame.main248kbuffer1contentframe.main248kbuffer1channelframe.main248kbuffer1channelslider.slider_value
                         local text_channel = tonumber(main248kbuffer1frame.main248kbuffer1contentframe.main248kbuffer1channelframe.main248kbuffer1channeltextfield.text)
 
@@ -490,7 +540,23 @@ function gui.on_change(e)
                     if (global.ki.gui.buffer2.frame and global.ki.gui.buffer2.id) then
                     
                         local main248kbuffer2frame = global.ki.gui.buffer2.frame
-                        local id = global.ki.gui.buffer2.id
+                        local id = global.ki.gui.buffer2.id -- this global value(gui element) need to be defined per player
+                        --Quick and dirty remedy for crash that can cause in multiplay
+                        if not (
+                            main248kbuffer2frame.valid
+                            and main248kbuffer2frame.main248kbuffer2contentframe.valid
+                            and main248kbuffer2frame.main248kbuffer2contentframe.main248kbuffer2channelframe.valid
+                            and main248kbuffer2frame.main248kbuffer2contentframe.main248kbuffer2channelframe.main248kbuffer2channelslider.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        if not (main248kbuffer2frame.main248kbuffer2contentframe.main248kbuffer2channelframe.main248kbuffer2channeltextfield.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        --remedy end
                         local slider_channel = main248kbuffer2frame.main248kbuffer2contentframe.main248kbuffer2channelframe.main248kbuffer2channelslider.slider_value
                         local text_channel = tonumber(main248kbuffer2frame.main248kbuffer2contentframe.main248kbuffer2channelframe.main248kbuffer2channeltextfield.text)
 
@@ -502,7 +568,23 @@ function gui.on_change(e)
             if element == "main248kprefchannelbutton" then
                 if global.ki.gui.main then
                     if global.ki.gui.main.frame then
-                        local main248kframe = global.ki.gui.main.frame
+                        local main248kframe = global.ki.gui.main.frame -- this global value(gui element) need to be defined per player
+                        --Quick and dirty remedy for crash that can cause in multiplay
+                        if not (
+                            main248kframe.valid
+                            and main248kframe.main248kcontentframe.valid
+                            and main248kframe.main248kcontentframe.main248kprefchannelframe.valid
+                            and main248kframe.main248kcontentframe.main248kprefchannelframe.main248kprefchannelslider.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        if not (main248kframe.main248kcontentframe.main248kprefchannelframe.main248kprefchanneltextfield.valid
+                        ) then
+                            game.print("248k:gui_error")
+                            return
+                        end
+                        --remedy end
                         local slider_channel = main248kframe.main248kcontentframe.main248kprefchannelframe.main248kprefchannelslider.slider_value
                         local text_channel = tonumber(main248kframe.main248kcontentframe.main248kprefchannelframe.main248kprefchanneltextfield.text)
 
