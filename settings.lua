@@ -114,7 +114,7 @@ data:extend({
         name            = 'overhaul_mode',
         type            = 'bool-setting',
         setting_type    = 'startup',
-        default_value   = true,
+        default_value   = false,
         order           = 'i-a',
     },
     {
