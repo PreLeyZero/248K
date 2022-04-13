@@ -1204,4 +1204,32 @@ data:extend({
         order = 'a-b',
         always_show_made_in = true,
     },
+    {
+        name = 'fi_refinery_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        ingredients = {
+            {type="item", name="el_materials_ALK", amount=1},
+        },
+        results = {
+            {type="item", name="fi_refinery_item", amount=1}
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
+    {
+        name = 'fi_refinery_blank_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'fi_refining',
+        ingredients = {
+            {type="fluid", name="water", amount=100},
+        },
+        results = {
+            {type="fluid", name="steam", amount=100}
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
 })

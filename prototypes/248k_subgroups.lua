@@ -326,6 +326,11 @@ data:extend({
         name = 'fi_crushing',
         type = 'recipe-category',
     },
+    --fi refining
+    {
+        name = 'fi_refining',
+        type = 'recipe-category',
+    },
     --fi_modules
     --producticity
     {

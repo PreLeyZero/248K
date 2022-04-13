@@ -1204,7 +1204,23 @@ data:extend({
         energy_required = 1,
         order = 'a-b',
     },
-
+    {
+        name = 'el_kerosene_basic_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'oil-processing',
+        main_product = 'el_kerosene',
+        ingredients = {
+            {type="fluid", name="crude-oil", amount=200},
+            {type="fluid", name="steam", amount=100},
+        },
+        results = {
+            {type="fluid", name="el_kerosene", amount=140},
+            {type="fluid", name="water", amount=90},
+        },
+        result_count = 1,
+        energy_required = 5,
+    },
 
 
     

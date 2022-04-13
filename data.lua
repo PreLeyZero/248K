@@ -38,6 +38,7 @@ require('prototypes/fission/fi_modules')
 require('prototypes/fission/fi_fiberer')
 require('prototypes/fission/fi_compound_machine')
 require('prototypes/fission/fi_castor')
+require('prototypes/fission/fi_refinery')
 
 require('prototypes/fusion/fu_fusor')
 require('prototypes/fusion/fu_boiler')
@@ -76,6 +77,12 @@ require('prototypes/el_recipes')
 require('prototypes/fi_recipes')
 require('prototypes/fu_recipes')
 require('prototypes/gr_recipes')
+
+--fix early kerosene
+table.insert(data.raw.technology["advanced-oil-processing"].effects, { 
+    type = 'unlock-recipe',
+    recipe = 'el_kerosene_recipe',
+})
 
 --booktorio
 if mods["Booktorio"] then
@@ -117,3 +124,5 @@ require('scripts/gravitation/gr_make_white_hole_recipes')
 
 --make item vent recipes
 require('scripts/electronic/el_burner')
+
+

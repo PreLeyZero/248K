@@ -1,5 +1,17 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.11
+Date: 13.4.2022   
+  Features:
+    - updated ru locale thanks to Astorin
+
+  Changes:
+    - Overhaul mode is now off by default to prevent sync issues
+    - made early game techs towards ass. machine 2 cheaper to improve early game
+
+  Bugfixes:
+    - temporary fix for multiplayer GUI handling by x2605
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
 Date: 8.4.2022   
   Features:
     - added icon to not operable KI beacons
