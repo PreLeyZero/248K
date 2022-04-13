@@ -18,7 +18,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = '100',
             ingredients = {
                 {'automation-science-pack',1},
             },
@@ -124,7 +124,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = '50',
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -161,7 +161,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = '50',
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -206,7 +206,7 @@ data:extend({
             }
         },
         unit = {
-            count = '150',
+            count = '50',
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -260,7 +260,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = '50',
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -349,13 +349,13 @@ data:extend({
     {
         name = 'el_kerosene_tech',
         type = 'technology',
-        icon = sprite('el_kerosene_tech.png'),
+        icon = '__248k__/ressources/techs/el_kerosene_tech.png',
         icon_size = 128,
         prerequisites = {'el_ALK_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
-                recipe = 'el_kerosene_recipe',
+                recipe = 'el_kerosene_basic_recipe',
             },
             { 
                 type = 'unlock-recipe',
@@ -1623,6 +1623,32 @@ data:extend({
                 {'fu_space_probe_science_item',1}
             },
             time = 100,
+        },
+    },
+    {
+        name = 'fi_refinery_tech',
+        type = 'technology',
+        icon = sprite('fi_refinery_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_stage_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_refinery_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_refinery_blank_recipe',
+            }
+        },
+        unit = {
+            count = '100',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
         },
     },
     --============================================================================================================================================================
