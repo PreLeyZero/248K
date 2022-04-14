@@ -904,7 +904,7 @@ data:extend({
         ingredients = {
             {type="fluid", name="water", amount=100},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="stone", amount=10}
+            {type="item", name="stone", amount=8}
         },
         results = {
             {type="fluid", name="el_dirty_water", amount=100},
