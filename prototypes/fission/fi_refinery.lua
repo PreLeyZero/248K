@@ -45,6 +45,7 @@ data:extend({
         energy_source = {
             type = 'electric',
             usage_priority = 'secondary-input',
+            emissions_per_minute = 20,
             --input_flow_limit = '4MW',
         },
         energy_usage = '1MW',

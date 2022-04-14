@@ -896,6 +896,24 @@ data:extend({
         always_show_made_in = true
     },
     {
+        name = 'el_purify_stone_2_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_purifier_category',
+        main_product = 'el_dirty_water',
+        ingredients = {
+            {type="fluid", name="water", amount=100},
+            --{type="fluid", name="steam", amount=240, temperature=165},
+            {type="item", name="stone", amount=10}
+        },
+        results = {
+            {type="fluid", name="el_dirty_water", amount=100},
+            {type="item", name="el_materials_pure_aluminum", amount=2},
+        },
+        energy_required = 1,
+        always_show_made_in = true
+    },
+    {
         name = 'el_purify_iron_recipe',
         type = 'recipe',
         enabled = 'false',

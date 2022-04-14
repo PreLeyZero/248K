@@ -862,17 +862,17 @@ data:extend({
         category = 'el_purifier_category',
         main_product = 'fi_thorium232_item',
         ingredients = {
-            {type="fluid", name="fi_strong_acid", amount=200},
-            {type="fluid", name="water", amount=50},
+            {type="fluid", name="fi_strong_acid", amount=800},
+            {type="fluid", name="water", amount=200},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="iron-ore", amount=10}
+            {type="item", name="iron-ore", amount=40}
         },
         results = {
-            {type="fluid", name="fi_dirty_water", amount=50},
-            {type="item", name="fi_thorium232_item", amount=2},
-            {type="item", name="el_materials_pure_iron", amount=8}
+            {type="fluid", name="fi_dirty_water", amount=200},
+            {type="item", name="fi_thorium232_item", amount=1},
+            {type="item", name="el_materials_pure_iron", amount=39}
         },
-        energy_required = 4,
+        energy_required = 16,
         always_show_made_in = true
     },
     {
@@ -882,17 +882,17 @@ data:extend({
         category = 'el_purifier_category',
         main_product = 'uranium-238',
         ingredients = {
-            {type="fluid", name="fi_strong_acid", amount=200},
-            {type="fluid", name="water", amount=50},
+            {type="fluid", name="fi_strong_acid", amount=800},
+            {type="fluid", name="water", amount=200},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="copper-ore", amount=10}
+            {type="item", name="copper-ore", amount=40}
         },
         results = {
-            {type="fluid", name="fi_dirty_water", amount=50},
-            {type="item", name="uranium-238", amount=2},
-            {type="item", name="el_materials_pure_copper", amount=8}
+            {type="fluid", name="fi_dirty_water", amount=200},
+            {type="item", name="uranium-238", amount=1},
+            {type="item", name="el_materials_pure_copper", amount=39}
         },
-        energy_required = 2,
+        energy_required = 16,
         always_show_made_in = true
     },
     {
@@ -905,15 +905,15 @@ data:extend({
             {type="fluid", name="fi_strong_acid", amount=1000},
             {type="fluid", name="water", amount=500},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="uranium-ore", amount=100}
+            {type="item", name="uranium-ore", amount=500}
         },
         results = {
             {type="fluid", name="fi_dirty_water", amount=500},
-            {type="item", name="el_energy_crystal_item", amount=50},
-            {type="item", name="uranium-238", amount=20},
-            {type="item", name="uranium-235", amount=4},
+            {type="item", name="stone", amount=450},
+            {type="item", name="uranium-238", amount=49},
+            {type="item", name="uranium-235", amount=1},
         },
-        energy_required = 2,
+        energy_required = 20,
         always_show_made_in = true
     },
 

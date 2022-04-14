@@ -3,12 +3,15 @@ Version: 1.0.11
 Date: 13.4.2022   
   Features:
     - updated ru locale thanks to Astorin
+    - flame throwers can now use kerosene and desulfurized kerosene
+    - added highly advanced oil/kerosene processing
 
   Changes:
     - Overhaul mode is now off by default to prevent sync issues
     - made early game techs towards ass. machine 2 cheaper to improve early game
     - added prerequisite for fi advanced purification tech
     - unused crusher recipes are now hidden
+    - heavily nerfed fi stage uranium purification, also nerfed extraction of uranium/thorium with purification
 
   Bugfixes:
     - temporary fix for multiplayer GUI handling by x2605

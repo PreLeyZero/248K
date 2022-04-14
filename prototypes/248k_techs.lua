@@ -215,6 +215,27 @@ data:extend({
         },
     },
     {
+        name = 'el_purifier_2_tech',
+        type = 'technology',
+        icon = sprite('el_purifier_2_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_purifier_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_purify_stone_2_recipe',
+            }
+        },
+        unit = {
+            count = '50',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
+    {
         name = 'el_grower_tech',
         type = 'technology',
         icon = sprite('el_grower_tech.png'),

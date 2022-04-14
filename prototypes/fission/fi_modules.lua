@@ -45,7 +45,10 @@ local limitation_list = {
     'gr_materials_stack_up_item_recipe',
     'gr_materials_stack_down_item_recipe',
     'fi_rich_powder_recipe',
-    'fi_strong_acid_recipe'
+    'fi_strong_acid_recipe',
+    'fi_refinery_basic_recipe',
+    'fi_refinery_coal_recipe',
+    'fi_refinery_sulfur_recipe'
 }
 
 --item
