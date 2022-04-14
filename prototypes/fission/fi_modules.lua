@@ -48,7 +48,10 @@ local limitation_list = {
     'fi_strong_acid_recipe',
     'fi_refinery_basic_recipe',
     'fi_refinery_coal_recipe',
-    'fi_refinery_sulfur_recipe'
+    'fi_refinery_sulfur_recipe',
+    'fi_refinery_kerosene_coal_recipe',
+    'fi_refinery_kerosene_recipe',
+    'fi_empty_solution_recipe'
 }
 
 --item

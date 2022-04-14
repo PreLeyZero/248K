@@ -55,7 +55,7 @@ data:extend({
               0,
               0.8
             },
-            module_slots = 2
+            module_slots = 4
         },
 
         fluid_boxes = {
