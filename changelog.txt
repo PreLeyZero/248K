@@ -7,6 +7,8 @@ Date: 13.4.2022
   Changes:
     - Overhaul mode is now off by default to prevent sync issues
     - made early game techs towards ass. machine 2 cheaper to improve early game
+    - added prerequisite for fi advanced purification tech
+    - unused crusher recipes are now hidden
 
   Bugfixes:
     - temporary fix for multiplayer GUI handling by x2605

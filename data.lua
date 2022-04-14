@@ -84,6 +84,13 @@ table.insert(data.raw.technology["advanced-oil-processing"].effects, {
     recipe = 'el_kerosene_recipe',
 })
 
+--add kerosene and desulfurized kerosene to flame thrower
+if data.raw["fluid-turret"]["flamethrower-turret"] then
+    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "el_kerosene", damage_modifier = 1})
+    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "el_desulfurized_kerosene", damage_modifier = 1})
+end
+
+
 --booktorio
 if mods["Booktorio"] then
     require('bk_sprites')

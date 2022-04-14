@@ -1061,7 +1061,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_purifier_2_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_purifier_tech', 'uranium-processing'},
+        prerequisites = {'fi_purifier_tech', 'uranium-processing', 'fi_materials_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -1374,6 +1374,7 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_crystal_recipe',
             },
+            --[[
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_iron_recipe',
@@ -1382,14 +1383,17 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_copper_recipe',
             },
+            ]]
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_lithium_recipe',
             },
+            --[[
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_aluminum_recipe',
             },
+            ]]
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_coal_recipe',
@@ -1398,10 +1402,12 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_stone_recipe',
             },
+            --[[
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_crushed_uranium_recipe',
             },
+            ]]
         },
         unit = {
             count = '200',
@@ -1630,7 +1636,7 @@ data:extend({
         type = 'technology',
         icon = sprite('fi_refinery_tech.png'),
         icon_size = 128,
-        prerequisites = {'fi_stage_tech'},
+        prerequisites = {'fi_crusher_tech'},
         effects = {
             { 
                 type = 'unlock-recipe',
@@ -1638,11 +1644,89 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fi_refinery_blank_recipe',
-            }
+                recipe = 'fi_refinery_basic_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_crack_sulfur_gas_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_refinery_kerosene_recipe',
+            },
         },
         unit = {
             count = '100',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_refinery_2_tech',
+        type = 'technology',
+        icon = sprite('fi_refinery_2_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_refinery_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_refinery_sulfur_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_crack_acid_gas_recipe',
+            }
+        },
+        unit = {
+            count = '300',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_refinery_3_tech',
+        type = 'technology',
+        icon = sprite('fi_refinery_3_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_refinery_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_refinery_coal_recipe',
+            }
+        },
+        unit = {
+            count = '300',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_refinery_4_tech',
+        type = 'technology',
+        icon = sprite('fi_refinery_4_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_refinery_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_refinery_kerosene_coal_recipe',
+            },
+        },
+        unit = {
+            count = '300',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
