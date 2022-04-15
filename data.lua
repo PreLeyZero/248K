@@ -122,9 +122,7 @@ if data.raw.technology["atomic-bomb"] then
 end
 
 --overhaul
-if settings.startup['overhaul_mode'].value == true then
-    require('scripts/overhaul')
-end
+require('scripts/overhaul')
 
 --white hole
 require('scripts/gravitation/gr_make_white_hole_recipes')

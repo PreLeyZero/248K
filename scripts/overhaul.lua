@@ -1,3 +1,6 @@
+if settings.startup['overhaul_mode'].value == true then
+-- indent ignored
+
 local function add_to_recipe(recipe, item, item_amount)
     if not data.raw.recipe[recipe] then
         return
@@ -175,3 +178,5 @@ tech_structure = {"tech", "pre_tech"}
 add_to_recipes(change_table_index(building_table, recipe_structure))
 add_to_recipes(change_table_index(item_table, recipe_structure))
 add_to_techs(change_table_index(tech_table, tech_structure))
+
+end --indent ignored
