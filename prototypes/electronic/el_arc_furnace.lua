@@ -133,7 +133,7 @@ data:extend({
             lines_per_file = 1,
             frame_count = 3,
             animation_speed = 0.2,
-            shift = {0,-0.1} 
+            shift = {0,-0.3} 
           },
           light = {
             type = "basic",

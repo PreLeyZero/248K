@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 13.4.2022   
+  Changes:
+    - Rich powder accepts no longer productivity to prevent solution container looping
+    - nerfed rich water extraction from rich powder
+    - increased stone usage for rich powder and increased time usage
+    - added module slots to Item/fluid handler
+
+  Bugfixes:
+    - Arc Furnace texture was missaligned 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.12
 Date: 13.4.2022   
   Features:

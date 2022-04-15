@@ -48,6 +48,14 @@ data:extend({
         usage_priority = 'secondary-input',
         buffer_capacity = '5MJ',
     },
+    allowed_effects = {"speed", "consumption", "pollution"},
+        module_specification = {
+            module_info_icon_shift = {
+              0,
+              0.8
+            },
+            module_slots = 2
+        },
     crafting_speed = 1,
     energy_usage = '500KW',
     fluid_boxes = {

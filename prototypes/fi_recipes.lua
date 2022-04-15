@@ -1175,15 +1175,15 @@ data:extend({
         main_product = 'fi_materials_rich_powder',
         ingredients = {
             {type="item", name="fi_materials_solution", amount=1},
-            {type="item", name="fi_crushed_stone_item", amount=10},
+            {type="item", name="fi_crushed_stone_item", amount=20},
             {type="item", name="fi_crushed_coal_item", amount=20},
         },
         results = {
-            {type="item", name="fi_crushed_coal_item", amount=17},
-            {type="item", name="fi_materials_rich_powder", amount=3},
+            {type="item", name="fi_crushed_coal_item", amount=18},
+            {type="item", name="fi_materials_rich_powder", amount=2},
             {type="item", name="fi_materials_empty_solution", amount=1},
         },
-        energy_required = 6,
+        energy_required = 10,
         order = 'a-b',
         always_show_made_in = true,
     },
@@ -1195,10 +1195,10 @@ data:extend({
         main_product = 'fi_dirty_water',
         ingredients = {
             {type="item", name="fi_materials_rich_powder", amount=1},
-            {type="fluid", name="water", amount=300},
+            {type="fluid", name="water", amount=200},
         },
         results = {
-            {type="fluid", name="fi_dirty_water", amount=250},
+            {type="fluid", name="fi_dirty_water", amount=150},
             {type="fluid", name="el_dirty_water", amount=50},
         },
         energy_required = 1,
