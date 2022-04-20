@@ -1630,7 +1630,7 @@ data:extend({
         },
         results = {
             {type="item", name="stone", amount=5},
-            {type="item", name="fi_crushed_stone_item", amount=3, probability=0.5},
+            {type="item", name="fu_materials_stone", amount=1, probability=0.25},
             {type="fluid", name="el_dirty_water", amount=10},
         },
         result_count = 1,
