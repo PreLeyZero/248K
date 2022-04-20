@@ -2744,6 +2744,44 @@ data:extend({
             time = 100,
         },
     },
+    {
+        name = 'fu_miner_tech',
+        type = 'technology',
+        icon = sprite('fu_miner_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_materials_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_miner_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_mining_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_crush_stone_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_extract_stone_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_drill_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 100,
+        },
+    },
     --============================================================================================================================================================
     --gravitational
     {

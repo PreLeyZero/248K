@@ -108,7 +108,7 @@ item_table = {
 
     --{"automation-science-pack",    "fi_modules_core_item",  3},
     --{"logistic-science-pack",      "fi_modules_core_item",  3},
-    {"chemical-science-pack",        "el_energy_crystal_item",3},
+    {"chemical-science-pack",        "el_energy_crystal_item",2},
     {"production-science-pack",      "fi_materials_titan",  1},
     {"utility-science-pack",         "fi_materials_neodym", 1},
     

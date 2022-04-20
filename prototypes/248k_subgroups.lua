@@ -389,6 +389,15 @@ data:extend({
         name = 'fu_star_engine_caster_crafting_category',
         type = 'recipe-category',
     },
+    --fu miner
+    {
+        name = 'fu_miner_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'fu_miner_fuel_category',
+        type = 'fuel-category',
+    },
 --============================================================================================================================================================
 
 

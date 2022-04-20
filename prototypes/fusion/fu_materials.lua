@@ -126,4 +126,13 @@ data:extend({
         subgroup = 'fu_item_subgroup_b',
         order = 'f-a',
     },
+    {
+        name = 'fu_materials_stone',
+        type = 'item',
+        icon = sprite('stone.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fi_item_subgroup_a',
+        order = 'f-a',
+    },
 })

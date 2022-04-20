@@ -58,6 +58,7 @@ require('prototypes/fusion/fu_laser')
 require('prototypes/fusion/fu_plasma')
 require('prototypes/fusion/fu_materials')
 require('prototypes/fusion/fu_magnet')
+require('prototypes/fusion/fu_miner')
 
 require('prototypes/gravitation/gr_crafter')
 require('prototypes/gravitation/gr_materials')
@@ -77,6 +78,8 @@ require('prototypes/el_recipes')
 require('prototypes/fi_recipes')
 require('prototypes/fu_recipes')
 require('prototypes/gr_recipes')
+
+require('scripts/clean_up')
 
 --fix early kerosene
 table.insert(data.raw.technology["advanced-oil-processing"].effects, { 

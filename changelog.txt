@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.14
+Date: 20.4.2022   
+  Features:
+    - added fission stage stone quarry which can mine stone from nothing
+
+  Changes:
+    - reduced stone usage for rich water production
+    - buffed fission stage oil processing
+    - reduced energy crystal usage for blue science
+    - reduced stone usage for industrial glass
+
+  Bugfixes:
+    - a 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.13
 Date: 15.4.2022   
   Changes:

@@ -1584,6 +1584,93 @@ data:extend({
         always_show_made_in = true,
         subgroup = 'fu_item_subgroup_f',
     },
+    {
+        name = 'fu_miner_recipe',
+        type = 'recipe',
+        category = 'crafting',
+        enabled = false,
+        ingredients = {
+            {type="item", name="electric-mining-drill", amount=1},
+            {type="item", name="el_energy_crystal_item", amount=10},
+            {type="item", name="fi_materials_GFK", amount=15},
+            {type="item", name="concrete", amount=30},
+        },
+        results = {
+            {type="item", name="fu_miner_item", amount=1},
+        },
+        result_count = 20,
+        energy_required = 10,
+        always_show_made_in = true,
+        subgroup = 'fi_item_subgroup_c',
+    },
+    {
+        name = 'fu_mining_recipe',
+        type = 'recipe',
+        category = 'fu_miner_category',
+        enabled = false,
+        ingredients = {},
+        results = {
+            {type="item", name="fu_materials_stone", amount=1},
+        },
+        result_count = 1,
+        energy_required = 1.5,
+        always_show_made_in = true,
+        subgroup = 'fi_item_subgroup_a',
+    },
+    {
+        name = 'fu_extract_stone_recipe',
+        type = 'recipe',
+        category = 'chemistry',
+        enabled = false,
+        main_product = 'stone',
+        ingredients = {
+            {type="item", name="fu_materials_stone", amount=1},
+            {type="fluid", name="water", amount=10},
+            {type="fluid", name="fi_strong_acid", amount=5},
+        },
+        results = {
+            {type="item", name="stone", amount=5},
+            {type="item", name="fi_crushed_stone_item", amount=3, probability=0.5},
+            {type="fluid", name="el_dirty_water", amount=10},
+        },
+        result_count = 1,
+        energy_required = 0.5,
+        always_show_made_in = true,
+        subgroup = 'fi_item_subgroup_a',
+    },
+    {
+        name = 'fu_crush_stone_recipe',
+        type = 'recipe',
+        category = 'fi_crushing',
+        enabled = false,
+        ingredients = {
+            {type="item", name="fu_materials_stone", amount=1},
+        },
+        results = {
+            {type="item", name="stone", amount=4},
+        },
+        result_count = 1,
+        energy_required = 0.5,
+        always_show_made_in = true,
+        subgroup = 'fi_item_subgroup_a',
+    },
+    {
+        name = 'fu_drill_recipe',
+        type = 'recipe',
+        category = 'crafting',
+        enabled = false,
+        ingredients = {
+            {type="item", name="fi_materials_GFK", amount=1},
+            {type="item", name="fi_materials_titan", amount=1},
+        },
+        results = {
+            {type="item", name="fu_miner_fuel_item", amount=1},
+        },
+        result_count = 1,
+        energy_required = 6,
+        subgroup = 'fi_item_subgroup_b',
+    },
+    
     
 
 })

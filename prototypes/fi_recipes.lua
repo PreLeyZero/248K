@@ -762,7 +762,7 @@ data:extend({
         enabled = 'false',
         category = 'el_arc_furnace_category',
         ingredients = {
-            {type="item", name="stone", amount=5},
+            {type="item", name="stone", amount=3},
         },
         results = {
             {type="fluid", name="fi_arc_glass", amount=200},
@@ -844,7 +844,7 @@ data:extend({
             {type="fluid", name="fi_strong_acid", amount=100},
             {type="fluid", name="water", amount=50},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="stone", amount=10}
+            {type="item", name="stone", amount=8}
         },
         results = {
             {type="fluid", name="fi_dirty_water", amount=50},
@@ -1175,7 +1175,7 @@ data:extend({
         main_product = 'fi_materials_rich_powder',
         ingredients = {
             {type="item", name="fi_materials_solution", amount=1},
-            {type="item", name="fi_crushed_stone_item", amount=20},
+            {type="item", name="fi_crushed_stone_item", amount=16},
             {type="item", name="fi_crushed_coal_item", amount=20},
         },
         results = {
@@ -1239,7 +1239,7 @@ data:extend({
             {type="fluid", name="el_kerosene", amount=80},
             {type="fluid", name="heavy-oil", amount=20},
         },
-        energy_required = 6,
+        energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
         order = 'a-a',
         always_show_made_in = true,
@@ -1262,7 +1262,7 @@ data:extend({
             {type="fluid", name="el_kerosene", amount=65},
             {type="fluid", name="heavy-oil", amount=75},
         },
-        energy_required = 6,
+        energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
         order = 'a-a',
         always_show_made_in = true,
@@ -1285,7 +1285,7 @@ data:extend({
             {type="fluid", name="el_kerosene", amount=80},
             {type="fluid", name="heavy-oil", amount=20},
         },
-        energy_required = 6,
+        energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
         order = 'a-a',
         always_show_made_in = true,
@@ -1339,11 +1339,11 @@ data:extend({
             {type="fluid", name="el_kerosene", amount=200},
         },
         results = {
-            {type="fluid", name="el_acidic_water", amount=80},
-            {type="fluid", name="fi_acid_gas", amount=40},
-            {type="fluid", name="el_desulfurized_kerosene", amount=80},
+            {type="fluid", name="el_acidic_water", amount=100},
+            {type="fluid", name="fi_acid_gas", amount=50},
+            {type="fluid", name="el_desulfurized_kerosene", amount=90},
         },
-        energy_required = 6,
+        energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
         order = 'a-a',
         always_show_made_in = true,
@@ -1360,11 +1360,11 @@ data:extend({
             {type="item", name="fi_crushed_coal_item", amount=10},
         },
         results = {
-            {type="fluid", name="el_acidic_water", amount=90},
-            {type="fluid", name="fi_acid_gas", amount=60},
-            {type="fluid", name="heavy-oil", amount=80},
+            {type="fluid", name="el_acidic_water", amount=110},
+            {type="fluid", name="fi_acid_gas", amount=70},
+            {type="fluid", name="heavy-oil", amount=90},
         },
-        energy_required = 6,
+        energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
         order = 'a-a',
         always_show_made_in = true,
