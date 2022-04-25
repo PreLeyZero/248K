@@ -176,6 +176,17 @@ script.on_event({
     end
 )
 
+script.on_event({
+    defines.events.on_research_finished
+    },
+    function(e)
+        if e.research and (e.research.name == "fu_ki_plus_1_tech" or e.research.name == "fu_ki_plus_2_tech") then
+            if not global.ki then global.ki = {} end
+            global.ki.dirty = true
+        end
+    end
+)
+
 --===================================================================================================================
 
 --config change
