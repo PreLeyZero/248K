@@ -23,15 +23,17 @@
 --===================================================================================================================
 
 function gr_black_hole_init()
-    global.black_hole =  {}
-    global.black_hole.base = {}
-    global.black_hole.energy = {}
-    global.black_hole.dirty = false
-    global.black_hole.counter = 0
+    if not global.black_hole then --init is not guaranteed to run only once during whole game(?)
+        global.black_hole =  {}
+        global.black_hole.base = {}
+        global.black_hole.energy = {}
+        global.black_hole.dirty = false
+        global.black_hole.counter = 0
 
-    global.black_hole.gui = {}
-    global.black_hole.gui.frame = nil
-    global.black_hole.gui.id = nil
+        global.black_hole.gui = {}
+        global.black_hole.gui.frame = nil
+        global.black_hole.gui.id = nil
+    end
 end
 
 --===================================================================================================================
@@ -266,7 +268,7 @@ function black_hole_base_update()
 
                             stable = stable - 1
                             if total then
-                                if stabilizer then
+                                if new_stabilizer then --have no idea why "stabilizer" stated here
                                     stable = stable + new_stabilizer
                                 end
                             end
@@ -311,9 +313,10 @@ end
 
 function can_make_black_hole_energy(entity)
     if entity.valid then
-        inv = entity.get_inventory(defines.inventory.chest)
-        total = inv.get_item_count() - inv.get_item_count("gr_materials_stabilizer_item")
-        stabilizer = inv.get_item_count("gr_materials_stabilizer_item")
+        -- local statement is very important to avoid MP desync and save/load cycle mismatch
+        local inv = entity.get_inventory(defines.inventory.chest)
+        local total = inv.get_item_count() - inv.get_item_count("gr_materials_stabilizer_item")
+        local stabilizer = inv.get_item_count("gr_materials_stabilizer_item")
         if (stabilizer >= 100) and (total >= 1000) then
             return true
         else
