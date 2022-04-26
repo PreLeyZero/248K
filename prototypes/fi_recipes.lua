@@ -29,7 +29,7 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {'concrete',100},
+            {'concrete',50},
             {'fi_materials_GFK',40},
             {'el_tank_item',1}
         },
@@ -806,10 +806,10 @@ data:extend({
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_flourite',
         ingredients = {
-            {type="fluid", name="el_dirty_water", amount=100},
+            {type="fluid", name="el_dirty_water", amount=50},
         },
         results = {
-            {type="fluid", name="water", amount=100},
+            {type="fluid", name="water", amount=50},
             {type="item", name="fi_materials_flourite", amount=1},
         },
         energy_required = 0.2,
@@ -865,7 +865,7 @@ data:extend({
             {type="fluid", name="fi_strong_acid", amount=800},
             {type="fluid", name="water", amount=200},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="iron-ore", amount=40}
+            {type="item", name="iron-ore", amount=80}
         },
         results = {
             {type="fluid", name="fi_dirty_water", amount=200},
@@ -885,7 +885,7 @@ data:extend({
             {type="fluid", name="fi_strong_acid", amount=800},
             {type="fluid", name="water", amount=200},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="copper-ore", amount=40}
+            {type="item", name="copper-ore", amount=80}
         },
         results = {
             {type="fluid", name="fi_dirty_water", amount=200},
@@ -1231,7 +1231,7 @@ data:extend({
         icon_size = 64,
         ingredients = {
             {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=100},
+            {type="fluid", name="steam", amount=80},
         },
         results = {
             {type="fluid", name="petroleum-gas", amount=80},
@@ -1253,7 +1253,7 @@ data:extend({
         icon_size = 64,
         ingredients = {
             {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=100},
+            {type="fluid", name="steam", amount=80},
             {type="item", name="fi_crushed_coal_item", amount=10},
         },
         results = {
@@ -1276,7 +1276,7 @@ data:extend({
         icon_size = 64,
         ingredients = {
             {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=100},
+            {type="fluid", name="steam", amount=80},
             {type="item", name="sulfur", amount=3},
         },
         results = {
@@ -1298,10 +1298,10 @@ data:extend({
         main_product = 'sulfur',
         ingredients = {
             {type="fluid", name="fi_acid_gas", amount=10},
-            {type="fluid", name="steam", amount=20},
+            {type="fluid", name="steam", amount=10},
         },
         results = {
-            {type="fluid", name="water", amount=15},
+            {type="fluid", name="water", amount=5},
             {type="item", name="sulfur", amount=1},
         },
         energy_required = 0.5,
@@ -1317,7 +1317,7 @@ data:extend({
         main_product = 'el_acidic_water',
         ingredients = {
             {type="fluid", name="fi_acid_gas", amount=20},
-            {type="fluid", name="steam", amount=20},
+            {type="fluid", name="steam", amount=10},
         },
         results = {
             {type="fluid", name="el_acidic_water", amount=20},

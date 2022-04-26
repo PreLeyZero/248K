@@ -118,20 +118,6 @@ data:extend({
         always_show_made_in = true,
     },
     {
-        name = 'fu_fusion_card_3_recipe',
-        type = 'recipe',
-        category = 'fu_fusor_crafting_category',
-        enabled = 'false',
-        ingredients = {
-            {type="fluid", name="fu_lithium_6", amount=100},
-            {type="fluid", name="fu_helium_3", amount=100},
-        },
-        result = 'fu_materials_fusion_card',
-        result_count = 100,
-        energy_required = 100,
-        always_show_made_in = true,
-    },
-    {
         name = 'fu_fusion_card_4_recipe',
         type = 'recipe',
         category = 'fu_fusor_crafting_category',
@@ -1293,7 +1279,7 @@ data:extend({
         enabled = 'false',
         category = 'chemistry',
         ingredients = {
-            {type="fluid", name="steam", amount=300},
+            {type="fluid", name="steam", amount=100},
             {type="item", name="el_aluminum_item", amount=4},
         },
         results = {

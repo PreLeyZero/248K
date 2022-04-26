@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 26.4.2022
+  Changes:
+    - reduced roboport hitboxes
+    - reduced overall steam usage (esp. for ceramics and oil production)
+    - fixed purification ratio for advanced purification
+    - nuclear waste storage is now cheaper aswell as of silo tank
+    - decreased dirty water usage for lithium and fluorite 
+
+  Bugfixes:
+    - fixed blackhole desync and KI beacon update (by x2605)
+---------------------------------------------------------------------------------------------------
 Version: 1.0.14
 Date: 20.4.2022   
   Features:

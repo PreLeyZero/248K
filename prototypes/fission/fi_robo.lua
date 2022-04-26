@@ -43,7 +43,7 @@ data:extend({
         flags = {"player-creation","placeable-neutral"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-1.4,-1.4},{1.4,1.4}},
+        collision_box = {{-1.3,-1.3},{1.3,1.3}},
         selection_box = {{-1.5,-1.5},{1.5,1.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
@@ -134,7 +134,7 @@ data:extend({
         flags = {"player-creation","placeable-neutral"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-1.4,-1.4},{1.4,1.4}},
+        collision_box = {{-1.3,-1.3},{1.3,1.3}},
         selection_box = {{-1.5,-1.5},{1.5,1.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {

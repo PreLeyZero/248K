@@ -107,6 +107,10 @@ end
 if mods["space-exploration"] then
     require('scripts/SE/data')
 end
+--UMR
+if mods["umr"] then
+    require('scripts/umr/data')
+end
 
 data:extend({
     {

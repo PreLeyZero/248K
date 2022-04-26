@@ -166,7 +166,7 @@ data:extend({
         main_product = 'el_kerosene',
         ingredients = {
             {type="fluid", name="crude-oil", amount=160},
-            {type="fluid", name="steam", amount=100},
+            {type="fluid", name="steam", amount=60},
         },
         results = {
             {type="fluid", name="el_kerosene", amount=120},
@@ -182,10 +182,9 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {'pipe',100},
-            {'electronic-circuit',60},
-            {'steel-plate', 200},
-            {'el_aluminum_item',400},
+            {'storage-tank', 4},
+            {'steel-plate', 50},
+            {'el_aluminum_item', 150},
         },
         result = 'el_tank_item',
         result_count = 1,
@@ -1014,10 +1013,10 @@ data:extend({
         category = 'crafting-with-fluid',
         main_product = 'el_lithium_item',
         ingredients = {
-            {type="fluid", name="el_dirty_water", amount=100},
+            {type="fluid", name="el_dirty_water", amount=50},
         },
         results = {
-            {type="fluid", name="water", amount=100},
+            {type="fluid", name="water", amount=50},
             {type="item", name="el_lithium_item", amount=1},
         },
         energy_required = 0.2,
@@ -1138,7 +1137,7 @@ data:extend({
         enabled = 'false',
         category = 'crafting-with-fluid',
         ingredients = {
-            {type="fluid", name="steam", amount=100},
+            {type="fluid", name="steam", amount=60},
             {type="item", name="stone", amount=2},
         },
         results = {
@@ -1230,7 +1229,7 @@ data:extend({
         main_product = 'el_kerosene',
         ingredients = {
             {type="fluid", name="crude-oil", amount=200},
-            {type="fluid", name="steam", amount=100},
+            {type="fluid", name="steam", amount=80},
         },
         results = {
             {type="fluid", name="el_kerosene", amount=140},
