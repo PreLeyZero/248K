@@ -70,4 +70,18 @@ data:extend({
         energy_required = 100,
         always_show_made_in = true,
     },
+    {
+        name = 'fu_fusion_card_6_recipe',
+        type = 'recipe',
+        category = 'fu_fusor_crafting_category',
+        enabled = 'false',
+        ingredients = {
+            {type="fluid", name="fu_deuterium", amount=100},
+            {type="fluid", name="fu_helium_3", amount=100},
+        },
+        result = 'fu_materials_fusion_card',
+        result_count = 20,
+        energy_required = 100,
+        always_show_made_in = true,
+    },
 })

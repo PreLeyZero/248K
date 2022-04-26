@@ -1968,10 +1968,6 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_fusion_card_6_recipe',
-            },
-            { 
-                type = 'unlock-recipe',
                 recipe = 'fu_fusion_card_7_recipe',
             },
             {
