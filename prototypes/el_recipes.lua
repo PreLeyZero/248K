@@ -1137,7 +1137,7 @@ data:extend({
         enabled = 'false',
         category = 'crafting-with-fluid',
         ingredients = {
-            {type="fluid", name="steam", amount=60},
+            {type="fluid", name="steam", amount=30},
             {type="item", name="stone", amount=2},
         },
         results = {

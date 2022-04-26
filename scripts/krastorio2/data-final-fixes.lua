@@ -235,6 +235,21 @@ data:extend({
         },
         energy_required = 2,
     },
+    {
+        name = 'el_ceramic_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        ingredients = {
+            {type="fluid", name="steam", amount=10},
+            {type="item", name="stone", amount=2},
+        },
+        results = {
+            {type="item", name="el_materials_ceramic", amount=1},
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
 })
 
 --techs

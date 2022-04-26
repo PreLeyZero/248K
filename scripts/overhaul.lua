@@ -97,7 +97,7 @@ building_table = {
 --[ITEMS]
 
 item_table = {
-    {"advanced-circuit",        "el_materials_ceramic", 5},
+    {"advanced-circuit",        "el_materials_ceramic", 2},
     {"processing-unit",         "fi_materials_gold",    3},
     {"electric-engine-unit",    "fi_materials_gold",    3},
     {"flying-robot-frame",      "fi_materials_neodym",  6},
