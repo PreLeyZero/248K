@@ -326,7 +326,7 @@ data:extend({
             {'fi_pure_fuel_item',1},
         },
         result = 'fi_equipment_player_reactor_item',
-        result_count = 4,
+        result_count = 6,
         energy_required = 20,
     },
     {
@@ -334,9 +334,9 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {'fi_energy_crystal_item',100},
-            {'low-density-structure',20},
-            {'processing-unit',40},
+            {'fi_energy_crystal_item',20},
+            {'low-density-structure',10},
+            {'processing-unit',10},
             {'energy-shield-mk2-equipment',5}
         },
         result = 'fi_equipment_player_shield_item',
@@ -349,12 +349,12 @@ data:extend({
         enabled = 'false',
         ingredients = {
             {'fi_solid_reactor_item',1},
-            {'low-density-structure',20},
-            {'iron-gear-wheel',40},
+            {'low-density-structure',10},
+            {'iron-gear-wheel',20},
             {'fi_pure_fuel_item',1},
         },
         result = 'fi_train_equipment_generator_item',
-        result_count = 4,
+        result_count = 6,
         energy_required = 20,
     },
     --crystals

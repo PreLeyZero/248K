@@ -172,7 +172,7 @@ data:extend({
         fuel_top_speed_multiplier = 1.55,
         fuel_category = 'el_train_fuel',
         fuel_emissions_multiplier = 3.5,
-        fuel_value = '350MJ',
+        fuel_value = '250MJ',
     },
 
 

@@ -21,7 +21,7 @@ data:extend({
         fuel_category = 'el_train_fuel',
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
-        fuel_value = '100MJ',
+        fuel_value = '70MJ',
     },
     {
         name = 'el_train_fuel_diesel_energized_item',
@@ -35,7 +35,7 @@ data:extend({
         fuel_top_speed_multiplier = 1.3,
         fuel_category = 'el_train_fuel',
         fuel_emissions_multiplier = 1,
-        fuel_value = '135MJ',
+        fuel_value = '100MJ',
     },
 
 })

@@ -22,7 +22,7 @@ data:extend({
         fuel_acceleration_multiplier = 1,
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
-        fuel_value = '300MJ',
+        fuel_value = '150MJ',
     },
     {
         name = 'fi_crushed_crystal_item',
