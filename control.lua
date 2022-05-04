@@ -13,11 +13,11 @@ require('scripts/informatron/inf_main')
 
 function print_start_message()
     if settings.startup['overhaul_mode'].value == false then
-        game.print("You are currently playing 248k on standalone Mode.", {r=0.5, g=0, b=0.5})
-        game.print("If you wish to play 248k as an overhaul mod with tech and item integration, especially in Krastorio2 turn on the mod setting", {r=0.5, g=0, b=0.5})
+        game.print({"inf_248k.standalone_mode_msg_1"}, {r=0.5, g=0, b=0.5})
+        game.print({"inf_248k.standalone_mode_msg_2"}, {r=0.5, g=0, b=0.5})
     elseif settings.startup['overhaul_mode'].value == true then
-        game.print("You are currently playing 248k on overhaul Mode.", {r=0.5, g=0, b=0.5})
-        game.print("If you wish to play 248k as an standalone mod without tech and item integration turn off the mod setting", {r=0.5, g=0, b=0.5})
+        game.print({"inf_248k.overhaul_mode_msg_1"}, {r=0.5, g=0, b=0.5})
+        game.print({"inf_248k.overhaul_mode_msg_2"}, {r=0.5, g=0, b=0.5})
     end
 end
 
@@ -36,7 +36,7 @@ script.on_init(
             registerThread_248k()
         end
 
-        for i,v in pairs(game.players) do 
+        for i,v in pairs(game.players) do
             gui.add_top_gui(game.players[i])
         end
 
@@ -52,14 +52,14 @@ script.on_event({
     defines.events.on_player_created
     },
     function(e)
-        gui.add_top_gui(game.get_player(e["player_index"]))   
-        
+        gui.add_top_gui(game.get_player(e["player_index"]))
+
         if not global.message_printed then
             print_start_message()
-            global.message_printed = true    
+            global.message_printed = true
         end
-        
-    end 
+
+    end
 )
 
 --===================================================================================================================
@@ -99,7 +99,7 @@ script.on_event({
 
 --on tick
 
-script.on_nth_tick(60, 
+script.on_nth_tick(60,
     function(e)
     el_ki_buffer1_working()
     el_ki_buffer1_update()

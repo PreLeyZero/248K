@@ -32,7 +32,7 @@ function gui.add_core_gui(e,update)
 
     --====================================
     --destroy and clear
-    --====================================    
+    --====================================
 
     if player.gui.left["main248kcoreframe"] then
         player.gui.left["main248kcoreframe"].destroy()
@@ -55,13 +55,13 @@ function gui.add_core_gui(e,update)
     end
 
 
-    local channel = global.ki.core[id].channel 
+    local channel = global.ki.core[id].channel
     local linked = #global.ki.channel[channel].beacons
 
     local main248kcoreframe = player.gui.left.add({
         type = "frame",
         name = "main248kcoreframe",
-        caption = "KI1 core: "
+        caption = {"gui.ki_1_core"}
     })
     main248kcoreframe.style.minimal_height = 10
     main248kcoreframe.style.minimal_width = 10
@@ -77,7 +77,7 @@ function gui.add_core_gui(e,update)
     local main248kcorechannelframe = main248kcorecontentframe.add({
         type = "frame",
         name = "main248kcorechannelframe",
-        caption = "core channel",
+        caption = {"gui.core channel"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -95,21 +95,21 @@ function gui.add_core_gui(e,update)
         type = "textfield",
         name = "main248kcorechanneltextfield",
         numeric = "true",
-        text = channel 
+        text = channel
     })
     main248kcorechanneltextfield.style.maximal_width = 30
 
     local main248kcorechannelbutton = main248kcorechannelframe.add({
         type = "button",
         name = "main248kcorechannelbutton",
-        caption = "Apply",
+        caption = {"gui.Apply"},
         style = mod_gui.button_style
     })
 
     local main248klinkedframe = main248kcorecontentframe.add({
         type = "frame",
         name = "main248kkinkedframe",
-        caption = "linked beacons",
+        caption = {"gui.linked beacons"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -133,7 +133,7 @@ function gui.add_main_gui(player)
     local main248kframe = player.gui.left.add({
         type = "frame",
         name = "main248kframe",
-        caption = "248k KI overview: "
+        caption = {"gui.248k_ki_overview"}
     })
     main248kframe.style.minimal_height = 10
     main248kframe.style.minimal_width = 10
@@ -149,7 +149,7 @@ function gui.add_main_gui(player)
     local main248kprefchannelframe = main248kcontentframe.add({
         type = "frame",
         name = "main248kprefchannelframe",
-        caption = "standard channel",
+        caption = {"gui.standard_channel"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -174,14 +174,14 @@ function gui.add_main_gui(player)
     local main248kprefchannelbutton = main248kprefchannelframe.add({
         type = "button",
         name = "main248kprefchannelbutton",
-        caption = "Apply",
+        caption = {"gui.Apply"},
         style = mod_gui.button_style
     })
 
     local main248ksupportedframe = main248kcontentframe.add({
         type = "frame",
         name = "main248ksupportedframe",
-        caption = "max. supported beacons",
+        caption = {"gui.max_supported_beacons"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -195,7 +195,7 @@ function gui.add_main_gui(player)
     local main248ktotalframe = main248kcontentframe.add({
         type = "frame",
         name = "main248ktotalframe",
-        caption = "total beacons",
+        caption = {"gui.total beacons"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -209,7 +209,7 @@ function gui.add_main_gui(player)
     local main248kselectchannelframe = main248kcontentframe.add({
         type = "frame",
         name = "main248kselectchannelframe",
-        caption = "change beacon channel:",
+        caption = {"gui.change beacon channel"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -234,7 +234,7 @@ function gui.add_main_gui(player)
     local main248kselectchannelbutton = main248kselectchannelframe.add({
         type = "button",
         name = "main248kselectchannelbutton",
-        caption = "Apply",
+        caption = {"gui.Apply"},
         style = mod_gui.button_style
     })
 
@@ -255,14 +255,14 @@ function gui.add_buffer1_gui(e,update)
 
     --====================================
     --destroy and clear
-    --====================================    
+    --====================================
 
     if player.gui.left["main248kbuffer1frame"] then
         player.gui.left["main248kbuffer1frame"].destroy()
         global.ki.gui.buffer1 = {}
         return
     end
-    
+
     if global.ki then
         if global.ki.buffer1 then
             if not global.ki.buffer1[id] then
@@ -277,12 +277,12 @@ function gui.add_buffer1_gui(e,update)
         end
     end
 
-    local channel = global.ki.buffer1[id].channel 
+    local channel = global.ki.buffer1[id].channel
 
     local main248kbuffer1frame = player.gui.left.add({
         type = "frame",
         name = "main248kbuffer1frame",
-        caption = "KI2 amplifier: "
+        caption = {"gui.ki_2_amplifier"}
     })
     main248kbuffer1frame.style.minimal_height = 10
     main248kbuffer1frame.style.minimal_width = 10
@@ -298,7 +298,7 @@ function gui.add_buffer1_gui(e,update)
     local main248kbuffer1channelframe = main248kbuffer1contentframe.add({
         type = "frame",
         name = "main248kbuffer1channelframe",
-        caption = "amplifier channel",
+        caption = {"gui.amplifier channel"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -316,14 +316,14 @@ function gui.add_buffer1_gui(e,update)
         type = "textfield",
         name = "main248kbuffer1channeltextfield",
         numeric = "true",
-        text = channel 
+        text = channel
     })
     main248kbuffer1channeltextfield.style.maximal_width = 30
 
     local main248kbuffer1channelbutton = main248kbuffer1channelframe.add({
         type = "button",
         name = "main248kbuffer1channelbutton",
-        caption = "Apply",
+        caption = {"gui.Apply"},
         style = mod_gui.button_style
     })
 
@@ -345,7 +345,7 @@ function gui.add_buffer2_gui(e,update)
 
     --====================================
     --destroy and clear
-    --====================================    
+    --====================================
 
     if player.gui.left["main248kbuffer2frame"] then
         player.gui.left["main248kbuffer2frame"].destroy()
@@ -366,13 +366,13 @@ function gui.add_buffer2_gui(e,update)
             end
         end
     end
-    
-    local channel = global.ki.buffer2[id].channel 
+
+    local channel = global.ki.buffer2[id].channel
 
     local main248kbuffer2frame = player.gui.left.add({
         type = "frame",
         name = "main248kbuffer2frame",
-        caption = "KI3 amplifier: "
+        caption = {"gui.ki_3_amplifier"}
     })
     main248kbuffer2frame.style.minimal_height = 10
     main248kbuffer2frame.style.minimal_width = 10
@@ -388,7 +388,7 @@ function gui.add_buffer2_gui(e,update)
     local main248kbuffer2channelframe = main248kbuffer2contentframe.add({
         type = "frame",
         name = "main248kbuffer2channelframe",
-        caption = "amplifier channel",
+        caption = {"gui.amplifier channel"},
         direction = "horizontal",
         style = "bordered_frame"
     })
@@ -406,14 +406,14 @@ function gui.add_buffer2_gui(e,update)
         type = "textfield",
         name = "main248kbuffer2channeltextfield",
         numeric = "true",
-        text = channel 
+        text = channel
     })
     main248kbuffer2channeltextfield.style.maximal_width = 30
 
     local main248kbuffer2channelbutton = main248kbuffer2channelframe.add({
         type = "button",
         name = "main248kbuffer2channelbutton",
-        caption = "Apply",
+        caption = {"gui.Apply"},
         style = mod_gui.button_style
     })
 
@@ -427,7 +427,7 @@ end
 
 function gui.on_change(e)
     local player = game.get_player(e["player_index"])
-    
+
     if e["element"] then
         if e["element"].valid then
             local element = e["element"].name
@@ -439,11 +439,11 @@ function gui.on_change(e)
                     gui.add_main_gui(player)
                 end
             end
-        
+
             if element == "main248kselectchannelbutton" then
                 if player.cursor_stack.can_set_stack({name = "el_ki_selection_tool"}) then
                     player.cursor_stack.set_stack({name = "el_ki_selection_tool"})
-                
+
                     if global.ki.gui.main then
                         if global.ki.gui.main.frame then
                             local main248kframe = global.ki.gui.main.frame -- this global value(gui element) need to be defined per player
@@ -471,14 +471,14 @@ function gui.on_change(e)
                             change_valid_selectchannel(slider_channel,text_channel)
                         end
                     end
-                
+
                 end
             end
-        
+
             if element == "main248kcorechannelbutton" then
                 if global.ki.gui.core then
                     if (global.ki.gui.core.frame and global.ki.gui.core.id) then
-                    
+
                         local main248kcoreframe = global.ki.gui.core.frame
                         local id = global.ki.gui.core.id -- this global value(gui element) need to be defined per player
                         --Quick and dirty remedy for crash that can cause in multiplay
@@ -504,11 +504,11 @@ function gui.on_change(e)
                     end
                 end
             end
-        
+
             if element == "main248kbuffer1channelbutton" then
                 if global.ki.gui.buffer1 then
                     if (global.ki.gui.buffer1.frame and global.ki.gui.buffer1.id) then
-                    
+
                         local main248kbuffer1frame = global.ki.gui.buffer1.frame
                         local id = global.ki.gui.buffer1.id -- this global value(gui element) need to be defined per player
                         --Quick and dirty remedy for crash that can cause in multiplay
@@ -534,11 +534,11 @@ function gui.on_change(e)
                     end
                 end
             end
-        
+
             if element == "main248kbuffer2channelbutton" then
                 if global.ki.gui.buffer2 then
                     if (global.ki.gui.buffer2.frame and global.ki.gui.buffer2.id) then
-                    
+
                         local main248kbuffer2frame = global.ki.gui.buffer2.frame
                         local id = global.ki.gui.buffer2.id -- this global value(gui element) need to be defined per player
                         --Quick and dirty remedy for crash that can cause in multiplay
@@ -564,7 +564,7 @@ function gui.on_change(e)
                     end
                 end
             end
-        
+
             if element == "main248kprefchannelbutton" then
                 if global.ki.gui.main then
                     if global.ki.gui.main.frame then
@@ -592,11 +592,11 @@ function gui.on_change(e)
                     end
                 end
             end
-        
+
             if element == "main248kcorechannelslider" then
                 gui.update_main()
             end
-        
+
             if element == "main248kcorechanneltextfield" then
                 gui.update_main()
             end
@@ -664,7 +664,7 @@ function gui.update_main()
             game.players[i].gui.left["main248kbuffer2frame"].destroy()
             gui.add_buffer2_gui(game.players[i],true)
         end
-    end 
+    end
 end
 
 --=================================================================================
