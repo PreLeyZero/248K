@@ -133,6 +133,31 @@ data:extend({
         },
     },
     {
+        name = 'el_charger_tech',
+        type = 'technology',
+        icon = sprite('el_charger_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_burner_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_charger_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_charge_crystal_recipe',
+            }
+        },
+        unit = {
+            count = '50',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
+    {
         name = 'el_caster_tech',
         type = 'technology',
         icon = sprite('el_caster_tech.png'),
@@ -912,7 +937,8 @@ data:extend({
             'el_burner_tech',
             'el_water_generator_tech',
             'el_train_tech',
-            'el_ki_tech'
+            'el_ki_tech',
+            'el_charger_tech'
         },
         effects = {
             {
@@ -1459,6 +1485,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fi_fuel_train_crystal_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_charge_crystal_recipe',
             },
         },
         unit = {
@@ -2041,6 +2071,10 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fu_boiler_hydrogen_oxygen_1_recipe',
             },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_charger_hydrogen_oxygen_recipe',
+            },
         },
         unit = {
             count = '800',
@@ -2066,6 +2100,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_boiler_hydrogen_oxygen_2_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_charger_hydrogen_oxygen_1_recipe',
             },
         },
         unit = {
@@ -2093,6 +2131,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_boiler_hydrogen_oxygen_3_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_charger_hydrogen_oxygen_2_recipe',
             },
         },
         unit = {
@@ -2150,6 +2192,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_refined_crystal_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_charge_crystal_recipe',
             },
         },
         unit = {

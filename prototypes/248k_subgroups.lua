@@ -422,6 +422,10 @@ data:extend({
         name = 'fi_pure_fuel',
         type = 'fuel-category',
     },
+    {
+        name = 'charged_fuel',
+        type = 'fuel-category',
+    },
     --train_equip
     {
         name = 'el_train_equipment',
@@ -443,6 +447,10 @@ data:extend({
     },
     {
         name = 'el_arc_furnace_category',
+        type = 'recipe-category',
+    },
+    {
+        name = 'el_charger_category',
         type = 'recipe-category',
     },
     {

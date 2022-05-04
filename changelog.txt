@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.18
+Date: 04.5.2022
+  Features:
+    - added energy injector to charge energy crystals aswell as water electrolysis
+
+  Changes:
+    - removed fuel values of energy crystals, moved to charged variants
+---------------------------------------------------------------------------------------------------
 Version: 1.0.17
 Date: 03.5.2022
   Features:

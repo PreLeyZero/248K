@@ -1238,6 +1238,33 @@ data:extend({
         result_count = 1,
         energy_required = 5,
     },
+    {
+        name = 'el_charger_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        ingredients = {
+            {'iron-gear-wheel',40},
+            {'steel-plate',25},
+            {'stone-furnace',2}
+        },
+        result = 'el_charger_item',
+        result_count = 1,
+        energy_required = 4,
+    },
+    {
+        name = 'el_charge_crystal_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_charger_category',
+        ingredients = {
+            {type='item', name='el_energy_crystal_item', amount=1, propability=0.95},
+        },
+        result = 'el_energy_crystal_charged_item',
+        result_count = 1,
+        energy_required = 2,
+        always_show_made_in = true,
+    },
 
 
     

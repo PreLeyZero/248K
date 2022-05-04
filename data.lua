@@ -22,6 +22,7 @@ require('prototypes/electronic/el_caster')
 require('prototypes/electronic/el_purifier')
 require('prototypes/electronic/el_grower')
 require('prototypes/electronic/el_materials')
+require('prototypes/electronic/el_charger')
 
 require('prototypes/fission/fi_crafter')
 require('prototypes/fission/fi_miner')

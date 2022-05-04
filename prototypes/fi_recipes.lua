@@ -1369,4 +1369,17 @@ data:extend({
         order = 'a-a',
         always_show_made_in = true,
     },
+    {
+        name = 'fi_charge_crystal_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'el_charger_category',
+        ingredients = {
+            {type='item', name='fi_energy_crystal_item', amount=1, propability=0.95},
+        },
+        result = 'fi_energy_crystal_charged_item',
+        result_count = 1,
+        energy_required = 10,
+        always_show_made_in = true,
+    },
 })
