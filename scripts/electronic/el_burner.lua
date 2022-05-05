@@ -1,4 +1,5 @@
 function make_burner_recipe(item)
+    if string.find(item, "dummy") then return end -- fix for ElectricTrains crash
     local blank = {
         name = 'fu_burn_oxygen_recipe',
         type = 'recipe',
