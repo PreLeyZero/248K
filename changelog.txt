@@ -14,6 +14,7 @@ Date: 05.5.2022
 
   Bugfixes:
     - removed conditional requires which caused sync problems
+    - fixed bug with electric trains by shadoxxhd
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.18
 Date: 04.5.2022
