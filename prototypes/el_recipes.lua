@@ -171,7 +171,7 @@ data:extend({
         results = {
             {type="fluid", name="el_kerosene", amount=120},
             {type="fluid", name="light-oil", amount=90},
-            {type="fluid", name="water", amount=90},
+            {type="fluid", name="water", amount=70},
         },
         result_count = 1,
         energy_required = 5,
@@ -1258,7 +1258,7 @@ data:extend({
         enabled = 'false',
         category = 'el_charger_category',
         ingredients = {
-            {type='item', name='el_energy_crystal_item', amount=1, propability=0.95},
+            {type='item', name='el_energy_crystal_item', amount=1},
         },
         result = 'el_energy_crystal_charged_item',
         result_count = 1,

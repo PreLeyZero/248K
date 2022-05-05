@@ -1375,7 +1375,7 @@ data:extend({
         enabled = 'false',
         category = 'el_charger_category',
         ingredients = {
-            {type='item', name='fi_energy_crystal_item', amount=1, propability=0.95},
+            {type='item', name='fi_energy_crystal_item', amount=1},
         },
         result = 'fi_energy_crystal_charged_item',
         result_count = 1,

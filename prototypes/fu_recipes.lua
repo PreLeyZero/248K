@@ -1648,7 +1648,7 @@ data:extend({
         enabled = 'false',
         category = 'el_charger_category',
         ingredients = {
-            {type='item', name='fu_materials_energy_crystal', amount=1, propability=0.95},
+            {type='item', name='fu_materials_energy_crystal', amount=1},
         },
         result = 'fu_materials_energy_charged_crystal',
         result_count = 1,
@@ -1662,12 +1662,13 @@ data:extend({
         main_product = 'fu_hydrogen',
         enabled = 'false',
         ingredients = {
-            {type="item", name="fi_crushed_coal_item", amount=1},
+            {type="item", name="fi_materials_gold", amount=1},
             {type="fluid", name="water", amount=150},
         },
         results = {
             {type="fluid", name="fu_hydrogen", amount=100},
-            {type="fluid", name="fu_oxygen", amount=50}
+            {type="fluid", name="fu_oxygen", amount=50},
+            {type="item", name="fi_materials_gold", amount=1, probability=0.25},
         },
         result_count = 1,
         energy_required = 5,
@@ -1684,7 +1685,8 @@ data:extend({
         },
         results = {
             {type="fluid", name="fu_hydrogen", amount=200},
-            {type="fluid", name="fu_oxygen", amount=100}
+            {type="fluid", name="fu_oxygen", amount=100},
+            {type="item", name="fi_materials_gold", amount=1, probability=0.55},
         },
         result_count = 1,
         energy_required = 5,
@@ -1696,12 +1698,28 @@ data:extend({
         main_product = 'fu_hydrogen',
         enabled = 'false',
         ingredients = {
-            {type="item", name="fi_materials_titan", amount=1},
+            {type="item", name="fi_materials_gold", amount=1},
             {type="fluid", name="water", amount=650},
         },
         results = {
             {type="fluid", name="fu_hydrogen", amount=500},
-            {type="fluid", name="fu_oxygen", amount=150}
+            {type="fluid", name="fu_oxygen", amount=150},
+            {type="item", name="fi_materials_gold", amount=1, probability=0.85},
+        },
+        result_count = 1,
+        energy_required = 5,
+    },
+    {
+        name = 'fu_charger_hydrogen_oxygen_3_recipe',
+        type = 'recipe',
+        category = 'el_charger_category',
+        main_product = 'fu_hydrogen',
+        enabled = 'false',
+        ingredients = {
+            {type="fluid", name="water", amount=1100},
+        },
+        results = {
+            {type="fluid", name="fu_hydrogen", amount=1000},
         },
         result_count = 1,
         energy_required = 5,

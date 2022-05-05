@@ -2032,6 +2032,10 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
+                recipe = 'fu_charger_hydrogen_oxygen_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
                 recipe = 'fu_boiler_recipe',
             },
             { 
@@ -2073,7 +2077,7 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_charger_hydrogen_oxygen_recipe',
+                recipe = 'fu_charger_hydrogen_oxygen_1_recipe',
             },
         },
         unit = {
@@ -2103,7 +2107,7 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_charger_hydrogen_oxygen_1_recipe',
+                recipe = 'fu_charger_hydrogen_oxygen_2_recipe',
             },
         },
         unit = {
@@ -2134,7 +2138,7 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
-                recipe = 'fu_charger_hydrogen_oxygen_2_recipe',
+                recipe = 'fu_charger_hydrogen_oxygen_3_recipe',
             },
         },
         unit = {

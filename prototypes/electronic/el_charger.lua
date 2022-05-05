@@ -27,7 +27,8 @@ data:extend({
   --prototype
   {
       name = 'el_charger_entity',
-      type = 'furnace',
+      --type = 'furnace',
+      type = 'assembling-machine',
       icon = sprite('icon.png'),
       icon_size = 64,
       flags = {"player-creation","placeable-neutral"},
@@ -41,8 +42,8 @@ data:extend({
           result = 'el_charger_item',
       },
       crafting_categories = {'el_charger_category'},
-      result_inventory_size = 1,
-      source_inventory_size = 1,
+      --result_inventory_size = 1,
+      --source_inventory_size = 1,
       crafting_speed = 1,
       --fixed_recipe = 'el_water_pressure_recipe',
       energy_source = {
