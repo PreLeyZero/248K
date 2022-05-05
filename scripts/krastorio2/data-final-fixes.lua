@@ -363,7 +363,8 @@ table.insert(data.raw["generator-equipment"]["fi_train_equipment_generator_item"
 
 if (config("krastorio_endgame")) then
     table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=40}) 
-    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=40}) 
+    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=40})
+    table.insert(data.raw.recipe["kr-intergalactic-transceiver"].ingredients ,{type="item", name="gr_materials_white_item", amount=1}) 
     table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_down_item", amount=5}) 
     table.insert(data.raw.recipe["kr-antimatter-reactor"].ingredients ,{type="item", name="gr_materials_stack_up_item", amount=5}) 
 end
