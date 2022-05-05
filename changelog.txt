@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.19
+Date: 04.5.2022
+  Features:
+    - added a new recipe for electrical water seperation
+
+  Changes:
+    - Energy injector is now a assembling machine instead of a furnace
+    - advacned oil processing from kerosene now returns 70 instead of 90 water
+    - KI2 energy now needs lithium instead of U235, decreased cost overall
+    - electrical water seperation recipes will now only take in gold and retrurn gold with a certain percentage
+    - energy crystals have got their fuel value back
+    - better diesel fuels now cost less, but use charged crystals
+---------------------------------------------------------------------------------------------------
 Version: 1.0.18
 Date: 04.5.2022
   Features:

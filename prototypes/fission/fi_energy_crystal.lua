@@ -17,6 +17,12 @@ data:extend({
         stack_size = 500,
         subgroup = 'fi_item_subgroup_b',
         order = 'a-c',
+        fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
+        fuel_category = 'chemical',
+        fuel_acceleration_multiplier = 1,
+        fuel_emissions_multiplier = 1,
+        fuel_top_speed_multiplier = 1,
+        fuel_value = '30MJ',
     },
     {
         name = 'fi_energy_crystal_charged_item',

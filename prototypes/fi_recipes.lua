@@ -432,9 +432,8 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {'fi_energy_crystal_item',6},
-            {'el_lithium_item',6},
-            {'el_train_fuel_diesel_item',6},
+            {'fi_energy_crystal_charged_item',1},
+            {'el_train_fuel_diesel_item',4},
         },
         result = 'fi_fuel_train_crystal_item',
         result_count = 4,

@@ -303,9 +303,8 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {type="item", name="el_train_fuel_diesel_item", amount=3},
-            {type="item", name="el_energy_crystal_item", amount=3},
-            {type="item", name="el_lithium_item", amount=3},
+            {type="item", name="el_train_fuel_diesel_item", amount=4},
+            {type="item", name="el_energy_crystal_charged_item", amount=1},
         },
         results = {
             {type="item", name="el_train_fuel_diesel_energized_item", amount=4},

@@ -17,6 +17,12 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
+        fuel_category = 'chemical',
+        fuel_acceleration_multiplier = 1,
+        fuel_emissions_multiplier = 1,
+        fuel_top_speed_multiplier = 1,
+        fuel_value = '60MJ',
     },
     {
         name = 'fu_materials_energy_charged_crystal',
