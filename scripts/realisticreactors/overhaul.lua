@@ -1,3 +1,6 @@
+if settings.startup['overhaul_mode'].value then
+-- indent ignored
+
 local function add_to_recipe(recipe, item, item_amount)
     if not data.raw.recipe[recipe] then
         return
@@ -415,3 +418,4 @@ add_tech_cards(change_table_index(add_card_table, tech_structure))
 remove_pre_techs(change_table_index(pre_tech_table, tech_structure))
 remove_tech_cards(change_table_index(remove_card_table, card_structure))
 
+end --indent ignored

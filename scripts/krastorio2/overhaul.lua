@@ -1,3 +1,6 @@
+if settings.startup['overhaul_mode'].value then
+-- indent ignored
+
 local function add_to_recipe(recipe, item, item_amount)
     if not data.raw.recipe[recipe] then
         return
@@ -514,11 +517,7 @@ add_cards_to_tree(del_doubles(walk_techs("gr_charger_tech", break_con)), "singul
 add_cards_to_tree(del_doubles(walk_techs("gr_compact_fusion_tech", break_con)), "singularity-tech-card")
 add_cards_to_tree(del_doubles(walk_techs("kr-singularity-tech-card", break_con)), "fu_space_probe_science_item")
 
-
---TODO
---rare metals with fi_materials
---compact fusion tech and singularity tech
---singularity tech stuff integate
+end --indent ignored
 
 --===================================================================================================================
 --                              math and meta 

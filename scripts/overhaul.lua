@@ -1,4 +1,4 @@
-if settings.startup['overhaul_mode'].value == true then
+if settings.startup['overhaul_mode'].value then
 -- indent ignored
 
 local function add_to_recipe(recipe, item, item_amount)

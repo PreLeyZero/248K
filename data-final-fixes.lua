@@ -7,6 +7,7 @@ end
 --krastorio2
 if mods["Krastorio2"] then
     require('scripts/krastorio2/data-final-fixes')
+    require('scripts/krastorio2/overhaul')
 end
 --ind2
 if mods["IndustrialRevolution"] then
@@ -16,17 +17,13 @@ end
 if mods["space-exploration"] then
     require('scripts/SE/data-final-fixes')
 end
---overhaul K2
-if (settings.startup['overhaul_mode'].value == true and mods["Krastorio2"]) then
-    require('scripts/krastorio2/overhaul')
-end
 --overhaul with realistic reactors
 if mods["RealisticReactors"] then
     for i,v in ipairs(data.raw.technology["nuclear-power"].prerequisites) do
         if v == "effectivity-module-2" then data.raw.technology["nuclear-power"].prerequisites[i] = nil end
     end
 
-    if (settings.startup['overhaul_mode'].value == true and settings.startup['overhaul_realistic_reactors'].value == true) then
+    if settings.startup['overhaul_realistic_reactors'].value then
         require('scripts/realisticreactors/overhaul')
     end
 end
