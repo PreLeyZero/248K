@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.19
-Date: 04.5.2022
+Date: 05.5.2022
   Features:
     - added a new recipe for electrical water seperation
 
@@ -11,6 +11,9 @@ Date: 04.5.2022
     - electrical water seperation recipes will now only take in gold and retrurn gold with a certain percentage
     - energy crystals have got their fuel value back
     - better diesel fuels now cost less, but use charged crystals
+
+  Bugfixes:
+    - removed conditional requires which caused sync problems
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.18
 Date: 04.5.2022
