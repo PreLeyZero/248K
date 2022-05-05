@@ -624,9 +624,9 @@ data:extend({
         category = 'fi_ki_circuit_category',
         main_product = 'fi_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="uranium-238", amount=20},
-            {type="item", name="uranium-235", amount=1},
-            {type="item", name="battery", amount=10},
+            {type="item", name="uranium-238", amount=6},
+            {type="item", name="el_lithium_item", amount=6},
+            {type="item", name="battery", amount=6},
         },
         results = {
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
@@ -640,9 +640,9 @@ data:extend({
         category = 'fi_ki_circuit_category',
         main_product = 'fi_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="uranium-238", amount=10},
-            {type="item", name="uranium-235", amount=1},
-            {type="item", name="battery", amount=8},
+            {type="item", name="uranium-238", amount=4},
+            {type="item", name="el_lithium_item", amount=4},
+            {type="item", name="battery", amount=4},
         },
         results = {
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
@@ -656,8 +656,8 @@ data:extend({
         category = 'fi_ki_circuit_category',
         main_product = 'fi_ki_circuit_fluid',
         ingredients = {
-            {type="item", name="uranium-238", amount=10},
-            {type="item", name="battery", amount=8},
+            {type="item", name="uranium-238", amount=4},
+            {type="item", name="battery", amount=4},
         },
         results = {
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
@@ -672,11 +672,9 @@ data:extend({
         main_product = 'fi_ki_circuit_fluid',
         ingredients = {
             {type="item", name="uranium-ore", amount=10},
-            {type="item", name="battery", amount=4},
         },
         results = {
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
-            {type="item", name="uranium-235", amount=1},
         },
         energy_required = 20,
     },
