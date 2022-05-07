@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.20
+Date: 07.5.2022
+  Changes:
+    - decreased steam usage for 248ks oil processing (even more when K2 is used)
+    - buffed carbon and sulfur driven oil processing
+    - increased yield of rich powder processing and made it faster
+    - increased conversion rate of sulfuric acid -> hydrosulfuric
+---------------------------------------------------------------------------------------------------
 Version: 1.0.19
 Date: 05.5.2022
   Features:
@@ -6,9 +14,9 @@ Date: 05.5.2022
 
   Changes:
     - Energy injector is now a assembling machine instead of a furnace
-    - advacned oil processing from kerosene now returns 70 instead of 90 water
+    - advanced oil processing from kerosene now returns 70 instead of 90 water
     - KI2 energy now needs lithium instead of U235, decreased cost overall
-    - electrical water seperation recipes will now only take in gold and retrurn gold with a certain percentage
+    - electrical water seperation recipes will now only take in gold and return gold with a certain percentage
     - energy crystals have got their fuel value back
     - better diesel fuels now cost less, but use charged crystals
 

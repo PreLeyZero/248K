@@ -329,6 +329,29 @@ data:extend({
     },
 })
 
+data.raw.recipe["fi_refinery_basic_recipe"].ingredients = { 
+    {type="fluid", name="crude-oil", amount=180}, 
+    {type="fluid", name="steam", amount=15}
+}
+data.raw.recipe["fi_refinery_coal_recipe"].ingredients = { 
+    {type="fluid", name="crude-oil", amount=180},
+    {type="fluid", name="steam", amount=15},
+    {type="item", name="fi_crushed_coal_item", amount=10}
+}
+data.raw.recipe["fi_refinery_sulfur_recipe"].ingredients = {
+    {type="fluid", name="crude-oil", amount=180},
+    {type="fluid", name="steam", amount=15},
+    {type="item", name="sulfur", amount=3}
+}
+data.raw.recipe["fi_crack_sulfur_gas_recipe"].ingredients = {
+    {type="fluid", name="fi_acid_gas", amount=10},
+    {type="fluid", name="steam", amount=2}
+}
+data.raw.recipe["fi_crack_acid_gas_recipe"].ingredients = {
+    {type="fluid", name="fi_acid_gas", amount=20},
+    {type="fluid", name="steam", amount=2}
+}
+
 --techs
 table.insert(data.raw.technology["kr-lithium-processing"].effects, {type ="unlock-recipe", recipe ="fi_lithium_to_k2"})
 --table.insert(data.raw.technology["kr-matter-processing"].effects, {type ="unlock-recipe", recipe ="fu_star_engine_cooler_7_recipe"})

@@ -821,13 +821,13 @@ data:extend({
         category = 'chemistry',
         main_product = 'fi_strong_acid',
         ingredients = {
-            {type="fluid", name="water", amount=50},
+            {type="fluid", name="water", amount=100},
             {type="fluid", name="sulfuric-acid", amount=50},
             {type="item", name="fi_materials_flourite", amount=1},
         },
         results = {
-            {type="fluid", name="el_acidic_water", amount=20},
-            {type="fluid", name="fi_strong_acid", amount=80},
+            {type="fluid", name="el_acidic_water", amount=50},
+            {type="fluid", name="fi_strong_acid", amount=100},
         },
         energy_required = 0.2,
         order = 'a-b',
@@ -1150,10 +1150,10 @@ data:extend({
         category = 'chemistry',
         main_product = 'fi_materials_solution',
         ingredients = {
-            {type="fluid", name="fi_strong_acid", amount=240},
-            {type="fluid", name="sulfuric-acid", amount=120},
+            {type="fluid", name="fi_strong_acid", amount=120},
+            {type="fluid", name="sulfuric-acid", amount=6},
             {type="item", name="fi_materials_empty_solution", amount=1},
-            {type="item", name="el_lithium_item", amount=3},
+            {type="item", name="el_lithium_item", amount=2},
         },
         results = {
             {type="fluid", name="el_acidic_water", amount=20},
@@ -1175,14 +1175,14 @@ data:extend({
         ingredients = {
             {type="item", name="fi_materials_solution", amount=1},
             {type="item", name="fi_crushed_stone_item", amount=16},
-            {type="item", name="fi_crushed_coal_item", amount=20},
+            {type="item", name="fi_crushed_coal_item", amount=10},
         },
         results = {
-            {type="item", name="fi_crushed_coal_item", amount=18},
-            {type="item", name="fi_materials_rich_powder", amount=2},
+            {type="item", name="fi_crushed_coal_item", amount=7},
+            {type="item", name="fi_materials_rich_powder", amount=3},
             {type="item", name="fi_materials_empty_solution", amount=1},
         },
-        energy_required = 10,
+        energy_required = 6,
         order = 'a-b',
         always_show_made_in = true,
     },
@@ -1230,7 +1230,7 @@ data:extend({
         icon_size = 64,
         ingredients = {
             {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=80},
+            {type="fluid", name="steam", amount=40},
         },
         results = {
             {type="fluid", name="petroleum-gas", amount=80},
@@ -1252,14 +1252,14 @@ data:extend({
         icon_size = 64,
         ingredients = {
             {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=80},
+            {type="fluid", name="steam", amount=40},
             {type="item", name="fi_crushed_coal_item", amount=10},
         },
         results = {
             {type="fluid", name="petroleum-gas", amount=60},
             {type="fluid", name="fi_acid_gas", amount=30},
-            {type="fluid", name="el_kerosene", amount=65},
-            {type="fluid", name="heavy-oil", amount=75},
+            {type="fluid", name="el_kerosene", amount=75},
+            {type="fluid", name="heavy-oil", amount=95},
         },
         energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
@@ -1275,12 +1275,12 @@ data:extend({
         icon_size = 64,
         ingredients = {
             {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=80},
+            {type="fluid", name="steam", amount=40},
             {type="item", name="sulfur", amount=3},
         },
         results = {
-            {type="fluid", name="petroleum-gas", amount=80},
-            {type="fluid", name="fi_acid_gas", amount=50},
+            {type="fluid", name="petroleum-gas", amount=95},
+            {type="fluid", name="fi_acid_gas", amount=75},
             {type="fluid", name="el_kerosene", amount=80},
             {type="fluid", name="heavy-oil", amount=20},
         },
@@ -1297,7 +1297,7 @@ data:extend({
         main_product = 'sulfur',
         ingredients = {
             {type="fluid", name="fi_acid_gas", amount=10},
-            {type="fluid", name="steam", amount=10},
+            {type="fluid", name="steam", amount=5},
         },
         results = {
             {type="fluid", name="water", amount=5},
@@ -1316,7 +1316,7 @@ data:extend({
         main_product = 'el_acidic_water',
         ingredients = {
             {type="fluid", name="fi_acid_gas", amount=20},
-            {type="fluid", name="steam", amount=10},
+            {type="fluid", name="steam", amount=5},
         },
         results = {
             {type="fluid", name="el_acidic_water", amount=20},
