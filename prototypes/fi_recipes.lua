@@ -1151,7 +1151,7 @@ data:extend({
         main_product = 'fi_materials_solution',
         ingredients = {
             {type="fluid", name="fi_strong_acid", amount=120},
-            {type="fluid", name="sulfuric-acid", amount=6},
+            {type="fluid", name="sulfuric-acid", amount=60},
             {type="item", name="fi_materials_empty_solution", amount=1},
             {type="item", name="el_lithium_item", amount=2},
         },
@@ -1394,6 +1394,7 @@ data:extend({
             {type="item", name="el_materials_ceramic", amount=2},
         },
         energy_required = 1,
-        order = 'a-b',
+        subgroup = 'el_item_subgroup_a',
+        order = 'a-c',
     },
 })

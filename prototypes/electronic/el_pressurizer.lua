@@ -43,7 +43,7 @@ data:extend({
       crafting_categories = {'el_special_fluid'},
       crafting_speed = 1,
       ingredient_count = 2,
-      --fixed_recipe = 'el_water_pressure_recipe',
+      fixed_recipe = 'el_water_pressure_recipe',
       energy_source = {
           type = 'electric',
           usage_priority = 'secondary-input',

@@ -37,6 +37,7 @@ data:extend({
         energy_required = 5,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_charger_hydrogen_oxygen_1_recipe',
@@ -57,6 +58,7 @@ data:extend({
         energy_required = 5,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_charger_hydrogen_oxygen_2_recipe',
@@ -77,6 +79,7 @@ data:extend({
         energy_required = 5,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_charger_hydrogen_oxygen_3_recipe',
@@ -94,6 +97,7 @@ data:extend({
         energy_required = 5,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_3_recipe',
@@ -111,6 +115,7 @@ data:extend({
         energy_required = 1,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_recipe',
@@ -129,6 +134,7 @@ data:extend({
         energy_required = 1,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_1_recipe',
@@ -147,6 +153,7 @@ data:extend({
         energy_required = 1,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_2_recipe',
@@ -165,6 +172,7 @@ data:extend({
         energy_required = 1,
         subgroup = 'fu_item_subgroup_e',
         order = 'a-a',
+        always_show_made_in = true,
     },
     {
         name = 'fu_hydrogen_recipe',
@@ -182,6 +190,7 @@ data:extend({
         },
         result_count = '0.5',
         energy_required = 100,
+        always_show_made_in = true,
     },
     {
         name = 'fu_exchanger_1_recipe',

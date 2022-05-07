@@ -11,12 +11,7 @@ data:extend({
         icon = sprite('el_stage_tech.png'),
         icon_size = 128,
         prerequisites = {'electronics'},
-        effects = {
-            {
-                type = 'nothing',
-                effect_description = {'description.el_stage_eff'},
-            },
-        },
+        effects = {},
         unit = {
             count = '100',
             ingredients = {
@@ -32,12 +27,7 @@ data:extend({
         icon = sprite('el_energy_tech.png'),
         icon_size = 128,
         prerequisites = {'el_ALK_tech','el_lithium_tech'},
-        effects = {
-            { 
-                type = 'nothing',
-                effect_description = {'description.el_energy_eff'},
-            },
-        },
+        effects = {},
         unit = {
             count = '150',
             ingredients = {
@@ -415,10 +405,6 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'el_tank_recipe',
             },
-            { 
-                type = 'nothing',
-                effect_description = {'description.el_kerosene_tech_eff'},
-            },
         },
         unit = {
             count = '150',
@@ -491,10 +477,6 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'el_ki_cpu_recipe',
-            },
-            { 
-                type = 'nothing',
-                effect_description = {'description.el_ki_tech_eff'},
             },
             { 
                 type = 'unlock-recipe',
@@ -940,12 +922,7 @@ data:extend({
             'el_ki_tech',
             'el_charger_tech'
         },
-        effects = {
-            {
-                type = 'nothing',
-                effect_description = {'description.fi_stage_eff'},
-            },
-        },
+        effects = {},
         unit = {
             count = '200',
             ingredients = {
@@ -963,12 +940,7 @@ data:extend({
         icon = sprite('fi_energy_tech.png'),
         icon_size = 128,
         prerequisites = {'fi_materials_tech'},
-        effects = {
-            { 
-                type = 'nothing',
-                effect_description = {'description.fi_energy_eff'},
-            },
-        },
+        effects = {},
         unit = {
             count = '150',
             ingredients = {
@@ -1821,12 +1793,7 @@ data:extend({
             'fi_robo_tech',
             'fi_train_tech'
         },
-        effects = {
-            {
-                type = 'nothing',
-                effect_description = {'description.fu_stage_eff'},
-            },
-        },
+        effects = {},
         unit = {
             count = '200',
             ingredients = {
@@ -2021,11 +1988,7 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_fusion_card_7_recipe',
-            },
-            {
-                type = 'nothing',
-                effect_description = {'description.fu_fusor_eff'},
-            },
+            }
         },
         unit = {
             count = '400',
@@ -2067,11 +2030,7 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_hydrogen_recipe',
-            },
-            {
-                type = 'nothing',
-                effect_description = {'description.fu_basic_elements_eff'},
-            },
+            }
         },
         unit = {
             count = '400',
@@ -2184,10 +2143,6 @@ data:extend({
         icon_size = 128,
         prerequisites = {'fu_fusor_tech','fu_crystal_tech','fu_magnet_tech','fu_plasma_tech'},
         effects = {
-            { 
-                type = 'nothing',
-                effect_description = {'description.fu_energy_eff'},
-            },
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_tech_sign_recipe',
@@ -2318,11 +2273,7 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_stelerator_3_recipe',
-            },
-            { 
-                type = 'nothing',
-                effect_description = {'description.fu_reactor_eff'},
-            },
+            }
         },
         unit = {
             count = '1000',
@@ -2382,11 +2333,7 @@ data:extend({
         { 
             type = 'unlock-recipe',
             recipe = 'fu_tokamak_2_recipe',
-        },
-        { 
-            type = 'nothing',
-            effect_description = {'description.fu_tokamak_eff'},
-        },
+        }
     },
         unit = {
             count = '2000',
@@ -2451,11 +2398,7 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_activator_2_recipe',
-            },
-            { 
-                type = 'nothing',
-                effect_description = {'description.fu_activator_eff'},
-            },
+            }
         },
         unit = {
             count = '1000',
@@ -2495,11 +2438,7 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'fu_star_engine_heater_left_recipe',
-            },
-            { 
-                type = 'nothing',
-                effect_description = {'description.fu_star_engine_eff'},
-            },
+            }
         },
         unit = {
             count = '10000',
@@ -2859,12 +2798,7 @@ data:extend({
             'fu_hydrogen_3_tech',
             'fu_lead_tech'
         },
-        effects = {
-            {
-                type = 'nothing',
-                effect_description = {'description.gr_stage_eff'},
-            },
-        },
+        effects = {},
         unit = {
             count = '200',
             ingredients = {

@@ -173,6 +173,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 1,
+        always_show_made_in = true,
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_1_recipe',
@@ -189,6 +190,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 1,
+        always_show_made_in = true,
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_2_recipe',
@@ -205,6 +207,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 1,
+        always_show_made_in = true,
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_3_recipe',
@@ -220,6 +223,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 1,
+        always_show_made_in = true,
     },
     {
         name = 'fu_hydrogen_recipe',
@@ -236,6 +240,7 @@ data:extend({
             {type="fluid", name="fu_tritium", amount=1}
         },
         energy_required = 100,
+        always_show_made_in = true,
     },
     {
         name = 'fu_lithium_6_recipe',
@@ -250,6 +255,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 1,
+        always_show_made_in = true,
     },
     --lead
     {
@@ -306,6 +312,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 10,
+        always_show_made_in = true,
     },
     --stelerator fusion
     {
@@ -1688,6 +1695,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 5,
+        always_show_made_in = true,
     },
     {
         name = 'fu_charger_hydrogen_oxygen_1_recipe',
@@ -1706,6 +1714,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 5,
+        always_show_made_in = true,
     },
     {
         name = 'fu_charger_hydrogen_oxygen_2_recipe',
@@ -1724,6 +1733,7 @@ data:extend({
         },
         result_count = 1,
         energy_required = 5,
+        always_show_made_in = true,
     },
     {
         name = 'fu_charger_hydrogen_oxygen_3_recipe',
@@ -1739,5 +1749,6 @@ data:extend({
         },
         result_count = 1,
         energy_required = 5,
+        always_show_made_in = true,
     },
 })

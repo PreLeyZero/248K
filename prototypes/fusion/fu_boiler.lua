@@ -47,6 +47,7 @@ data:extend({
             max_temperature = 1000,
             specific_heat = '100MJ',
             max_transfer = '10GW',
+            min_working_temperature = 500,
             connections = {
                 {position = {0.5,-1.8}, direction = defines.direction.north},
                 {position = {-0.5,-1.8}, direction = defines.direction.north},
