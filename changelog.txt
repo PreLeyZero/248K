@@ -10,6 +10,7 @@ Date: 07.5.2022
     - buffed carbon and sulfur driven oil processing
     - increased yield of rich powder processing and made it faster
     - increased conversion rate of sulfuric acid -> hydrosulfuric
+    - set minimum working temperature for thermochemical seperator to 500 dec
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.19
 Date: 05.5.2022
