@@ -1557,6 +1557,22 @@ data:extend({
         subgroup = 'fu_item_subgroup_f',
     },
     {
+        name = 'fu_burn_dirty_water_recipe',
+        type = 'recipe',
+        category = 'fu_burner_category',
+        hidden = true,
+        ingredients = {
+            {type="fluid", name="el_dirty_water", amount=100},
+        },
+        results = {
+            {type="fluid", name="water", amount=100},
+        },
+        result_count = 1,
+        energy_required = 1,
+        always_show_made_in = true,
+        subgroup = 'fu_item_subgroup_f',
+    },
+    {
         name = 'fu_miner_recipe',
         type = 'recipe',
         category = 'crafting',
