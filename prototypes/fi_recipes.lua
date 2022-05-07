@@ -1381,4 +1381,19 @@ data:extend({
         energy_required = 10,
         always_show_made_in = true,
     },
+    {
+        name = 'fi_ceramic_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting-with-fluid',
+        ingredients = {
+            {type="fluid", name="steam", amount=45},
+            {type="item", name="fi_crushed_stone_item", amount=3},
+        },
+        results = {
+            {type="item", name="el_materials_ceramic", amount=2},
+        },
+        energy_required = 1,
+        order = 'a-b',
+    },
 })

@@ -1466,6 +1466,28 @@ data:extend({
             time = 30,
         },
     },
+    {
+        name = 'fi_ceramic_tech',
+        type = 'technology',
+        icon = sprite('fi_ceramic_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_crusher_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_ceramic_recipe',
+            }
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
     --fi crystal 
     {
         name = 'fi_crystal_tech',
