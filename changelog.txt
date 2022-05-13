@@ -9,6 +9,7 @@ Date: 13.5.2022
     - all building icons are now brighter
     - lowerd volume of some machines
     - made combined matter cheaper
+    - added another exotic kovarex recipe
     - reduced stack sizes of energy crystals and diesel fuels
     - increased stack size of neutron canisters
     - adjusted fusion reactor fluid inputs
