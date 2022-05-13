@@ -13,6 +13,7 @@ Date: 13.5.2022
     - reduced stack sizes of energy crystals and diesel fuels
     - increased stack size of neutron canisters
     - adjusted fusion reactor fluid inputs
+    - increased Item/fluid handler module slots
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.20
