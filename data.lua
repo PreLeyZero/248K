@@ -60,6 +60,7 @@ require('prototypes/fusion/fu_plasma')
 require('prototypes/fusion/fu_materials')
 require('prototypes/fusion/fu_magnet')
 require('prototypes/fusion/fu_miner')
+require('prototypes/fusion/fu_turbine')
 
 require('prototypes/gravitation/gr_crafter')
 require('prototypes/gravitation/gr_materials')

@@ -515,6 +515,42 @@ data:extend({
         order = 'b-a',
         always_show_made_in = true,
     },
+    {
+        name = 'fu_turbine_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        ingredients = {
+            {type="item", name="steam-turbine", amount=5},
+            {type="item", name="fu_materials_KFK", amount=40},
+            {type="item", name="fu_materials_TIM", amount=40},
+            {type="item", name="concrete", amount=60},
+        },
+        results = {
+            {type="item", name="fu_turbine_item", amount=1},
+        },
+        result_count = 1,
+        energy_required = 10,
+    },
+    {
+        name = 'fu_exchanger_4_recipe',
+        type = 'recipe',
+        category = 'fu_exchanger_crafting_category',
+        main_product = 'fu_hot_steam',
+        enabled = 'false',
+        ingredients = {
+            {type="fluid", name="fu_lead_fluid_hot", amount=100},
+            {type="fluid", name="water", amount=100},
+        },
+        results = {
+            {type="fluid", name="fu_lead_fluid_cold", amount=100},
+            {type="fluid", name="fu_hot_steam", amount=100, temperature=1500},
+        },
+        result_count = 1,
+        energy_required = 1,
+        subgroup = 'fu_item_subgroup_e',
+        order = 'b-a',
+        always_show_made_in = true,
+    },
     --fu_robo
     {
         name = 'fu_robo_logistic_recipe',

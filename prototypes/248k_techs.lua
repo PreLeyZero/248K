@@ -2286,6 +2286,37 @@ data:extend({
             time = 45,
         },
     },
+    {
+        name = 'fu_turbine_tech',
+        type = 'technology',
+        icon = sprite('fu_turbine_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fu_energy_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_turbine_recipe',
+            },
+            --{ 
+            --    type = 'unlock-recipe',
+            --    recipe = 'fu_stelerator_1_recipe',
+            --},
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_exchanger_4_recipe',
+            },
+        },
+        unit = {
+            count = '400',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1}
+            },
+            time = 45,
+        },
+    },
     --robo
     {
         name = 'fu_robo_tech',

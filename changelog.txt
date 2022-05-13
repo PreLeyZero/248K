@@ -4,6 +4,7 @@ Date: 13.5.2022
   Features:
     - added a better ceramic recipe in fission stage
     - added descriptions to a lot of machines/items 
+    - added high capacity steam turbine
 
   Changes:
     - all building icons are now brighter
