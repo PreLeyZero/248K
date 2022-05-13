@@ -3052,6 +3052,10 @@ data:extend({
             { 
                 type = 'unlock-recipe',
                 recipe = 'gr_kovarex_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_kovarex_2_recipe',
             }
         },
         unit = {

@@ -34,9 +34,9 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {'fu_space_probe_down_matter_item',3},
+            {'fu_space_probe_down_matter_item',2},
             {'low-density-structure',10},
-            {'fu_space_probe_data_card_3_item',2},
+            {'fu_space_probe_data_card_3_item',1},
         },
         result = 'gr_materials_stack_down_item',
         result_count = 1,
@@ -47,9 +47,9 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         ingredients = {
-            {'fu_space_probe_up_matter_item',3},
+            {'fu_space_probe_up_matter_item',2},
             {'low-density-structure',10},
-            {'fu_space_probe_data_card_3_item',2},
+            {'fu_space_probe_data_card_3_item',1},
         },
         result = 'gr_materials_stack_up_item',
         result_count = 1,
@@ -201,6 +201,23 @@ data:extend({
         results = {
             {type="item", name="fu_space_probe_down_matter_item", amount=9},
             {type="item", name="fu_space_probe_up_matter_item", amount=1}
+        },
+        result_count = 1,
+        energy_required = 100,
+        always_show_made_in = true
+    },
+    {
+        name = 'gr_kovarex_2_recipe',
+        type = 'recipe',
+        category = 'centrifuging',
+        enabled = 'false',
+        main_product = 'fu_space_probe_down_matter_item',
+        ingredients = {
+            {type="item", name="fu_space_probe_up_matter_item", amount=10}
+        },
+        results = {
+            {type="item", name="fu_space_probe_up_matter_item", amount=9},
+            {type="item", name="fu_space_probe_down_matter_item", amount=1}
         },
         result_count = 1,
         energy_required = 100,

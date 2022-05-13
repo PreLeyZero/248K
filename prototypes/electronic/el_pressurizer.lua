@@ -144,7 +144,7 @@ data:extend({
       working_sound =
       {
         sound = {filename = "__base__/sound/chemical-plant-3.ogg" },
-        apparent_volume = 0.1,
+        apparent_volume = 0.05,
       },
   },
 })

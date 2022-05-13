@@ -1,4 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.21
+Date: 13.5.2022
+  Features:
+    - added a better ceramic recipe in fission stage
+    - added descriptions to a lot of machines/items 
+
+  Changes:
+    - all building icons are now brighter
+    - lowerd volume of some machines
+    - made combined matter cheaper
+    - reduced stack sizes of energy crystals and diesel fuels
+    - increased stack size of neutron canisters
+    - adjusted fusion reactor fluid inputs
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.20
 Date: 07.5.2022
   Features:

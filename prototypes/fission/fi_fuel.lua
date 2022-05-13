@@ -165,7 +165,7 @@ data:extend({
         type = 'item',
         icon = sprite('train_crystal_item.png'),
         icon_size = 64,
-        stack_size = 100,
+        stack_size = 20,
         subgroup = 'fi_item_subgroup_d',
         order = 'd-a',
         fuel_acceleration_multiplier = 0.6,

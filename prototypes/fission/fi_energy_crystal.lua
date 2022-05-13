@@ -14,7 +14,7 @@ data:extend({
         type = 'item',
         icon = sprite('item.png'),
         icon_size = 64,
-        stack_size = 500,
+        stack_size = 100,
         subgroup = 'fi_item_subgroup_b',
         order = 'a-c',
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},

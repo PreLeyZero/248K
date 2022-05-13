@@ -60,6 +60,19 @@ data:extend({
         energy_usage = '400MW',
         --fluid
         fluid_boxes = {
+          { 
+            filter = "fu_lead_fluid_cold",
+            base_area = 1,
+            height = 2,
+            base_level = -1,
+            pipe_covers = pipecoverspictures(),
+            pipe_picture = grey_south_pipe_picture,
+            pipe_connections =
+            {
+              {type = "input", position = {2, 7}}
+            },
+            production_type = "input"
+          },
           {
             base_area = 1,
             height = 2,
@@ -68,7 +81,7 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {type = "input", position = {-1, -7}},
+              {type = "input", position = {-2, -7}},
             },
             production_type = "input"
           },
@@ -80,23 +93,12 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {type = "input", position = {1, -7}}
+              {type = "input", position = {2, -7}}
             },
             production_type = "input"
           },
           { 
-            base_area = 1,
-            height = 2,
-            base_level = -1,
-            pipe_covers = pipecoverspictures(),
-            pipe_picture = grey_south_pipe_picture,
-            pipe_connections =
-            {
-              {type = "input", position = {3, -7}}
-            },
-            production_type = "input"
-          },
-          { 
+            filter = "fu_lead_fluid_hot",
             base_area = 1,
             height = 2,
             base_level = 1,
@@ -104,10 +106,10 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {type = "output", position = {-3, -7}}
+              {type = "output", position = {-2, 7}}
             },
             production_type = "output"
-          },
+          }
         },
         --animation
         animation = {
@@ -173,6 +175,19 @@ data:extend({
       energy_usage = '400MW',
       --fluid
       fluid_boxes = {
+        { 
+          filter = "fu_lead_fluid_cold",
+          base_area = 1,
+          height = 2,
+          base_level = -1,
+          pipe_covers = pipecoverspictures(),
+          pipe_picture = grey_south_pipe_picture,
+          pipe_connections =
+          {
+            {type = "input", position = {2, 7}}
+          },
+          production_type = "input"
+        },
         {
           base_area = 1,
           height = 2,
@@ -181,7 +196,7 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {type = "input", position = {-1, -7}},
+            {type = "input", position = {-2, -7}},
           },
           production_type = "input"
         },
@@ -193,23 +208,12 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {type = "input", position = {1, -7}}
+            {type = "input", position = {2, -7}}
           },
           production_type = "input"
         },
         { 
-          base_area = 1,
-          height = 2,
-          base_level = -1,
-          pipe_covers = pipecoverspictures(),
-          pipe_picture = grey_south_pipe_picture,
-          pipe_connections =
-          {
-            {type = "input", position = {3, -7}}
-          },
-          production_type = "input"
-        },
-        { 
+          filter = "fu_lead_fluid_hot",
           base_area = 1,
           height = 2,
           base_level = 1,
@@ -217,10 +221,10 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {type = "output", position = {-3, -7}}
+            {type = "output", position = {-2, 7}}
           },
           production_type = "output"
-        },
+        }
       },
       animation = {
         filename = sprite('tokamak_entity_animation.png'),

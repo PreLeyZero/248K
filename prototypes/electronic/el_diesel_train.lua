@@ -167,18 +167,18 @@ data:extend({
                 sound = {
                     {
                         filename = "__base__/sound/train-breaks.ogg",
-                        volume = 0.6,
+                        volume = 0.2,
                     }
                 },
             },
         },
         working_sound = { 
             sound = { filename ='__base__/sound/train-engine.ogg'},
-            apparent_volume = 0.5,
+            apparent_volume = 0.2,
         }, 
         vehicle_impact_sound = {
             filename = "__base__/sound/car-metal-impact-6.ogg",
-            volume = 0.8
+            volume = 0.3
         },
 
     },
