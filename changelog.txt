@@ -8,6 +8,8 @@ Date: 19.5.2022
     - added module slots for laser/plasma/magnet facility, decreased their lead usage
     - added module slots to fusor, improves yield of fusor recipes
     - increased yield of lithium to lithium[6]
+    - made all rare metals cheaper
+    - removed KIX dependency from max beacon support tech
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.21
 Date: 13.5.2022

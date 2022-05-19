@@ -305,7 +305,7 @@ data:extend({
         category = 'crafting-with-fluid',
         enabled = 'false',
         ingredients = {
-            {type="item", name="fu_crushed_lead_item", amount=5},
+            {type="item", name="fu_crushed_lead_item", amount=1},
         },
         results = {
             {type="fluid", name="fu_lead_fluid_cold", amount=100},
@@ -1401,7 +1401,7 @@ data:extend({
             --{type="item", name="fi_materials_pure_gold", amount=2},
             --{type="item", name="fi_materials_pure_neodym", amount=2},
             --{type="item", name="fi_materials_pure_titan", amount=2},
-            {type="item", name="fu_materials_pure_lead", amount=6},
+            {type="item", name="fu_materials_pure_lead", amount=5},
         },
         energy_required = 0.2,
         order = 'a-b',

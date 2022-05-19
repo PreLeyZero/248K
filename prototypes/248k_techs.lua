@@ -890,7 +890,7 @@ data:extend({
         type = 'technology',
         icon = sprite('el_ki_sup_4_tech.png'),
         icon_size = 128,
-        prerequisites = {'el_ki_sup_3_tech','fu_ki_eff_3_tech','fu_ki_plus_1_tech'},
+        prerequisites = {'el_ki_sup_3_tech','fu_ki_eff_3_tech'},
         effects = {
             { 
                 type = 'nothing',

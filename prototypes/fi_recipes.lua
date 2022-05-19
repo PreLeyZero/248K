@@ -1063,12 +1063,12 @@ data:extend({
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_pure_neodym',
         ingredients = {
-            {type="fluid", name="fi_dirty_water", amount=200},
+            {type="fluid", name="fi_dirty_water", amount=100},
         },
         results = {
-            {type="fluid", name="water", amount=200},
+            {type="fluid", name="water", amount=100},
             --{type="item", name="fi_materials_pure_gold", amount=2},
-            {type="item", name="fi_materials_pure_neodym", amount=1},
+            {type="item", name="fi_materials_pure_neodym", amount=2},
             --{type="item", name="fi_materials_pure_titan", amount=2},
         },
         energy_required = 0.2,
@@ -1081,10 +1081,10 @@ data:extend({
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_pure_gold',
         ingredients = {
-            {type="fluid", name="fi_dirty_water", amount=200},
+            {type="fluid", name="fi_dirty_water", amount=100},
         },
         results = {
-            {type="fluid", name="water", amount=200},
+            {type="fluid", name="water", amount=100},
             {type="item", name="fi_materials_pure_gold", amount=2},
             --{type="item", name="fi_materials_pure_neodym", amount=4},
             --{type="item", name="fi_materials_pure_titan", amount=2},
@@ -1099,13 +1099,13 @@ data:extend({
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_pure_titan',
         ingredients = {
-            {type="fluid", name="fi_dirty_water", amount=200},
+            {type="fluid", name="fi_dirty_water", amount=100},
         },
         results = {
-            {type="fluid", name="water", amount=200},
+            {type="fluid", name="water", amount=100},
             --{type="item", name="fi_materials_pure_gold", amount=2},
             --{type="item", name="fi_materials_pure_neodym", amount=4},
-            {type="item", name="fi_materials_pure_titan", amount=1},
+            {type="item", name="fi_materials_pure_titan", amount=2},
         },
         energy_required = 0.2,
         order = 'a-b',
