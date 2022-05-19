@@ -99,7 +99,7 @@ data:extend({
             {type="fluid", name="fu_protium", amount=100},
         },
         result = 'fu_materials_fusion_card',
-        result_count = 5,
+        result_count = 10,
         energy_required = 100,
         always_show_made_in = true,
     },
@@ -113,7 +113,7 @@ data:extend({
             {type="fluid", name="fu_deuterium", amount=100},
         },
         result = 'fu_materials_fusion_card',
-        result_count = 30,
+        result_count = 100,
         energy_required = 100,
         always_show_made_in = true,
     },
@@ -127,7 +127,7 @@ data:extend({
             {type="fluid", name="fu_tritium", amount=100},
         },
         result = 'fu_materials_fusion_card',
-        result_count = 100,
+        result_count = 500,
         energy_required = 100,
         always_show_made_in = true,
     },
@@ -140,7 +140,7 @@ data:extend({
             {type="fluid", name="fu_deuterium", amount=100},
         },
         result = 'fu_materials_fusion_card',
-        result_count = 40,
+        result_count = 50,
         energy_required = 100,
         always_show_made_in = true,
     },
@@ -251,7 +251,7 @@ data:extend({
             {type="item", name="fi_crushed_lithium_item", amount=1},
         },
         results = {
-            {type="fluid", name="fu_lithium_6", amount=1},
+            {type="fluid", name="fu_lithium_6", amount=5},
         },
         result_count = 1,
         energy_required = 1,
@@ -305,7 +305,7 @@ data:extend({
         category = 'crafting-with-fluid',
         enabled = 'false',
         ingredients = {
-            {type="item", name="fu_crushed_lead_item", amount=10},
+            {type="item", name="fu_crushed_lead_item", amount=5},
         },
         results = {
             {type="fluid", name="fu_lead_fluid_cold", amount=100},
@@ -1189,12 +1189,12 @@ data:extend({
         main_product = 'fu_materials_energy_crystal',
         subgroup = 'fu_item_subgroup_a-b',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid_cold", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=10},
             {type="item", name="fu_materials_refined_crystal", amount=1}
         },
         results = {
             {type="item", name="fu_materials_energy_crystal", amount=1},
-            {type="fluid", name="fu_lead_fluid_hot", amount=50}
+            {type="fluid", name="fu_lead_fluid_hot", amount=10}
         },
         result_count = 1,
         energy_required = 3,
@@ -1343,10 +1343,10 @@ data:extend({
         category = 'fu_laser_category',
         main_product = 'fu_materials_laser_card',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid_cold", amount=50}
+            {type="fluid", name="fu_lead_fluid_cold", amount=10}
         },
         results = {
-            {type="fluid", name="fu_lead_fluid_hot", amount=50},
+            {type="fluid", name="fu_lead_fluid_hot", amount=10},
             {type="item", name="fu_materials_laser_card", amount=1}
         },
         energy_required = 1,
@@ -1359,11 +1359,11 @@ data:extend({
         category = 'fu_plasma_category',
         main_product = 'fu_materials_plasma_card',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid_cold", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=10},
             {type="item", name="stone", amount=10}
         },
         results = {
-            {type="fluid", name="fu_lead_fluid_hot", amount=50},
+            {type="fluid", name="fu_lead_fluid_hot", amount=10},
             {type="item", name="fu_materials_plasma_card", amount=1}
         },
         energy_required = 1,
@@ -1376,11 +1376,11 @@ data:extend({
         category = 'fu_magnet_category',
         main_product = 'fu_materials_magnet_card',
         ingredients = {
-            {type="fluid", name="fu_lead_fluid_cold", amount=50},
+            {type="fluid", name="fu_lead_fluid_cold", amount=10},
             {type="item", name="fi_materials_neodym", amount=1}
         },
         results = {
-            {type="fluid", name="fu_lead_fluid_hot", amount=50},
+            {type="fluid", name="fu_lead_fluid_hot", amount=10},
             {type="item", name="fu_materials_magnet_card", amount=1}
         },
         energy_required = 1,

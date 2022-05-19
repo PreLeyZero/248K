@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.22
+Date: 19.5.2022
+  Features:
+    - added a new sprite for hot lead coolant
+
+  Changes:
+    - added module slots for laser/plasma/magnet facility, decreased their lead usage
+    - added module slots to fusor, improves yield of fusor recipes
+    - increased yield of lithium to lithium[6]
+---------------------------------------------------------------------------------------------------
 Version: 1.0.21
 Date: 13.5.2022
   Features:

@@ -178,7 +178,7 @@ data:extend({
     {
         name = 'fu_lead_fluid_hot',
         type = 'fluid',
-        icon = sprite('fu_lead_fluid.png'),
+        icon = sprite('fu_lead_fluid_hot.png'),
         icon_size = 64,
         default_temperature = 15,
         max_temperature = 1500,

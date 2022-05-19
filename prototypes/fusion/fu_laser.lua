@@ -48,6 +48,14 @@ data:extend({
           type = 'electric',
           usage_priority = 'secondary-input',
       },
+      allowed_effects = {"speed", "consumption", "pollution"},
+      module_specification = {
+        module_info_icon_shift = {
+          0,
+          0.8
+        },
+        module_slots = 6
+      }, 
       energy_usage = '60MW',
       fluid_boxes = {
           {
