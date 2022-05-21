@@ -175,6 +175,15 @@ data:extend({
         },
         result_count = 1,
         energy_required = 5,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_kerosene.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_2.png"
+            }
+        }
     },
     {
         name = 'el_tank_recipe',
@@ -503,6 +512,15 @@ data:extend({
             {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_memory_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_1.png"
+            }
+        } 
     },
     {
         name = 'el_ki_memory_fluid_recipe_1',
@@ -520,6 +538,15 @@ data:extend({
             {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_memory_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_2.png"
+            }
+        } 
     },
     {
         name = 'el_ki_memory_fluid_recipe_2',
@@ -537,6 +564,15 @@ data:extend({
             {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_memory_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_3.png"
+            }
+        } 
     },
     {
         name = 'el_ki_memory_fluid_recipe_3',
@@ -553,6 +589,15 @@ data:extend({
             {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_memory_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_4.png"
+            }
+        } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe',
@@ -569,6 +614,15 @@ data:extend({
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fu_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_1.png"
+            }
+        } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe_1',
@@ -585,6 +639,15 @@ data:extend({
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fu_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_2.png"
+            }
+        } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe_2',
@@ -600,6 +663,15 @@ data:extend({
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fu_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_3.png"
+            }
+        } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe_3',
@@ -615,6 +687,15 @@ data:extend({
             {type="fluid", name="fu_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fu_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_4.png"
+            }
+        } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe',
@@ -631,6 +712,15 @@ data:extend({
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_1.png"
+            }
+        } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe_1',
@@ -647,6 +737,15 @@ data:extend({
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_2.png"
+            }
+        } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe_2',
@@ -662,6 +761,15 @@ data:extend({
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_3.png"
+            }
+        } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe_3',
@@ -676,6 +784,15 @@ data:extend({
             {type="fluid", name="fi_ki_circuit_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_ki_circuit_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_4.png"
+            }
+        } 
     },
     --el_ki_cpu_entity
     {
@@ -693,7 +810,7 @@ data:extend({
             {type="item", name="el_ki_cpu_item", amount=1},
         },
         result_count = 1,
-        energy_required = 30,
+        energy_required = 30, 
     },
     --el_ki_cpu_fluid
     {
@@ -712,6 +829,15 @@ data:extend({
             {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_cpu_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_1.png"
+            }
+        } 
     },
     {
         name = 'el_ki_cpu_fluid_recipe_1',
@@ -729,6 +855,15 @@ data:extend({
             {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_cpu_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_2.png"
+            }
+        } 
     },
     {
         name = 'el_ki_cpu_fluid_recipe_2',
@@ -746,6 +881,15 @@ data:extend({
             {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_cpu_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_3.png"
+            }
+        } 
     },
     {
         name = 'el_ki_cpu_fluid_recipe_3',
@@ -762,6 +906,15 @@ data:extend({
             {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},
         },
         energy_required = 20,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_ki_cpu_fluid.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_4.png"
+            }
+        } 
     },
 
     --el_ki_core_cpu_memory
@@ -889,7 +1042,16 @@ data:extend({
             {type="item", name="el_materials_pure_aluminum", amount=2},
         },
         energy_required = 1,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_stone.png"
+            }
+        } 
     },
     {
         name = 'el_purify_stone_2_recipe',
@@ -907,7 +1069,17 @@ data:extend({
             {type="item", name="el_materials_pure_aluminum", amount=2},
         },
         energy_required = 1,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_stone.png"
+            }
+        }
+        
     },
     {
         name = 'el_purify_iron_recipe',
@@ -925,7 +1097,17 @@ data:extend({
             {type="item", name="el_materials_pure_iron", amount=5},
         },
         energy_required = 1,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_iron.png"
+            }
+        }
+        
     },
     {
         name = 'el_purify_copper_recipe',
@@ -943,7 +1125,16 @@ data:extend({
             {type="item", name="el_materials_pure_copper", amount=5},
         },
         energy_required = 1,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_copper.png"
+            }
+        } 
     },
     {
         name = 'el_purify_stone_acidic_recipe',
@@ -1234,6 +1425,15 @@ data:extend({
         },
         result_count = 1,
         energy_required = 5,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/el_kerosene.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_1.png"
+            }
+        } 
     },
     {
         name = 'el_charger_recipe',

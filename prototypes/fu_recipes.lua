@@ -174,6 +174,17 @@ data:extend({
         result_count = 1,
         energy_required = 1,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_1.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-a-a',
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_1_recipe',
@@ -191,6 +202,17 @@ data:extend({
         result_count = 1,
         energy_required = 1,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_2.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-a-b',
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_2_recipe',
@@ -208,6 +230,17 @@ data:extend({
         result_count = 1,
         energy_required = 1,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_3.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-a-c',
     },
     {
         name = 'fu_boiler_hydrogen_oxygen_3_recipe',
@@ -224,6 +257,17 @@ data:extend({
         result_count = 1,
         energy_required = 1,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_4.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-a-d',
     },
     {
         name = 'fu_hydrogen_recipe',
@@ -1732,6 +1776,17 @@ data:extend({
         result_count = 1,
         energy_required = 5,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_1.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-b-a',
     },
     {
         name = 'fu_charger_hydrogen_oxygen_1_recipe',
@@ -1751,6 +1806,17 @@ data:extend({
         result_count = 1,
         energy_required = 5,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_2.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-b-b',
     },
     {
         name = 'fu_charger_hydrogen_oxygen_2_recipe',
@@ -1770,6 +1836,17 @@ data:extend({
         result_count = 1,
         energy_required = 5,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_3.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-b-c',
     },
     {
         name = 'fu_charger_hydrogen_oxygen_3_recipe',
@@ -1786,5 +1863,16 @@ data:extend({
         result_count = 1,
         energy_required = 5,
         always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_4.png"
+            }
+        },
+        subgroup = 'fu_item_subgroup_e',
+        order = 'a-b-d',
     },
 })

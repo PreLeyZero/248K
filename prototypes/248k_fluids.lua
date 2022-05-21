@@ -188,7 +188,7 @@ data:extend({
 		pressure_to_speed_ratio = 0.400, 
 		flow_to_energy_ratio = 0,
         subgroup = 'fu_item_subgroup_e',
-        order = 'a-a',
+        order = 'a-c',
     },
     {
         name = 'fu_lead_fluid_cold',
@@ -203,7 +203,7 @@ data:extend({
 		pressure_to_speed_ratio = 0.400, 
 		flow_to_energy_ratio = 0,
         subgroup = 'fu_item_subgroup_e',
-        order = 'a-a',
+        order = 'a-c',
     },
     {
         name = 'el_dirty_water',

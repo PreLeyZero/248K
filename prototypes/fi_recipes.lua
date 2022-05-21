@@ -852,7 +852,18 @@ data:extend({
             {type="item", name="el_materials_pure_copper", amount=3},
         },
         energy_required = 2,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_stone.png"
+            }
+        },
+        subgroup = 'fi_item_subgroup_f',
+        order = 'a-a',
     },
     {
         name = 'fi_purify_iron_recipe',
@@ -872,7 +883,18 @@ data:extend({
             {type="item", name="el_materials_pure_iron", amount=39}
         },
         energy_required = 16,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_iron.png"
+            }
+        },
+        subgroup = 'fi_item_subgroup_f',
+        order = 'a-a',
     },
     {
         name = 'fi_purify_copper_recipe',
@@ -892,7 +914,18 @@ data:extend({
             {type="item", name="el_materials_pure_copper", amount=39}
         },
         energy_required = 16,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_copper.png"
+            }
+        },
+        subgroup = 'fi_item_subgroup_f',
+        order = 'a-a',
     },
     {
         name = 'fi_purify_uranium_recipe',
@@ -913,7 +946,18 @@ data:extend({
             {type="item", name="uranium-235", amount=1},
         },
         energy_required = 20,
-        always_show_made_in = true
+        always_show_made_in = true,
+        icon_size = 64,
+        icons = {
+            {
+                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+            },
+            {
+                icon = "__248k__/ressources/icons/overlay_uranium.png"
+            }
+        },
+        subgroup = 'fi_item_subgroup_f',
+        order = 'a-a',
     },
 
 
