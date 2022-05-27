@@ -124,4 +124,18 @@ data:extend({
         default_value   = true,
         order           = 'i-c',
     },
+    {
+        name            = 'retexture_science',
+        type            = 'bool-setting',
+        setting_type    = 'startup',
+        default_value   = true,
+        order           = 'i-d',
+    },
+    {
+        name            = 'overhaul_science',
+        type            = 'bool-setting',
+        setting_type    = 'startup',
+        default_value   = false,
+        order           = 'i-d',
+    },
 })

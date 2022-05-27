@@ -1891,4 +1891,24 @@ data:extend({
         result_count = 1,
         energy_required = 4,
     },
+    {
+        name = 'fu_lab_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        main_product = 'fu_lab_item',
+        ingredients = {
+            {type="item", name="concrete", amount=100},
+            {type="item", name="lab", amount=10},
+            {type="item", name="fu_materials_energy_charged_crystal", amount=10},
+            {type="item", name="fu_materials_KFK", amount=40},
+            {type="item", name="fu_materials_TIM", amount=40},
+            {type="item", name="fu_materials_magnet", amount=10},
+        },
+        results = {
+            {type="item", name="fu_lab_item", amount=1},
+        },
+        result_count = 1,
+        energy_required = 10,
+    },
 })

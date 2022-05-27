@@ -1,8 +1,10 @@
 --insert tech
 if data.raw.lab['lab'] then
-    table.insert(data.raw.lab['lab'].inputs, 'fu_space_probe_science_item')
     table.insert(data.raw.lab['lab'].inputs, 'fi_ki_science')
     table.insert(data.raw.lab['lab'].inputs, 'fu_ki_science')
+    if not settings.startup['overhaul_science'].value then
+        table.insert(data.raw.lab['lab'].inputs, 'fu_space_probe_science_item')
+    end
 end
 --krastorio2
 if mods["Krastorio2"] then

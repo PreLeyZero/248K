@@ -2890,6 +2890,30 @@ data:extend({
             time = 100,
         },
     },
+    {
+        name = 'fu_lab_tech',
+        type = 'technology',
+        icon = sprite('fu_lab_tech.png'),
+        icon_size = 128,
+        enabled = false,
+        prerequisites = {'fu_energy_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_lab_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1}
+            },
+            time = 100,
+        },
+    },
     --============================================================================================================================================================
     --gravitational
     {

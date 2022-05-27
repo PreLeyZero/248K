@@ -61,6 +61,7 @@ require('prototypes/fusion/fu_materials')
 require('prototypes/fusion/fu_magnet')
 require('prototypes/fusion/fu_miner')
 require('prototypes/fusion/fu_turbine')
+require('prototypes/fusion/fu_lab')
 
 require('prototypes/gravitation/gr_crafter')
 require('prototypes/gravitation/gr_materials')
@@ -139,5 +140,8 @@ require('scripts/gravitation/gr_make_white_hole_recipes')
 
 --make item vent recipes
 require('scripts/electronic/el_burner')
+
+--science overhaul
+require('scripts/science_overhaul')
 
 
