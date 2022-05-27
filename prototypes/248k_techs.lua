@@ -906,6 +906,27 @@ data:extend({
             time = 30,
         },
     },
+    {
+        name = 'el_grenade_tech',
+        type = 'technology',
+        icon = sprite('el_grenade_tech.png'),
+        icon_size = 128,
+        prerequisites = {'el_charger_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'el_grenade_recipe',
+            },
+        },
+        unit = {
+            count = '50',
+            ingredients = {
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+            },
+            time = 30,
+        },
+    },
     
     --============================================================================================================================================================
     --fi
@@ -1772,6 +1793,28 @@ data:extend({
         },
         unit = {
             count = '300',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
+    {
+        name = 'fi_grenade_tech',
+        type = 'technology',
+        icon = sprite('fi_grenade_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fi_crystal_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_grenade_recipe',
+            },
+        },
+        unit = {
+            count = '100',
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2812,6 +2855,29 @@ data:extend({
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
+            },
+            time = 100,
+        },
+    },
+    {
+        name = 'fu_grenade_tech',
+        type = 'technology',
+        icon = sprite('fu_grenade_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fu_crystal_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_grenade_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1}
             },
             time = 100,
         },

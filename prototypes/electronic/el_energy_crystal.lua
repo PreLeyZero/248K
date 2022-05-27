@@ -7,6 +7,35 @@ local function sprite(name)
     return '__248k__/ressources/electronic/el_energy_crystal/el_energy_crystal_'..name
 end
 
+throw_projectile =
+{
+  {
+    filename = "__base__/sound/fight/throw-projectile-1.ogg",
+    volume = 0.4
+  },
+  {
+    filename = "__base__/sound/fight/throw-projectile-2.ogg",
+    volume = 0.4
+  },
+  {
+    filename = "__base__/sound/fight/throw-projectile-3.ogg",
+    volume = 0.4
+  },
+  {
+    filename = "__base__/sound/fight/throw-projectile-4.ogg",
+    volume = 0.4
+  },
+  {
+    filename = "__base__/sound/fight/throw-projectile-5.ogg",
+    volume = 0.4
+  },
+  {
+    filename = "__base__/sound/fight/throw-projectile-6.ogg",
+    volume = 0.4
+  }
+
+}
+
 --item
 data:extend({
     {
@@ -39,5 +68,5 @@ data:extend({
         fuel_top_speed_multiplier = 1,
         fuel_value = '20MJ',
         burnt_result = 'el_energy_crystal_item',
-    },
+    }
 })

@@ -72,6 +72,7 @@ require('prototypes/gravitation/gr_lab')
 
 require('prototypes/248k_fluids')
 require('prototypes/248k_elements')
+require('prototypes/grenades')
 
 require('prototypes/248k_subgroups')
 

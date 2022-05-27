@@ -1875,4 +1875,20 @@ data:extend({
         subgroup = 'fu_item_subgroup_e',
         order = 'a-b-d',
     },
+    {
+        name = 'fu_grenade_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        main_product = 'fu_grenade',
+        ingredients = {
+            {type="item", name="fu_materials_energy_charged_crystal", amount=1},
+            {type="item", name="grenade", amount=1},
+        },
+        results = {
+            {type="item", name="fu_grenade", amount=1},
+        },
+        result_count = 1,
+        energy_required = 4,
+    },
 })

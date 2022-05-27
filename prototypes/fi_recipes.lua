@@ -1441,4 +1441,20 @@ data:extend({
         subgroup = 'el_item_subgroup_a',
         order = 'a-c',
     },
+    {
+        name = 'fi_grenade_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        main_product = 'fi_grenade',
+        ingredients = {
+            {type="item", name="fi_energy_crystal_charged_item", amount=1},
+            {type="item", name="grenade", amount=1},
+        },
+        results = {
+            {type="item", name="fi_grenade", amount=1},
+        },
+        result_count = 1,
+        energy_required = 4,
+    },
 })

@@ -1462,7 +1462,22 @@ data:extend({
         energy_required = 2,
         always_show_made_in = true,
     },
-
+    {
+        name = 'el_grenade_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'crafting',
+        main_product = 'el_grenade',
+        ingredients = {
+            {type="item", name="el_energy_crystal_charged_item", amount=1},
+            {type="item", name="grenade", amount=1},
+        },
+        results = {
+            {type="item", name="el_grenade", amount=1},
+        },
+        result_count = 1,
+        energy_required = 4,
+    },
 
     
 })
