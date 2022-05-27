@@ -1720,6 +1720,14 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fi_refinery_kerosene_recipe',
             },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_solid_1_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_solid_2_recipe',
+            },
         },
         unit = {
             count = '100',

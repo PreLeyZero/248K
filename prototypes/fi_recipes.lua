@@ -1457,4 +1457,42 @@ data:extend({
         result_count = 1,
         energy_required = 4,
     },
+    {
+        name = 'fi_solid_1_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'chemistry',
+        main_product = 'solid-fuel',
+        icon = sprite('icons/fi_solid_1.png'),
+        icon_size = 64,
+        ingredients = {
+            {type="fluid", name="el_kerosene", amount=20},
+        },
+        results = {
+            {type="item", name="solid-fuel", amount=1},
+        },
+        result_count = 1,
+        energy_required = 2,
+        subgroup = 'fluid-recipes',
+        order = 'b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]-a',
+    },
+    {
+        name = 'fi_solid_2_recipe',
+        type = 'recipe',
+        enabled = 'false',
+        category = 'chemistry',
+        main_product = 'solid-fuel',
+        icon = sprite('icons/fi_solid_2.png'),
+        icon_size = 64,
+        ingredients = {
+            {type="fluid", name="el_desulfurized_kerosene", amount=30},
+        },
+        results = {
+            {type="item", name="solid-fuel", amount=1},
+        },
+        result_count = 1,
+        energy_required = 2,
+        subgroup = 'fluid-recipes',
+        order = 'b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]-b',
+    },
 })
