@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.24
+Date: 27.5.2022
+  Features:
+    - added optional science retexture
+    - added science overhaul [WIP]
+
+  Changes:
+    - buffed industrial glass production with K2, but reduced crafting speed
+
+  Bugfixes:
+    - fixed bug with K2 and RFP in overhaul mode
+---------------------------------------------------------------------------------------------------
 Version: 1.0.23
 Date: 21.5.2022
   Features:

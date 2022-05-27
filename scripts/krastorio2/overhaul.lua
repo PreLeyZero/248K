@@ -434,12 +434,12 @@ data:extend({
         enabled = 'false',
         category = 'el_arc_furnace_category',
         ingredients = {
-            {type="item", name="glass", amount=15},
-            {type="item", name="quartz", amount=5},
-            {type="item", name="coke", amount=5}
+            {type="item", name="glass", amount=3},
+            {type="item", name="quartz", amount=1},
+            {type="item", name="coke", amount=1}
         },
         results = {
-            {type="fluid", name="fi_arc_glass", amount=600},
+            {type="fluid", name="fi_arc_glass", amount=300},
         },
         energy_required = 1,
         order = 'a-b',
@@ -516,6 +516,21 @@ add_cards_to_tree(del_doubles(walk_techs("gr_stage_tech", break_con)), "advanced
 add_cards_to_tree(del_doubles(walk_techs("gr_charger_tech", break_con)), "singularity-tech-card")
 add_cards_to_tree(del_doubles(walk_techs("gr_compact_fusion_tech", break_con)), "singularity-tech-card")
 add_cards_to_tree(del_doubles(walk_techs("kr-singularity-tech-card", break_con)), "fu_space_probe_science_item")
+
+if mods["RealisticFusionPower"] then
+    
+    data.raw.recipe["fu_tokamak_reactor_recipe"].ingredients = {
+        {'fu_materials_magnet',200},
+        {'fu_materials_TIM',400},
+        {'fu_materials_KFK',400},
+        {'concrete',500},
+        {'fu_materials_energy_crystal',200},
+        {'pump',80},
+        {'processing-unit',500},
+        {'fu_tech_sign_item',2000},
+    }
+
+end
 
 end --indent ignored
 
