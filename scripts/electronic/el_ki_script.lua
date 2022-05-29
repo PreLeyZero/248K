@@ -419,6 +419,13 @@ function el_ki_core_working()
             local oldactive = global.ki.core[i].active
             global.ki.core[i].active = global.ki.core[i].entity.is_crafting()
 
+            if global.ki.core[i].active then
+                if global.ki.core[i].entity.energy < global.ki.core[i].entity.prototype.energy_usage then
+                    global.ki.core[i].active = false
+                    global.ki.dirty = true
+                end
+            end
+
             if not oldactive == global.ki.core[i].active then
                 global.ki.dirty = true
             end
@@ -431,6 +438,13 @@ function el_ki_buffer1_working()
         if global.ki.buffer1[i].entity.valid then
             local oldactive = global.ki.buffer1[i].active
             global.ki.buffer1[i].active = global.ki.buffer1[i].entity.is_crafting()
+
+            if global.ki.buffer1[i].active then
+                if global.ki.buffer1[i].entity.energy < global.ki.buffer1[i].entity.prototype.energy_usage then
+                    global.ki.buffer1[i].active = false
+                    global.ki.dirty = true
+                end
+            end
 
             if not oldactive == global.ki.buffer1[i].active then
                 global.ki.dirty = true
@@ -456,6 +470,13 @@ function el_ki_buffer2_working()
         if global.ki.buffer2[i].entity.valid then
             local oldactive = global.ki.buffer2[i].active
             global.ki.buffer2[i].active = global.ki.buffer2[i].entity.is_crafting()
+
+            if global.ki.buffer2[i].active then
+                if global.ki.buffer2[i].entity.energy < global.ki.buffer2[i].entity.prototype.energy_usage then
+                    global.ki.buffer2[i].active = false
+                    global.ki.dirty = true
+                end
+            end
 
             if not oldactive == global.ki.buffer2[i].active then
                 global.ki.dirty = true
