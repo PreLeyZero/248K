@@ -1,4 +1,4 @@
-##The Mod:
+## The Mod:
 This mod is designed to be playable in already existing worlds since it changes nothing on world generation. Adds multiple ways of producing energy, usefull alternate vanila recipes, customizeable trains, module effect spreading ki cores, and much more!
 
 ![alt text](https://github.com/PreLeyZero/248k-mod-page/raw/main/gr_materials_magnet.png)
