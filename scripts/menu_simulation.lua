@@ -63,3 +63,17 @@ data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_3 =
     game.surfaces.nauvis.daytime = 1
   ]],
 }
+
+data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_3 =
+{
+  checkboard = false,
+  save = "__248k__/ressources/menu_simulation/248k_menu_6.zip",
+  length = 60*25,
+  init = [[
+    local logo = game.surfaces.nauvis.find_entities_filtered{name = "crash-site-spaceship", limit = 1}[1]  
+    game.camera_position = {logo.position.x, logo.position.y}
+    game.camera_zoom = 0.7
+    game.tick_paused = false
+    game.surfaces.nauvis.daytime = 1
+  ]],
+}
