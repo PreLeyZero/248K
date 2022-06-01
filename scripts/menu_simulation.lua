@@ -64,7 +64,7 @@ data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_3 =
   ]],
 }
 
-data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_3 =
+data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_6 =
 {
   checkboard = false,
   save = "__248k__/ressources/menu_simulation/248k_menu_6.zip",
