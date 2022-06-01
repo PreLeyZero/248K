@@ -64,7 +64,7 @@ data:extend({
             fuel_category = 'el_train_fuel',
             fuel_inventory_size = 3,
             effectitvity = 1,
-            emissions_per_minute = 40,
+            emissions_per_minute = 20,
             smoke = {
                 {
                     name = "train-smoke",
@@ -174,11 +174,11 @@ data:extend({
         },
         working_sound = { 
             sound = { filename ='__base__/sound/train-engine.ogg'},
-            apparent_volume = 0.2,
+            apparent_volume = 0.1,
         }, 
         vehicle_impact_sound = {
             filename = "__base__/sound/car-metal-impact-6.ogg",
-            volume = 0.3
+            volume = 0.1
         },
 
     },

@@ -62,36 +62,36 @@ end
 --[BUILDINGS]
 
 building_table = {
-    {"assembling-machine-2",    "el_materials_ALK", 5},
+    {"assembling-machine-2",    "el_materials_ALK", 3},
     --
     --{"fast-inserter",           "el_aluminum_item", 2},
     --{"long-handed-inserter",    "el_aluminum_item", 2},
     --
-    {"engine-unit",             "el_materials_ALK", 5},
+    {"engine-unit",             "el_materials_ALK", 3},
     {"fast-transport-belt",     "el_materials_ALK", 1},
     {"fast-splitter",           "el_materials_ALK", 3},
     {"fast-underground-belt",   "el_materials_ALK", 8},
-    {"chemical-plant",          "el_materials_ALK", 10},
-    {"oil-refinery",            "el_materials_ALK", 10},
-    {"medium-electric-pole",    "el_materials_ALK", 4},
-    {"big-electric-pole",       "el_materials_ALK", 8},
+    {"chemical-plant",          "el_materials_ALK", 6},
+    {"oil-refinery",            "el_materials_ALK", 6},
+    {"medium-electric-pole",    "el_materials_ALK", 2},
+    {"big-electric-pole",       "el_materials_ALK", 4},
 
     {"stack-inserter",          "el_energy_crystal_item", 2},
 
     {"express-splitter",        "fi_materials_GFK", 3},
     {"express-transport-belt",  "fi_materials_GFK", 1},
     {"express-underground-belt","fi_materials_GFK", 8},
-    {"electric-furnace",        "fi_materials_GFK", 12},
-    {"centrifuge",              "fi_materials_GFK", 25},
-    {"steam-turbine",           "fi_materials_GFK", 20},
+    {"electric-furnace",        "fi_materials_GFK", 8},
+    {"centrifuge",              "fi_materials_GFK", 20},
+    {"steam-turbine",           "fi_materials_GFK", 15},
     {"heat-exchanger",          "fi_materials_GFK", 10},
-    {"heat-pipe",               "fi_materials_titan",2},
+    {"heat-pipe",               "fi_materials_titan",1},
 
     {"rocket-silo",             "fu_materials_KFK", 40},
 
-    {"beacon",                  "fi_materials_titan",   12},
-    {"substation",              "fi_materials_titan",   6},
-    {"assembling-machine-3",    "fi_materials_titan",   6},
+    {"beacon",                  "fi_materials_titan",   8},
+    {"substation",              "fi_materials_titan",   4},
+    {"assembling-machine-3",    "fi_materials_titan",   4},
 }
 
 --[ITEMS]
