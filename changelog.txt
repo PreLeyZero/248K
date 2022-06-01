@@ -1,9 +1,15 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.25
-Date: ??.??.????
+Date: 01.06.2022
+  Features:
+    - added 3 main menu simulations
+    - added circuit connections to 248ks roboport
+
   Bugfixes:
     - fixed bug where KI core would still transmit modules when power was cut
 
+  Changes:
+    - buffed 248ks roboport and charging station charging
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.24
 Date: 27.5.2022
