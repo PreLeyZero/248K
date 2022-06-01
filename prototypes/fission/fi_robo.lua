@@ -58,9 +58,9 @@ data:extend({
         },
         energy_usage = '4MW',
         charge_approach_distance = 2,
-        charging_energy = '2MW',
+        charging_energy = '4MW',
         recharge_minimum = '1MW',
-        charging_station_count = 4, 
+        charging_station_count = 8, 
         construction_radius = 70,
         logistics_radius = 70,
         material_slots_count = 10,
@@ -122,8 +122,55 @@ data:extend({
 			scale = 1.5,
 			animation_speed = 0.5
         },
- 
-        
+
+        circuit_wire_connection_point = {
+            wire = {
+                copper = {0, 0},
+                green = {0, 0},
+                red = {0, 0}
+            },
+            shadow = {
+                copper = {0, 0},
+                green = {0, 0},
+                red = {0, 0}
+            }
+        },
+		circuit_connector_sprites = {
+            led_red = {
+                filename = "__248k__/ressources/64x64_empty.png",
+                width = 64,
+                height = 64,
+                shift = {0, 0},
+                intensity = 0.3,
+                size = 1
+            },
+            led_green = {
+                filename = "__248k__/ressources/64x64_empty.png",
+                width = 64,
+                height = 64,
+                shift = {0, 0},
+                intensity = 0.3,
+                size = 1
+            },
+            led_blue = {
+                filename = "__248k__/ressources/64x64_empty.png",
+                width = 64,
+                height = 64,
+                shift = {0, 0},
+                intensity = 0.3,
+                size = 1
+            },
+            led_light = {
+                filename = "__248k__/ressources/64x64_empty.png",
+                width = 64,
+                height = 64,
+                shift = {0, 0},
+                intensity = 0.3,
+                size = 1,
+                blend_mode = "additive",
+            },
+        },
+		circuit_wire_max_distance = 20,
     },
     --charger
     {
@@ -149,9 +196,9 @@ data:extend({
         },
         energy_usage = '4MW',
         charge_approach_distance = 2,
-        charging_energy = '6MW',
+        charging_energy = '12MW',
         recharge_minimum = '1MW',
-        charging_station_count = 6, 
+        charging_station_count = 12, 
         construction_radius = 1,
         logistics_radius = 1,
         material_slots_count = 0,
