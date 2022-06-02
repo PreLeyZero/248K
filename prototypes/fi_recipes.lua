@@ -1463,7 +1463,7 @@ data:extend({
         enabled = 'false',
         category = 'chemistry',
         main_product = 'solid-fuel',
-        icon = sprite('icons/fi_solid_1.png'),
+        icon = sprite('icons/fi_solid_2.png'),
         icon_size = 64,
         ingredients = {
             {type="fluid", name="el_kerosene", amount=20},
@@ -1482,7 +1482,7 @@ data:extend({
         enabled = 'false',
         category = 'chemistry',
         main_product = 'solid-fuel',
-        icon = sprite('icons/fi_solid_2.png'),
+        icon = sprite('icons/fi_solid_1.png'),
         icon_size = 64,
         ingredients = {
             {type="fluid", name="el_desulfurized_kerosene", amount=30},
