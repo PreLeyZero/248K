@@ -68,6 +68,7 @@ data:extend({
         request_to_open_door_timeout = 15,
         spawn_and_station_height = 1.2,
         robots_shrink_when_entering_and_exiting = true,
+        recharge_minimum = '4MW',
 
         base = {
             filename = sprite('port_base.png'),
@@ -205,6 +206,7 @@ data:extend({
         robot_slots_count = 0,
         request_to_open_door_timeout = 4,
         spawn_and_station_height = 2,
+        recharge_minimum = '4MW',
 
         base = {
             filename = sprite('charger_base_2.png'),
