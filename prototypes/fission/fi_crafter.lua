@@ -35,6 +35,7 @@ data:extend({
         corpse = 'big-remnants',
         collision_box = data.raw['assembling-machine']['assembling-machine-1'].collision_box,
         selection_box = data.raw['assembling-machine']['assembling-machine-1'].selection_box,
+        squeak_behaviour = false,
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,

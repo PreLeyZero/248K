@@ -56,6 +56,7 @@ data:extend({
         corpse = 'small-remnants',
         collision_box = data.raw['solar-panel']['solar-panel'].collision_box,
         selection_box = data.raw['solar-panel']['solar-panel'].selection_box,
+        squeak_behaviour = false,
         --energy
         energy_source = {
             type = 'electric',
