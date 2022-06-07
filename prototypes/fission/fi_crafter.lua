@@ -33,13 +33,14 @@ data:extend({
         flags = {"player-creation","placeable-neutral"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-1.4,-1.4},{1.4,1.4}},
-        selection_box = {{-1.5,-1.5},{1.5,1.5}},
+        collision_box = data.raw['assembling-machine']['assembling-machine-1'].collision_box,
+        selection_box = data.raw['assembling-machine']['assembling-machine-1'].selection_box,
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
             result = 'fi_crafter_item',
         },
+        fast_replaceable_group = "assembling-machine",
         crafting_categories = {'advanced-crafting','crafting','smelting','fi_crafting_category'},
         crafting_speed = 3.5,
         energy_source = {
@@ -106,3 +107,5 @@ data:extend({
         },
     },
 })
+
+data.raw['assembling-machine']['assembling-machine-3'].next_upgrade = 'fi_crafter_entity'

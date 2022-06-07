@@ -1728,6 +1728,14 @@ data:extend({
                 type = 'unlock-recipe',
                 recipe = 'fi_solid_2_recipe',
             },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_rocket_fuel_1_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_rocket_fuel_2_recipe',
+            },
         },
         unit = {
             count = '100',

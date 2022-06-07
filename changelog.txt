@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.26
+Date: 07.06.2022
+  Features:
+    - added rocket fuel recipes from kerosene
+
+  Bugfixes:
+    - added upgradeability for solar panel and assembling machines
+    - fixed startup bug with new roboport prototype attribute
+---------------------------------------------------------------------------------------------------
 Version: 1.0.25
 Date: 01.06.2022
   Features:
