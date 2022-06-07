@@ -1,3 +1,5 @@
+--fix upgradeables bounding boxes
+require('scripts/upgrades')
 --insert tech
 if data.raw.lab['lab'] then
     table.insert(data.raw.lab['lab'].inputs, 'fi_ki_science')

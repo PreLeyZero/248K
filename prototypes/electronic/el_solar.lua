@@ -63,7 +63,7 @@ data:extend({
             usage_priority = 'solar',
             input_flow_limit = '0W',
         },
-        fast_replaceable_group = 'solar-panel',
+        --fast_replaceable_group = 'solar-panel',
         production = solar_output(),
         --picture
         picture = {
@@ -75,8 +75,3 @@ data:extend({
         map_color = {r=1.7,g=1.7,b=1.7},
     },
 })
-
-if data.raw["solar-panel"]["solar-panel"] then
-    data.raw["solar-panel"]["solar-panel"].next_upgrade = "el_solar_entity"
-    data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
-end

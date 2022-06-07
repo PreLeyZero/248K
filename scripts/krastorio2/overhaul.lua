@@ -410,9 +410,7 @@ pre_tech_table = {
 --                              changes in entities and other protypes 
 --===================================================================================================================
 
-data.raw["solar-panel"]["solar-panel"].next_upgrade = "el_solar_entity"
 data.raw["solar-panel"]["el_solar_entity"].production = "220kW"
-data.raw["solar-panel"]["el_solar_entity"].next_upgrade = "kr-advanced-solar-panel"
 data.raw["solar-panel"]["kr-advanced-solar-panel"].production = "480kW"
 data.raw.item["el_materials_ALK"].stack_size = 200
 data.raw.recipe["dt-fuel"].ingredients = {
