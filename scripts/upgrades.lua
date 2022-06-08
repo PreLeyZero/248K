@@ -31,9 +31,3 @@ data.raw['assembling-machine']['fi_crafter_entity'].next_upgrade = 'gr_crafter_e
 data.raw['assembling-machine']['assembling-machine-3'].next_upgrade = 'fi_crafter_entity'
 data.raw["solar-panel"]["solar-panel"].next_upgrade = "el_solar_entity"
 data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
-
-if not mods["space-exploration"] then
-    if mods["Krastorio2"] then
-        data.raw["solar-panel"]["el_solar_entity"].next_upgrade = "kr-advanced-solar-panel"
-    end
-end
