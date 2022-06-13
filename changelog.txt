@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.28
+Date: ??.??.2022
+  Features:
+
+  Changes:
+    - changed map color of silo tank to that of normal storage tank
+
+  Bugfixes:
+    - fixed issue with K2 and rfp in overhaul mode
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.27
 Date: 08.06.2022
   Bugfixes:
