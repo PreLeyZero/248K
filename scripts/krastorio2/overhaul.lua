@@ -530,6 +530,13 @@ if mods["RealisticFusionPower"] then
         {'fu_tech_sign_item',2000},
     }
 
+    data.raw.recipe["fu_empty_container_recipe"].ingredients = {
+        {type="item", name="fu_materials_magnet", amount=2},
+        {type="item", name="fu_materials_KFK", amount=6},
+        {type="item", name="fu_materials_energy_crystal", amount=2},
+        {type="item", name="fu_tech_sign_item", amount=10},
+    }
+
 end
 
 end --indent ignored
