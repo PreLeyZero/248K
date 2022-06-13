@@ -7,6 +7,12 @@ local function sprite(name)
     return '__248k__/ressources/electronic/el_tank/el_tank_'..name
 end
 
+local tank_color = {r=1.7,g=1.7,b=1.7}
+
+if data.raw["storage-tank"]["storage-tank"] then
+    tank_color = data.raw["storage-tank"]["storage-tank"].map_color
+end
+
 --item
 data:extend({
     {
@@ -103,6 +109,6 @@ data:extend({
             production_type = "input-output"
         },
         window_bounding_box = {{0,0},{1,1}},
-        map_color = {r=1.7,g=1.7,b=1.7},
+        map_color = tank_color,
     },
 })
