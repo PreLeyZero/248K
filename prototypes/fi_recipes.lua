@@ -1617,7 +1617,7 @@ data:extend({
         },
         results = {
             {type="fluid", name="el_dirty_water", amount=1000},
-            {type="item", name="fi_materials_dirty_solution", amount=1},
+            {type="item", name="fi_materials_empty_solution", amount=1},
         },
         result_count = 1,
         energy_required = 0.2,
