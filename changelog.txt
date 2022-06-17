@@ -1,10 +1,15 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.28
-Date: ??.??.2022
+Date: 17.06.2022
   Features:
+    - added ingot former machine (fusion stage)
+    - retextured rare metals
+    - added a compressed version of rich water
 
   Changes:
     - changed map color of silo tank to that of normal storage tank
+    - made electric furnace cheaper in terms of fiberglass r. plastic
+    - but increased titanium/neodymiumusage in science packs
 
   Bugfixes:
     - fixed issue with K2 and rfp in overhaul mode

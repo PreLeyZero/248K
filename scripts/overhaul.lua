@@ -81,7 +81,7 @@ building_table = {
     {"express-splitter",        "fi_materials_GFK", 3},
     {"express-transport-belt",  "fi_materials_GFK", 1},
     {"express-underground-belt","fi_materials_GFK", 8},
-    {"electric-furnace",        "fi_materials_GFK", 8},
+    {"electric-furnace",        "fi_materials_GFK", 4},
     {"centrifuge",              "fi_materials_GFK", 20},
     {"steam-turbine",           "fi_materials_GFK", 15},
     {"heat-exchanger",          "fi_materials_GFK", 10},
@@ -112,8 +112,8 @@ item_table = {
     --{"automation-science-pack",    "fi_modules_core_item",  3},
     --{"logistic-science-pack",      "fi_modules_core_item",  3},
     {"chemical-science-pack",        "el_energy_crystal_item",2},
-    {"production-science-pack",      "fi_materials_titan",  1},
-    {"utility-science-pack",         "fi_materials_neodym", 1},
+    {"production-science-pack",      "fi_materials_titan",  3},
+    {"utility-science-pack",         "fi_materials_neodym", 3},
     
 }
 

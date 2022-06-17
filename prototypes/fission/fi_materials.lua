@@ -180,5 +180,23 @@ data:extend({
         subgroup = 'fi_item_subgroup_a-b',
         order = 'b-a',
     },
+    {
+        name = 'fi_materials_rich_solution',
+        type = 'item',
+        icon = sprite('rich_solution.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fi_item_subgroup_b',
+        order = 'f-b',
+    },
+    {
+        name = 'fi_materials_dirty_solution',
+        type = 'item',
+        icon = sprite('dirty_solution.png'),
+        icon_size = 64,
+        stack_size = 100,
+        subgroup = 'fi_item_subgroup_b',
+        order = 'f-b',
+    },
 
 })

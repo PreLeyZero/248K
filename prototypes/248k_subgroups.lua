@@ -474,6 +474,10 @@ data:extend({
         type = 'recipe-category',
     },
     {
+        name = 'fu_ingot_category',
+        type = 'recipe-category',
+    },
+    {
         name = 'fu_laser_category',
         type = 'recipe-category',
     },

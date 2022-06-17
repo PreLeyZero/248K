@@ -52,7 +52,16 @@ local limitation_list = {
     'fi_refinery_sulfur_recipe',
     'fi_refinery_kerosene_coal_recipe',
     'fi_refinery_kerosene_recipe',
-    'fi_empty_solution_recipe'
+    'fi_empty_solution_recipe',
+    'fu_gold_ingot_recipe',
+    'fu_titan_ingot_recipe',
+    'fu_neodym_ingot_recipe',
+    'fu_lead_ingot_recipe',
+    'fu_gold_plate_recipe',
+    'fu_titan_plate_recipe',
+    'fu_neodym_plate_recipe',
+    'fu_lead_plate_recipe',
+
 }
 
 --item

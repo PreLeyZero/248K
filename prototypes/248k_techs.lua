@@ -1117,6 +1117,22 @@ data:extend({
             },
             { 
                 type = 'unlock-recipe',
+                recipe = 'fi_rich_solution_pack_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_rich_solution_unpack_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_dirty_solution_pack_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_dirty_solution_unpack_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
                 recipe = 'fi_extract_rich_powder_recipe',
             },
         },
@@ -1860,6 +1876,153 @@ data:extend({
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
                 {'utility-science-pack',1}
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_ingot_tech',
+        type = 'technology',
+        icon = sprite('fu_ingot_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_TIM_tech',
+            'fu_KFK_tech'
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_ingot_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_treat_slag_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1}
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_gold_ingot_tech',
+        type = 'technology',
+        icon = sprite('fu_gold_ingot_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_ingot_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_gold_ingot_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_gold_plate_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_neodym_ingot_tech',
+        type = 'technology',
+        icon = sprite('fu_neodym_ingot_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_ingot_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_neodym_ingot_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_neodym_plate_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_titan_ingot_tech',
+        type = 'technology',
+        icon = sprite('fu_titan_ingot_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_ingot_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_titan_ingot_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_titan_plate_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1},
+            },
+            time = 45,
+        },
+    },
+    {
+        name = 'fu_lead_ingot_tech',
+        type = 'technology',
+        icon = sprite('fu_lead_ingot_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_ingot_tech',
+            'fu_lead_tech',
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_lead_ingot_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_lead_plate_recipe',
+            },
+        },
+        unit = {
+            count = '200',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1},
             },
             time = 45,
         },
