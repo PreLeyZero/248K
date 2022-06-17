@@ -130,24 +130,24 @@ data:extend({
             filename = sprite('entity_animation.png'),
             size = {512,512},
             scale = 0.54,
-            line_length = 2,
-            lines_per_file = 2,
-            frame_count = 4,
-            animation_speed = 0.2,
+            line_length = 3,
+            lines_per_file = 3,
+            frame_count = 9,
+            animation_speed = 0.1,
             shift = {0,-0.3} 
           },
           light = {
             type = "basic",
             intensity = 1,
             size = 15,
-            color = {r=0.79 ,g=0.08 ,b=0.87 },
+            color = {r=0.78 ,g=0.5 ,b=0.09 },
           }
         }
       },
       working_sound =
       {
         sound = {filename = "__base__/sound/electric-furnace.ogg" },
-        apparent_volume = 0.3,
+        apparent_volume = 0.1,
       },
   },
 })
