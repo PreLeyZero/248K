@@ -14,7 +14,11 @@ local function adjust_bounding_boxes(table_in)
         data.raw[v[3]][v[1]].selection_box = data.raw[v[3]][v[2]].selection_box
 
         --set fast_replaceable_group 
-        data.raw[v[3]][v[1]].fast_replaceable_group = v[3]
+        if data.raw[v[3]][v[2]].fast_replaceable_group then
+            data.raw[v[3]][v[1]].fast_replaceable_group = data.raw[v[3]][v[2]].fast_replaceable_group
+        else
+            data.raw[v[3]][v[1]].fast_replaceable_group = v[3]
+        end
 
         --collision mask
         data.raw[v[3]][v[1]].collision_mask = data.raw[v[3]][v[2]].collision_mask
