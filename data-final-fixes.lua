@@ -1,5 +1,8 @@
 --fix upgradeables bounding boxes
 require('scripts/upgrades')
+--legacy icons
+require('scripts/legacy_icons')
+
 --insert tech
 if data.raw.lab['lab'] then
     table.insert(data.raw.lab['lab'].inputs, 'fi_ki_science')
