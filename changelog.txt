@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.29
-Date: 08.06.2022
+Date: 29.06.2022
   Features:
     - added option for legacy icons on rare metals
     - added new miner tiers and upgrade items
