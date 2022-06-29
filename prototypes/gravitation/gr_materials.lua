@@ -447,5 +447,14 @@ data:extend({
         subgroup = 'gr_item_subgroup_a',
         order = 'a-a',
     },
+    {
+        name = 'gr_materials_upgrade',
+        type = 'item',
+        icon = sprite('upgrade.png'),
+        icon_size = 64,
+        stack_size = 20,
+        subgroup = 'gr_item_subgroup_d',
+        order = 'x-a',
+    },
 
 })

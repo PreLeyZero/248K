@@ -337,6 +337,10 @@ data:extend({
         name = '248k_productivity_category',
         type = 'module-category',
     },
+    {
+        name = '248k_mining_category',
+        type = 'module-category',
+    },
 
 --============================================================================================================================================================
     --fu fusor

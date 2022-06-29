@@ -202,4 +202,13 @@ data:extend({
         subgroup = 'fu_item_subgroup_a',
         order = 'f-a',
     },
+    {
+        name = 'fu_materials_upgrade',
+        type = 'item',
+        icon = sprite('upgrade.png'),
+        icon_size = 64,
+        stack_size = 20,
+        subgroup = 'fu_item_subgroup_b',
+        order = 'x-a',
+    },
 })

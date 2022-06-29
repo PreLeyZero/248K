@@ -1855,6 +1855,32 @@ data:extend({
             time = 30,
         },
     },
+    {
+        name = 'fi_upgrade_tech',
+        type = 'technology',
+        icon = sprite('fi_upgrade_tech.png'),
+        icon_size = 128,
+        prerequisites = {'fu_miner_tech'},
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_upgrade_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fi_miner_upgrade_recipe',
+            },
+        },
+        unit = {
+            count = '100',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1,},
+            },
+            time = 30,
+        },
+    },
     --============================================================================================================================================================
     --fu
     {
@@ -3085,6 +3111,36 @@ data:extend({
             time = 100,
         },
     },
+    {
+        name = 'fu_upgrade_tech',
+        type = 'technology',
+        icon = sprite('fu_upgrade_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fi_upgrade_tech',
+            'fu_magnet_tech'
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_upgrade_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'fu_miner_upgrade_recipe',
+            },
+        },
+        unit = {
+            count = '100',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'utility-science-pack',1}
+            },
+            time = 30,
+        },
+    },
     --============================================================================================================================================================
     --gravitational
     {
@@ -3867,6 +3923,39 @@ data:extend({
                 {'fu_space_probe_science_item',1}
             },
             time = 100,
+        },
+    },
+    {
+        name = 'gr_upgrade_tech',
+        type = 'technology',
+        icon = sprite('gr_upgrade_tech.png'),
+        icon_size = 128,
+        prerequisites = {
+            'fu_upgrade_tech',
+            'gr_plasma_cube_tech'
+        },
+        effects = {
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_upgrade_recipe',
+            },
+            { 
+                type = 'unlock-recipe',
+                recipe = 'gr_miner_upgrade_recipe',
+            },
+        },
+        unit = {
+            count = '100',
+            ingredients = {
+                {'chemical-science-pack',1},
+                {'automation-science-pack',1},
+                {'logistic-science-pack',1},
+                {'production-science-pack',1},
+                {'utility-science-pack',1}, 
+                {'space-science-pack',1}, 
+                {'fu_space_probe_science_item',1}
+            },
+            time = 30,
         },
     },
 })

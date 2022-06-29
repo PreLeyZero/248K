@@ -3,6 +3,7 @@ Version: 1.0.29
 Date: 08.06.2022
   Features:
     - added option for legacy icons on rare metals
+    - added miner modules
 
   Changes:
     - made roboports and bots more tanky

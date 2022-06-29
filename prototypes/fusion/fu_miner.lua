@@ -52,6 +52,8 @@ data:extend({
           mining_time = 1,
           result = 'fu_miner_item',
       },
+      fast_replaceable_group = 'fu_miner_entity',
+      next_upgrade = 'fu_miner_entity_2',
       crafting_categories = {'fu_miner_category'},
       crafting_speed = 1,
       ingredient_count = 2,
@@ -107,3 +109,96 @@ data:extend({
       },
   },
 })
+
+local miner2 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner_entity'])
+miner2.name = 'fu_miner_entity_2'
+miner2.icons = {
+  {
+      icon = miner2.icon
+  },
+  {
+      icon = "__248k__/ressources/icons/fi_upgrade.png"
+  }
+}
+miner2.icon = nil
+miner2.minable.result = 'fu_miner_item_2'
+miner2.crafting_speed = 2
+miner2.next_upgrade = 'fu_miner_entity_3'
+
+local miner3 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner_entity'])
+miner3.name = 'fu_miner_entity_3'
+miner3.icons = {
+  {
+      icon = miner3.icon
+  },
+  {
+      icon = "__248k__/ressources/icons/fu_upgrade.png"
+  }
+}
+miner3.icon = nil
+miner3.minable.result = 'fu_miner_item_3'
+miner3.crafting_speed = 3
+miner3.base_productivity = 0.5
+miner3.next_upgrade = 'fu_miner_entity_4'
+
+local miner4 = util.table.deepcopy(data.raw['assembling-machine']['fu_miner_entity'])
+miner4.name = 'fu_miner_entity_4'
+miner4.icons = {
+  {
+      icon = miner4.icon
+  },
+  {
+      icon = "__248k__/ressources/icons/gr_upgrade.png"
+  }
+}
+miner4.icon = nil
+miner4.minable.result = 'fu_miner_item_4'
+miner4.crafting_speed = 8
+miner4.base_productivity = 4
+
+--items
+local miner2_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
+miner2_item.name = 'fu_miner_item_2'
+miner2_item.icons = {
+  {
+      icon = miner2_item.icon
+  },
+  {
+      icon = "__248k__/ressources/icons/fi_upgrade.png"
+  }
+}
+miner2_item.icon = nil
+miner2_item.place_result = 'fu_miner_entity_2'
+
+local miner3_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
+miner3_item.name = 'fu_miner_item_3'
+miner3_item.icons = {
+  {
+      icon = miner3_item.icon
+  },
+  {
+      icon = "__248k__/ressources/icons/fu_upgrade.png"
+  }
+}
+miner3_item.icon = nil
+miner3_item.place_result = 'fu_miner_entity_3'
+miner3_item.subgroup = 'fu_item_subgroup_c'
+miner3_item.order = 'a-b'
+
+local miner4_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
+miner4_item.name = 'fu_miner_item_4'
+miner4_item.icons = {
+  {
+      icon = miner4_item.icon
+  },
+  {
+      icon = "__248k__/ressources/icons/gr_upgrade.png"
+  }
+}
+miner4_item.icon = nil
+miner4_item.place_result = 'fu_miner_entity_4'
+miner4_item.subgroup = 'gr_item_subgroup_c'
+miner4_item.order = 'a-b'
+
+
+data:extend({miner2,miner3,miner4,miner2_item,miner3_item,miner4_item})

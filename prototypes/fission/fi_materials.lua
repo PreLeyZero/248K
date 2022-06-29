@@ -198,5 +198,14 @@ data:extend({
         subgroup = 'fi_item_subgroup_b',
         order = 'f-b',
     },
+    {
+        name = 'fi_materials_upgrade',
+        type = 'item',
+        icon = sprite('upgrade.png'),
+        icon_size = 64,
+        stack_size = 20,
+        subgroup = 'fi_item_subgroup_j',
+        order = 'b-a',
+    },
 
 })

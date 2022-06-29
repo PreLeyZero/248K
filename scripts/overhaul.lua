@@ -155,6 +155,7 @@ tech_table = {
     {"fi_crafter_tech",         "fi_refining_tech"},
     {"el_solar_tech",           "concrete"},
     {"fusion-reactor-equipment","fu_energy_tech"},
+    {"fi_upgrade_tech",         "speed-module-2"},
 
     --add science packs
     {"fi_stage_tech",           "chemical-science-pack"},
