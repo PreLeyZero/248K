@@ -49,13 +49,13 @@ end --indent ignored
 if settings.startup['overhaul_science'].value then
     -- indent ignored
     
-        --only overhaul if no k2
-        if not mods["Krastorio2"] then
-            data.raw.technology["fu_lab_tech"].enabled = true
-
-            table.insert(data.raw.technology["fu_space_probe_3_tech"].prerequisites, "fu_lab_tech")
-        end
+    --only overhaul if no k2
+    if not mods["Krastorio2"] then
+        data.raw.technology["fu_lab_tech"].enabled = true
+        data.raw.technology["fu_lab_tech"].hidden = false
+        table.insert(data.raw.technology["fu_space_probe_3_tech"].prerequisites, "fu_lab_tech")
+    end
     
-    end --indent ignored
+end --indent ignored
     
 
