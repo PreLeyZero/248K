@@ -82,3 +82,70 @@ data.raw.beacon["fu_ki_core_slave_entity"].module_specification = {
     module_info_icon_shift = {0, 0.5},
     module_info_multi_row_initial_height_modifier = -0.3,
 }
+
+
+--[[*************************************************************************]]--
+--Fixes break in tech tree
+data.raw.technology["fu_KFK_tech"].prerequisites = {
+	"fi_caster_tech",
+
+}
+data.raw.technology["fu_KFK_tech"].unit.ingredients = {
+
+    {"chemical-science-pack",1},
+    {"automation-science-pack",1},
+    {"logistic-science-pack",1},
+}
+
+--Currently SE/K2 labs do not accept KI cubes. The following iterates through the tech tree and replaces red cubes with Production Science
+--and Yellow cubes with material science pack 3, which are approximately the same point in the tech tree and cost
+for tech_name, technology in pairs(data.raw.technology) do
+
+--[[Flags for the presence of the prod/matter techs arleady present. If it is present, flags for removal at the end. It can't be removed
+during the iteration as it has already initilised the ingredient table, so the entire table needs to be replaced]]
+	local prod=false
+	local matter=false
+	
+	
+	--Iterate over techs and replace the ingredient if not already present
+	for tech_ingredient, ingredient in pairs(technology.unit.ingredients) do
+		local ingredient_name = ingredient.name or ingredient[1]
+		if ingredient_name == "production-science-pack" then
+			prod=true
+		end
+		if ingredient_name == "se-material-science-pack-3" then
+			matter=true
+		end
+		
+		if ingredient_name == "fi_ki_science" then
+			if prod==true then
+				
+			else data.raw.technology[tech_name].unit.ingredients[tech_ingredient]={"production-science-pack",1}
+			end
+		end
+		if ingredient_name == "fu_ki_science" then
+			if matter==true then
+				
+			else data.raw.technology[tech_name].unit.ingredients[tech_ingredient]={"se-material-science-pack-3", 1}
+			end
+		end
+	end
+	
+--Iterate over and construct a new ingredient table without the relevant cube
+	if prod or matter then
+		local new_ingredients = {}
+		for tech_ingredient, ingredient in pairs(technology.unit.ingredients) do
+			local ingredient_name = ingredient.name or ingredient[1]
+				if ingredient_name == "fi_ki_science" then
+				
+				elseif ingredient_name == "fu_ki_science" then
+				
+				else
+					table.insert(new_ingredients, ingredient)
+				end
+		end
+		
+		data.raw.technology[tech_name].unit.ingredients = new_ingredients
+	end
+	
+end
