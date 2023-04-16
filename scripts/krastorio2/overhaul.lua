@@ -1,18 +1,28 @@
 if settings.startup['overhaul_mode'].value then
 -- indent ignored
 
+local function add_ingredient(ingredients, item, item_amount)
+    for _, ingredient in ipairs(ingredients) do
+        if ingredient.name == item then
+            ingredient.amount = math.max(ingredient.amount, item_amount)
+            return --leave early if we already found this ingredient
+        end
+    end
+    table.insert(ingredients, {type="item", name=item, amount=item_amount})
+end
+
 local function add_to_recipe(recipe, item, item_amount)
     if not data.raw.recipe[recipe] then
         return
     end
 
     if data.raw.recipe[recipe].ingredients then
-        table.insert(data.raw.recipe[recipe].ingredients, {type="item", name=item, amount=item_amount})
+        add_ingredient(data.raw.recipe[recipe].ingredients, item, item_amount )
     end
 
     if data.raw.recipe[recipe].normal and data.raw.recipe[recipe].expensive then
-        table.insert(data.raw.recipe[recipe].normal.ingredients, {type="item", name=item, amount=item_amount})
-        table.insert(data.raw.recipe[recipe].expensive.ingredients, {type="item", name=item, amount=item_amount})
+        add_ingredient(data.raw.recipe[recipe].normal.ingredients, item, item_amount )
+        add_ingredient(data.raw.recipe[recipe].expensive.ingredients, item, item_amount )
     end
 end
 
@@ -24,7 +34,7 @@ local function add_to_recipes(table_in)
 end
 
 local function change_table_index(table_in, structure)
-    
+
     local indexed_table = {}
 
     for _,v in ipairs(table_in) do
