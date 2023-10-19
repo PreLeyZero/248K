@@ -633,9 +633,17 @@ function el_ki_single_beacon_update(id)
                 local coreunit = global.ki.channel[channel].core
                 if global.ki.core[coreunit] then
                     if global.ki.core[coreunit].active then
-                        for i,v in pairs(global.ki.core[coreunit].totalmodules) do
-                            if beacon_inv.can_insert({name=global.ki.core[coreunit].totalmodules[i], count=1}) then
-                                beacon_inv.insert({name=global.ki.core[coreunit].totalmodules[i], count=1})
+                        local moduleset = global.ki.core[coreunit].totalmodules
+                        if beacon_entity.name == 'fu_ki_beacon_entity' then
+                            if game.forces[1].technologies['fu_ki_plus_2_tech'].researched then
+                                moduleset = global.ki.core[coreunit].fu_ki_plus_2_modules
+                            elseif game.forces[1].technologies['fu_ki_plus_1_tech'].researched then
+                                moduleset = global.ki.core[coreunit].fu_ki_plus_1_modules
+                            end
+                        end
+                        for i,v in pairs(moduleset) do
+                            if beacon_inv.can_insert({name=moduleset[i], count=1}) then
+                                beacon_inv.insert({name=moduleset[i], count=1})
                             end
                         end
                     end
@@ -691,6 +699,8 @@ function el_ki_buffer1_adder()
                 
                 local coreid = global.ki.channel[i].core
                 global.ki.core[coreid].totalmodules = {}
+                global.ki.core[coreid].fu_ki_plus_1_modules = {}
+                global.ki.core[coreid].fu_ki_plus_2_modules = {}
                 
                 
                 for x,f in pairs(global.ki.core[coreid].modules) do
@@ -725,7 +735,7 @@ function el_ki_buffer1_adder()
                             table.insert(moduletable, v)
                         end
                     
-                        global.ki.core[coreid].totalmodules = moduletable
+                        global.ki.core[coreid].fu_ki_plus_2_modules = moduletable
                     elseif game.forces[1].technologies['fu_ki_plus_1_tech'].researched then
                         local moduletable = {}
                         for _,v in pairs(global.ki.core[coreid].totalmodules) do 
@@ -733,7 +743,7 @@ function el_ki_buffer1_adder()
                             table.insert(moduletable, v)
                         end
                     
-                        global.ki.core[coreid].totalmodules = moduletable
+                        global.ki.core[coreid].fu_ki_plus_1_modules = moduletable
                     end
                 end
             end
