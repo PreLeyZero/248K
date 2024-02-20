@@ -139,6 +139,10 @@ function open_gui(player)
             type = "label",
             caption = {"248k.migration-gui-ei-sub-text-7"},
         }
+        main_container.add{
+            type = "label",
+            caption = {"248k.migration-gui-ei-sub-text-8"},
+        }
     end
 
 
