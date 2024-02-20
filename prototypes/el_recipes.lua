@@ -132,7 +132,7 @@ data:extend({
         main_product = 'el_pressurized_water',
         ingredients = {
             {type="fluid", name="water", amount=480},
-            {type="fluid", name="steam", amount=240, temperature=165},
+            {type="fluid", name="steam", amount=240, minimium_temperature=165},
         },
         results = {
             {type="fluid", name="el_pressurized_water", amount=240, temperature =500},
