@@ -87,7 +87,7 @@ building_table = {
     {"heat-exchanger",          "fi_materials_GFK", 10},
     {"heat-pipe",               "fi_materials_titan",1},
 
-    {"rocket-silo",             "fu_materials_KFK", 40},
+    --{"rocket-silo",             "fu_materials_KFK", 40},
 
     {"beacon",                  "fi_materials_titan",   8},
     {"substation",              "fi_materials_titan",   4},
@@ -107,7 +107,7 @@ item_table = {
     {"speed-module-3",          "fi_modules_core_item", 3},
     {"effectivity-module-2",    "fi_modules_core_item", 1},
     {"effectivity-module-3",    "fi_modules_core_item", 3},
-    {"satellite",               "fu_materials_KFK",     10},
+    --{"satellite",               "fu_materials_KFK",     10},
 
     --{"automation-science-pack",    "fi_modules_core_item",  3},
     --{"logistic-science-pack",      "fi_modules_core_item",  3},
@@ -147,7 +147,7 @@ tech_table = {
     {"productivity-module-2",   "fi_modules_1_tech"},
     {"kovarex-enrichment-process",   "el_ki_eff_1_tech"},
     {"kovarex-enrichment-process",   "fi_ki_eff_1_tech"},
-    {"rocket-silo",             "fu_KFK_tech"},
+    --{"rocket-silo",             "fu_KFK_tech"},
     {"space-science-pack",      "fu_KFK_tech"},
     {"el_train_tech",           "railway"},
     {"el_kerosene_tech",        "oil-processing"},
@@ -179,5 +179,12 @@ tech_structure = {"tech", "pre_tech"}
 add_to_recipes(change_table_index(building_table, recipe_structure))
 add_to_recipes(change_table_index(item_table, recipe_structure))
 add_to_techs(change_table_index(tech_table, tech_structure))
+
+-- if no space exploration mod
+if not mods["space-exploration"] then
+    -- rocket silo and satellite
+    add_to_recipes(change_table_index({{"rocket-silo", "fu_materials_KFK", 40}, {"satellite", "fu_materials_KFK", 10}}, recipe_structure))
+    add_to_techs(change_table_index({{"rocket-silo", "fu_KFK_tech"}}, tech_structure))
+end
 
 end --indent ignored

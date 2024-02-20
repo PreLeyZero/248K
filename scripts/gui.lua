@@ -602,6 +602,15 @@ function gui.on_change(e)
             end
         end
     end
+
+    local parent_gui = e.element.tags.parent_gui
+    local action = e.element.tags.action
+    if parent_gui == "248k_migration_notice" then
+        if action == "close-gui" then
+            player.gui.screen["248k_migration_notice"].destroy()
+        end
+    end
+
 end
 
 function gui.on_selected(e)

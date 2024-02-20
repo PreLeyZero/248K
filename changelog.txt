@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.30
+Date: 20.02.2024
+  Features:
+    - added german locale (thanks to SempfgurkeXP2)
+  Changes:
+    - fixed issue with KIX not inserting right module amount (PR #52)
+    - water pressurizers can now use steam with temp of 165dec or higher (PR #45)
+  Bugfixes:
+    - fixes multiple recipe insertions (PR #47)
+    - fixed issue with SE in overhaul mode, silo needing CFC
+---------------------------------------------------------------------------------------------------
 Version: 1.0.29
 Date: 29.06.2022
   Features:
