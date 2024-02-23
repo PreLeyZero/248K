@@ -603,6 +603,10 @@ function gui.on_change(e)
         end
     end
 
+    if not e.element.valid then
+        return
+    end
+
     local parent_gui = e.element.tags.parent_gui
     local action = e.element.tags.action
     if parent_gui == "248k_migration_notice" then
